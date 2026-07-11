@@ -52,25 +52,59 @@ window.startCourse = function (cfg) {
   }
   function today() { return Math.floor(Date.now() / 86400000); }
 
-  /* ---------- text-to-speech (Web Speech API) ---------- */
+  /* ---------- audio: pre-generated MP3s with speech-synthesis fallback ---------- */
   var TTS = !!(window.speechSynthesis && window.SpeechSynthesisUtterance);
+  // CAN_AUDIO gates the 🔊 UI: pre-generated audio (cfg.audio + manifest) or device TTS
+  var CAN_AUDIO = (!!cfg.audio && typeof Audio !== "undefined") || TTS;
+  var BAD_VOICE = /eddy|flo\b|grandma|grandpa|reed|rocko|sandy|shelley|albert|jester|whisper|zarvox|bad news|good news|bells|boing|bubbles|cellos|organ|superstar|trinoids|wobble|junior|ralph|kathy|fred/i;
+  var GOOD_VOICE = /premium|enhanced|neural|natural|siri|google/i;
   function pickVoice() {
     if (!TTS) return null;
     var voices = window.speechSynthesis.getVoices() || [];
     var prefs = cfg.voicePrefs;
-    for (var p = 0; p < prefs.length; p++) {
-      for (var i = 0; i < voices.length; i++) {
-        if ((voices[i].lang || "").toLowerCase().replace("_", "-").indexOf(prefs[p]) === 0)
-          return voices[i];
+    var best = null, bestScore = -Infinity;
+    for (var i = 0; i < voices.length; i++) {
+      var lang = (voices[i].lang || "").toLowerCase().replace("_", "-");
+      var rank = -1;
+      for (var p = 0; p < prefs.length; p++) {
+        if (lang.indexOf(prefs[p]) === 0) { rank = p; break; }
       }
+      if (rank === -1) continue;
+      var name = voices[i].name || "";
+      // language-preference order dominates; within a language, avoid Apple's
+      // novelty voices and prefer premium/neural ones
+      var score = (prefs.length - rank) * 100 + (GOOD_VOICE.test(name) ? 50 : 0) - (BAD_VOICE.test(name) ? 500 : 0);
+      if (score > bestScore) { bestScore = score; best = voices[i]; }
     }
-    return null;
+    return best;
   }
   var speakChain = null; // holds current utterances: guards stale onend chains + Chrome GC bug
+  var audioEl = null;    // single reused element so clips never overlap
+  function playFile(file, fallbackText) {
+    if (typeof Audio === "undefined") return false;
+    if (!audioEl) audioEl = new Audio();
+    audioEl.pause();
+    audioEl.src = cfg.code + "/audio/" + file;
+    var p = audioEl.play();
+    if (p && p.catch) p.catch(function (err) {
+      // missing/broken file -> use device TTS; autoplay-block -> nothing to do
+      if (err && err.name !== "NotAllowedError") ttsSpeak(fallbackText);
+    });
+    return true;
+  }
   function speak(text) {
-    if (!TTS || !text) return false;
+    if (!text) return false;
+    var t = String(text).trim();
+    if (TTS) window.speechSynthesis.cancel();
+    if (audioEl) audioEl.pause();
+    speakChain = null;
+    var file = cfg.audio && window.AUDIO_FILES && window.AUDIO_FILES[t];
+    if (file && playFile(file, t)) return true;
+    return ttsSpeak(t);
+  }
+  function ttsSpeak(text) {
+    if (!TTS) return false;
     try {
-      window.speechSynthesis.cancel();
       // "hi / hello" would be read run-together; speak each alternative as its own
       // utterance with an explicit 300ms pause between them
       var parts = String(text).split(/\s*\/\s*/).filter(function (p) { return p.trim(); });
@@ -97,7 +131,7 @@ window.startCourse = function (cfg) {
     window.speechSynthesis.onvoiceschanged = function () { /* voices now cached */ };
   }
   function audioBtn(text, extraClass) {
-    if (!TTS || !text) return null;
+    if (!CAN_AUDIO || !text) return null;
     return el("button", {
       class: "audio-btn" + (extraClass ? " " + extraClass : ""),
       type: "button", title: "Listen", "aria-label": "Listen",
@@ -329,7 +363,7 @@ window.startCourse = function (cfg) {
     ]);
     c.appendChild(actions);
 
-    if (!TTS) {
+    if (!CAN_AUDIO) {
       c.appendChild(el("p", { class: "warn", text:
         "Note: your browser doesn't expose speech synthesis, so the 🔊 listen buttons are hidden. Everything else works." }));
     }
@@ -375,12 +409,12 @@ window.startCourse = function (cfg) {
   function renderVocab(lesson) {
     if (!lesson.vocab || !lesson.vocab.length) return null;
     var rows = [el("tr", {}, [
-      TTS ? el("th", { text: "" }) : null,
+      CAN_AUDIO ? el("th", { text: "" }) : null,
       el("th", { text: cfg.name }), el("th", { text: "Say it like" }), el("th", { text: "English" })
     ])];
     lesson.vocab.forEach(function (v) {
       rows.push(el("tr", {}, [
-        TTS ? el("td", { class: "audio-cell" }, [audioBtn(v[F])]) : null,
+        CAN_AUDIO ? el("td", { class: "audio-cell" }, [audioBtn(v[F])]) : null,
         el("td", { class: "l2", text: v[F] }),
         el("td", { class: "say", text: v.say || "" }),
         el("td", { text: v.en })
@@ -404,7 +438,7 @@ window.startCourse = function (cfg) {
       wrap.classList.toggle("show-en");
       toggle.textContent = wrap.classList.contains("show-en") ? "Hide English" : "Show English";
     } }, ["Hide English"]);
-    var playAll = TTS ? el("button", { class: "btn small ghost", onclick: function () {
+    var playAll = CAN_AUDIO ? el("button", { class: "btn small ghost", onclick: function () {
       speak(lesson.dialogue.map(function (d) { return d[F]; }).join(". "));
     } }, ["🔊 Play all"]) : null;
     return el("section", {}, [sectionTitle("Dialogue"), el("div", { class: "row-controls" }, [toggle, playAll]), wrap]);
@@ -424,7 +458,7 @@ window.startCourse = function (cfg) {
       box.classList.toggle("show-en");
       toggle.textContent = box.classList.contains("show-en") ? "Hide translation" : "Show translation";
     } }, ["Hide translation"]);
-    var playAll = TTS ? el("button", { class: "btn small ghost", onclick: function () { speak(r[F]); } }, ["🔊 Play all"]) : null;
+    var playAll = CAN_AUDIO ? el("button", { class: "btn small ghost", onclick: function () { speak(r[F]); } }, ["🔊 Play all"]) : null;
     return el("section", {}, [
       sectionTitle("Reading" + (r.title ? " — " + r.title : "")),
       el("div", { class: "row-controls" }, [toggle, playAll]), box
@@ -569,7 +603,7 @@ window.startCourse = function (cfg) {
   function renderListen(ex, card, feedback, mark) {
     var answers = asAnswers(ex);
     var phrase = ex.audio || answers[0];
-    if (!TTS) {
+    if (!CAN_AUDIO) {
       // graceful fallback: show the text so the exercise is still doable
       card.appendChild(el("p", { class: "muted", text: "(Audio unavailable in this browser — here is the phrase to transcribe:) " + phrase }));
     }
@@ -582,7 +616,7 @@ window.startCourse = function (cfg) {
       else mark("incorrect", "✗ It was: <strong>" + answers[0] + "</strong>");
     } }, ["Check"]);
     input.addEventListener("keydown", function (e) { if (e.key === "Enter") check.click(); });
-    if (TTS) speak(phrase);
+    if (CAN_AUDIO) speak(phrase);
     card.appendChild(el("div", { class: "ex-controls" }, [play, input, check, revealLink(answers, feedback)]));
   }
 
@@ -704,7 +738,7 @@ window.startCourse = function (cfg) {
     var dirBtn = el("button", { class: "btn small ghost" });
     var counter = el("span", { class: "fc-counter" });
     var card = el("div", { class: "flashcard" });
-    var sayBtn = TTS ? el("button", { class: "btn small ghost", text: "🔊 Say it" }) : null;
+    var sayBtn = CAN_AUDIO ? el("button", { class: "btn small ghost", text: "🔊 Say it" }) : null;
     var gotIt = el("button", { class: "btn small", text: "Got it ✓" });
     var review = el("button", { class: "btn small ghost", text: "Review ↻" });
     var restart = el("button", { class: "btn small ghost", text: "Restart deck" });
@@ -869,7 +903,7 @@ window.startCourse = function (cfg) {
       c.appendChild(el("h1", { text: "🃏 Flashcard review" }));
       var progressLine = el("p", { class: "muted" });
       var card = el("div", { class: "flashcard review-card" });
-      var sayBtn = TTS ? el("button", { class: "btn small ghost", text: "🔊 Say it" }) : null;
+      var sayBtn = CAN_AUDIO ? el("button", { class: "btn small ghost", text: "🔊 Say it" }) : null;
       var flipBtn = el("button", { class: "btn", text: "Show answer" });
       var graded = el("div", { class: "grade-row" });
       var done = 0, flipped = false, cur = null;

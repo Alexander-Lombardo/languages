@@ -5,6 +5,7 @@
 window.SITE_LANGS = {
   fr: {
     code: "fr", name: "French", flag: "🇫🇷", field: "fr", locale: "fr",
+    audio: true, // pre-generated neural MP3s in fr/audio/ (tools/gen-audio.py)
     ttsLang: "fr-FR", voicePrefs: ["fr-fr", "fr-ca", "fr-be", "fr-ch", "fr"],
     storeKey: "frenchCourseProgress.v1", srsKey: "frenchCourseSRS.v1", streakKey: "frenchCourseStreak.v1"
   },

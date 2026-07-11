@@ -118,14 +118,25 @@
 
     window.COURSE = undefined; // data files initialise it
     var loaded = 0, failed = false;
+    var total = files.length + (cfg.audio ? 1 : 0);
+    function tick() {
+      loaded++;
+      if (loaded === total && !failed) window.startCourse(cfg);
+    }
+    if (cfg.audio) {
+      // optional: text -> mp3 map for pre-generated audio; app falls back to TTS without it
+      var a = document.createElement("script");
+      a.src = code + "/audio/manifest.js";
+      a.async = false;
+      a.onload = tick;
+      a.onerror = tick;
+      document.body.appendChild(a);
+    }
     files.forEach(function (f) {
       var s = document.createElement("script");
       s.src = code + "/data/" + f;
       s.async = false; // preserve execution order (course.js first, lessons in order)
-      s.onload = function () {
-        loaded++;
-        if (loaded === files.length && !failed) window.startCourse(cfg);
-      };
+      s.onload = tick;
       s.onerror = function () {
         if (failed) return;
         failed = true;
