@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Language Courses</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <a id="brand" class="brand" href="#" title="All languages">🌐 Language Courses</a>
+    <span class="brand-sub">Interactive Courses</span>
+    <select id="lang-switch" class="lang-switch" aria-label="Switch language" hidden></select>
+  </header>
+
+  <div class="layout">
+    <nav id="sidebar" class="sidebar" aria-label="Lessons"></nav>
+    <main id="content" class="content" tabindex="-1"></main>
+  </div>
+
+  <!-- Course data is injected per selected language by loader.js -->
+  <script src="config.js"></script>
+  <script src="manifest.js"></script>
+  <script src="app.js"></script>
+  <script src="loader.js"></script>
+</body>
+</html>
