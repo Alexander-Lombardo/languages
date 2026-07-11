@@ -77,7 +77,8 @@
     if (!TTS || !text) return false;
     try {
       window.speechSynthesis.cancel();
-      var u = new SpeechSynthesisUtterance(String(text));
+      // "hi / hello" would be read run-together; a comma makes TTS pause between alternatives
+      var u = new SpeechSynthesisUtterance(String(text).replace(/\s*\/\s*/g, ", "));
       var v = pickEnglishVoice();
       if (v) { u.voice = v; u.lang = v.lang; } else { u.lang = "en-US"; }
       u.rate = 0.95;

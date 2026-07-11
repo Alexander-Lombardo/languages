@@ -70,7 +70,8 @@ window.startCourse = function (cfg) {
     if (!TTS || !text) return false;
     try {
       window.speechSynthesis.cancel();
-      var u = new SpeechSynthesisUtterance(String(text));
+      // "hi / hello" would be read run-together; a comma makes TTS pause between alternatives
+      var u = new SpeechSynthesisUtterance(String(text).replace(/\s*\/\s*/g, ", "));
       var v = pickVoice();
       if (v) { u.voice = v; u.lang = v.lang; } else { u.lang = cfg.ttsLang; }
       u.rate = 0.95;
