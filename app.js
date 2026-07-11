@@ -66,20 +66,30 @@ window.startCourse = function (cfg) {
     }
     return null;
   }
+  var speakChain = null; // holds current utterances: guards stale onend chains + Chrome GC bug
   function speak(text) {
     if (!TTS || !text) return false;
     try {
       window.speechSynthesis.cancel();
-      // "hi / hello" would be read run-together; queue each alternative as its own
-      // utterance so every voice inserts a clear pause between them
+      // "hi / hello" would be read run-together; speak each alternative as its own
+      // utterance with an explicit 300ms pause between them
       var parts = String(text).split(/\s*\/\s*/).filter(function (p) { return p.trim(); });
       var v = pickVoice();
-      parts.forEach(function (part) {
+      var utts = parts.map(function (part) {
         var u = new SpeechSynthesisUtterance(part);
         if (v) { u.voice = v; u.lang = v.lang; } else { u.lang = cfg.ttsLang; }
         u.rate = 0.95;
-        window.speechSynthesis.speak(u);
+        return u;
       });
+      utts.forEach(function (u, i) {
+        if (i < utts.length - 1) u.onend = function () {
+          setTimeout(function () {
+            if (speakChain === utts) window.speechSynthesis.speak(utts[i + 1]);
+          }, 300);
+        };
+      });
+      speakChain = utts;
+      window.speechSynthesis.speak(utts[0]);
       return true;
     } catch (e) { return false; }
   }
