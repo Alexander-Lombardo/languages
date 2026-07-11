@@ -77,12 +77,16 @@
     if (!TTS || !text) return false;
     try {
       window.speechSynthesis.cancel();
-      // "hi / hello" would be read run-together; a comma makes TTS pause between alternatives
-      var u = new SpeechSynthesisUtterance(String(text).replace(/\s*\/\s*/g, ", "));
+      // "hi / hello" would be read run-together; queue each alternative as its own
+      // utterance so every voice inserts a clear pause between them
+      var parts = String(text).split(/\s*\/\s*/).filter(function (p) { return p.trim(); });
       var v = pickEnglishVoice();
-      if (v) { u.voice = v; u.lang = v.lang; } else { u.lang = "en-US"; }
-      u.rate = 0.95;
-      window.speechSynthesis.speak(u);
+      parts.forEach(function (part) {
+        var u = new SpeechSynthesisUtterance(part);
+        if (v) { u.voice = v; u.lang = v.lang; } else { u.lang = "en-US"; }
+        u.rate = 0.95;
+        window.speechSynthesis.speak(u);
+      });
       return true;
     } catch (e) { return false; }
   }
