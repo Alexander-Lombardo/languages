@@ -59,22 +59,57 @@
   }
   function today() { return Math.floor(Date.now() / 86400000); }
 
-  /* ---------- text-to-speech (Web Speech API) ---------- */
+  /* ---------- audio: pre-generated MP3s (audio/manifest.js) with TTS fallback ---------- */
   var TTS = !!(window.speechSynthesis && window.SpeechSynthesisUtterance);
+  var HAS_FILES = !!window.AUDIO_FILES && typeof Audio !== "undefined";
+  // CAN_AUDIO gates the 🔊 UI: pre-generated audio or device speech synthesis
+  var CAN_AUDIO = HAS_FILES || TTS;
+  var BAD_VOICE = /eddy|flo\b|grandma|grandpa|reed|rocko|sandy|shelley|albert|jester|whisper|zarvox|bad news|good news|bells|boing|bubbles|cellos|organ|superstar|trinoids|wobble|junior|ralph|kathy|fred/i;
+  var GOOD_VOICE = /premium|enhanced|neural|natural|siri|google/i;
   function pickEnglishVoice() {
     if (!TTS) return null;
     var voices = window.speechSynthesis.getVoices() || [];
     var prefs = ["en-us", "en-gb", "en-au", "en-ca", "en-ie", "en"];
-    for (var p = 0; p < prefs.length; p++) {
-      for (var i = 0; i < voices.length; i++) {
-        if ((voices[i].lang || "").toLowerCase().replace("_", "-").indexOf(prefs[p]) === 0)
-          return voices[i];
+    var best = null, bestScore = -Infinity;
+    for (var i = 0; i < voices.length; i++) {
+      var lang = (voices[i].lang || "").toLowerCase().replace("_", "-");
+      var rank = -1;
+      for (var p = 0; p < prefs.length; p++) {
+        if (lang.indexOf(prefs[p]) === 0) { rank = p; break; }
       }
+      if (rank === -1) continue;
+      var name = voices[i].name || "";
+      // language-preference order dominates; within a language, avoid Apple's
+      // novelty voices and prefer premium/neural ones
+      var score = (prefs.length - rank) * 100 + (GOOD_VOICE.test(name) ? 50 : 0) - (BAD_VOICE.test(name) ? 500 : 0);
+      if (score > bestScore) { bestScore = score; best = voices[i]; }
     }
-    return null;
+    return best;
   }
   var speakChain = null; // holds current utterances: guards stale onend chains + Chrome GC bug
+  var audioEl = null;    // single reused element so clips never overlap
+  function playFile(file, fallbackText) {
+    if (!audioEl) audioEl = new Audio();
+    audioEl.pause();
+    audioEl.src = "audio/" + file;
+    var p = audioEl.play();
+    if (p && p.catch) p.catch(function (err) {
+      // missing/broken file -> use device TTS; autoplay-block -> nothing to do
+      if (err && err.name !== "NotAllowedError") ttsSpeak(fallbackText);
+    });
+    return true;
+  }
   function speak(text) {
+    if (!text) return false;
+    var t = String(text).trim();
+    if (TTS) window.speechSynthesis.cancel();
+    if (audioEl) audioEl.pause();
+    speakChain = null;
+    var file = HAS_FILES && window.AUDIO_FILES[t];
+    if (file && playFile(file, t)) return true;
+    return ttsSpeak(t);
+  }
+  function ttsSpeak(text) {
     if (!TTS || !text) return false;
     try {
       window.speechSynthesis.cancel();
@@ -104,7 +139,7 @@
     window.speechSynthesis.onvoiceschanged = function () { /* voices now cached */ };
   }
   function audioBtn(text, extraClass) {
-    if (!TTS || !text) return null;
+    if (!CAN_AUDIO || !text) return null;
     return el("button", {
       class: "audio-btn" + (extraClass ? " " + extraClass : ""),
       type: "button", title: "Escuchar", "aria-label": "Escuchar",
@@ -335,7 +370,7 @@
     ]);
     c.appendChild(actions);
 
-    if (!TTS) {
+    if (!CAN_AUDIO) {
       c.appendChild(el("p", { class: "warn", text:
         "Nota: tu navegador no ofrece síntesis de voz, así que los botones 🔊 de escucha están ocultos. Todo lo demás funciona." }));
     }
@@ -382,12 +417,12 @@
   function renderVocab(lesson) {
     if (!lesson.vocab || !lesson.vocab.length) return null;
     var rows = [el("tr", {}, [
-      TTS ? el("th", { text: "" }) : null,
+      CAN_AUDIO ? el("th", { text: "" }) : null,
       el("th", { text: "English" }), el("th", { text: "Pronunciación" }), el("th", { text: "Español" })
     ])];
     lesson.vocab.forEach(function (v) {
       rows.push(el("tr", {}, [
-        TTS ? el("td", { class: "audio-cell" }, [audioBtn(v.en)]) : null,
+        CAN_AUDIO ? el("td", { class: "audio-cell" }, [audioBtn(v.en)]) : null,
         el("td", { class: "term", text: v.en }),
         el("td", { class: "say", text: v.say || "" }),
         el("td", { text: v.es })
@@ -411,7 +446,7 @@
       wrap.classList.toggle("show-tr");
       toggle.textContent = wrap.classList.contains("show-tr") ? "Ocultar español" : "Mostrar español";
     } }, ["Mostrar español"]);
-    var playAll = TTS ? el("button", { class: "btn small ghost", onclick: function () {
+    var playAll = CAN_AUDIO ? el("button", { class: "btn small ghost", onclick: function () {
       speak(lesson.dialogue.map(function (d) { return d.en; }).join(". "));
     } }, ["🔊 Reproducir todo"]) : null;
     return el("section", {}, [sectionTitle("Diálogo"), el("div", { class: "row-controls" }, [toggle, playAll]), wrap]);
@@ -431,7 +466,7 @@
       box.classList.toggle("show-tr");
       toggle.textContent = box.classList.contains("show-tr") ? "Ocultar traducción" : "Mostrar traducción";
     } }, ["Mostrar traducción"]);
-    var playAll = TTS ? el("button", { class: "btn small ghost", onclick: function () { speak(r.en); } }, ["🔊 Reproducir todo"]) : null;
+    var playAll = CAN_AUDIO ? el("button", { class: "btn small ghost", onclick: function () { speak(r.en); } }, ["🔊 Reproducir todo"]) : null;
     return el("section", {}, [
       sectionTitle("Lectura" + (r.title ? " — " + r.title : "")),
       el("div", { class: "row-controls" }, [toggle, playAll]), box
@@ -576,7 +611,7 @@
   function renderListen(ex, card, feedback, mark) {
     var answers = asAnswers(ex);
     var phrase = ex.audio || answers[0];
-    if (!TTS) {
+    if (!CAN_AUDIO) {
       // graceful fallback: show the text so the exercise is still doable
       card.appendChild(el("p", { class: "muted", text: "(Audio no disponible en este navegador — aquí está la frase para transcribir:) " + phrase }));
     }
@@ -598,11 +633,11 @@
     var joined = lines.map(function (d) { return d.en; }).join(".  ");
     var questions = ex.questions || [];
 
-    if (!TTS) {
+    if (!CAN_AUDIO) {
       card.appendChild(el("p", { class: "muted", text: "(Audio no disponible en este navegador — lee la transcripción y responde.)" }));
     }
     var playBtn = el("button", { class: "btn", onclick: function () { speak(joined); } }, ["▶ Reproducir conversación"]);
-    var againBtn = TTS ? el("button", { class: "btn small ghost", onclick: function () { speak(joined); } }, ["↻ Repetir"]) : null;
+    var againBtn = CAN_AUDIO ? el("button", { class: "btn small ghost", onclick: function () { speak(joined); } }, ["↻ Repetir"]) : null;
 
     var transcript = el("div", { class: "ld-transcript hidden" }, lines.map(function (d) {
       return el("p", { class: "dline" }, [
@@ -616,7 +651,7 @@
       var hidden = transcript.classList.toggle("hidden");
       trToggle.textContent = hidden ? "Ver transcripción" : "Ocultar transcripción";
     } }, ["Ver transcripción"]);
-    if (!TTS) transcript.classList.remove("hidden");
+    if (!CAN_AUDIO) transcript.classList.remove("hidden");
 
     card.appendChild(el("div", { class: "row-controls" }, [playBtn, againBtn, trToggle]));
     card.appendChild(transcript);
@@ -774,7 +809,7 @@
     var dirBtn = el("button", { class: "btn small ghost" });
     var counter = el("span", { class: "fc-counter" });
     var card = el("div", { class: "flashcard" });
-    var sayBtn = TTS ? el("button", { class: "btn small ghost", text: "🔊 Decir" }) : null;
+    var sayBtn = CAN_AUDIO ? el("button", { class: "btn small ghost", text: "🔊 Decir" }) : null;
     var gotIt = el("button", { class: "btn small", text: "La sé ✓" });
     var review = el("button", { class: "btn small ghost", text: "Repasar ↻" });
     var restart = el("button", { class: "btn small ghost", text: "Reiniciar mazo" });
@@ -913,7 +948,7 @@
       c.appendChild(el("h1", { text: "🃏 Repaso con tarjetas" }));
       var progressLine = el("p", { class: "muted" });
       var card = el("div", { class: "flashcard review-card" });
-      var sayBtn = TTS ? el("button", { class: "btn small ghost", text: "🔊 Decir" }) : null;
+      var sayBtn = CAN_AUDIO ? el("button", { class: "btn small ghost", text: "🔊 Decir" }) : null;
       var flipBtn = el("button", { class: "btn", text: "Ver respuesta" });
       var graded = el("div", { class: "grade-row" });
       var done = 0, flipped = false, cur = null;

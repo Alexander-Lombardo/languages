@@ -28,6 +28,7 @@ VOICES = {
     "ru": "ru-RU-SvetlanaNeural",
     "it": "it-IT-ElsaNeural",
     "es": "es-MX-DaliaNeural",
+    "en": "en-US-JennyNeural",  # standalone English app (site/english/)
 }
 RATE = "-5%"          # slightly slower for learners (matches the app's 0.95 TTS rate)
 CONCURRENCY = 8
@@ -83,7 +84,7 @@ async def main() -> None:
         texts = texts[:limit]
     print(f"{code}: {len(texts)} strings, voice {VOICES[code]}")
 
-    audio_dir = SITE / code / "audio"
+    audio_dir = SITE / ("english" if code == "en" else code) / "audio"
     audio_dir.mkdir(parents=True, exist_ok=True)
 
     manifest = {t: fname(t) for t in texts}

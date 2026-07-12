@@ -7,7 +7,8 @@ const path = require("path");
 
 const code = process.argv[2];
 if (!code) { console.error("usage: node tools/dump-strings.js <lang-code>"); process.exit(1); }
-const dataDir = path.join(__dirname, "..", code, "data");
+// "en" is the standalone English app: different folder, same spoken-field convention
+const dataDir = path.join(__dirname, "..", code === "en" ? "english" : code, "data");
 if (!fs.existsSync(dataDir)) { console.error("no data dir: " + dataDir); process.exit(1); }
 
 global.window = { COURSE: { lessons: [] } };
@@ -15,7 +16,7 @@ require(path.join(dataDir, "course.js"));
 fs.readdirSync(dataDir).filter(f => /^lesson-\d+\.js$/.test(f)).sort()
   .forEach(f => require(path.join(dataDir, f)));
 
-const F = code; // vocab field name == language code (fr/de/ru/it/es)
+const F = code; // spoken-text field name == language code (fr/de/ru/it/es/en)
 const texts = new Set();
 const add = (t) => { if (t && String(t).trim()) texts.add(String(t).trim()); };
 
@@ -33,6 +34,10 @@ for (const l of global.window.COURSE.lessons) {
   (l.exercises || []).forEach(ex => {
     if (ex.type === "listen")
       add(ex.audio || (ex.answers && ex.answers.length ? ex.answers[0] : ex.answer));
+    if (ex.type === "listen-dialogue") {                         // English app only
+      (ex.lines || []).forEach(d => add(d[F]));                  // transcript buttons
+      add((ex.lines || []).map(d => d[F]).join(".  "));          // play-conversation (two spaces, matches app.js)
+    }
   });
 }
 
