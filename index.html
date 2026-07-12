@@ -4,25 +4,47 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Language Courses</title>
-  <link rel="stylesheet" href="styles.css" />
+  <script>
+    /* apply persisted theme before first paint to avoid a light-mode flash */
+    (function () {
+      try {
+        var t = localStorage.getItem("siteTheme.v1");
+        if (!t && window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches) t = "dark";
+        if (t === "dark") document.documentElement.setAttribute("data-theme", "dark");
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css?v=2" />
 </head>
 <body>
-  <header class="topbar">
-    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
-    <a id="brand" class="brand" href="#" title="All languages">🌐 Language Courses</a>
-    <span class="brand-sub">Interactive Courses</span>
-    <select id="lang-switch" class="lang-switch" aria-label="Switch language" hidden></select>
-  </header>
-
   <div class="layout">
-    <nav id="sidebar" class="sidebar" aria-label="Lessons"></nav>
-    <main id="content" class="content" tabindex="-1"></main>
+    <aside id="sidebar" class="sidebar" aria-label="Course navigation">
+      <div class="side-brand">
+        <a id="brand" class="brand" href="#" title="All languages">🌐 Language Courses</a>
+        <span id="brand-sub" class="brand-sub">Interactive courses</span>
+      </div>
+      <nav id="side-nav" class="side-nav" aria-label="Lessons"></nav>
+    </aside>
+    <div class="main-col">
+      <header class="topbar">
+        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+        <span id="page-context" class="page-context"></span>
+        <div class="topbar-tools">
+          <div id="pomodoro" class="pomodoro" data-state="idle" hidden></div>
+          <button id="zen-toggle" class="tool-btn" title="Zen mode (z)" aria-label="Zen mode">⛶</button>
+          <button id="theme-toggle" class="tool-btn" title="Toggle dark mode" aria-label="Toggle dark mode">🌙</button>
+          <button id="kbd-help" class="tool-btn" title="Keyboard shortcuts (?)" aria-label="Keyboard shortcuts">⌨</button>
+          <select id="lang-switch" class="lang-switch" aria-label="Switch language" hidden></select>
+        </div>
+      </header>
+      <main id="content" class="content" tabindex="-1"></main>
+    </div>
   </div>
 
   <!-- Course data is injected per selected language by loader.js -->
   <script src="config.js?v=4"></script>
   <script src="manifest.js?v=2"></script>
-  <script src="app.js?v=4"></script>
-  <script src="loader.js?v=3"></script>
+  <script src="app.js?v=5"></script>
+  <script src="loader.js?v=4"></script>
 </body>
 </html>

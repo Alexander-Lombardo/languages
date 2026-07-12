@@ -31,6 +31,7 @@
       Object.keys(attrs).forEach(function (k) {
         if (k === "class") node.className = attrs[k];
         else if (k === "text") node.textContent = attrs[k];
+        else if (k === "html") node.innerHTML = attrs[k];
         else if (k.slice(0, 2) === "on" && typeof attrs[k] === "function")
           node.addEventListener(k.slice(2), attrs[k]);
         else node.setAttribute(k, attrs[k]);
@@ -97,6 +98,10 @@
     document.title = cfg.name + " · Language Courses";
     var brand = document.getElementById("brand");
     brand.textContent = cfg.flag + " " + cfg.name + " A1 → C2";
+    var sub = document.getElementById("brand-sub");
+    if (sub) sub.textContent = "Self-study course";
+    var ctx = document.getElementById("page-context");
+    if (ctx) ctx.textContent = cfg.name + " · A1 → C2";
 
     var sel = document.getElementById("lang-switch");
     sel.hidden = false;
@@ -147,6 +152,232 @@
     });
   }
 
+  /* ================= shell features (theme / zen / shortcuts / pomodoro) =================
+     These live here (not app.js) so the headless smoke test never executes them. */
+
+  var THEME_KEY = "siteTheme.v1";
+  var ZEN_KEY = "siteZen";       // sessionStorage: survives in-tab language switches only
+  var POMO_KEY = "sitePomodoro.v1";
+
+  /* ---------- theme ---------- */
+  function initTheme() {
+    var btn = document.getElementById("theme-toggle");
+    if (!btn) return;
+    function icon() {
+      btn.textContent = document.documentElement.getAttribute("data-theme") === "dark" ? "☀️" : "🌙";
+    }
+    btn.addEventListener("click", function () {
+      var dark = document.documentElement.getAttribute("data-theme") === "dark";
+      if (dark) document.documentElement.removeAttribute("data-theme");
+      else document.documentElement.setAttribute("data-theme", "dark");
+      try { localStorage.setItem(THEME_KEY, dark ? "light" : "dark"); } catch (e) {}
+      icon();
+    });
+    icon();
+  }
+
+  /* ---------- zen mode ---------- */
+  var zenPill = null;
+  function setZen(on) {
+    if (document.body.classList.contains("landing")) on = false;
+    document.body.classList.toggle("zen", on);
+    try { sessionStorage.setItem(ZEN_KEY, on ? "1" : ""); } catch (e) {}
+    if (on && !zenPill) {
+      zenPill = el("button", { class: "zen-exit", type: "button", onclick: function () { setZen(false); } },
+        ["⛶ exit zen · z"]);
+      document.body.appendChild(zenPill);
+    }
+  }
+  function initZen() {
+    var btn = document.getElementById("zen-toggle");
+    if (btn) btn.addEventListener("click", function () {
+      setZen(!document.body.classList.contains("zen"));
+    });
+    try { if (sessionStorage.getItem(ZEN_KEY) === "1") setZen(true); } catch (e) {}
+  }
+
+  /* ---------- keyboard shortcuts + help overlay ---------- */
+  var overlay = null;
+  function ensureOverlay() {
+    if (overlay) return overlay;
+    function row(keys, what) {
+      return el("div", { class: "kbd-row" }, [
+        el("span", { text: what }),
+        el("span", { class: "kbd-keys", html: keys })
+      ]);
+    }
+    var panel = el("div", { class: "kbd-panel" }, [
+      el("h2", { text: "Keyboard shortcuts" }),
+      row("<kbd>←</kbd> <kbd>→</kbd>", "Previous / next lesson"),
+      row("<kbd>h</kbd>", "Course home"),
+      row("<kbd>g</kbd>", "Glossary"),
+      row("<kbd>r</kbd>", "Flashcard review"),
+      row("<kbd>/</kbd>", "Focus search"),
+      row("<kbd>z</kbd>", "Zen mode (hide everything but the lesson)"),
+      row("<kbd>?</kbd>", "This help"),
+      row("<kbd>Esc</kbd>", "Close / exit"),
+      el("p", { class: "kbd-hint", text: "Shortcuts pause automatically while you're typing in an exercise." })
+    ]);
+    // row() uses html for the kbd markup
+    overlay = el("div", { class: "kbd-overlay", onclick: function (e) { if (e.target === overlay) toggleOverlay(false); } }, [panel]);
+    overlay.hidden = true;
+    document.body.appendChild(overlay);
+    return overlay;
+  }
+  function toggleOverlay(show) {
+    var o = ensureOverlay();
+    o.hidden = show === undefined ? !o.hidden : !show;
+  }
+
+  function initShortcuts() {
+    var help = document.getElementById("kbd-help");
+    if (help) help.addEventListener("click", function () { toggleOverlay(); });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.defaultPrevented || e.metaKey || e.ctrlKey || e.altKey || e.isComposing) return;
+
+      // Escape always works: close overlay > blur input > exit zen
+      if (e.key === "Escape") {
+        if (overlay && !overlay.hidden) { toggleOverlay(false); return; }
+        var a = document.activeElement;
+        if (a && /^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName)) { a.blur(); return; }
+        if (document.body.classList.contains("zen")) setZen(false);
+        return;
+      }
+
+      // don't hijack typing
+      var t = e.target;
+      if (t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName))) return;
+
+      if (e.key === "?") { toggleOverlay(); e.preventDefault(); return; }
+      if (overlay && !overlay.hidden) return;            // overlay swallows the rest
+      if (document.body.classList.contains("landing")) return;
+
+      var hash = (location.hash || "").replace("#", "");
+      var lessons = window.COURSE && window.COURSE.lessons;
+
+      if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
+        var id = hash.indexOf("lesson/") === 0 ? hash.slice(7) : (/^\d+$/.test(hash) ? hash : null);
+        if (!id || !lessons || !lessons.length) return;
+        var ids = lessons.map(function (l) { return l.id; });
+        var pos = ids.indexOf(id);
+        if (pos === -1) return;
+        var next = e.key === "ArrowRight" ? pos + 1 : pos - 1;
+        if (next < 0 || next >= ids.length) return;
+        location.hash = "lesson/" + ids[next];
+        e.preventDefault();
+      }
+      else if (e.key === "h") location.hash = "home";
+      else if (e.key === "g") location.hash = "glossary";
+      else if (e.key === "r") location.hash = "review";
+      else if (e.key === "z") setZen(!document.body.classList.contains("zen"));
+      else if (e.key === "/") {
+        e.preventDefault();
+        var target = document.getElementById("dash-search") || document.getElementById("glossary-search");
+        if (target) { target.focus(); return; }
+        location.hash = "home";
+        setTimeout(function () {
+          var s = document.getElementById("dash-search");
+          if (s) s.focus();
+        }, 80);
+      }
+    });
+  }
+
+  /* ---------- pomodoro (25 focus / 5 break) ---------- */
+  var FOCUS_MS = 25 * 60 * 1000;
+  var BREAK_MS = 5 * 60 * 1000;
+  var pomoTimer = null;
+  var baseTitle = "";
+
+  function pomoLoad() {
+    try { return JSON.parse(localStorage.getItem(POMO_KEY)) || null; } catch (e) { return null; }
+  }
+  function pomoSave(s) {
+    try {
+      if (s) localStorage.setItem(POMO_KEY, JSON.stringify(s));
+      else localStorage.removeItem(POMO_KEY);
+    } catch (e) {}
+  }
+  function phaseLen(phase) { return phase === "break" ? BREAK_MS : FOCUS_MS; }
+
+  function initPomodoro() {
+    var box = document.getElementById("pomodoro");
+    if (!box) return;
+    baseTitle = document.title;
+
+    var label = el("span", { class: "pomo-label", text: "focus" });
+    var time = el("span", { class: "pomo-time", text: "25:00" });
+    var startBtn = el("button", { class: "tool-btn", type: "button", title: "Start/pause pomodoro" }, ["▶"]);
+    var resetBtn = el("button", { class: "tool-btn", type: "button", title: "Reset pomodoro" }, ["↺"]);
+    box.appendChild(label); box.appendChild(time); box.appendChild(startBtn); box.appendChild(resetBtn);
+
+    var state = pomoLoad() || { phase: "focus", running: false, remaining: FOCUS_MS };
+
+    function remainingNow() {
+      return state.running ? Math.max(0, state.endAt - Date.now()) : state.remaining;
+    }
+    function fmt(ms) {
+      var s = Math.round(ms / 1000);
+      return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0");
+    }
+    function render() {
+      var ms = remainingNow();
+      time.textContent = fmt(ms);
+      label.textContent = state.phase;
+      box.setAttribute("data-state", state.running ? state.phase : "paused-" + state.phase);
+      startBtn.textContent = state.running ? "⏸" : "▶";
+      document.title = state.running ? "(" + fmt(ms) + ") " + baseTitle : baseTitle;
+    }
+    function stopTimer() { if (pomoTimer) { clearInterval(pomoTimer); pomoTimer = null; } }
+    function phaseEnd() {
+      stopTimer();
+      var finished = state.phase;
+      state = { phase: finished === "focus" ? "break" : "focus", running: false, remaining: phaseLen(finished === "focus" ? "break" : "focus") };
+      pomoSave(state);
+      render();
+      // flash the tab title a few times so the phase change is noticeable
+      var msg = finished === "focus" ? "🍅 Break time!" : "🍅 Back to focus!";
+      var flashes = 0;
+      var fl = setInterval(function () {
+        document.title = (flashes % 2 === 0) ? msg : baseTitle;
+        if (++flashes >= 6) { clearInterval(fl); render(); }
+      }, 800);
+    }
+    function tick() {
+      if (remainingNow() <= 0) { phaseEnd(); return; }
+      render();
+    }
+    function start() {
+      state = { phase: state.phase, running: true, endAt: Date.now() + remainingNow() };
+      pomoSave(state);
+      stopTimer();
+      pomoTimer = setInterval(tick, 1000);
+      render();
+    }
+    function pause() {
+      state = { phase: state.phase, running: false, remaining: remainingNow() };
+      pomoSave(state);
+      stopTimer();
+      render();
+    }
+    startBtn.addEventListener("click", function () { state.running ? pause() : start(); });
+    resetBtn.addEventListener("click", function () {
+      stopTimer();
+      state = { phase: "focus", running: false, remaining: FOCUS_MS };
+      pomoSave(null);
+      render();
+    });
+
+    // hydrate: resume a running timer, or advance one phase if it expired while away
+    if (state.running) {
+      if (state.endAt > Date.now()) { pomoTimer = setInterval(tick, 1000); }
+      else { phaseEnd(); }
+    }
+    render();
+    box.hidden = false;
+  }
+
   function boot() {
     document.getElementById("brand").addEventListener("click", function (e) {
       e.preventDefault();
@@ -155,6 +386,11 @@
     var code = chosenLang();
     if (code && LANGS[code] && MANIFEST[code]) loadLanguage(code);
     else renderLanding();
+
+    initTheme();
+    initZen();
+    initShortcuts();
+    initPomodoro(); // after renderHeader/renderLanding so it captures the right base title
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);

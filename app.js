@@ -276,7 +276,7 @@ window.startCourse = function (cfg) {
 
   /* ---------- sidebar navigation ---------- */
   function renderNav() {
-    var nav = document.getElementById("sidebar");
+    var nav = document.getElementById("side-nav");
     if (!nav) return;
     var progress = loadProgress();
     var hash = (location.hash || "").replace("#", "");
@@ -335,6 +335,21 @@ window.startCourse = function (cfg) {
     return { total: ids.length, done: done, ids: ids };
   }
 
+  function statCard(emoji, tint, value, label, href, linkText) {
+    var foot = el("div", { class: "stat-foot" });
+    if (href) foot.appendChild(el("a", { class: "stat-link", href: href, text: linkText }));
+    return el("div", { class: "stat" }, [
+      el("div", { class: "stat-top" }, [
+        el("div", { class: "stat-ico " + tint, text: emoji }),
+        el("div", {}, [
+          el("div", { class: "stat-num", text: String(value) }),
+          el("div", { class: "stat-label", text: label })
+        ])
+      ]),
+      foot
+    ]);
+  }
+
   function renderHome() {
     var c = document.getElementById("content");
     c.innerHTML = "";
@@ -347,29 +362,36 @@ window.startCourse = function (cfg) {
     c.appendChild(el("p", { class: "lead", text:
       "A complete self-study course from absolute beginner to mastery. Read each lesson, listen to the audio, then drill with interactive exercises and spaced-repetition flashcards." }));
 
-    // stat tiles
-    c.appendChild(el("div", { class: "stat-row" }, [
-      el("div", { class: "stat" }, [el("div", { class: "stat-num", text: doneCount + "/" + total }), el("div", { class: "stat-label", text: "lessons done" })]),
-      el("div", { class: "stat" }, [el("div", { class: "stat-num", text: "🔥 " + streakCount() }), el("div", { class: "stat-label", text: "day streak" })]),
-      el("div", { class: "stat" }, [el("div", { class: "stat-num", text: String(due) }), el("div", { class: "stat-label", text: "cards due" })]),
-      el("div", { class: "stat" }, [el("div", { class: "stat-num", text: String(srsCount()) }), el("div", { class: "stat-label", text: "words learned" })])
+    // search-first: one field over lessons + vocabulary
+    var searchInput = el("input", {
+      class: "dash-search", id: "dash-search", type: "search",
+      placeholder: "Search lessons & vocabulary…  press /", autocomplete: "off"
+    });
+    var results = el("div", { class: "search-results" });
+    results.style.display = "none";
+    c.appendChild(el("div", { class: "dash-search-wrap" }, [
+      el("span", { class: "search-ico", text: "🔍" }), searchInput
     ]));
+    c.appendChild(results);
 
+    // bento stat cards
     var cont = firstIncompleteId();
-    var actions = el("div", { class: "home-actions" }, [
-      cont ? el("a", { class: "btn primary", href: "#lesson/" + cont, text: (doneCount ? "Continue · Lesson " + cont + " →" : "Start · Lesson 00 →") }) : null,
-      el("a", { class: "btn ghost", href: "#review", text: "🃏 Review " + due + " card" + (due === 1 ? "" : "s") }),
-      el("a", { class: "btn ghost", href: "#glossary", text: "📖 Glossary" })
-    ]);
-    c.appendChild(actions);
+    c.appendChild(el("div", { class: "stat-row" }, [
+      statCard("📘", "tint-blue", doneCount + "/" + total, "lessons done",
+        cont ? "#lesson/" + cont : null, doneCount ? "Continue · Lesson " + cont + " →" : "Start · Lesson 00 →"),
+      statCard("🔥", "tint-orange", streakCount(), "day streak", null, null),
+      statCard("🃏", "tint-green", due, "cards due", "#review", "Review →"),
+      statCard("📖", "tint-purple", srsCount(), "words learned", "#glossary", "Glossary →")
+    ]));
 
     if (!CAN_AUDIO) {
       c.appendChild(el("p", { class: "warn", text:
         "Note: your browser doesn't expose speech synthesis, so the 🔊 listen buttons are hidden. Everything else works." }));
     }
 
-    // level cards
-    c.appendChild(el("h2", { class: "sec-title", text: "Levels" }));
+    // default panel: levels + how-to (hidden while searching)
+    var defaultPanel = el("div", {});
+    defaultPanel.appendChild(el("h2", { class: "sec-title", text: "Levels" }));
     var grid = el("div", { class: "level-grid" });
     (COURSE.levels || []).forEach(function (lv) {
       var st = levelStats(lv.code);
@@ -387,19 +409,86 @@ window.startCourse = function (cfg) {
       ]);
       grid.appendChild(card);
     });
-    c.appendChild(grid);
+    defaultPanel.appendChild(grid);
 
     var howto = el("div", { class: "card" }, [
       el("h2", { text: "How to use this" }),
       el("ul", {}, [
         el("li", { html: "Work through lessons <strong>in order</strong> — each level builds on the last." }),
-        el("li", { html: "Tap any <strong>🔊</strong> to hear native-style " + cfg.name + " (uses your device's voice)." }),
+        el("li", { html: "Tap any <strong>🔊</strong> to hear native-style " + cfg.name + "." }),
         el("li", { html: "Do the <strong>Exercises</strong> — fill-in, multiple choice, translation, listening, matching, sentence-building and conjugation, all auto-checked." }),
         el("li", { html: "Finished lessons feed the <strong>Flashcard review</strong> — a spaced-repetition deck that brings words back just before you'd forget them." }),
         el("li", { html: "Progress, scores and your streak save automatically in this browser." })
       ])
     ]);
-    c.appendChild(howto);
+    defaultPanel.appendChild(howto);
+    c.appendChild(defaultPanel);
+
+    // search behavior (element-level listeners only — headless-safe)
+    var vocabCache = null;
+    var firstHref = null;
+    function paintResults() {
+      var raw = searchInput.value.trim();
+      var q = loose(raw);
+      firstHref = null;
+      if (!q) {
+        results.style.display = "none";
+        results.innerHTML = "";
+        defaultPanel.style.display = "";
+        return;
+      }
+      if (!vocabCache) vocabCache = allVocab();
+      results.innerHTML = "";
+      defaultPanel.style.display = "none";
+      results.style.display = "";
+
+      var lessons = (COURSE.outline || []).filter(function (o) {
+        return loose(o.title).indexOf(q) !== -1 || String(o.id).indexOf(raw) === 0;
+      }).slice(0, 8);
+      var vocab = vocabCache.filter(function (v) {
+        return loose(v[F]).indexOf(q) !== -1 || loose(v.en).indexOf(q) !== -1;
+      });
+
+      if (lessons.length) {
+        results.appendChild(el("div", { class: "sr-head", text: "Lessons" }));
+        lessons.forEach(function (o) {
+          var loaded = !!lessonById(o.id);
+          var href = "#lesson/" + o.id;
+          if (loaded && !firstHref) firstHref = href;
+          var attrs = { class: "sr-row" + (loaded ? "" : " disabled") };
+          if (loaded) attrs.href = href;
+          results.appendChild(el(loaded ? "a" : "div", attrs, [
+            el("span", { class: "nav-num", text: o.id }),
+            el("span", { class: "sr-title", text: o.title }),
+            el("span", { class: "nav-badge badge-" + String(o.level).replace(/[^A-Za-z0-9]/g, ""), text: o.level })
+          ]));
+        });
+      }
+      if (vocab.length) {
+        results.appendChild(el("div", { class: "sr-head", text: "Vocabulary" }));
+        vocab.slice(0, 12).forEach(function (v) {
+          if (!firstHref) firstHref = "#lesson/" + v.lessonId;
+          results.appendChild(el("div", { class: "sr-row" }, [
+            audioBtn(v[F]),
+            el("span", { class: "l2", text: v[F] }),
+            el("span", { class: "sr-title muted", text: v.en }),
+            el("a", { class: "gloss-link", href: "#lesson/" + v.lessonId, text: "L" + v.lessonId })
+          ]));
+        });
+        if (vocab.length > 12) {
+          results.appendChild(el("a", { class: "sr-more", href: "#glossary", text: vocab.length - 12 + " more matches — open the glossary →" }));
+        }
+      }
+      if (!lessons.length && !vocab.length) {
+        results.appendChild(el("p", { class: "muted", text: "No matches." }));
+      }
+    }
+    searchInput.addEventListener("input", paintResults);
+    searchInput.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" && firstHref) location.hash = firstHref.slice(1);
+      else if (e.key === "Escape") { searchInput.value = ""; paintResults(); searchInput.blur(); }
+    });
+
     window.scrollTo(0, 0);
   }
 
@@ -989,7 +1078,7 @@ window.startCourse = function (cfg) {
     c.appendChild(el("h1", { text: "📖 Glossary" }));
     var vocab = allVocab();
     c.appendChild(el("p", { class: "lead", text: vocab.length + " words from every loaded lesson. Search in " + cfg.name + " or English." }));
-    var search = el("input", { class: "ex-input wide", type: "search", placeholder: "search…", autocomplete: "off" });
+    var search = el("input", { class: "ex-input wide", id: "glossary-search", type: "search", placeholder: "search…", autocomplete: "off" });
     c.appendChild(search);
     var list = el("div", { class: "glossary-list" });
     c.appendChild(list);
@@ -1019,6 +1108,8 @@ window.startCourse = function (cfg) {
   /* ---------- routing ---------- */
   function route() {
     var hash = (location.hash || "").replace("#", "");
+    var sb = document.getElementById("sidebar");
+    if (sb) sb.classList.remove("open"); // close mobile overlay on any navigation
     renderNav();
     if (hash === "" || hash === "home") renderHome();
     else if (hash === "review") renderReview();

@@ -45,7 +45,7 @@ El.prototype.addEventListener = function (ev, fn) { (this._listeners[ev] = this.
 El.prototype.focus = function () {};
 
 var registry = {};
-["sidebar", "content", "menu-toggle"].forEach(function (id) { registry[id] = new El("div"); });
+["sidebar", "side-nav", "content", "menu-toggle"].forEach(function (id) { registry[id] = new El("div"); });
 
 global.document = {
   readyState: "complete",
@@ -128,9 +128,13 @@ Object.keys(LANGS).forEach(function (code) {
   c2[cfg.field] = "word-two";
   store[cfg.srsKey] = JSON.stringify({ cards: { "word-one": c1, "word-two": c2 } });
 
+  // reset nav too (it renders into side-nav)
+  registry["side-nav"]._children = [];
+
   try {
     global.window.startCourse(cfg);
     if (registry.content._children.length === 0) errors.push(code + " home: empty after start");
+    if (registry["side-nav"]._children.length === 0) errors.push(code + " nav: empty after start");
   } catch (e) {
     errors.push(code + " startCourse: " + (e && e.message));
   }
