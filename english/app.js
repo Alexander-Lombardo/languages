@@ -283,7 +283,7 @@
 
   /* ---------- sidebar navigation ---------- */
   function renderNav() {
-    var nav = document.getElementById("sidebar");
+    var nav = document.getElementById("side-nav");
     if (!nav) return;
     var progress = loadProgress();
     var hash = (location.hash || "").replace("#", "");
@@ -342,6 +342,21 @@
     return { total: ids.length, done: done, ids: ids };
   }
 
+  function statCard(emoji, tint, value, label, href, linkText) {
+    var foot = el("div", { class: "stat-foot" });
+    if (href) foot.appendChild(el("a", { class: "stat-link", href: href, text: linkText }));
+    return el("div", { class: "stat" }, [
+      el("div", { class: "stat-top" }, [
+        el("div", { class: "stat-ico " + tint, text: emoji }),
+        el("div", {}, [
+          el("div", { class: "stat-num", text: String(value) }),
+          el("div", { class: "stat-label", text: label })
+        ])
+      ]),
+      foot
+    ]);
+  }
+
   function renderHome() {
     var c = document.getElementById("content");
     c.innerHTML = "";
@@ -354,29 +369,36 @@
     c.appendChild(el("p", { class: "lead", text:
       "Curso completo de inglés, de principiante absoluto a dominio total. Lee cada lección, escucha el audio y practica con ejercicios interactivos, comprensión auditiva y tarjetas de repaso espaciado." }));
 
-    // stat tiles
-    c.appendChild(el("div", { class: "stat-row" }, [
-      el("div", { class: "stat" }, [el("div", { class: "stat-num", text: doneCount + "/" + total }), el("div", { class: "stat-label", text: "lecciones hechas" })]),
-      el("div", { class: "stat" }, [el("div", { class: "stat-num", text: "🔥 " + streakCount() }), el("div", { class: "stat-label", text: "días seguidos" })]),
-      el("div", { class: "stat" }, [el("div", { class: "stat-num", text: String(due) }), el("div", { class: "stat-label", text: "tarjetas por repasar" })]),
-      el("div", { class: "stat" }, [el("div", { class: "stat-num", text: String(srsCount()) }), el("div", { class: "stat-label", text: "palabras aprendidas" })])
+    // search-first: one field over lessons + vocabulary
+    var searchInput = el("input", {
+      class: "dash-search", id: "dash-search", type: "search",
+      placeholder: "Buscar lecciones y vocabulario…  pulsa /", autocomplete: "off"
+    });
+    var results = el("div", { class: "search-results" });
+    results.style.display = "none";
+    c.appendChild(el("div", { class: "dash-search-wrap" }, [
+      el("span", { class: "search-ico", text: "🔍" }), searchInput
     ]));
+    c.appendChild(results);
 
+    // bento stat cards
     var cont = firstIncompleteId();
-    var actions = el("div", { class: "home-actions" }, [
-      cont ? el("a", { class: "btn primary", href: "#lesson/" + cont, text: (doneCount ? "Continuar · Lección " + cont + " →" : "Empezar · Lección 00 →") }) : null,
-      el("a", { class: "btn ghost", href: "#review", text: "🃏 Repasar " + due + " tarjeta" + (due === 1 ? "" : "s") }),
-      el("a", { class: "btn ghost", href: "#glossary", text: "📖 Glosario" })
-    ]);
-    c.appendChild(actions);
+    c.appendChild(el("div", { class: "stat-row" }, [
+      statCard("📘", "tint-blue", doneCount + "/" + total, "lecciones hechas",
+        cont ? "#lesson/" + cont : null, doneCount ? "Continuar · Lección " + cont + " →" : "Empezar · Lección 00 →"),
+      statCard("🔥", "tint-orange", streakCount(), "días seguidos", null, null),
+      statCard("🃏", "tint-green", due, "tarjetas por repasar", "#review", "Repasar →"),
+      statCard("📖", "tint-purple", srsCount(), "palabras aprendidas", "#glossary", "Glosario →")
+    ]));
 
     if (!CAN_AUDIO) {
       c.appendChild(el("p", { class: "warn", text:
         "Nota: tu navegador no ofrece síntesis de voz, así que los botones 🔊 de escucha están ocultos. Todo lo demás funciona." }));
     }
 
-    // level cards
-    c.appendChild(el("h2", { class: "sec-title", text: "Niveles" }));
+    // default panel: levels + how-to (hidden while searching)
+    var defaultPanel = el("div", {});
+    defaultPanel.appendChild(el("h2", { class: "sec-title", text: "Niveles" }));
     var grid = el("div", { class: "level-grid" });
     (COURSE.levels || []).forEach(function (lv) {
       var st = levelStats(lv.code);
@@ -394,20 +416,87 @@
       ]);
       grid.appendChild(card);
     });
-    c.appendChild(grid);
+    defaultPanel.appendChild(grid);
 
     var howto = el("div", { class: "card" }, [
       el("h2", { text: "Cómo usar este curso" }),
       el("ul", {}, [
         el("li", { html: "Haz las lecciones <strong>en orden</strong>: cada nivel se apoya en el anterior." }),
-        el("li", { html: "Toca cualquier <strong>🔊</strong> para oír el inglés (usa la voz de tu dispositivo)." }),
+        el("li", { html: "Toca cualquier <strong>🔊</strong> para oír el inglés." }),
         el("li", { html: "Haz la <strong>Comprensión auditiva</strong>: escucha una conversación y responde las preguntas." }),
         el("li", { html: "Haz los <strong>Ejercicios</strong> — rellenar huecos, opción múltiple, traducción, dictado, emparejar, ordenar y conjugar, todos corregidos al instante." }),
         el("li", { html: "Las lecciones terminadas alimentan el <strong>Repaso con tarjetas</strong>: repetición espaciada que te trae las palabras justo antes de olvidarlas." }),
         el("li", { html: "Tu progreso, puntuaciones y racha se guardan automáticamente en este navegador." })
       ])
     ]);
-    c.appendChild(howto);
+    defaultPanel.appendChild(howto);
+    c.appendChild(defaultPanel);
+
+    // search behavior (element-level listeners only)
+    var vocabCache = null;
+    var firstHref = null;
+    function paintResults() {
+      var raw = searchInput.value.trim();
+      var q = loose(raw);
+      firstHref = null;
+      if (!q) {
+        results.style.display = "none";
+        results.innerHTML = "";
+        defaultPanel.style.display = "";
+        return;
+      }
+      if (!vocabCache) vocabCache = allVocab();
+      results.innerHTML = "";
+      defaultPanel.style.display = "none";
+      results.style.display = "";
+
+      var lessons = (COURSE.outline || []).filter(function (o) {
+        return loose(o.title).indexOf(q) !== -1 || String(o.id).indexOf(raw) === 0;
+      }).slice(0, 8);
+      var vocab = vocabCache.filter(function (v) {
+        return loose(v.en).indexOf(q) !== -1 || loose(v.es).indexOf(q) !== -1;
+      });
+
+      if (lessons.length) {
+        results.appendChild(el("div", { class: "sr-head", text: "Lecciones" }));
+        lessons.forEach(function (o) {
+          var loaded = !!lessonById(o.id);
+          var href = "#lesson/" + o.id;
+          if (loaded && !firstHref) firstHref = href;
+          var attrs = { class: "sr-row" + (loaded ? "" : " disabled") };
+          if (loaded) attrs.href = href;
+          results.appendChild(el(loaded ? "a" : "div", attrs, [
+            el("span", { class: "nav-num", text: o.id }),
+            el("span", { class: "sr-title", text: o.title }),
+            el("span", { class: "nav-badge badge-" + String(o.level).replace(/[^A-Za-z0-9]/g, ""), text: o.level })
+          ]));
+        });
+      }
+      if (vocab.length) {
+        results.appendChild(el("div", { class: "sr-head", text: "Vocabulario" }));
+        vocab.slice(0, 12).forEach(function (v) {
+          if (!firstHref) firstHref = "#lesson/" + v.lessonId;
+          results.appendChild(el("div", { class: "sr-row" }, [
+            audioBtn(v.en),
+            el("span", { class: "term", text: v.en }),
+            el("span", { class: "sr-title muted", text: v.es }),
+            el("a", { class: "gloss-link", href: "#lesson/" + v.lessonId, text: "L" + v.lessonId })
+          ]));
+        });
+        if (vocab.length > 12) {
+          results.appendChild(el("a", { class: "sr-more", href: "#glossary", text: vocab.length - 12 + " coincidencias más — abre el glosario →" }));
+        }
+      }
+      if (!lessons.length && !vocab.length) {
+        results.appendChild(el("p", { class: "muted", text: "Sin resultados." }));
+      }
+    }
+    searchInput.addEventListener("input", paintResults);
+    searchInput.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" && firstHref) location.hash = firstHref.slice(1);
+      else if (e.key === "Escape") { searchInput.value = ""; paintResults(); searchInput.blur(); }
+    });
+
     window.scrollTo(0, 0);
   }
 
@@ -912,7 +1001,6 @@
     ]);
     c.appendChild(navRow);
 
-    document.getElementById("sidebar").classList.remove("open");
     window.scrollTo(0, 0);
     c.focus();
   }
@@ -1032,7 +1120,7 @@
     c.appendChild(el("h1", { text: "📖 Glosario" }));
     var vocab = allVocab();
     c.appendChild(el("p", { class: "lead", text: vocab.length + " palabras de cada lección cargada. Busca en inglés o en español." }));
-    var search = el("input", { class: "ex-input wide", type: "search", placeholder: "buscar…", autocomplete: "off" });
+    var search = el("input", { class: "ex-input wide", id: "glossary-search", type: "search", placeholder: "buscar…", autocomplete: "off" });
     c.appendChild(search);
     var list = el("div", { class: "glossary-list" });
     c.appendChild(list);
@@ -1061,6 +1149,8 @@
 
   /* ---------- routing ---------- */
   function route() {
+    var sb = document.getElementById("sidebar");
+    if (sb) sb.classList.remove("open");
     var hash = (location.hash || "").replace("#", "");
     renderNav();
     if (hash === "" || hash === "home") renderHome();
