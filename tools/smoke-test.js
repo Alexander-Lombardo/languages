@@ -78,6 +78,7 @@ global.navigator = {};
 
 /* ---- load config, manifest, engine ---- */
 require(path.join(SITE, "config.js"));
+require(path.join(SITE, "speakers.js"));
 require(path.join(SITE, "manifest.js"));
 require(path.join(SITE, "app.js")); // defines window.startCourse
 const LANGS = global.window.SITE_LANGS;

@@ -326,7 +326,8 @@ a.sr-row:hover { background: var(--hover); }
 /* ---------- dialogue & reading ---------- */
 .row-controls { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 4px; align-items: center; }
 .dialogue, .reading { background: var(--surface-2); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 18px; margin-top: 8px; }
-.dline { margin: .35em 0; }
+.dline { margin: .35em 0; border-left: 3px solid transparent; padding-left: 6px; margin-left: -9px; }
+.dline.playing { border-left-color: var(--accent); }
 .spk { font-weight: 700; color: var(--ink); }
 .dialogue .en, .reading-en { color: var(--muted); }
 .dialogue:not(.show-en) .en { display: none; }

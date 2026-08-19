@@ -7,7 +7,7 @@
   "use strict";
 
   var LANG_KEY = "activeLanguage.v1";
-  var DATA_V = 2; // cache-buster for <code>/data/*.js — bump when lesson content changes
+  var DATA_V = 3; // cache-buster for <code>/data/*.js — bump when lesson content changes
   var LANGS = window.SITE_LANGS;
   var MANIFEST = window.SITE_MANIFEST;
 
@@ -132,7 +132,7 @@
     if (cfg.audio) {
       // optional: text -> mp3 map for pre-generated audio; app falls back to TTS without it
       var a = document.createElement("script");
-      a.src = code + "/audio/manifest.js";
+      a.src = code + "/audio/manifest.js?v=" + DATA_V;
       a.async = false;
       a.onload = tick;
       a.onerror = tick;

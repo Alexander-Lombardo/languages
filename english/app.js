@@ -111,17 +111,50 @@
     });
     return true;
   }
-  function speak(text, onEnd) {
+  function audioFile(t, voice) {
+    // voice slot "f1" is the plain key; other slots are stored as "[m1] text" etc.
+    // (see site/tools/gen-audio.py). Fall back to the default-voice file if missing.
+    if (!HAS_FILES) return null;
+    if (voice && voice !== "f1" && window.AUDIO_FILES["[" + voice + "] " + t]) return window.AUDIO_FILES["[" + voice + "] " + t];
+    return window.AUDIO_FILES[t] || null;
+  }
+  var seqToken = 0; // bumped by every speak()/speakSeq() so stale sequences stop
+  function speak(text, onEnd, voice) {
     if (!text) return false;
     var t = String(text).trim();
+    seqToken++;
+    return speakOne(t, onEnd, voice);
+  }
+  function speakOne(t, onEnd, voice) {
     if (TTS) window.speechSynthesis.cancel();
     if (audioEl) audioEl.pause();
     speakChain = null;
     speakMode = null;
     speakEnd = typeof onEnd === "function" ? onEnd : null;
-    var file = HAS_FILES && window.AUDIO_FILES[t];
+    var file = audioFile(t, voice);
     if (file && playFile(file, t)) return true;
     return ttsSpeak(t);
+  }
+  // Play several lines back to back (a dialogue, one file per speaker voice).
+  // items: [{text, voice}]; opts.onLine(i) before each line, opts.onEnd() after the last.
+  function speakSeq(items, opts) {
+    opts = opts || {};
+    var my = ++seqToken;
+    var i = 0;
+    function next() {
+      if (my !== seqToken) return;
+      if (i >= items.length) { if (opts.onEnd) opts.onEnd(); return; }
+      var it = items[i++];
+      if (opts.onLine) opts.onLine(i - 1);
+      var ok = speakOne(it.text, function () {
+        if (my !== seqToken) return;
+        setTimeout(next, 400);
+      }, it.voice);
+      if (!ok) setTimeout(next, 0);
+    }
+    if (!items || !items.length) return false;
+    next();
+    return true;
   }
   function pauseSpeak() {
     if (speakMode === "file" && audioEl) audioEl.pause();
@@ -162,13 +195,18 @@
   if (TTS && window.speechSynthesis.onvoiceschanged !== undefined) {
     window.speechSynthesis.onvoiceschanged = function () { /* voices now cached */ };
   }
-  function audioBtn(text, extraClass) {
+  function audioBtn(text, extraClass, voice) {
     if (!CAN_AUDIO || !text) return null;
     return el("button", {
       class: "audio-btn" + (extraClass ? " " + extraClass : ""),
       type: "button", title: "Escuchar", "aria-label": "Escuchar",
-      onclick: function (e) { e.stopPropagation(); speak(text); }
+      onclick: function (e) { e.stopPropagation(); speak(text, null, voice); }
     }, ["🔊"]);
+  }
+  // speaker name -> voice slot for a dialogue (speakers.js: window.SPEAKERS.en + assignVoices)
+  function dialogueVoices(lines) {
+    var gender = (window.SPEAKERS || {}).en || {};
+    return typeof window.assignVoices === "function" ? window.assignVoices(lines, gender) : {};
   }
 
   /* ---------- progress (localStorage) ---------- */
@@ -546,9 +584,10 @@
 
   function renderDialogue(lesson) {
     if (!lesson.dialogue || !lesson.dialogue.length) return null;
+    var voices = dialogueVoices(lesson.dialogue);
     var lines = lesson.dialogue.map(function (d) {
       return el("p", { class: "dline" }, [
-        audioBtn(d.en, "inline"),
+        audioBtn(d.en, "inline", voices[d.sp]),
         d.sp ? el("span", { class: "spk", text: d.sp + ": " }) : null,
         el("span", { class: "term", text: d.en }),
         el("span", { class: "gloss", text: " — " + d.es })
@@ -570,17 +609,21 @@
     // ▶ Reproducir → ⏸ Pausa → ▶ Continuar → (fin) ▶ Reproducir
     var playBtn = null;
     if (CAN_AUDIO) {
-      var joined = lesson.dialogue.map(function (d) { return d.en; }).join(". ");
+      var items = lesson.dialogue.map(function (d) { return { text: d.en, voice: voices[d.sp] }; });
       var state = "idle";
+      function highlight(i) {
+        lines.forEach(function (p, k) { p.classList.toggle("playing", k === i); });
+      }
       function setState(st) {
         state = st;
         playBtn.textContent = st === "playing" ? "⏸ Pausa" : st === "paused" ? "▶ Continuar" : "▶ Reproducir";
+        if (st === "idle") highlight(-1);
       }
       playBtn = el("button", { class: "btn small ghost", onclick: function () {
         if (state === "playing") { pauseSpeak(); setState("paused"); }
         else if (state === "paused") { resumeSpeak(); setState("playing"); }
         else {
-          var ok = speak(joined, function () { setState("idle"); });
+          var ok = speakSeq(items, { onLine: highlight, onEnd: function () { setState("idle"); } });
           setState(ok ? "playing" : "idle");
         }
       } }, ["▶ Reproducir"]);
@@ -813,18 +856,19 @@
      then comprehension questions checked together. */
   function renderListenDialogue(ex, card, feedback, mark) {
     var lines = ex.lines || [];
-    var joined = lines.map(function (d) { return d.en; }).join(".  ");
+    var voices = dialogueVoices(lines);
+    var items = lines.map(function (d) { return { text: d.en, voice: voices[d.sp] }; });
     var questions = ex.questions || [];
 
     if (!CAN_AUDIO) {
       card.appendChild(el("p", { class: "muted", text: "(Audio no disponible en este navegador — lee la transcripción y responde.)" }));
     }
-    var playBtn = el("button", { class: "btn", onclick: function () { speak(joined); } }, ["▶ Reproducir conversación"]);
-    var againBtn = CAN_AUDIO ? el("button", { class: "btn small ghost", onclick: function () { speak(joined); } }, ["↻ Repetir"]) : null;
+    var playBtn = el("button", { class: "btn", onclick: function () { speakSeq(items); } }, ["▶ Reproducir conversación"]);
+    var againBtn = CAN_AUDIO ? el("button", { class: "btn small ghost", onclick: function () { speakSeq(items); } }, ["↻ Repetir"]) : null;
 
     var transcript = el("div", { class: "ld-transcript hidden" }, lines.map(function (d) {
       return el("p", { class: "dline" }, [
-        audioBtn(d.en, "inline"),
+        audioBtn(d.en, "inline", voices[d.sp]),
         d.sp ? el("span", { class: "spk", text: d.sp + ": " }) : null,
         el("span", { class: "term", text: d.en }),
         d.es ? el("span", { class: "gloss", text: " — " + d.es }) : null
