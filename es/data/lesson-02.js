@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Diego", es: "Perfecto. Eres muy simpática.", en: "Perfect. You're very nice." },
     { sp: "Marta", es: "¡Gracias! Tú también.", en: "Thanks! You too." }
   ],
+  dialogueQuiz: [
+    { q: "Where is Diego from?", choices: ["Colombia", "Mexico", "Peru"], answer: "Mexico" },
+    { q: "What is Diego’s job?", choices: ["Teacher", "Nurse", "Doctor"], answer: "Doctor" },
+    { q: "How does Marta feel today?", choices: ["Tired but happy", "Busy and tired", "Sad but calm"], answer: "Tired but happy" },
+    { q: "Is Marta busy now?", choices: ["Yes, very busy", "No, she is free", "Only in the morning"], answer: "No, she is free" },
+    { q: "How long is Marta staying there?", choices: ["All morning", "All afternoon", "All day"], answer: "All afternoon" }
+  ],
   grammarHTML:
     "<h3>Two verbs, one English word</h3>" +
     "<p>Spanish has two verbs that both mean <em>to be</em>: <strong>ser</strong> and <strong>estar</strong>. They are not interchangeable. The simplest rule: <strong>ser</strong> is for what something <em>is</em> (identity, essence), and <strong>estar</strong> is for how or where something <em>is right now</em> (state, location).</p>" +

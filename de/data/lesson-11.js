@@ -45,6 +45,13 @@ window.COURSE.lessons.push({
     { sp: "Anna", de: "Hier sind zehn Euro.", en: "Here's ten euros." },
     { sp: "Verkäufer", de: "Danke, und eins fünfzig zurück. Schönen Tag!", en: "Thanks, and one fifty back. Have a nice day!" }
   ],
+  dialogueQuiz: [
+    { q: "What does Anna want first?", choices: ["A kilo of apples", "A kilo of pears", "Half a kilo of apples"], answer: "A kilo of apples" },
+    { q: "How much cheese does Anna want?", choices: ["A pound", "Half a pound", "A kilo"], answer: "Half a pound" },
+    { q: "How many eggs are in the pack?", choices: ["Six", "Ten", "Twelve"], answer: "Ten" },
+    { q: "How much does everything cost?", choices: ["Eight euros fifty", "Four euros ninety", "Ten euros"], answer: "Eight euros fifty" },
+    { q: "How much change does Anna get?", choices: ["One euro", "One fifty", "Two fifty"], answer: "One fifty" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Asking the price</h3>" +

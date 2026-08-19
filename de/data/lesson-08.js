@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Markus", de: "Doch, ich mag Tee! Aber jetzt Kaffee, bitte.", en: "Yes I do, I like tea! But coffee now, please." },
     { sp: "Frau Weber", de: "Natürlich. Welches Café mögen Sie?", en: "Of course. Which café do you like?" }
   ],
+  dialogueQuiz: [
+    { q: "Where is Markus from?", choices: ["Germany", "Austria", "Switzerland"], answer: "Austria" },
+    { q: "Where is Mrs. Weber going?", choices: ["To the café", "To the office", "To the course"], answer: "To the office" },
+    { q: "When does the course start?", choices: ["At eight", "At nine", "At ten"], answer: "At nine" },
+    { q: "What do they discover?", choices: ["They have the same course", "They live in the same street", "They have the same teacher"], answer: "They have the same course" },
+    { q: "What does Markus want to drink now?", choices: ["Tea", "Coffee", "Water"], answer: "Coffee" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>W-questions (W-Fragen)</h3>" +

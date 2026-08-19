@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Lena", de: "Voll. Bis dann, und zieh nicht so schicke Klamotten an, sonst fühl ich mich underdressed.", en: "Totally. See you then, and don't wear anything too fancy or I'll feel underdressed." },
     { sp: "Tom", de: "Haha, alles klar, kommt im Hoodie. Bis später!", en: "Haha, alright, coming in a hoodie. Later!" }
   ],
+  dialogueQuiz: [
+    { q: "Was hat Lena am Wochenende vor?", choices: ["Eigentlich nichts", "Eine große Party", "Einen Ausflug"], answer: "Eigentlich nichts" },
+    { q: "Was schlägt Tom vor?", choices: ["Einen Kaffee trinken gehen", "Ins Kino gehen", "Zusammen kochen"], answer: "Einen Kaffee trinken gehen" },
+    { q: "Warum passt Lena der Vorschlag gut?", choices: ["Sie hat gerade kaum Geld", "Sie liebt Kaffee", "Sie wohnt in der Nähe"], answer: "Sie hat gerade kaum Geld" },
+    { q: "Um wie viel Uhr wollen sie sich treffen?", choices: ["So um drei", "So um fünf", "So um zwölf"], answer: "So um drei" },
+    { q: "Was soll Tom nicht tun?", choices: ["Zu schicke Klamotten anziehen", "Zu spät kommen", "Seinen Hoodie anziehen"], answer: "Zu schicke Klamotten anziehen" }
+  ],
   reading: {
     title: "Wie redet man eigentlich „richtig“?",
     de: "Wer Deutsch nur aus dem Lehrbuch kennt, ist oft überrascht, wie wenig die Leute auf der Straße so sprechen, wie es im Buch steht. Niemand sagt im Gespräch ständig „Ich habe es nicht gewusst“ — man sagt eher „Wusst ich nicht“ und verschluckt dabei die halbe Grammatik. Das ist kein schlechtes Deutsch, sondern Umgangssprache: die natürliche, gesprochene Variante, die von Region, Alter und Situation abhängt.\n\nProblematisch wird es erst, wenn die Ebenen durcheinandergeraten. Ein „Voll krass, was der Chef da abgezogen hat“ mag unter Freunden völlig okay sein, in einer Bewerbung oder Hausarbeit wirkt es deplatziert. Die eigentliche Kunst auf hohem Niveau ist also nicht, möglichst gewählt zu reden, sondern das Register bewusst zu wechseln — locker mit Freunden, präzise im Beruf, korrekt auf dem Papier.\n\nFüllwörter wie „halt“, „also“ oder „ne?“ sind dabei keine Fehler. Sie geben dem Sprecher Zeit zum Denken und dem Gespräch einen menschlichen Rhythmus. Wer sie nie benutzt, klingt schnell wie ein Roboter.",

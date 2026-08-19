@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Lena", de: "Genau. Und falls es schiefgeht — die Kirche im Dorf lassen. Es ist nicht das Ende der Welt.", en: "Exactly. And if it goes wrong — don't overdo it. It's not the end of the world." },
     { sp: "Tom", de: "Stimmt. Eigentlich ist mir die Note inzwischen fast Wurst.", en: "True. Actually the grade is almost a matter of indifference to me by now." }
   ],
+  dialogueQuiz: [
+    { q: "Was steht morgen an?", choices: ["Toms Prüfung", "Lenas Prüfung", "Eine Reise"], answer: "Toms Prüfung" },
+    { q: "Wie hat Tom sich vorbereitet?", choices: ["Er hat kaum gelernt", "Er hat sehr viel gelernt", "Er hat mit Lena geübt"], answer: "Er hat kaum gelernt" },
+    { q: "Was rät Lena mit „aus einer Mücke keinen Elefanten“?", choices: ["Das Problem nicht aufbauschen", "Besser vorbereiten", "Früh schlafen gehen"], answer: "Das Problem nicht aufbauschen" },
+    { q: "Was gibt Tom zu?", choices: ["Er redet sich das Problem größer", "Er hat Angst vor der Prüferin", "Er will die Prüfung verschieben"], answer: "Er redet sich das Problem größer" },
+    { q: "Wie steht Tom am Ende zur Note?", choices: ["Sie ist ihm fast egal", "Sie ist ihm sehr wichtig", "Er hofft auf eine Eins"], answer: "Sie ist ihm fast egal" }
+  ],
   reading: {
     title: "Eine Sprache voller Bilder",
     de: "Wer Deutsch wirklich beherrschen will, kommt an den Redewendungen nicht vorbei. Sie sind das Salz in der Suppe jeder Unterhaltung. Wörtlich genommen ergeben sie selten Sinn: Wenn jemand »Tomaten auf den Augen hat«, trägt er natürlich kein Gemüse im Gesicht, sondern übersieht das Offensichtliche. Und wer »Schwein hat«, besitzt kein Tier, sondern schlicht Glück.\n\nGefährlich wird es, wenn man Bilder aus der Muttersprache eins zu eins überträgt. Im Englischen »tritt man in den Eimer«, im Deutschen jedoch »beißt man ins Gras«. Zwei Sprachen, dasselbe traurige Ende, ganz verschiedene Bilder.\n\nSprichwörter wiederum verpacken Lebensweisheit in einen einzigen Satz. »Morgenstund hat Gold im Mund« lobt den Frühaufsteher; »Lügen haben kurze Beine« warnt den Schwindler. Wer solche Wendungen treffsicher einsetzt, klingt nicht nur korrekt, sondern endlich auch wie ein Muttersprachler — vorausgesetzt, er wirft nicht gleich beim ersten Stolpern die Flinte ins Korn.",

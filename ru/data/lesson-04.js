@@ -50,6 +50,13 @@ window.COURSE.lessons.push({
     { sp: "Анна", ru: "До свидания, Иван! Пока, Том!", en: "Goodbye, Ivan! Bye, Tom!" },
     { sp: "Том", ru: "Пока, Анна! До завтра.", en: "Bye, Anna! See you tomorrow." }
   ],
+  dialogueQuiz: [
+    { q: "Where is Ivan from?", choices: ["Moscow", "London", "Kazan"], answer: "Moscow" },
+    { q: "What does Ivan say about Anna’s Russian?", choices: ["She speaks it very well", "She doesn’t understand it", "She speaks only English"], answer: "She speaks it very well" },
+    { q: "Who is Tom?", choices: ["Anna’s brother", "Ivan’s friend", "Ivan’s teacher"], answer: "Ivan’s friend" },
+    { q: "What does Anna do?", choices: ["She is a doctor", "She is a teacher", "She is a student"], answer: "She is a student" },
+    { q: "Why do they say goodbye?", choices: ["It’s late already", "Tom has to work", "Anna is tired"], answer: "It’s late already" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>ты or вы? Two words for “you”</h3>" +

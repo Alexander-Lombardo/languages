@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Cliente", it: "Ottimo. Un’ultima cosa: potremmo pagare con la carta?", en: "Excellent. One last thing: could we pay by card?" },
     { sp: "Cameriere", it: "Senz’altro. Dovrebbe solo avvisarci se cambiate l’orario. A stasera!", en: "Absolutely. You’d only need to let us know if you change the time. See you tonight!" }
   ],
+  dialogueQuiz: [
+    { q: "Per quante persone vuole prenotare il cliente?", choices: ["Due", "Quattro", "Sei"], answer: "Quattro" },
+    { q: "Perché il tavolo vicino alla finestra non è libero?", choices: ["È prenotato fino alle nove", "È riservato al personale", "È troppo piccolo"], answer: "È prenotato fino alle nove" },
+    { q: "A che ora decidono di arrivare?", choices: ["Verso le otto", "Verso le nove", "Verso le nove e mezza"], answer: "Verso le nove e mezza" },
+    { q: "Perché il menù di pesce non va bene?", choices: ["È troppo caro", "La moglie non mangia pesce", "Il cliente è allergico"], answer: "La moglie non mangia pesce" },
+    { q: "Cosa propone il cameriere in alternativa?", choices: ["Una grigliata di carne", "Una pizza", "Un piatto vegetariano"], answer: "Una grigliata di carne" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>How the present conditional is built</h3>" +

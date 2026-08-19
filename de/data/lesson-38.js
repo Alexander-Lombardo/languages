@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Frau Weber", de: "Und sobald die Genehmigung da ist, ist der Fall abgeschlossen.", en: "And as soon as the permit is here, the case is closed." },
     { sp: "Herr Klein", de: "Genau. Dann muss nichts mehr gemacht werden.", en: "Exactly. Then nothing more needs to be done." }
   ],
+  dialogueQuiz: [
+    { q: "Wie weit ist der Antrag?", choices: ["Er ist fast fertig", "Er ist noch nicht begonnen", "Er ist schon abgeschlossen"], answer: "Er ist fast fertig" },
+    { q: "Was wird gerade noch geprüft?", choices: ["Eine Unterschrift", "Zwei Unterlagen", "Die Genehmigung"], answer: "Zwei Unterlagen" },
+    { q: "Bis wann ist alles geregelt?", choices: ["Bis Montag", "Bis Mittwoch", "Bis Freitag"], answer: "Bis Freitag" },
+    { q: "Was sagt Frau Weber über manche Fehler?", choices: ["Sie waren leicht vermeidbar", "Sie waren sehr teuer", "Sie waren nicht wichtig"], answer: "Sie waren leicht vermeidbar" },
+    { q: "Wann ist der Fall abgeschlossen?", choices: ["Sobald die Frist abläuft", "Sobald die Genehmigung da ist", "Sobald der Antrag geprüft ist"], answer: "Sobald die Genehmigung da ist" }
+  ],
   reading: {
     title: "Neue Regelung im Bürgeramt",
     de: "Im Bürgeramt der Stadt wird seit Januar ein neues Verfahren eingesetzt. Anträge werden jetzt zuerst online ausgefüllt und erst danach im Amt bearbeitet. Dadurch lässt sich viel Zeit sparen, und lange Warteschlangen sollen vermieden werden.\n\nDie Reaktion der Bürger ist gemischt. Viele finden das System praktisch: „Endlich ist alles digital geregelt, und man muss nicht mehr stundenlang warten.“ Andere sind skeptisch, weil nicht jeder einen Computer hat. „Was ist mit älteren Menschen?“, fragt eine Rentnerin. „Für sie ist das neue Verfahren nicht immer machbar.“\n\nDie Stadt betont, dass auch Hilfe vor Ort angeboten wird. Wer Unterstützung braucht, dem wird geholfen. Sobald ein Antrag vollständig eingereicht ist, gilt er als bearbeitbar und wird innerhalb von zwei Wochen geprüft. Probleme, die sich vermeiden lassen, sollen so von Anfang an ausgeschlossen werden.",

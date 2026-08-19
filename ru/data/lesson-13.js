@@ -51,6 +51,13 @@ window.COURSE.lessons.push({
     { sp: "Прохожий", ru: "Пожалуйста. Хорошего дня!", en: "You're welcome. Have a good day!" },
     { sp: "Турист", ru: "И вам! До свидания.", en: "You too! Goodbye." }
   ],
+  dialogueQuiz: [
+    { q: "What is the tourist looking for first?", choices: ["The metro", "A pharmacy", "A bus stop"], answer: "A pharmacy" },
+    { q: "How far is the pharmacy?", choices: ["Two minutes", "Ten minutes", "Quite far"], answer: "Two minutes" },
+    { q: "When is the metro open?", choices: ["From six until midnight", "From seven until ten", "All night"], answer: "From six until midnight" },
+    { q: "Where does the bus go?", choices: ["To the station", "To the centre", "To the airport"], answer: "To the centre" },
+    { q: "Where is the tourist from?", choices: ["Spain", "Italy", "France"], answer: "Italy" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>The question words</h3>" +

@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Kellner", de: "Heute schon. Sie sollten den Auflauf probieren.", en: "Today, yes. You should try the casserole." },
     { sp: "Herr Klein", de: "Würden Sie uns einen Moment geben? Wir würden gern überlegen.", en: "Would you give us a moment? We would like to think it over." }
   ],
+  dialogueQuiz: [
+    { q: "Für wie viele Personen möchte Herr Klein einen Tisch?", choices: ["Für zwei", "Für drei", "Für vier"], answer: "Für zwei" },
+    { q: "Welchen Tisch möchten sie haben?", choices: ["Den Tisch in der Ecke", "Den Tisch am Fenster", "Den Tisch auf der Terrasse"], answer: "Den Tisch am Fenster" },
+    { q: "Was möchte Frau Weber trinken?", choices: ["Ein Glas Wein", "Eine Tasse Kaffee", "Ein Glas Wasser"], answer: "Ein Glas Wasser" },
+    { q: "Was möchte Frau Weber über das Tagesmenü wissen?", choices: ["Ob es vegetarisch ist", "Ob es teuer ist", "Ob es scharf ist"], answer: "Ob es vegetarisch ist" },
+    { q: "Was empfiehlt der Kellner?", choices: ["Die Suppe", "Den Fisch", "Den Auflauf"], answer: "Den Auflauf" }
+  ],
   reading: {
     title: "Eine höfliche Bitte",
     de: "Liebe Frau Schmidt,\n\nich würde mich gern bei Ihnen erkundigen, ob am Freitag noch ein Termin frei wäre. Ich hätte ein paar Fragen zu meinem Vertrag und würde gern persönlich vorbeikommen. Könnten Sie mir vielleicht einen Termin am Vormittag anbieten? Am Nachmittag müsste ich leider arbeiten.\n\nFalls es Ihnen passt, würde ich gegen zehn Uhr kommen. Sollte das nicht möglich sein, wäre ich auch für einen anderen Tag dankbar. Ich möchte Sie auf keinen Fall stören.\n\nVielen Dank im Voraus. Ich würde mich sehr über eine kurze Antwort freuen.\n\nMit freundlichen Grüßen\nMarkus Berg",

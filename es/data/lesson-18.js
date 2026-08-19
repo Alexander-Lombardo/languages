@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Cliente", es: "¡Qué barato! Me la llevo.", en: "How cheap! I'll take it." },
     { sp: "Vendedora", es: "Perfecto. Puede pagar en la caja.", en: "Perfect. You can pay at the checkout." }
   ],
+  dialogueQuiz: [
+    { q: "What is the customer looking for?", choices: ["A shirt", "A jacket", "Trousers"], answer: "A shirt" },
+    { q: "What color does the customer want?", choices: ["Red", "Blue", "White"], answer: "Blue" },
+    { q: "What size does the customer wear?", choices: ["Small", "Medium", "Large"], answer: "Medium" },
+    { q: "Where is the fitting room?", choices: ["At the back, on the right", "At the entrance", "Upstairs"], answer: "At the back, on the right" },
+    { q: "How much does the shirt cost today?", choices: ["Twelve euros", "Twenty euros", "Thirty euros"], answer: "Twenty euros" }
+  ],
   grammarHTML:
     "<h3>Demonstratives: this, that, that over there</h3>" +
     "<p>Spanish has <strong>three</strong> levels of distance. They agree with the noun in gender and number, just like articles.</p>" +

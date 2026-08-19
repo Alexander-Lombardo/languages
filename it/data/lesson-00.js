@@ -39,6 +39,13 @@ window.COURSE.lessons.push({
     { sp: "Marco", it: "Prego! A presto, Anna.", en: "You’re welcome! See you soon, Anna." },
     { sp: "Anna", it: "Arrivederci, Marco. Buonanotte!", en: "Goodbye, Marco. Good night!" }
   ],
+  dialogueQuiz: [
+    { q: "How does Marco greet Anna?", choices: ["Good morning", "Good evening", "Good night"], answer: "Good morning" },
+    { q: "How is Anna feeling?", choices: ["So-so", "Tired", "Well"], answer: "Well" },
+    { q: "What does Anna ask Marco?", choices: ["If he speaks English", "Where he is from", "How old he is"], answer: "If he speaks English" },
+    { q: "What does Marco suggest?", choices: ["Speaking English", "Speaking Italian", "Speaking slowly"], answer: "Speaking Italian" },
+    { q: "How does Anna say goodbye?", choices: ["See you tomorrow", "Good night", "Good afternoon"], answer: "Good night" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>The Italian alphabet (21 letters)</h3>" +

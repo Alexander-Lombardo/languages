@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Jess", en: "Good. There you'd say 'the costs are higher than expected'.", es: "Bien. Ahí dirías «los costes son más altos de lo previsto»." },
     { sp: "Marco", en: "Exactly. Right idiom, wrong room, and you look unprofessional.", es: "Exacto. Idiom correcto, sala equivocada, y pareces poco profesional." }
   ],
+  dialogueQuiz: [
+    { q: "Why is Jess fed up?", choices: ["The project is costing too much", "The team is late", "The client is rude"], answer: "The project is costing too much" },
+    { q: "What does Marco think of the supplier?", choices: ["A bargain", "A total rip-off", "Very reliable"], answer: "A total rip-off" },
+    { q: "What does Marco suggest they do?", choices: ["Pull out of the project", "Bite the bullet", "Change supplier"], answer: "Bite the bullet" },
+    { q: "What does Jess want to do because she’s knackered?", choices: ["Call it a day", "Go for a run", "Finish the numbers"], answer: "Call it a day" },
+    { q: "What does Jess ask Marco about the meeting?", choices: ["To bring the numbers", "To keep it formal", "To arrive early"], answer: "To keep it formal" }
+  ],
   reading: {
     title: "Speaking the Real Language",
     en: "You can master every rule of English grammar and still feel lost the moment a native speaker opens their mouth. The reason is idioms: those fixed phrases whose meaning has nothing to do with the individual words. \"It's raining cats and dogs\" has no cats in it. \"Break a leg\" is a wish for good luck. \"I'm fed up\" has nothing to do with food. You cannot decode them; you have to learn them whole, like vocabulary.\n\nSlang goes a step further. It is the living, restless edge of a language, invented by the young and discarded just as fast. Words like \"awesome,\" \"ghost,\" \"chill,\" and \"no biggie\" carry a strong flavour of informality and, often, of a particular generation or place. \"Knackered\" marks you as British; \"bummed\" marks you as American. Used naturally, slang signals belonging. Used clumsily, it signals the opposite.\n\nAnd here lies the real skill, which is not knowing idioms but knowing when to use them. Telling a friend a concert was \"awesome\" is perfect. Telling a job interviewer that their company is \"awesome\" is a gamble. Describing a contract as \"a rip-off\" to your mates is fine; saying it to the client is professional suicide. The phrase is not wrong; the room is.\n\nThis is what linguists call register, the dial that runs from the slang of the street to the formality of the courtroom. Advanced speakers do not just collect colourful expressions. They learn to read the room and turn the dial to match it. That, more than any single idiom, is what fluency really sounds like.",

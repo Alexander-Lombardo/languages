@@ -45,6 +45,13 @@ window.COURSE.lessons.push({
     { sp: "Tom", de: "Im Mai? Dann feiern wir zusammen!", en: "In May? Then we'll celebrate together!" },
     { sp: "Lena", de: "Sehr gern. Also bis Samstag um zwei!", en: "Gladly. So, see you Saturday at two!" }
   ],
+  dialogueQuiz: [
+    { q: "What time is it?", choices: ["Quarter past three", "Half past three", "Quarter to three"], answer: "Quarter past three" },
+    { q: "When does the film start?", choices: ["At three", "At half past three", "At four"], answer: "At half past three" },
+    { q: "Until when does Tom work on Monday?", choices: ["Five in the evening", "Six in the evening", "Seven in the evening"], answer: "Six in the evening" },
+    { q: "When will they meet on Saturday?", choices: ["At two", "At three", "At six"], answer: "At two" },
+    { q: "When is Lena's birthday?", choices: ["The first of May", "The first of March", "The fifth of May"], answer: "The first of May" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Telling the time: official vs. colloquial</h3>" +

@@ -45,6 +45,13 @@ window.COURSE.lessons.push({
     { sp: "Léa", fr: "D'accord. À ce soir !", en: "OK. See you tonight!" },
     { sp: "Karim", fr: "À ce soir, au cinéma !", en: "See you tonight, at the cinema!" }
   ],
+  dialogueQuiz: [
+    { q: "Where is Karim going first?", choices: ["To the bank", "To the market", "To the park"], answer: "To the market" },
+    { q: "What is Léa going to do at the café?", choices: ["Eat lunch", "Study with a friend", "Meet Karim"], answer: "Study with a friend" },
+    { q: "How will Karim get to the park?", choices: ["On foot", "By bus", "By car"], answer: "By bus" },
+    { q: "What time is the film?", choices: ["At seven", "At eight", "At nine"], answer: "At eight" },
+    { q: "Who else is coming to the cinema?", choices: ["Karim’s friends", "Léa’s family", "Nobody else"], answer: "Karim’s friends" }
+  ],
   grammarHTML:
     "<h3>aller (to go) — irregular</h3>" +
     "<table><tr><td>je <strong>vais</strong></td><td>nous <strong>allons</strong></td></tr>" +

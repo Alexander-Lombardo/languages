@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Présentateur", fr: "Le ministre des Transports a réagi ?", en: "Has the Transport Minister reacted?" },
     { sp: "Claire Mortier", fr: "Dans un communiqué, il a déclaré que l'État \"resterait attentif\" et a démenti toute pression sur les syndicats. Une dépêche de l'AFP confirme ce démenti à l'instant.", en: "In a press release, he stated that the State \"would remain attentive\" and denied any pressure on the unions. An AFP wire dispatch confirms this denial just now." }
   ],
+  dialogueQuiz: [
+    { q: "Quel est le sujet à la une ?", choices: ["Une grève des transports", "Des élections", "Une tempête"], answer: "Une grève des transports" },
+    { q: "Depuis combien de jours dure le blocage ?", choices: ["Un jour", "Deux jours", "Trois jours"], answer: "Trois jours" },
+    { q: "Quand les négociations auraient-elles repris ?", choices: ["Vers deux heures du matin", "Hier midi", "Ce matin à 8 heures"], answer: "Vers deux heures du matin" },
+    { q: "Que prévoirait le protocole ?", choices: ["Une baisse des horaires", "Une revalorisation des salaires", "Des embauches"], answer: "Une revalorisation des salaires" },
+    { q: "Qu’a démenti le ministre ?", choices: ["La reprise des négociations", "Toute pression sur les syndicats", "L’existence d’un accord"], answer: "Toute pression sur les syndicats" }
+  ],
   reading: {
     title: "Inondations dans le Sud-Ouest : le bilan s'alourdirait",
     fr: "BORDEAUX (AFP) — Les pluies torrentielles qui s'abattent depuis vendredi sur le Sud-Ouest auraient fait au moins trois victimes, selon un bilan provisoire communiqué dimanche par la préfecture. Plusieurs personnes seraient toujours portées disparues.\n\nD'après les pompiers, plus de huit cents interventions ont été menées en quarante-huit heures. Des centaines d'habitants ont été évacués et relogés dans des gymnases. Le trafic ferroviaire a été interrompu sur l'ensemble du réseau régional, et plusieurs routes restent coupées.\n\nLe niveau de la Garonne aurait dépassé sa cote d'alerte dans la nuit, indique une source proche du dossier. Selon Météo-France, une accalmie serait attendue en milieu de semaine, mais le risque de nouvelles crues n'est pas écarté.\n\nLa ministre de la Transition écologique, qui s'est rendue sur place lundi, a déclaré que l'État \"serait aux côtés des sinistrés\". Elle a annoncé qu'un plan d'aide d'urgence serait débloqué dans les prochains jours. Une enquête a par ailleurs été ouverte afin de déterminer si certaines digues avaient cédé.",

@@ -51,6 +51,13 @@ window.COURSE.lessons.push({
     { sp: "Дима", ru: "Хорошо. Мне очень нравится эта идея.", en: "Good. I really like this idea." },
     { sp: "Катя", ru: "Тогда до субботы!", en: "Then see you Saturday!" }
   ],
+  dialogueQuiz: [
+    { q: "How old is Dima?", choices: ["Twenty-three", "Twenty-five", "Thirty"], answer: "Twenty-five" },
+    { q: "Why is the friend going to her friend’s?", choices: ["To help before an exam", "To watch a film", "To have dinner"], answer: "To help before an exam" },
+    { q: "What music do they both like?", choices: ["Rock", "Jazz", "Classical"], answer: "Jazz" },
+    { q: "When is the concert?", choices: ["On Friday", "On Saturday", "On Sunday"], answer: "On Saturday" },
+    { q: "What will Dima give as a gift?", choices: ["A warm scarf", "A concert ticket", "A letter"], answer: "A warm scarf" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>What the dative does</h3>" +

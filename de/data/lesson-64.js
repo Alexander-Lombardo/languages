@@ -39,6 +39,13 @@ window.COURSE.lessons.push({
     { sp: "Tutorin", de: "Dann bleibt nur noch der Feinschliff — und der hört nie ganz auf.", en: "Then all that remains is the fine polish — and that never quite ends." },
     { sp: "Lerner", de: "Gut so. Eine Sprache, die fertig wäre, wäre ja eine tote.", en: "Good. A language that were finished would be a dead one." }
   ],
+  dialogueQuiz: [
+    { q: "Woran erinnert die Tutorin den Lerner?", choices: ["An die Laute ä, ö, ü", "An den Konjunktiv", "An das Passiv"], answer: "An die Laute ä, ö, ü" },
+    { q: "Was hätte der Lerner damals verstanden?", choices: ["Nur Bahnhof", "Fast alles", "Die Hälfte"], answer: "Nur Bahnhof" },
+    { q: "Wann hat man laut Lerner eine Sprache gemeistert?", choices: ["Wenn man in ihr träumt", "Wenn man keine Fehler macht", "Wenn man wie ein Muttersprachler klingt"], answer: "Wenn man in ihr träumt" },
+    { q: "Was ist letzte Nacht passiert?", choices: ["Er hat auf Deutsch geträumt", "Er hat die Prüfung bestanden", "Er hat ein Buch gelesen"], answer: "Er hat auf Deutsch geträumt" },
+    { q: "Was bleibt laut Tutorin noch?", choices: ["Der Feinschliff", "Die Grammatik", "Der Wortschatz"], answer: "Der Feinschliff" }
+  ],
   reading: {
     title: "Rückblick auf einen langen Weg",
     de: "Wer am Anfang steht, sieht nur den Berg. Die Artikel scheinen willkürlich, die Fälle wie eine Schikane, und jeder Satz endet an einer Stelle, an der das Verb hätte stehen sollen. Man fragt sich, ob jemals der Tag kommen werde, an dem all das von selbst geschieht.\n\nUnd dann, fast unbemerkt, verschiebt sich etwas. Der Akkusativ, über den so lange gerungen wurde, fügt sich ein, ohne dass man nachdenken müsste. Sätze, die früher Wort für Wort gebaut werden mussten, werden nun gesprochen, als hätte man sie immer schon gekannt. Das Verb wandert ans Ende, wohin es gehört, und niemand hat es dorthin geschoben.\n\nWäre der Weg gerade gewesen, er wäre weniger wert. Es waren die Umwege, die Irrtümer, die peinlichen falschen Freunde, die das Gelernte verankert haben. Man sagt, eine Fremdsprache schenke einem eine zweite Seele; vielleicht stimmt das, vielleicht ist es bloß eine schöne Übertreibung. Sicher aber ist: Wer sich auf eine andere Sprache wirklich einlässt, kehrt verändert zurück.\n\nWas bleibt, ist keine Urkunde und kein Zertifikat, sondern eine Gewohnheit des Hinhörens — und die stille Gewissheit, dass das Lernen, wenn es gut war, niemals ganz aufhört. Herzlichen Glückwunsch. Der Berg liegt hinter Ihnen; vor Ihnen liegt das Land.",

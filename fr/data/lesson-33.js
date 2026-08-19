@@ -44,6 +44,13 @@ window.COURSE.lessons.push({
     { sp: "Léo", fr: "Complètement. Mais enfin, un fermier nous a aidés et on est arrivés le soir.", en: "Completely. But at last, a farmer helped us and we arrived in the evening." },
     { sp: "Nadia", fr: "Quelle aventure ! Au fond, c'est ça qui rend un voyage mémorable.", en: "What an adventure! Deep down, that's what makes a trip memorable." }
   ],
+  dialogueQuiz: [
+    { q: "Où Léo a-t-il voyagé ?", choices: ["En Espagne", "En Italie", "En Grèce"], answer: "En Italie" },
+    { q: "Comment était le début du voyage ?", choices: ["Tout allait bien", "Il pleuvait", "Ils étaient malades"], answer: "Tout allait bien" },
+    { q: "Pourquoi ont-ils raté le train ?", choices: ["Le train était annulé", "Ils étaient arrivés en retard", "Ils avaient perdu les billets"], answer: "Ils étaient arrivés en retard" },
+    { q: "Qu’est-il arrivé à la voiture louée ?", choices: ["Elle est tombée en panne", "Elle a été volée", "Elle a eu un accident"], answer: "Elle est tombée en panne" },
+    { q: "Qui les a aidés ?", choices: ["Un policier", "Un fermier", "Un mécanicien"], answer: "Un fermier" }
+  ],
   reading: {
     title: "La nuit où nous avons raté l'avion",
     fr: "L'été dernier, ma sœur et moi avons décidé de partir en Espagne. Au début, nous étions très excités : il faisait chaud et nos valises étaient prêtes depuis la veille. Le matin du départ, tout allait bien. Mais d'abord, le taxi que nous avions réservé n'est jamais arrivé. Nous avons attendu vingt minutes, puis nous avons compris qu'il y avait un problème. Soudain, ma sœur s'est rendu compte qu'elle avait oublié son passeport à la maison. Nous sommes donc retournés le chercher en courant. Ensuite, dans le métro, il y avait une grève et tout était bloqué. Quand nous sommes enfin arrivés à l'aéroport, l'avion avait déjà décollé. Au début, nous étions furieux, mais à la fin, nous avons éclaté de rire. Nous avons pris un autre vol le lendemain, et ce voyage reste notre meilleur souvenir.",

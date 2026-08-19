@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Hugo", fr: "Moi aussi, j'agis afin que mes enfants aient une planète vivable.", en: "Me too, I act so that my children have a livable planet." },
     { sp: "Nadia", fr: "Donc on est d'accord : par conséquent, on s'inscrit ensemble samedi ?", en: "So we agree: consequently, shall we both sign up Saturday?" }
   ],
+  dialogueQuiz: [
+    { q: "De quoi parlait le reportage ?", choices: ["Du réchauffement climatique", "Des élections", "Du chômage"], answer: "Du réchauffement climatique" },
+    { q: "Pourquoi Hugo l’a-t-il trouvé inquiétant ?", choices: ["Les inégalités s’aggravent", "Les prix augmentent", "Les villes s’agrandissent"], answer: "Les inégalités s’aggravent" },
+    { q: "Grâce à quoi la pollution a-t-elle baissé ?", choices: ["Aux énergies renouvelables", "Aux voitures électriques", "Au tri des déchets"], answer: "Aux énergies renouvelables" },
+    { q: "Pourquoi les associations manquent-elles de place ?", choices: ["Par manque d’argent", "Tellement de gens font du bénévolat", "À cause des travaux"], answer: "Tellement de gens font du bénévolat" },
+    { q: "Que proposent-ils à la fin ?", choices: ["De s’inscrire ensemble samedi", "D’écrire au maire", "De revoir le reportage"], answer: "De s’inscrire ensemble samedi" }
+  ],
   reading: {
     title: "Agir ensemble pour la planète",
     fr: "Le réchauffement climatique n'est plus une menace lointaine : c'est pourquoi de plus en plus de citoyens veulent agir. À cause de notre consommation excessive, nous produisons trop de déchets et nous gaspillons des ressources précieuses. Cependant, des solutions existent. Grâce aux énergies renouvelables, certaines villes réduisent déjà leur pollution de façon visible. Puisque le problème est collectif, la réponse doit l'être aussi. Comme l'État ne peut pas tout faire, le bénévolat et la solidarité jouent un rôle essentiel. Beaucoup d'associations organisent le tri des déchets ou plantent des arbres afin que les générations futures héritent d'un environnement plus sain. Le développement durable cherche un équilibre entre la croissance économique et le respect de la nature, de sorte que personne ne soit oublié. Les inégalités sociales s'aggravent souvent à cause des catastrophes climatiques ; par conséquent, justice sociale et justice écologique vont ensemble. Chacun peut agir, pour que demain soit plus juste et plus vert.",

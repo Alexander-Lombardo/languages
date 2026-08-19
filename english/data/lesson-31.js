@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Guide", en: "Photos are allowed, but flash isn't.", es: "Las fotos están permitidas, pero el flash no." },
     { sp: "Tom", en: "Good to know. Thank you.", es: "Bueno saberlo. Gracias." }
   ],
+  dialogueQuiz: [
+    { q: "When was the castle built?", choices: ["In the 12th century", "In the 14th century", "In the 16th century"], answer: "In the 14th century" },
+    { q: "Who built the castle?", choices: ["A local king", "A rich merchant", "A famous architect"], answer: "A local king" },
+    { q: "What happened to two of the paintings?", choices: ["They were sold", "They were stolen in 1980", "They were damaged by fire"], answer: "They were stolen in 1980" },
+    { q: "What is the castle used for today?", choices: ["Concerts and weddings", "A school", "Government offices"], answer: "Concerts and weddings" },
+    { q: "What isn’t allowed in the castle?", choices: ["Photos", "Flash", "Children"], answer: "Flash" }
+  ],
   reading: {
     title: "Where Things Come From",
     en: "Look around the room you're in. Almost everything was made somewhere else and brought to you. The chair was probably produced in a factory, the phone in your hand was designed in one country and assembled in another, and the coffee you drink was grown thousands of kilometres away.\n\nWe rarely know exactly who did these things, and usually we don't care. What matters is the result: the chair exists, the phone works, the coffee is ready. That is why the passive voice is so common in descriptions, news and instructions.\n\nWhen the person matters, we add it with \"by\": America was reached by sailors long before Columbus. When it doesn't, we simply leave it out: the museum is closed on Mondays. Nobody needs to be told who closes it.",

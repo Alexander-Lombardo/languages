@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Markus", de: "Red dir nichts ein. Du tust, als wüsstest du nicht, wie gut deine Arbeit ist.", en: "Don't talk yourself into it. You act as if you didn't know how good your work is." },
     { sp: "Lena", de: "Vielleicht. An deiner Stelle wäre ich allerdings längst verzweifelt.", en: "Maybe. In your place, though, I'd have despaired long ago." }
   ],
+  dialogueQuiz: [
+    { q: "Was wünscht sich Lena?", choices: ["Mehr Zeit","Mehr Geld","Mehr Hilfe"], answer: "Mehr Zeit" },
+    { q: "Wie tut Lena laut Markus?", choices: ["Als hätte sie nichts geschafft","Als wäre alles fertig","Als wäre sie nicht interessiert"], answer: "Als hätte sie nichts geschafft" },
+    { q: "Wie beschreibt Markus das Problem?", choices: ["Zu komplex für einen Tag","Zu einfach für Lena","Nicht mehr zu lösen"], answer: "Zu komplex für einen Tag" },
+    { q: "Was bedauert Lena?", choices: ["Nicht früher angefangen zu haben","Das Projekt übernommen zu haben","Markus nicht gefragt zu haben"], answer: "Nicht früher angefangen zu haben" },
+    { q: "Wie wäre Lena an Markus’ Stelle?", choices: ["Längst verzweifelt","Viel entspannter","Richtig stolz"], answer: "Längst verzweifelt" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>1 · Irreale Wünsche — unreal wishes</h3>" +

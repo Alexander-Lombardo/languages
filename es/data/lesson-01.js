@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Diego", es: "¡Qué bien! Hasta luego, Marta.", en: "How nice! See you later, Marta." },
     { sp: "Marta", es: "Adiós, Diego.", en: "Goodbye, Diego." }
   ],
+  dialogueQuiz: [
+    { q: "What does Diego ask first?", choices: ["Marta’s name", "Where Marta is from", "How Marta is"], answer: "Marta’s name" },
+    { q: "How is Diego?", choices: ["So-so", "Very well", "Tired"], answer: "Very well" },
+    { q: "How is Marta feeling?", choices: ["Very well", "Bad", "So-so"], answer: "So-so" },
+    { q: "Where is Diego from?", choices: ["Colombia", "Mexico", "Spain"], answer: "Mexico" },
+    { q: "Where is Marta from?", choices: ["Colombia", "Mexico", "Argentina"], answer: "Colombia" }
+  ],
   grammarHTML:
     "<h3>Introducing yourself with <em>llamarse</em></h3>" +
     "<p>To say your name, Spanish uses the reflexive verb <strong>llamarse</strong> (literally “to call oneself”). The little word <em>me</em>, <em>te</em>, <em>se</em> changes with the person.</p>" +

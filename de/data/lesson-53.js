@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Markus", de: "Verstanden. Die Bedeutung ist ähnlich, aber das richtige Wort hängt vom Partnerwort ab.", en: "Understood. The meaning is similar, but the right word depends on its partner word." },
     { sp: "Frau Berg", de: "Genau. Präzision entsteht nicht durch schwere Wörter, sondern durch das treffende.", en: "Exactly. Precision doesn't come from heavy words, but from the apt one." }
   ],
+  dialogueQuiz: [
+    { q: "Was kritisiert Frau Berg am Bericht?", choices: ["Den eintönigen Stil", "Die vielen Fehler", "Die falsche Länge"], answer: "Den eintönigen Stil" },
+    { q: "Welches Wort kommt fünfmal vor?", choices: ["machen", "haben", "gehen"], answer: "machen" },
+    { q: "Was „begeht“ man laut Frau Berg?", choices: ["Einen Fehler", "Einen Termin", "Eine Entscheidung"], answer: "Einen Fehler" },
+    { q: "Was ist die richtige Kollokation mit „Maßnahmen“?", choices: ["Maßnahmen ergreifen", "Maßnahmen machen", "Maßnahmen treffen"], answer: "Maßnahmen ergreifen" },
+    { q: "Wodurch entsteht laut Frau Berg Präzision?", choices: ["Durch das treffende Wort", "Durch schwere Wörter", "Durch lange Sätze"], answer: "Durch das treffende Wort" }
+  ],
   reading: {
     title: "Das treffende Wort",
     de: "Es gibt im Deutschen eine Handvoll Wörter, die fast überall passen — und genau das ist ihr Problem. „Machen“, „sagen“, „gehen“, „gut“, „Sache“: Wer sie zu oft verwendet, wirkt nicht falsch, aber unscharf. Der Text liest sich grau, weil ihm die Konturen fehlen.\n\nPräzision bedeutet nicht, möglichst seltene oder gelehrte Wörter zu wählen. Sie bedeutet, genau das Wort zu finden, das der Sache entspricht. „Eine Entscheidung treffen“ klingt selbstverständlich, doch wer „eine Entscheidung machen“ schreibt, verrät sofort, dass Deutsch nicht seine Muttersprache ist — nicht weil es unverständlich wäre, sondern weil die Kollokation nicht stimmt. Wörter haben feste Partner, und diese Partnerschaften muss man lernen wie Vokabeln selbst.\n\nWer präzise schreiben will, prüft seinen Entwurf ein zweites Mal: Welche Verben wiederholen sich? Welches „gut“ ließe sich durch „überzeugend“, „gelungen“ oder „fundiert“ ersetzen? Oft reicht ein einziger Durchgang, um aus einem grauen Text einen klaren zu machen.",

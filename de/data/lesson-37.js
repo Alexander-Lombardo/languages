@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Herr Klein", de: "Wurde die Bevölkerung vorher informiert?", en: "Was the public informed beforehand?" },
     { sp: "Frau Weber", de: "Natürlich. Die Pläne wurden durch eine Ausstellung öffentlich vorgestellt.", en: "Of course. The plans were presented to the public through an exhibition." }
   ],
+  dialogueQuiz: [
+    { q: "Wann wird das neue Rathaus eröffnet?", choices: ["Im Frühjahr", "Im Sommer", "Im Herbst"], answer: "Im Herbst" },
+    { q: "Wann wurde der Bau begonnen?", choices: ["Letztes Jahr", "Vor zwei Jahren", "Dieses Jahr"], answer: "Letztes Jahr" },
+    { q: "Von wem wurde das Rathaus entworfen?", choices: ["Von einem Büro aus Berlin", "Von einem Büro aus München", "Von der Stadtverwaltung"], answer: "Von einem Büro aus München" },
+    { q: "Was ist mit dem alten Gebäude passiert?", choices: ["Es wurde renoviert", "Es wurde verkauft", "Es wurde abgerissen"], answer: "Es wurde abgerissen" },
+    { q: "Wie wurde die Bevölkerung informiert?", choices: ["Durch eine Ausstellung", "Durch die Zeitung", "Durch einen Brief"], answer: "Durch eine Ausstellung" }
+  ],
   reading: {
     title: "Wie ein Buch entsteht",
     de: "Bevor ein Buch in den Buchhandlungen verkauft wird, durchläuft es viele Schritte. Zuerst wird das Manuskript vom Autor geschrieben und an einen Verlag geschickt. Dort wird es von Lektoren gelesen und sorgfältig geprüft.\n\nWenn der Text angenommen worden ist, wird er bearbeitet. Fehler werden korrigiert, einzelne Kapitel werden umgestellt, und das Layout wird gestaltet. Anschließend wird das Buch gedruckt — heute meist durch moderne Digitaldruckmaschinen.\n\nNachdem die fertigen Exemplare geliefert worden sind, werden sie an die Geschäfte verteilt. Erst dann wird das Buch der Öffentlichkeit vorgestellt. Bei dieser ganzen Beschreibung fällt auf, dass nicht der Mensch im Mittelpunkt steht, sondern der Vorgang selbst — und genau dafür wird im Deutschen das Passiv verwendet.",

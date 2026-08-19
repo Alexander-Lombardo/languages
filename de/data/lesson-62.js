@@ -39,6 +39,13 @@ window.COURSE.lessons.push({
     { sp: "Lena", de: "Und sehr deutsch: kein Lachen, kein Zwinkern. Du musst es am Ton erkennen.", en: "And very German: no laughing, no wink. You have to spot it by the tone." },
     { sp: "Tom", de: "„Nicht schlecht“ heißt bei uns ja oft „ziemlich beeindruckend“ — die berühmte Untertreibung.", en: "“Not bad” often means “quite impressive” for us — the famous understatement." }
   ],
+  dialogueQuiz: [
+    { q: "Warum können Geister laut Witz schlecht lügen?", choices: ["Man sieht durch sie hindurch", "Sie haben kein Gesicht", "Sie sprechen zu leise"], answer: "Man sieht durch sie hindurch" },
+    { q: "Wie nennt Tom den Witz?", choices: ["Einen Kalauer", "Eine Satire", "Eine Anekdote"], answer: "Einen Kalauer" },
+    { q: "Warum funktioniert das Wortspiel nur auf Deutsch?", choices: ["Weil „durchschauen“ zwei Bedeutungen hat", "Weil Geister deutsch sind", "Weil es sich reimt"], answer: "Weil „durchschauen“ zwei Bedeutungen hat" },
+    { q: "Woran erkennt man deutsche Ironie laut Lena?", choices: ["Am Ton", "Am Lachen", "Am Zwinkern"], answer: "Am Ton" },
+    { q: "Was bedeutet „nicht schlecht“ oft?", choices: ["Ziemlich beeindruckend", "Mittelmäßig", "Eher enttäuschend"], answer: "Ziemlich beeindruckend" }
+  ],
   reading: {
     title: "Glosse: Die Deutschen und ihr angeblich fehlender Humor",
     de: "Es hält sich hartnäckig das Gerücht, die Deutschen besäßen keinen Humor. Das ist natürlich völliger Unsinn — wir haben sehr wohl Humor, wir lassen ihn nur ungern an die frische Luft.\n\nMan stelle sich die Lage vor: Ein Volk, dessen Sprache es erlaubt, Wörter beliebig zusammenzuschrauben, müsste eigentlich vor Wortspielen geradezu bersten. Und das tut es auch. Nur sind unsere besten Witze leider so gebaut, dass man sie übersetzen kann — woraufhin sie sich, wie ein Souffl é beim Öffnen der Ofentür, augenblicklich in nichts auflösen.\n\nNehmen wir den Klassiker vom Cowboy, der rückwärts in den Saloon reitet, weil er gehört hat, hier werde abgezogen. „Abziehen“ — das kann man eben beides: jemanden ausrauben und einen Stiefel ausziehen. Auf Englisch? Nichts. Schweigen. Ein höfliches, ratloses Lächeln.\n\nVielleicht ist das unser eigentlicher Humor: dass wir uns über Witze freuen, die außerhalb unserer Grenzen niemand versteht. Eine Pointe ganz für uns allein. Wenn das keine feine Ironie ist, dann weiß ich auch nicht.",

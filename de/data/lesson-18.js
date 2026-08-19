@@ -45,6 +45,13 @@ window.COURSE.lessons.push({
     { sp: "Oma", de: "Wir wohnten auf dem Land. Es war ruhig und schön.", en: "We lived in the countryside. It was quiet and lovely." },
     { sp: "Lena", de: "Das klingt wie ein Märchen, Oma.", en: "That sounds like a fairy tale, Grandma." }
   ],
+  dialogueQuiz: [
+    { q: "What didn’t Grandma have as a child?", choices: ["A radio", "A television", "A bicycle"], answer: "A television" },
+    { q: "What did Grandma always want to do?", choices: ["Play football", "Read books", "Go swimming"], answer: "Play football" },
+    { q: "What did she have to do first?", choices: ["Help in the kitchen", "Her homework", "Walk the dog"], answer: "Her homework" },
+    { q: "Who didn’t like the sport?", choices: ["Her brother", "Her mother", "Her sister"], answer: "Her sister" },
+    { q: "Where did the family live back then?", choices: ["In a big city", "In the countryside", "Near the sea"], answer: "In the countryside" }
+  ],
   reading: {
     title: "Eine kleine Geschichte",
     de: "Es war einmal ein junger König. Er hatte ein großes Schloss, aber er war oft allein und traurig. Jeden Abend wollte er Geschichten hören, doch niemand konnte ihm welche erzählen.\n\nEines Tages kam eine alte Frau in das Schloss. Sie hatte viele Märchen im Kopf und sollte sie dem König erzählen. Der König war begeistert. Er musste lachen und weinen, und endlich war er nicht mehr allein.\n\nVon damals an durfte die Frau immer im Schloss bleiben. So fand der König einen Freund.",

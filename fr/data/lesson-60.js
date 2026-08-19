@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Coach", fr: "Voilà l'éloquence. Le « nous » vous inclut dans la salle ; force est de constater qu'on vous écoute déjà autrement.", en: "That's eloquence. The 'nous' includes you in the room; one cannot but note that they already listen to you differently." },
     { sp: "Élève", fr: "Reste à doser : trop de figures et le discours sonne creux, n'est-ce pas ?", en: "It remains to strike the balance: too many devices and the speech rings hollow, doesn't it?" }
   ],
+  dialogueQuiz: [
+    { q: "Que reproche le coach au plaidoyer ?", choices: ["Il est trop long", "Il ne décolle pas", "Il est faux"], answer: "Il ne décolle pas" },
+    { q: "Quelle figure consiste à répéter le début des phrases ?", choices: ["La gradation", "L’anaphore", "La litote"], answer: "L’anaphore" },
+    { q: "Sur quoi le coach conseille-t-il de terminer ?", choices: ["Sur une anecdote", "Sur une citation", "Sur une gradation"], answer: "Sur une gradation" },
+    { q: "Que propose l’élève de glisser ?", choices: ["Une question rhétorique", "Une métaphore", "Un chiffre"], answer: "Une question rhétorique" },
+    { q: "Quel risque l’élève évoque-t-il à la fin ?", choices: ["Parler trop vite", "Un discours qui sonne creux", "Oublier son texte"], answer: "Un discours qui sonne creux" }
+  ],
   reading: {
     title: "Plaidoyer pour la lecture",
     fr: "Mes amis, il est grand temps de le dire haut et fort : un peuple qui ne lit plus est un peuple qui s'oublie. Comment ne pas voir que chaque livre fermé est une fenêtre murée, une lumière éteinte, un avenir rétréci ? Force est de constater que nous laissons nos enfants grandir parmi les écrans et mourir de soif au bord d'un océan de mots. Je ne vous parlerai pas du plaisir solitaire d'une page tournée le soir ; je ne vous parlerai pas de ces personnages qui deviennent des amis ; non, je vous parlerai de ce qui nous unit. Car lire, ce n'est pas fuir le monde : c'est apprendre à le comprendre, puis à le changer. Nous lisons pour savoir, nous savons pour agir, nous agissons pour transmettre. N'est-il pas évident qu'une nation se mesure à ce qu'elle ose imaginer ? Je vous invite, ce soir, non pas à m'applaudir, mais à rouvrir un livre. Un seul. Demain, vous en ouvrirez un autre. Et le pays, peu à peu, se remettra à rêver.",

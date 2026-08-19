@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Léa (France)", fr: "Donc le repas du midi, le « déjeuner » en France, devient le « dîner » chez vous, et le repas du soir, le « souper ».", en: "So the midday meal, \"déjeuner\" in France, becomes \"dîner\" for you, and the evening meal, \"souper\"." },
     { sp: "Mathis (Québec)", fr: "Voilà. Aucune de ces variétés n'est plus correcte qu'une autre — c'est simplement le génie de la francophonie : une langue, mille couleurs.", en: "That's it. None of these varieties is more correct than another — it's simply the genius of the Francophone world: one language, a thousand colours." }
   ],
+  dialogueQuiz: [
+    { q: "D’où Mathis vient-il d’arriver ?", choices: ["De Bruxelles", "De Montréal", "De Genève"], answer: "De Montréal" },
+    { q: "Que signifie « bienvenue » au Québec quand on remercie ?", choices: ["De rien", "Bonjour", "À bientôt"], answer: "De rien" },
+    { q: "Comment dit-on « un mail » au Québec ?", choices: ["Un stationnement", "Un courriel", "Un char"], answer: "Un courriel" },
+    { q: "Que signifie « il drache » en Belgique ?", choices: ["Il neige", "Il fait très chaud", "Il pleut très fort"], answer: "Il pleut très fort" },
+    { q: "Comment s’appelle le repas du soir en Suisse romande ?", choices: ["Le dîner", "Le souper", "Le déjeuner"], answer: "Le souper" }
+  ],
   reading: {
     title: "Une langue, plusieurs mondes",
     fr: "On parle souvent du français comme s'il n'en existait qu'une seule version, celle de Paris. Pourtant, la francophonie rassemble près de trois cents millions de locuteurs répartis sur les cinq continents, et chaque région a façonné la langue à son image.\n\nEn Belgique et en Suisse romande, on compte autrement : septante pour soixante-dix, nonante pour quatre-vingt-dix, et, dans plusieurs cantons suisses, huitante pour quatre-vingts. Le repas du soir s'appelle souvent le souper. Au Québec, le français résiste avec fierté à la pression de l'anglais : on écrit un courriel, on gare son char dans un stationnement, on va magasiner la fin de semaine.\n\nEn Afrique, où le français sert souvent de langue commune entre des dizaines de langues locales, le vocabulaire s'enrichit sans cesse de créations propres à chaque pays. De Dakar à Kinshasa, on entend des tournures que Paris ignore.\n\nAucune de ces variétés n'est une faute : ce sont des français à part entière, vivants et légitimes. Comprendre la francophonie, c'est accepter que la norme parisienne n'est qu'une voix parmi beaucoup d'autres.",

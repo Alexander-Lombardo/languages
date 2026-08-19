@@ -45,6 +45,13 @@ window.COURSE.lessons.push({
     { sp: "Frau Weber", de: "Schön. Bis bald! Auf Wiedersehen.", en: "Lovely. See you soon! Goodbye." },
     { sp: "Tom", de: "Tschüss, Frau Weber!", en: "Bye, Mrs. Weber!" }
   ],
+  dialogueQuiz: [
+    { q: "How does Lena feel?", choices: ["Very well", "A little tired", "Sick"], answer: "A little tired" },
+    { q: "How does Tom respond to her feeling tired?", choices: ["Oh, too bad", "Me too", "Then go home"], answer: "Oh, too bad" },
+    { q: "Who arrives during the conversation?", choices: ["Mrs. Weber", "Mr. Weber", "Anna"], answer: "Mrs. Weber" },
+    { q: "How is Mrs. Weber doing?", choices: ["So-so", "Very well", "Tired"], answer: "Very well" },
+    { q: "How does Tom say goodbye to Mrs. Weber?", choices: ["Goodbye", "Bye", "Good night"], answer: "Bye" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>du or Sie? The two words for \"you\"</h3>" +

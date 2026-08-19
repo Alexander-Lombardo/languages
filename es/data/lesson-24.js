@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Lucía", es: "Gracias. Te debo un favor.", en: "Thanks. I owe you a favor." },
     { sp: "Mario", es: "Me lo cobro con un café.", en: "I'll collect it from you with a coffee." }
   ],
+  dialogueQuiz: [
+    { q: "¿Qué le pide prestado al principio?", choices: ["El teléfono", "El cargador", "El ordenador"], answer: "El cargador" },
+    { q: "¿Cuándo tiene que devolverlo?", choices: ["Hoy", "Mañana", "La semana que viene"], answer: "Hoy" },
+    { q: "¿A quién le entregó el informe?", choices: ["A la jefa", "A un compañero", "Al cliente"], answer: "A la jefa" },
+    { q: "¿Cómo le explicó los datos?", choices: ["Con prisa", "Con calma", "Por teléfono"], answer: "Con calma" },
+    { q: "¿Cómo se va a cobrar el favor?", choices: ["Con un café", "Con una cena", "Con un regalo"], answer: "Con un café" }
+  ],
   grammarHTML:
     "<h3>Two pronouns, one verb</h3>" +
     "<p>When a sentence has both an <strong>indirect object</strong> (to/for whom) and a <strong>direct object</strong> (what), Spanish often replaces both with pronouns. The rule of order is fixed: <strong>indirect before direct</strong> — remember <em>ID</em> (Indirect, then Direct).</p>" +

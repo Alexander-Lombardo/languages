@@ -51,6 +51,13 @@ window.COURSE.lessons.push({
     { sp: "Игорь", ru: "Спасибо! А где твоя семья?", en: "Thanks! And where is your family?" },
     { sp: "Лена", ru: "Мои родители в Казани. Я скучаю.", en: "My parents are in Kazan. I miss them." }
   ],
+  dialogueQuiz: [
+    { q: "What is Anton?", choices: ["The speaker’s brother", "The speaker’s dad", "The speaker’s son"], answer: "The speaker’s brother" },
+    { q: "What is the sister’s name?", choices: ["Vera", "Anna", "Maria"], answer: "Vera" },
+    { q: "Who is the woman next to Grandpa?", choices: ["The speaker’s mom", "Grandma", "The speaker’s aunt"], answer: "Grandma" },
+    { q: "Whose children are in the photo?", choices: ["The speaker’s", "The sister’s", "The brother’s"], answer: "The sister’s" },
+    { q: "Where are the friend’s parents?", choices: ["In Moscow", "In Kazan", "Off-frame"], answer: "In Kazan" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>«My» changes to match the noun</h3>" +

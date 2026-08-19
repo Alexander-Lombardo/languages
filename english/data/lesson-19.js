@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Doctor", en: "Yes, but you shouldn't go to work today.", es: "Sí, pero no debería ir a trabajar hoy." },
     { sp: "Sam", en: "Okay, doctor. Thank you very much.", es: "De acuerdo, doctor. Muchas gracias." }
   ],
+  dialogueQuiz: [
+    { q: "¿Qué le pasa al paciente?", choices: ["Le duele la espalda", "Tiene un fuerte dolor de cabeza", "Le duele el estómago"], answer: "Tiene un fuerte dolor de cabeza" },
+    { q: "¿Qué más le duele?", choices: ["La garganta", "El oído", "La pierna"], answer: "La garganta" },
+    { q: "¿Desde cuándo se siente mal?", choices: ["Desde hace una semana", "Desde esta mañana", "Desde ayer"], answer: "Desde ayer" },
+    { q: "¿Qué debe hacer según el médico?", choices: ["Hacer ejercicio", "Descansar y beber mucha agua", "Comer más"], answer: "Descansar y beber mucha agua" },
+    { q: "¿Qué no debería hacer hoy?", choices: ["Tomar medicinas", "Ir al trabajo", "Beber agua"], answer: "Ir al trabajo" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Hablar de malestares: have y hurt</h3>" +

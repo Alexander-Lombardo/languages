@@ -44,6 +44,13 @@ window.COURSE.lessons.push({
     { sp: "Voyageur", fr: "Voilà. Auriez-vous aussi un horaire imprimé ?", en: "Here you go. Would you also have a printed timetable?" },
     { sp: "Guichetier", fr: "Je vous l'imprime tout de suite. Bon voyage, monsieur !", en: "I'll print it for you right away. Have a good trip, sir!" }
   ],
+  dialogueQuiz: [
+    { q: "Quel billet le voyageur veut-il ?", choices: ["Un aller simple pour Dijon", "Un aller-retour pour Lyon", "Un aller-retour pour Dijon"], answer: "Un aller-retour pour Lyon" },
+    { q: "Quand souhaite-t-il partir ?", choices: ["Ce soir", "Demain matin", "Demain après-midi"], answer: "Demain matin" },
+    { q: "Où doit-il changer de train ?", choices: ["À Dijon", "À Lyon", "À Paris"], answer: "À Dijon" },
+    { q: "Que doit présenter le voyageur ?", choices: ["Un billet composté", "Une pièce d’identité", "Une carte de réduction"], answer: "Une pièce d’identité" },
+    { q: "Que demande le voyageur à la fin ?", choices: ["Un horaire imprimé", "Un reçu", "Une place côté fenêtre"], answer: "Un horaire imprimé" }
+  ],
   reading: {
     title: "Une matinée à la préfecture",
     fr: "Mardi matin, Karim doit renouveler son titre de séjour. Avant de partir, il vérifie son dossier : il faut qu'il apporte une pièce d'identité, un justificatif de domicile et plusieurs photos. \"Il vaut mieux que j'arrive tôt\", pense-t-il, car la file d'attente est souvent longue. À la préfecture, un agent l'accueille au guichet : \"Bonjour, monsieur. Pourriez-vous remplir ce formulaire et patienter, s'il vous plaît ?\" Karim a besoin d'aide pour une question et demande poliment : \"Serait-il possible de m'expliquer cette ligne ?\" L'agent répond avec patience. Ensuite, Karim doit prendre un nouveau rendez-vous pour récupérer sa carte. Avant de rentrer, il passe à la banque pour faire un virement, puis à la poste pour envoyer un colis à sa famille. Le soir, il est fatigué mais soulagé : il a enfin terminé toutes ses démarches administratives.",

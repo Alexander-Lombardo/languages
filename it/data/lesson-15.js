@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Lucia", it: "Sono d’accordo. E inquina meno della macchina.", en: "I agree. And it pollutes less than the car." },
     { sp: "Marco", it: "Perfetto, è la soluzione più intelligente di tutte.", en: "Perfect, it's the smartest solution of all." }
   ],
+  dialogueQuiz: [
+    { q: "According to Lucia, the train is more comfortable than what?", choices: ["The car", "The bus", "The plane"], answer: "The bus" },
+    { q: "What disadvantage of the train does Marco mention?", choices: ["It is slower", "It is more expensive", "It is often late"], answer: "It is more expensive" },
+    { q: "Which is the fastest train in Italy, according to Lucia?", choices: ["The Frecciarossa", "The Intercity", "The Regionale"], answer: "The Frecciarossa" },
+    { q: "What does Marco think travelling by train is better than?", choices: ["Flying", "Driving", "Taking the bus"], answer: "Driving" },
+    { q: "What extra advantage does Lucia mention?", choices: ["It pollutes less than the car", "It is cheaper than the car", "It has better seats"], answer: "It pollutes less than the car" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Comparing: <em>più / meno … di</em> vs <em>… che</em></h3>" +

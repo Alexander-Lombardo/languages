@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Nadia", fr: "Oui. C'est cette responsabilité collective qui donne du sens à sa pensée.", en: "Yes. It's that collective responsibility that gives meaning to his thought." },
     { sp: "Karim", fr: "Ce qui me plaît, c'est qu'il remet tout en question, même nos certitudes.", en: "What I like is that he calls everything into question, even our certainties." }
   ],
+  dialogueQuiz: [
+    { q: "Qu’est-ce qui intéresse Nadia dans le livre ?", choices: ["La notion de liberté", "La définition du pouvoir", "Le style de l’auteur"], answer: "La notion de liberté" },
+    { q: "Que n’a pas bien compris Karim ?", choices: ["Le troisième chapitre", "La définition du bonheur", "La fin du livre"], answer: "La définition du bonheur" },
+    { q: "Pour l’auteur, qu’est-ce que le bonheur ?", choices: ["Le pouvoir", "La richesse", "L’épanouissement personnel"], answer: "L’épanouissement personnel" },
+    { q: "De quoi l’auteur a-t-il besoin, selon Nadia ?", choices: ["D’un sens", "De richesse", "De liberté"], answer: "D’un sens" },
+    { q: "Qu’est-ce qui plaît à Karim ?", choices: ["Qu’il remet tout en question", "Qu’il rassure le lecteur", "Qu’il écrit simplement"], answer: "Qu’il remet tout en question" }
+  ],
   reading: {
     title: "Qu'est-ce qui donne un sens à nos vies ?",
     fr: "Ce qui distingue l'être humain, dit-on souvent, c'est sa quête de sens. Nous ne cherchons pas seulement à survivre ; ce que nous voulons, c'est comprendre pourquoi nous vivons. Pour certains, le bonheur réside dans la liberté individuelle ; pour d'autres, c'est l'appartenance à une communauté qui compte le plus. Ce dont nous avons tous besoin, semble-t-il, c'est d'un équilibre entre ces deux forces. La croissance économique, longtemps considérée comme la mesure du progrès, est aujourd'hui remise en question. Ce à quoi de plus en plus de gens aspirent, ce n'est pas l'accumulation de richesses, mais l'épanouissement personnel et la justice sociale. L'incertitude de notre époque nourrit parfois la méfiance ; pourtant, c'est précisément l'engagement de chacun qui peut transformer cette inquiétude en espoir. Au fond, ce qui donne un sens à nos vies, ce sont les liens que nous tissons et les valeurs que nous choisissons de défendre.",

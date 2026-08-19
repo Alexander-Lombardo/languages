@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Olga", en: "It opened a month ago. They've sold a lot already.", es: "Abrió hace un mes. Ya han vendido mucho." },
     { sp: "Dan", en: "Then I'll go this weekend.", es: "Entonces iré este fin de semana." }
   ],
+  dialogueQuiz: [
+    { q: "How many books has the first speaker read this month?", choices: ["Two", "Three", "Four"], answer: "Three" },
+    { q: "When did the second speaker read 1984?", choices: ["Last week", "A few years ago", "Last month"], answer: "A few years ago" },
+    { q: "What does the first speaker say about 1984?", choices: ["Has never read it", "Read it at school", "Didn’t like it"], answer: "Has never read it" },
+    { q: "When did the second speaker go to the new bookshop?", choices: ["On Sunday", "On Saturday", "On Friday"], answer: "On Saturday" },
+    { q: "When did the bookshop open?", choices: ["A week ago", "A year ago", "A month ago"], answer: "A month ago" }
+  ],
   reading: {
     title: "Two Friends, Two Stories",
     en: "Tom and Sara met at university in 2010. They studied together for three years and became good friends. After they finished, Tom moved to Canada and started a new career.\n\nThey have stayed friends ever since. They have visited each other many times, and they have shared all the big moments of their lives. Last summer, Sara flew to Canada and they spent two weeks together.\n\n\"We haven't seen each other this year,\" Sara says, \"but we talk every week. Tom called me yesterday. We have been friends for more than fifteen years now, and I think we always will be.\"",

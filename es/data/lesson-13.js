@@ -44,6 +44,13 @@ window.COURSE.lessons.push({
     { sp: "Marta", es: "¿Vas a visitar a tus abuelos?", en: "Are you going to visit your grandparents?" },
     { sp: "Diego", es: "Quizás la próxima semana.", en: "Maybe next week." }
   ],
+  dialogueQuiz: [
+    { q: "What is Diego going to do tomorrow?", choices: ["Study for the exam", "Cook a pizza", "Travel to the beach"], answer: "Study for the exam" },
+    { q: "What is Diego doing tonight?", choices: ["Visiting his grandparents", "Resting at home", "Going to a party"], answer: "Resting at home" },
+    { q: "Who is going to cook the pizza?", choices: ["Marta", "Marta’s brother", "Diego’s mother"], answer: "Marta’s brother" },
+    { q: "What are Diego’s weekend plans?", choices: ["Traveling to the beach", "Studying all weekend", "Nothing at all"], answer: "Traveling to the beach" },
+    { q: "When might Diego visit his grandparents?", choices: ["Tonight", "This weekend", "Maybe next week"], answer: "Maybe next week" }
+  ],
   grammarHTML:
     "<h3>The near future: <em>ir a</em> + infinitive</h3>" +
     "<p>To talk about plans and things that are going to happen soon, Spanish uses a very easy formula — the same one English uses with \"going to\":</p>" +

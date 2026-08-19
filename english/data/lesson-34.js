@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Ben", en: "True. We'll just give it to the receptionist.", es: "Cierto. Simplemente se lo daremos al recepcionista." },
     { sp: "Cara", en: "Good idea. She must be worried by now.", es: "Buena idea. A estas alturas debe de estar preocupada." }
   ],
+  dialogueQuiz: [
+    { q: "Why can’t the phone be Tom’s?", choices: ["Tom wasn’t there", "His phone is black", "Tom has no phone"], answer: "His phone is black" },
+    { q: "Whose phone might it be?", choices: ["Sara’s", "Ben’s", "Cara’s"], answer: "Sara’s" },
+    { q: "Why does Cara think Sara left it?", choices: ["She was in a hurry", "She often forgets it", "She was angry"], answer: "She was in a hurry" },
+    { q: "Why can’t they call Sara?", choices: ["She is at home", "The phone is locked", "Their phones are dead"], answer: "The phone is locked" },
+    { q: "What do they decide to do?", choices: ["Keep it until tomorrow", "Leave it on the table", "Give it to the receptionist"], answer: "Give it to the receptionist" }
+  ],
   reading: {
     title: "The Detective's Mind",
     en: "A good detective rarely says \"I know.\" Instead, they weigh the evidence and choose their words carefully. When something is almost certain, they say it must be true; when something is impossible, they say it can't be true. Everything in between is a matter of might, may, or could.\n\nImagine a detective in an empty office. The coffee is still warm, so someone must have been here minutes ago. The door wasn't forced, so the visitor can't have broken in; they may have had a key. A coat is missing, so the person could have left in a hurry.\n\nNotice that none of this is certain. The detective is reading clues and assigning probability to each one. This is exactly what these modal verbs do in English: they let you say how sure you are without claiming to know for a fact.\n\nThe next time you see something strange, try thinking like a detective. Was the meeting cancelled? It might have been the weather. Is your friend not answering? They must be busy. Speaking this way sounds natural, thoughtful, and very English.",

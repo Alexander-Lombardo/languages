@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Marta", es: "Tienes razón. Ojalá consiga el puesto.", en: "You're right. I hope I get the position." },
     { sp: "Diego", es: "Seguro que sí. Me sorprendería que no te eligieran.", en: "I'm sure you will. I'd be surprised if they didn't choose you." }
   ],
+  dialogueQuiz: [
+    { q: "¿Qué tiene ella mañana?", choices: ["Una entrevista de trabajo", "Un examen", "Una reunión con el jefe"], answer: "Una entrevista de trabajo" },
+    { q: "¿De qué tiene miedo?", choices: ["De llegar tarde", "De que le pregunten cosas difíciles", "De no tener experiencia"], answer: "De que le pregunten cosas difíciles" },
+    { q: "¿Qué quiere que vean en la entrevista?", choices: ["Que tiene experiencia", "Que es simpática", "Que habla idiomas"], answer: "Que tiene experiencia" },
+    { q: "¿Qué le molesta?", choices: ["Que el jefe sea serio", "Que la empresa esté lejos", "Que paguen poco"], answer: "Que la empresa esté lejos" },
+    { q: "¿Qué espera ella al final?", choices: ["Conseguir el puesto", "Cambiar de empresa", "Tener otra entrevista"], answer: "Conseguir el puesto" }
+  ],
   grammarHTML:
     "<h3>What is the subjunctive?</h3>" +
     "<p>So far you have used the <strong>indicative</strong> mood — for facts and certainty: <em>Ella viene</em> (she is coming). The <strong>subjunctive</strong> is a different mood used for things that are <em>wished for</em>, <em>doubted</em>, or <em>emotionally coloured</em> rather than stated as fact. It almost always appears in a second clause introduced by <strong>que</strong>.</p>" +

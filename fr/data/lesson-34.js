@@ -44,6 +44,13 @@ window.COURSE.lessons.push({
     { sp: "Léa", fr: "Ça marche ! Mais pas le restaurant cher : ça coûte les yeux de la tête.", en: "Sounds good! But not the expensive restaurant: it costs a fortune." },
     { sp: "Tom", fr: "Cependant, ce soir, j'ai bien envie de me faire plaisir quand même.", en: "However, tonight I really feel like treating myself anyway." }
   ],
+  dialogueQuiz: [
+    { q: "Pourquoi Tom a-t-il le cafard ?", choices: ["Il a perdu son travail", "On lui a posé un lapin", "Il a raté un examen"], answer: "On lui a posé un lapin" },
+    { q: "Combien de temps a-t-il attendu au café ?", choices: ["Une heure", "Une demi-heure", "Deux heures"], answer: "Une heure" },
+    { q: "Que décide Tom à propos de ce garçon ?", choices: ["Il lui redonne une chance", "Il laisse tomber", "Il va lui téléphoner"], answer: "Il laisse tomber" },
+    { q: "Que propose Tom pour ce soir ?", choices: ["Aller au cinéma", "Aller au resto", "Rester à la maison"], answer: "Aller au resto" },
+    { q: "Que pense Léa du restaurant cher ?", choices: ["Il est trop loin", "Il coûte les yeux de la tête", "Il est toujours complet"], answer: "Il coûte les yeux de la tête" }
+  ],
   reading: {
     title: "Une journée pleine de rebondissements",
     fr: "Hier, j'avais prévu une journée tranquille, car je travaille beaucoup en ce moment. D'abord, je voulais faire les courses, puis lire un peu. Cependant, rien ne s'est passé comme prévu. Ma voisine m'a appelé parce que sa voiture était en panne ; du coup, je l'ai conduite au garage. La réparation coûtait les yeux de la tête, alors elle avait un peu le cafard. Pour la consoler, je l'ai invitée à déjeuner. En revanche, le restaurant choisi était fermé, donc nous avons mangé un sandwich au parc. C'était simple, mais agréable quand même. D'ailleurs, nous avons beaucoup ri. Puisque la journée avait mal commencé, cette fin tranquille était une belle surprise. C'est pourquoi je crois qu'une mauvaise matinée ne gâche pas forcément toute la journée. Ça marche aussi comme leçon de vie !",

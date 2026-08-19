@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Marta", es: "Tu hermana te lo va a agradecer por mucho tiempo.", en: "Your sister will thank you for it for a long time." },
     { sp: "Diego", es: "Eso espero. Trabajé mucho para pagarlo, ¡pero vale la pena!", en: "I hope so. I worked hard to pay for it, but it's worth it!" }
   ],
+  dialogueQuiz: [
+    { q: "¿Para quién es el paquete?", choices: ["Para su madre", "Para su hermana", "Para una amiga"], answer: "Para su hermana" },
+    { q: "¿Por qué es el regalo?", choices: ["Por su cumpleaños", "Por su boda", "Por su graduación"], answer: "Por su graduación" },
+    { q: "¿Para cuándo tiene que llegar?", choices: ["Para el viernes", "Para el lunes", "Para mañana"], answer: "Para el viernes" },
+    { q: "¿Cuánto pagó por el envío exprés?", choices: ["Diez pesos", "Veinte pesos", "Treinta pesos"], answer: "Veinte pesos" },
+    { q: "¿Quién manda el paquete?", choices: ["Lo manda ella misma", "Lo manda un amigo", "Lo manda su hermana"], answer: "Lo manda ella misma" }
+  ],
   grammarHTML:
     "<h3>The big idea: cause vs. goal</h3>" +
     "<p>Both <strong>por</strong> and <strong>para</strong> often translate as English <em>for</em>, but they point in opposite directions. Think of <strong>por</strong> as looking <em>backward</em> at a cause, source, or motive, and <strong>para</strong> as looking <em>forward</em> toward a goal, destination, or recipient.</p>" +

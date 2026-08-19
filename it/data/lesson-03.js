@@ -39,6 +39,13 @@ window.COURSE.lessons.push({
     { sp: "Luca", it: "Le ragazze sono simpatiche, vero?", en: "The girls are nice, right?" },
     { sp: "Sara", it: "Sì, e anche i ragazzi. Andiamo!", en: "Yes, and the boys too. Let’s go!" }
   ],
+  dialogueQuiz: [
+    { q: "What are Sara and Luca looking at?", choices: ["Marco’s new house", "Marco’s new car", "Marco’s school"], answer: "Marco’s new house" },
+    { q: "What is in the garden?", choices: ["Flowers and trees", "A table and chairs", "A dog"], answer: "Flowers and trees" },
+    { q: "Who is Ali?", choices: ["Marco’s brother", "A neighbor", "A friend of Marco’s"], answer: "A friend of Marco’s" },
+    { q: "What does the neighbor have?", choices: ["A red bike", "A green backpack", "A blue bag"], answer: "A green backpack" },
+    { q: "What does Sara say about the boys?", choices: ["They are nice too", "They are students", "They are late"], answer: "They are nice too" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>1. Noun gender</h3>" +

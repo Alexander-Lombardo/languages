@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Rédactrice", fr: "La litote suffit. « Ce n'est pas tout à fait un succès » en dit plus long qu'un échec assumé.", en: "Litotes is enough. \"It is not exactly a success\" says far more than an openly admitted failure." },
     { sp: "Auteur", fr: "Autrement dit, je dois ciseler plutôt qu'amplifier. Force est de constater que vous avez raison.", en: "In other words, I should chisel rather than amplify. One is forced to admit that you are right." }
   ],
+  dialogueQuiz: [
+    { q: "Que reproche la rédactrice au paragraphe ?", choices: ["Il est inexact", "Son ton est plat", "Il est trop long"], answer: "Son ton est plat" },
+    { q: "Quelle était l’intention de l’auteur ?", choices: ["Rester neutre", "Être ironique", "Amplifier le propos"], answer: "Rester neutre" },
+    { q: "Quel procédé la rédactrice propose-t-elle d’abord ?", choices: ["La métaphore", "La dislocation de la phrase", "L’anaphore"], answer: "La dislocation de la phrase" },
+    { q: "Quelle figure suffit pour une pointe d’ironie ?", choices: ["La litote", "L’hyperbole", "L’antithèse"], answer: "La litote" },
+    { q: "Que conclut l’auteur ?", choices: ["Qu’il doit amplifier", "Qu’il doit ciseler", "Qu’il doit tout réécrire"], answer: "Qu’il doit ciseler" }
+  ],
   reading: {
     title: "L'art de ne pas tout dire",
     fr: "Le style n'est pas un ornement que l'on ajoute après coup ; c'est la manière même dont la pensée prend corps. Deux écrivains peuvent rapporter le même fait ; l'un l'assène, l'autre le suggère, et tout les sépare.\n\nConsidérons une scène banale : la pluie tombe sur une ville grise. « Il pleuvait. » Voilà le degré zéro, sec, efficace. Mais écoutez l'autre version : « Toute la journée, sans relâche, sans colère, sans fin, l'eau descendit sur les toits, sur les vitres, sur les âmes. » Le rythme ternaire enfle, la répétition martèle, et soudain la pluie devient destin.\n\nLe grand styliste sait pourtant qu'en dire trop, c'est avouer qu'on ne maîtrise rien. La litote règne en maîtresse : « Va, je ne te hais point » bouleverse plus que mille déclarations. De même, l'ironie ménage une distance ; elle laisse au lecteur le plaisir de comprendre seul.\n\nÀ vrai dire, écrire, c'est choisir. Choisir où placer l'accent, où rompre la phrase, où se taire. Le reste, comme disait l'autre, n'est que littérature.",

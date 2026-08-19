@@ -44,6 +44,13 @@ window.COURSE.lessons.push({
     { sp: "Touriste", fr: "Merci beaucoup, madame !", en: "Thank you very much, ma'am!" },
     { sp: "Femme", fr: "De rien. Bonne journée et bon voyage !", en: "You're welcome. Have a good day and a good trip!" }
   ],
+  dialogueQuiz: [
+    { q: "What is the tourist looking for first?", choices: ["The museum", "The station", "The post office"], answer: "The station" },
+    { q: "Where is the station?", choices: ["Across from the post office", "Next to the bank", "Behind the square"], answer: "Across from the post office" },
+    { q: "How long does it take on foot?", choices: ["Five minutes", "Fifteen minutes", "Twenty minutes"], answer: "Five minutes" },
+    { q: "Where is the bus stop?", choices: ["In front of the museum", "In front of the bank", "On the square"], answer: "In front of the bank" },
+    { q: "What does the tourist decide to do?", choices: ["Take the bus", "Take a taxi", "Walk"], answer: "Walk" }
+  ],
   reading: {
     title: "Pour aller au musée",
     fr: "Pardon, monsieur, où est le musée, s'il vous plaît ? Pour aller au musée, continuez tout droit jusqu'au feu. Ensuite, tournez à gauche et traversez la place. Le musée est en face de la banque, à côté de la poste. Ce n'est pas loin, c'est à dix minutes à pied. Mais si vous êtes fatigué, prenez le bus numéro 6. L'arrêt est devant la gare. Faites attention quand vous traversez la rue !",

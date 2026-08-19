@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Dottoressa", it: "Tra qualche giorno si sentirà meglio. Non deve preoccuparsi.", en: "In a few days you'll feel better. You mustn't worry." },
     { sp: "Marco", it: "Perfetto. Arrivederci, dottoressa!", en: "Perfect. Goodbye, doctor!" }
   ],
+  dialogueQuiz: [
+    { q: "Since when has Marco been feeling ill?", choices: ["Since yesterday", "Since this morning", "For a week"], answer: "Since yesterday" },
+    { q: "What hurts Marco?", choices: ["His stomach and back", "His head and throat", "His ear and eyes"], answer: "His head and throat" },
+    { q: "Does Marco have a fever?", choices: ["No, none at all", "Yes, a slight fever", "Yes, a very high fever"], answer: "Yes, a slight fever" },
+    { q: "What does the doctor tell him to do?", choices: ["Rest and drink lots of water", "Go to hospital", "Stay in bed for two weeks"], answer: "Rest and drink lots of water" },
+    { q: "How long must he take the medicine?", choices: ["Three days", "Five days", "Ten days"], answer: "Five days" }
+  ],
   reading: {
     title: "Anna sta male",
     it: "Oggi Anna non va a scuola perché sta male. Le fa male lo stomaco e ha un po’ di febbre. La mamma le dice che deve restare a letto e riposare. Anna prende una medicina e beve un tè caldo. Domani, forse, si sentirà meglio.",

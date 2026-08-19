@@ -51,6 +51,13 @@ window.COURSE.lessons.push({
     { sp: "Вера", ru: "Да, купила. И молоко тоже.", en: "Yes, I bought it. And milk too." },
     { sp: "Игорь", ru: "Спасибо! Ты всё сделала.", en: "Thanks! You got everything done." }
   ],
+  dialogueQuiz: [
+    { q: "How long was Vera reading?", choices: ["About an hour", "About two hours", "All evening"], answer: "About two hours" },
+    { q: "Did the friend finish the article?", choices: ["Yes, finally", "No, only half", "He didn’t start"], answer: "Yes, finally" },
+    { q: "What about Vera’s homework?", choices: ["She finished it", "She didn’t finish it", "She forgot about it"], answer: "She didn’t finish it" },
+    { q: "When must the problem be solved?", choices: ["By Friday", "By Monday", "By tomorrow"], answer: "By Friday" },
+    { q: "What did the friend buy?", choices: ["Bread and milk", "Bread and butter", "Only milk"], answer: "Bread and milk" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>The big idea: two views of one action</h3>" +

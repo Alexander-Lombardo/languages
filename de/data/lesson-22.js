@@ -47,6 +47,13 @@ window.COURSE.lessons.push({
     { sp: "Tourist", de: "Vielen Dank für Ihre Hilfe!", en: "Thank you very much for your help!" },
     { sp: "Lena", de: "Gern geschehen. Gute Reise!", en: "You're welcome. Have a good trip!" }
   ],
+  dialogueQuiz: [
+    { q: "Where does the tourist want to go?", choices: ["To the market", "To the train station", "To the bus stop"], answer: "To the train station" },
+    { q: "What should the tourist do at the traffic light?", choices: ["Turn left", "Turn right", "Go straight on"], answer: "Turn left" },
+    { q: "How long is the walk?", choices: ["About five minutes", "About ten minutes", "About twenty minutes"], answer: "About ten minutes" },
+    { q: "Which bus goes to the station?", choices: ["Bus 2", "Bus 12", "Bus 21"], answer: "Bus 12" },
+    { q: "Why should the tourist be careful?", choices: ["The street is busy", "It is getting dark", "The stop is far away"], answer: "The street is busy" }
+  ],
   reading: {
     title: "Der Weg zum Museum",
     de: "Eine Frau fragt einen Studenten nach dem Weg zum Museum. Der Student sagt: „Geh hier geradeaus und nimm die zweite Straße links. An der Kreuzung siehst du eine Apotheke. Bieg dort rechts ab und geh bis zur Ampel.“\n\nDie Frau fragt: „Ist es weit?“ Der Student antwortet: „Nein, fünf Minuten zu Fuß. Du kannst auch die U-Bahn nehmen, aber zu Fuß ist es schneller. Sei vorsichtig an der großen Straße!“",

@@ -44,6 +44,13 @@ window.COURSE.lessons.push({
     { sp: "Farmacéutica", es: "No, no la necesita. Y descanse mucho.", en: "No, you don't need one. And rest a lot." },
     { sp: "Marco", es: "Muchas gracias. ¡Que tenga buen día!", en: "Thank you very much. Have a good day!" }
   ],
+  dialogueQuiz: [
+    { q: "What is the patient’s first complaint?", choices: ["A headache", "A stomachache", "Back pain"], answer: "A headache" },
+    { q: "What else hurts?", choices: ["His ear", "His throat", "His knee"], answer: "His throat" },
+    { q: "Since when has he felt this way?", choices: ["Since this morning", "Since yesterday", "Since last week"], answer: "Since yesterday" },
+    { q: "How often should he take the medicine?", choices: ["Once a day", "Twice a day", "Three times a day"], answer: "Twice a day" },
+    { q: "Does he need a prescription?", choices: ["Yes, from a doctor", "No, he doesn’t", "Only for the cough"], answer: "No, he doesn’t" }
+  ],
   grammarHTML:
     "<h3>Saying what hurts: <em>doler</em></h3>" +
     "<p>To talk about pain, Spanish uses the verb <strong>doler</strong> (to hurt) much like <em>gustar</em>. The body part is the subject, and an <strong>indirect object pronoun</strong> tells <em>whom</em> it hurts. You usually only need two forms: <strong>duele</strong> (one thing hurts) and <strong>duelen</strong> (more than one thing hurts).</p>" +

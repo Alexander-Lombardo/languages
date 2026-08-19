@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "M. Rey", fr: "Pourriez-vous m'indiquer où en est notre dossier, s'il vous plaît ?", en: "Could you tell me where our file stands, please?" },
     { sp: "Mme Blanc", fr: "Je vous le ferai parvenir cet après-midi. N'hésitez pas à me solliciter.", en: "I will send it to you this afternoon. Do not hesitate to call on me." }
   ],
+  dialogueQuiz: [
+    { q: "Que propose Léa à Tom ?", choices: ["D’aller au cinéma", "D’aller boire un café", "De finir un livre"], answer: "D’aller boire un café" },
+    { q: "Comment Tom va-t-il la rejoindre ?", choices: ["À pied", "En bus", "En voiture"], answer: "En voiture" },
+    { q: "Dans combien de temps se voient-ils ?", choices: ["Dans dix minutes", "Dans une heure", "Ce soir"], answer: "Dans dix minutes" },
+    { q: "Que demande M. Rey à Mme Blanc ?", choices: ["Un rendez-vous demain", "Où en est leur dossier", "Une augmentation"], answer: "Où en est leur dossier" },
+    { q: "Quand Mme Blanc enverra-t-elle le dossier ?", choices: ["Demain matin", "La semaine prochaine", "Cet après-midi"], answer: "Cet après-midi" }
+  ],
   reading: {
     title: "Un courriel de candidature",
     fr: "Madame, Monsieur,\n\nÀ la suite de votre annonce parue sur votre site le 15 juin, je me permets de vous adresser ma candidature au poste d'assistant de communication. Titulaire d'un master en lettres modernes, j'ai acquis une solide expérience de la rédaction lors d'un stage de six mois au sein d'une agence de presse. Je serais ravi de mettre mes compétences au service de votre équipe et de contribuer à vos projets. Vous trouverez ci-joint mon curriculum vitae ainsi qu'une lettre de motivation détaillée. Je me tiens à votre entière disposition pour un éventuel entretien, à la date qui vous conviendra le mieux. Dans l'attente d'une réponse de votre part, je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.\n\nAntoine Mercier",

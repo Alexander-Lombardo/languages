@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Studentin", de: "Und dann wäge ich ab und ziehe folglich eine begründete Schlussfolgerung.", en: "And then I weigh things up and consequently draw a reasoned conclusion." },
     { sp: "Tutor", de: "Richtig. Das stärkere Lager kommt im Hauptteil zuletzt — das wirkt überzeugender.", en: "Correct. The stronger side comes last in the body — that's more persuasive." }
   ],
+  dialogueQuiz: [
+    { q: "Was kritisiert der Tutor an der Einleitung?", choices: ["Sie beginnt sofort mit einem Argument","Sie ist zu lang","Sie hat keine Leitfrage am Ende"], answer: "Sie beginnt sofort mit einem Argument" },
+    { q: "Wann kommt die These bei der linearen Erörterung?", choices: ["Am Schluss","Am Anfang","In der Mitte"], answer: "Am Schluss" },
+    { q: "Was soll die Studentin in der Einleitung nennen?", choices: ["Die Leitfrage","Alle Argumente","Die Schlussfolgerung"], answer: "Die Leitfrage" },
+    { q: "Woraus besteht jedes Argument?", choices: ["These, Begründung, Beispiel","Frage, Antwort, Fazit","Pro, Contra, Urteil"], answer: "These, Begründung, Beispiel" },
+    { q: "Welches Lager kommt im Hauptteil zuletzt?", choices: ["Das stärkere","Das schwächere","Das neutrale"], answer: "Das stärkere" }
+  ],
   reading: {
     title: "Modellabschnitt: Sollten Großstädte autofrei werden?",
     de: "Zunächst spricht für ein autofreies Zentrum, dass die Luftqualität spürbar steigt. <strong>(These)</strong> Der Straßenverkehr ist in vielen Städten die größte Quelle von Feinstaub und Stickoxiden. <strong>(Begründung)</strong> In Madrid etwa sank nach der Sperrung der Innenstadt die Stickstoffbelastung innerhalb eines Jahres deutlich. <strong>(Beispiel)</strong>\n\nDarüber hinaus gewinnt der öffentliche Raum an Aufenthaltsqualität. Wo zuvor Blech parkte, entstehen Cafés, Spielflächen und Begegnungsorte; die Stadt wird wieder zum Wohnzimmer ihrer Bewohner. Folglich profitieren nicht nur die Lungen, sondern auch das soziale Leben.\n\nEinräumen muss man allerdings, dass der Lieferverkehr und mobilitätseingeschränkte Menschen Lösungen brauchen. Dieses Gegenargument lässt sich jedoch durch Ausnahmegenehmigungen und einen gut ausgebauten Nahverkehr entkräften. Abschließend überwiegen demzufolge die Vorteile: Eine autofreie Innenstadt ist kein Verzicht, sondern ein Gewinn an Lebensqualität.",

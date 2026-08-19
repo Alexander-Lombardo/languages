@@ -39,6 +39,13 @@ window.COURSE.lessons.push({
     { sp: "Nonna", it: "Molto. Avevo otto anni e il mondo mi sembrava enorme.", en: "Very. I was eight years old and the world seemed enormous to me." },
     { sp: "Sofia", it: "Mi piace quando dici queste storie.", en: "I like it when you tell these stories." }
   ],
+  dialogueQuiz: [
+    { q: "Where did Grandma live when she was young?", choices: ["In the city", "In the countryside", "By the sea"], answer: "In the countryside" },
+    { q: "What was life like there?", choices: ["Quiet", "Busy", "Difficult"], answer: "Quiet" },
+    { q: "How did Grandma go to school?", choices: ["By bus", "By bike", "On foot"], answer: "On foot" },
+    { q: "What did they drink for breakfast?", choices: ["Coffee", "Fresh milk", "Orange juice"], answer: "Fresh milk" },
+    { q: "How old was Grandma in the story?", choices: ["Six", "Eight", "Ten"], answer: "Eight" }
+  ],
   reading: {
     title: "L’estate dai nonni",
     it: "Da bambino, ogni estate andavo dai nonni in campagna. Faceva caldo e il cielo era sempre azzurro. La mattina mi svegliavo presto, bevevo un bicchiere di latte e poi giocavo in giardino fino a sera. Erano giorni felici e tranquilli.",

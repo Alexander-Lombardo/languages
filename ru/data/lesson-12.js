@@ -51,6 +51,13 @@ window.COURSE.lessons.push({
     { sp: "Нина", ru: "Спасибо. Всё было отлично!", en: "Thank you. Everything was great!" },
     { sp: "Официант", ru: "Спасибо вам! До свидания.", en: "Thank you! Goodbye." }
   ],
+  dialogueQuiz: [
+    { q: "What kind of tea does the customer order?", choices: ["Green", "Black", "With milk"], answer: "Black" },
+    { q: "What soup does she choose?", choices: ["Borscht", "Chicken soup", "Fish soup"], answer: "Borscht" },
+    { q: "What bread does she ask for?", choices: ["White bread", "Black bread", "No bread"], answer: "Black bread" },
+    { q: "How was the food?", choices: ["Very tasty", "Too cold", "A bit salty"], answer: "Very tasty" },
+    { q: "What does she ask for at the end?", choices: ["Coffee", "The bill", "Another pie"], answer: "The bill" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Four polite ways to order</h3>" +

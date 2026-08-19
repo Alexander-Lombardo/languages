@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Tina", en: "Thanks! Even though I'm nervous, I feel more confident now.", es: "¡Gracias! A pesar de que estoy nerviosa, ahora me siento más segura." },
     { sp: "Paul", en: "That's the spirit. Let's start the application together.", es: "Esa es la actitud. Empecemos juntos la solicitud." }
   ],
+  dialogueQuiz: [
+    { q: "What would Tina love to do next year?", choices: ["Study abroad", "Find a job", "Travel with Paul"], answer: "Study abroad" },
+    { q: "What does Paul suggest?", choices: ["Asking her parents", "Applying for a scholarship", "Taking a loan"], answer: "Applying for a scholarship" },
+    { q: "What is Tina worried about?", choices: ["Her grades", "Her English", "Her age"], answer: "Her English" },
+    { q: "Why should Tina start today?", choices: ["The deadline is soon", "Paul is leaving", "The forms are short"], answer: "The deadline is soon" },
+    { q: "What does Paul offer to help with?", choices: ["The interview", "The travel plans", "The writing"], answer: "The writing" }
+  ],
   reading: {
     title: "Why I Learn English",
     en: "I started learning English because I wanted a better job. At first it was difficult, and I often felt like giving up. However, I kept practicing a little every day.\n\nMy grammar improved quickly, but my pronunciation was still weak. So, I began watching films in English and repeating the lines out loud. Although it felt strange at the beginning, it really helped.\n\nNow I can have long conversations with confidence. Learning a language takes time and patience. Therefore, my advice is simple: don't stop, even though progress feels slow. In the end, every small step counts.",

@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Eva", en: "It's the best coffee I've ever tried.", es: "Es el mejor café que he probado nunca." },
     { sp: "Dan", en: "Then I'll definitely come. See you there!", es: "Entonces iré seguro. ¡Nos vemos allí!" }
   ],
+  dialogueQuiz: [
+    { q: "Who is Marco?", choices: ["A neighbour", "A colleague", "A cousin"], answer: "A colleague" },
+    { q: "What instrument does Marco play?", choices: ["The piano", "The drums", "The guitar"], answer: "The guitar" },
+    { q: "Where does Marco’s sister live?", choices: ["In London", "In Rome", "In Paris"], answer: "In London" },
+    { q: "When did the café open?", choices: ["Last month", "Last week", "Yesterday"], answer: "Last week" },
+    { q: "What does the café have?", choices: ["A big garden", "A terrace", "Live music"], answer: "A big garden" }
+  ],
   reading: {
     title: "The Person Who Helps",
     en: "A librarian is a person who works in a library. It is a building which is full of books, and it is a quiet place where students study for hours.\n\nMy favourite librarian is a woman whose name is Carol. She is the colleague who helped me find the book that I needed for my exam. The book, which was on the top shelf, was difficult to reach.\n\nLibraries are places that many people forget about today. But the help that a good librarian gives you is something a computer cannot easily replace. The people who run them quietly keep knowledge alive.",

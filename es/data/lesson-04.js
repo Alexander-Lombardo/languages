@@ -44,6 +44,13 @@ window.COURSE.lessons.push({
     { sp: "Sara", es: "Yo siempre escribo en español por la tarde.", en: "I always write in Spanish in the afternoon." },
     { sp: "Marco", es: "¡Practicamos juntos mañana!", en: "Let's practise together tomorrow!" }
   ],
+  dialogueQuiz: [
+    { q: "How often does Marco study Spanish?", choices: ["Every day", "On weekends", "Once a week"], answer: "Every day" },
+    { q: "Where does Marco work?", choices: ["In a bookshop", "In a café", "In a park"], answer: "In a café" },
+    { q: "Where does Sara work?", choices: ["In a café", "In a school", "In a bookshop"], answer: "In a bookshop" },
+    { q: "Where does Marco live?", choices: ["Near the park", "Near the café", "Near the station"], answer: "Near the park" },
+    { q: "What does Sara always do in the afternoon?", choices: ["Read in Spanish", "Write in Spanish", "Walk to the café"], answer: "Write in Spanish" }
+  ],
   grammarHTML:
     "<h3>Three verb families</h3>" +
     "<p>Every Spanish verb's dictionary form (the <em>infinitive</em>) ends in one of three ways: <strong>-ar</strong>, <strong>-er</strong>, or <strong>-ir</strong>. To use a verb, you drop that ending and add a new one that matches the subject. These endings tell you <em>who</em> is doing the action, so Spanish often skips the subject pronoun.</p>" +

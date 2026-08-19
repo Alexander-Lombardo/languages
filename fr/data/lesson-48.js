@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Léa", fr: "Soit. Mais avoue qu'il est assez économe avec les compliments…", en: "Fine. But admit he's fairly thrifty with compliments…" },
     { sp: "Marc", fr: "Économe, ou carrément avare ? Là, je crains que tu n'aies raison.", en: "Thrifty, or downright miserly? There I fear you may be right." }
   ],
+  dialogueQuiz: [
+    { q: "De qui parlent Léa et Marc ?", choices: ["Du nouveau directeur", "D’un collègue", "D’un client"], answer: "Du nouveau directeur" },
+    { q: "Que dit Marc du directeur ?", choices: ["Il est très gentil", "Il n’est pas bête", "Il est timide"], answer: "Il n’est pas bête" },
+    { q: "Comment Léa le trouve-t-elle ?", choices: ["Ferme", "Obstiné", "Généreux"], answer: "Obstiné" },
+    { q: "Quel mot Marc préfère-t-il ?", choices: ["Ferme", "Avare", "Têtu"], answer: "Ferme" },
+    { q: "Sur quoi Marc finit-il par donner raison à Léa ?", choices: ["Il est économe de compliments", "Il est en retard", "Il parle trop"], answer: "Il est économe de compliments" }
+  ],
   reading: {
     title: "Le poids des mots",
     fr: "Choisir un mot, c'est déjà porter un jugement. Dire d'un collègue qu'il est économe, c'est le complimenter ; le traiter d'avare ou de radin, c'est le condamner. Pourtant, le comportement décrit peut être exactement le même. La langue ne se contente pas de désigner : elle évalue, en secret, par le jeu des connotations. Le locuteur cultivé en joue avec art. Plutôt que d'affirmer brutalement « c'est mauvais », il glissera un « ce n'est pas fameux » qui dit la même chose en ménageant son interlocuteur. La litote, qui consiste à dire moins pour suggérer davantage, est une politesse autant qu'une élégance. De même, l'euphémisme adoucit ce qui dérange : on ne meurt plus, on « s'éteint » ; on n'est pas vieux, on est « d'un certain âge ». Maîtriser ces nuances, c'est apprendre à doser ses mots : atténuer quand il le faut, intensifier à bon escient, et choisir, parmi mille synonymes apparents, celui dont la connotation traduit exactement ce que l'on pense — ni plus, ni moins.",

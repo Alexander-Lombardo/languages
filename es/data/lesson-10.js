@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Sofía", es: "Yo trabajé el sábado, pero el domingo descansé en casa.", en: "I worked on Saturday, but on Sunday I rested at home." },
     { sp: "Diego", es: "¡Qué tranquilo! La semana pasada yo también descansé poco.", en: "How peaceful! Last week I also rested little." }
   ],
+  dialogueQuiz: [
+    { q: "Where did Diego go over the weekend?", choices: ["To the mountains", "To the beach", "To the city"], answer: "To the beach" },
+    { q: "When did they arrive?", choices: ["Saturday very early", "Friday night", "Sunday morning"], answer: "Saturday very early" },
+    { q: "What did they eat?", choices: ["Fresh fish", "Grilled chicken", "Pasta"], answer: "Fresh fish" },
+    { q: "What did Diego do last night?", choices: ["Went to the movies", "Went to a concert", "Stayed at home"], answer: "Went to the movies" },
+    { q: "What did Sofía do on Sunday?", choices: ["Worked", "Rested at home", "Went to the beach"], answer: "Rested at home" }
+  ],
   grammarHTML:
     "<h3>The preterite: finished past actions</h3>" +
     "<p>The <strong>preterite</strong> (<em>pretérito</em>) describes actions that started and ended in the past: <em>I ate</em>, <em>she traveled</em>, <em>we arrived</em>. Think of a single, completed event with a clear endpoint.</p>" +

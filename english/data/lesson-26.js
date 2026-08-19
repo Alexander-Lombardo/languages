@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Anna", en: "Nice. Is the salary good?", es: "Qué bien. ¿El sueldo es bueno?" },
     { sp: "Pablo", en: "It's all right, but the deadlines are stressful.", es: "Está bien, pero las fechas límite son estresantes." }
   ],
+  dialogueQuiz: [
+    { q: "What is Pablo’s job?", choices: ["Software engineer", "Doctor", "Teacher"], answer: "Software engineer" },
+    { q: "What is Anna studying?", choices: ["Engineering", "Medicine", "Law"], answer: "Medicine" },
+    { q: "How long has Anna been studying?", choices: ["Two years", "Three years", "Four years"], answer: "Four years" },
+    { q: "What is Pablo in charge of?", choices: ["A small team", "A big office", "A new product"], answer: "A small team" },
+    { q: "What does Pablo find stressful?", choices: ["The salary", "The deadlines", "His colleagues"], answer: "The deadlines" }
+  ],
   reading: {
     title: "A New Career",
     en: "Laura studied economics at university. After she got her degree, she didn't know exactly what she wanted to do.\n\nFor her first job, she did an internship at a bank. She worked there for a year, but she found the work boring. The meetings were long and the deadlines were stressful.\n\nThen she decided to change her career. She applied for a job at a small company and became a teacher. Now she is self-employed and gives online classes. The salary is lower, but she is much happier. \"I'm finally in charge of my own time,\" she says.",

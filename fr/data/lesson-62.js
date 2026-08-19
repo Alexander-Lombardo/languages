@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Hugo", fr: "Que veux-tu, l'esprit, c'est comme le parapluie : on le sort quand il pleut des banalités.", en: "What can I say — wit is like an umbrella: you bring it out when it's raining clichés." },
     { sp: "Camille", fr: "Et te voilà reparti pour un running gag météo. J'applaudis, modérément.", en: "And there you go again with a weather running gag. I applaud, moderately." }
   ],
+  dialogueQuiz: [
+    { q: "Quel temps fait-il réellement ?", choices: ["Il pleut à verse", "Il fait un soleil radieux", "Il neige"], answer: "Il fait un soleil radieux" },
+    { q: "Comment Camille interprète-t-elle la réponse de Hugo ?", choices: ["Au premier degré", "Au second degré", "Comme une erreur"], answer: "Au second degré" },
+    { q: "Quelle figure Hugo utilise-t-il avec « je ne déteste pas » ?", choices: ["Une hyperbole", "Une litote", "Une métaphore"], answer: "Une litote" },
+    { q: "Qu’a oublié Hugo pour la troisième fois ?", choices: ["Ses clés", "Son manteau", "Le parapluie"], answer: "Le parapluie" },
+    { q: "Sur quoi repose le calembour « maux / mots » ?", choices: ["Sur l’homophonie", "Sur une rime", "Sur un anglicisme"], answer: "Sur l’homophonie" }
+  ],
   reading: {
     title: "Éloge ironique du parapluie",
     fr: "Je tiens à le dire haut et fort : le parapluie est l'invention la plus fiable de l'humanité. Jamais, au grand jamais, il ne se retourne par grand vent en une méduse de métal grotesque. Jamais il ne disparaît mystérieusement le jour précis où il pleut des cordes. Et quand vous le retrouvez enfin, oublié dans un train, c'est forcément le vôtre, ce modèle unique que partagent seulement neuf millions de Parisiens.\n\nMon parapluie et moi entretenons une relation d'une rare harmonie. Il s'ouvre exactement quand il veut, c'est-à-dire jamais quand je le souhaite, et se referme tout seul sur mes doigts avec une tendresse de piège à loup. Disons-le sans détour : je ne le déteste pas tout à fait. C'est, je crois, ce qu'on appelle une litote.\n\nCertains prétendent qu'il suffirait de regarder le ciel avant de sortir. Quelle idée saugrenue, quel raffinement inutile ! Pourquoi anticiper la pluie quand on peut, avec panache, la subir ? L'esprit français, dit-on, consiste à rire de tout — surtout de soi, et accessoirement de la météo, qui le mérite amplement.",

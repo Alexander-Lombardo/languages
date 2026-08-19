@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Tom", de: "Für mich ist Berlin die beste Stadt in Deutschland.", en: "For me, Berlin is the best city in Germany." },
     { sp: "Lena", de: "Dann nehmen wir den Zug. Das ist am besten.", en: "Then let's take the train. That's best." }
   ],
+  dialogueQuiz: [
+    { q: "Where do Tom and Lena want to go?", choices: ["To Munich", "To Berlin", "To Hamburg"], answer: "To Berlin" },
+    { q: "According to Tom, what is cheaper?", choices: ["The train", "The car", "The bus"], answer: "The car" },
+    { q: "What is more important to Lena?", choices: ["Money", "Comfort", "Time"], answer: "Time" },
+    { q: "Which city does Lena find more interesting?", choices: ["Munich", "Berlin", "Both equally"], answer: "Berlin" },
+    { q: "What do they decide at the end?", choices: ["To take the train", "To drive the car", "To stay at home"], answer: "To take the train" }
+  ],
   reading: {
     title: "Stadt oder Land?",
     de: "Viele Deutsche fragen sich: Lebt man besser in der Stadt oder auf dem Land? In der Stadt ist alles näher und es gibt mehr Arbeit. Aber das Leben ist auch teurer und lauter. Auf dem Land ist die Luft sauberer und die Mieten sind billiger. Für mich ist die Ruhe wichtiger als das Kino um die Ecke, deshalb wohne ich am liebsten auf dem Land.",

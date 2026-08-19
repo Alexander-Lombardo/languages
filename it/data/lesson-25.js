@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Viaggiatore", it: "Ecco a lei. Vorrei anche prenotare un albergo vicino alla stazione. Avete qualche consiglio?", en: "Here you are. I'd also like to book a hotel near the station. Do you have any suggestions?" },
     { sp: "Bigliettaio", it: "Mi dispiace, per questo dovrebbe rivolgersi all’ufficio turistico qui accanto.", en: "I'm sorry, for that you should ask at the tourist office right next door." }
   ],
+  dialogueQuiz: [
+    { q: "Che biglietto vuole il viaggiatore?", choices: ["Solo andata", "Andata e ritorno", "Un abbonamento"], answer: "Andata e ritorno" },
+    { q: "A che ora parte il treno?", choices: ["Alle 9:40", "Alle 11:25", "Alle 7:00"], answer: "Alle 9:40" },
+    { q: "Il treno è diretto?", choices: ["No, bisogna cambiare", "Sì, è diretto", "Non si sa ancora"], answer: "Sì, è diretto" },
+    { q: "Da quale binario parte?", choices: ["Dal binario 5", "Dal binario 7", "Dal binario 9"], answer: "Dal binario 7" },
+    { q: "Dove deve rivolgersi per l’albergo?", choices: ["All’ufficio turistico", "Alla biglietteria", "Alla reception della stazione"], answer: "All’ufficio turistico" }
+  ],
   reading: {
     title: "All’albergo",
     it: "Arrivata a Firenze, Giulia va in albergo a piedi perché è vicino alla stazione. Alla reception dice: «Buonasera, ho una prenotazione a nome Bianchi. Vorrei fare il check-in.» Il receptionist controlla il computer e le dà la chiave di una camera doppia al secondo piano. Giulia chiede gentilmente: «Potrebbe darmi la password del wi-fi? E a che ora è la colazione?» Il receptionist risponde che la colazione è dalle sette alle dieci e che, se ha bisogno di un taxi, basta chiamare la reception.",

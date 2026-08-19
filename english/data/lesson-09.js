@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Tourist", en: "Why is the street closed?", es: "¿Por qué está cerrada la calle?" },
     { sp: "Local", en: "There's a market today. Have a nice day!", es: "Hoy hay un mercado. ¡Que tenga buen día!" }
   ],
+  dialogueQuiz: [
+    { q: "¿Qué busca el turista primero?", choices: ["La estación", "El banco", "El parque"], answer: "La estación" },
+    { q: "¿Cómo se llega a la estación?", choices: ["Recto y a la derecha", "Recto y a la izquierda", "Está al otro lado del parque"], answer: "Recto y a la izquierda" },
+    { q: "¿Dónde está el banco?", choices: ["Al lado de la estación", "Entre las dos cafeterías", "Dentro del parque"], answer: "Al lado de la estación" },
+    { q: "¿A qué distancia está el parque?", choices: ["Cinco minutos", "Quince minutos", "Está lejos"], answer: "Cinco minutos" },
+    { q: "¿Por qué está cerrada la calle?", choices: ["Hay obras", "Hay un mercado", "Hay un accidente"], answer: "Hay un mercado" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Las preguntas con «Wh-»</h3>" +

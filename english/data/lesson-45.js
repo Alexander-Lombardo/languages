@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Nora", en: "Which most readers skim past without checking.", es: "Que la mayoría de los lectores pasa por alto sin comprobar." },
     { sp: "Adam", en: "And that's exactly how spin works.", es: "Y así es exactamente como funciona la manipulación." }
   ],
+  dialogueQuiz: [
+    { q: "What is typical of headline grammar, according to Adam?", choices: ["No articles, present tense", "Long sentences", "Lots of adjectives"], answer: "No articles, present tense" },
+    { q: "What does the article actually say the minister did?", choices: ["He slammed the critics", "He responded", "He resigned"], answer: "He responded" },
+    { q: "What effect does the verb ‘claim’ have?", choices: ["It makes the critics sound doubtful", "It makes the critics sound reliable", "It sounds neutral"], answer: "It makes the critics sound doubtful" },
+    { q: "What kind of text is it?", choices: ["Straight news", "An op-ed", "A press release"], answer: "An op-ed" },
+    { q: "What do most readers do with that detail?", choices: ["Check it carefully", "Skim past it", "Complain about it"], answer: "Skim past it" }
+  ],
   reading: {
     title: "How to Read the News Like an Editor",
     en: "The first thing a trained reader notices is not what a news story says, but how it says it. Headlines speak a compressed dialect of their own: articles vanish, the present tense stands in for the past, and the verb \"to be\" simply disappears. \"PM to Visit Flood Zone\" means a prime minister is going to visit; \"Three Hurt in Blast\" means three people were hurt. The grammar is broken on purpose, to save space and grab the eye.\n\nThe second clue is the reporting verb. To write that someone \"said\" a thing is neutral. To write that they \"claimed\" or \"alleged\" it plants a quiet seed of doubt. To write that they \"admitted\" or \"conceded\" it implies guilt or reluctance, while \"revealed\" suggests a hidden truth finally exposed. None of these verbs changes the underlying fact, yet each colours how we receive it.\n\nThen there is loaded language, the adjectives and verbs that smuggle an opinion into what looks like a report. A protest can be described as a \"gathering\" or a \"mob\"; a policy can be \"ambitious\" or \"reckless\"; a politician can \"respond\" or \"slam.\" Same event, opposite impression. Editors call this spin, and it is everywhere, including in the outlets we trust most.\n\nNone of this means the news is lying. Most reporting is honest and necessary. It means that meaning lives in word choice as much as in facts, and that a careful reader keeps one eye on the events and the other on the language describing them. Read that way, the news becomes not a verdict to accept but a text to interrogate.",

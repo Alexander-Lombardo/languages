@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Giulia", it: "Sei un tesoro. Glielo dirò ad Anna che cucini benissimo!", en: "You’re a darling. I’ll tell Anna that you cook really well!" },
     { sp: "Marco", it: "Non esagerare! Comunque grazie, mi fa piacere.", en: "Don’t exaggerate! Anyway thanks, that’s nice of you." }
   ],
+  dialogueQuiz: [
+    { q: "Cosa ha prestato Giulia a Marco?", choices: ["Un libro di cucina", "Una teglia", "Un romanzo"], answer: "Un libro di cucina" },
+    { q: "Per chi ha fatto la pasta Marco?", choices: ["Per Giulia", "Per Anna", "Per sua madre"], answer: "Per Anna" },
+    { q: "Come spiegherà la ricetta a Giulia?", choices: ["Gliela scrive per messaggio", "Gliela spiega al telefono", "La cucina insieme a lei"], answer: "Gliela scrive per messaggio" },
+    { q: "Dove ha comprato gli ingredienti?", choices: ["Al supermercato", "Al mercato", "Online"], answer: "Al mercato" },
+    { q: "Chi pagherà gli ingredienti?", choices: ["Giulia, subito", "Marco, se ne occupa lui", "Anna"], answer: "Marco, se ne occupa lui" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>1. Direct vs. indirect object pronouns</h3>" +

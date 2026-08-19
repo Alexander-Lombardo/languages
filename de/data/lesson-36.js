@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Tom", de: "Nachdem du endlich angekommen warst, war die Besprechung schon vorbei, oder?", en: "After you finally arrived, the meeting was already over, right?" },
     { sp: "Lena", de: "Genau. Sie hatten ohne mich angefangen — und schon entschieden.", en: "Exactly. They had started without me — and already decided." }
   ],
+  dialogueQuiz: [
+    { q: "Warum war Lena gestern so spät im Büro?", choices: ["Sie hatte den Zug verpasst", "Sie war beim Arzt", "Es gab einen Stau"], answer: "Sie hatte den Zug verpasst" },
+    { q: "Wie lange musste Lena warten?", choices: ["Eine halbe Stunde", "Eine Stunde", "Zwei Stunden"], answer: "Eine Stunde" },
+    { q: "Warum hatte Lena den Zug verpasst?", choices: ["Sie hatte den Wecker nicht gestellt", "Sie hatte die Tasche nicht gepackt", "Sie hatte verschlafen wegen Krankheit"], answer: "Sie hatte den Wecker nicht gestellt" },
+    { q: "Was war mit dem Handy passiert?", choices: ["Es war kaputt", "Es war über Nacht ausgegangen", "Es war gestohlen worden"], answer: "Es war über Nacht ausgegangen" },
+    { q: "Was war mit der Besprechung, als Lena ankam?", choices: ["Sie wurde verschoben", "Sie hatte noch nicht begonnen", "Sie war schon vorbei"], answer: "Sie war schon vorbei" }
+  ],
   reading: {
     title: "Ein verpasster Zug",
     de: "Als Jonas am Bahnhof ankam, war der Zug bereits abgefahren. Er hatte zu Hause länger gefrühstückt, als er geplant hatte, und unterwegs hatte ihn ein Stau aufgehalten. Nun stand er allein auf dem leeren Bahnsteig.\n\nNachdem er sich kurz geärgert hatte, ging er zum Schalter. Die Frau erklärte ihm, dass der nächste Zug erst in einer Stunde fahre. Jonas seufzte. Er hatte das Vorstellungsgespräch wochenlang vorbereitet, und jetzt würde er sich verspäten.\n\nEr rief die Firma an und entschuldigte sich. Erstaunlicherweise war die Personalchefin freundlich: Auch ihr Zug hatte am Morgen Verspätung gehabt. Nachdem Jonas das gehört hatte, beruhigte er sich. Schließlich, dachte er, hatten an diesem Morgen wohl viele dieselbe Erfahrung gemacht.",

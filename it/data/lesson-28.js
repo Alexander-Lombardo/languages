@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Marta", it: "Quindi avevi trovato un gatto smarrito mentre tornavi a casa.", en: "So you had found a lost cat while you were going home." },
     { sp: "Giulia", it: "Esatto. Infine ho chiamato il numero sul collare e, alla fine, l’ho riportato alla sua padrona.", en: "Exactly. Finally I called the number on the collar and, in the end, I took it back to its owner." }
   ],
+  dialogueQuiz: [
+    { q: "Com’era il tempo ieri sera?", choices: ["Pioveva forte", "C’era la nebbia", "Faceva freddo ma era sereno"], answer: "Pioveva forte" },
+    { q: "Che cosa ha sentito Giulia mentre camminava?", choices: ["Una voce", "Un rumore strano", "Un clacson"], answer: "Un rumore strano" },
+    { q: "Che cosa è apparso a un certo punto?", choices: ["Un cane", "Un uomo", "Un gatto enorme"], answer: "Un gatto enorme" },
+    { q: "Dove è saltato l’animale?", choices: ["Dentro la macchina", "Sul tetto", "In ufficio"], answer: "Dentro la macchina" },
+    { q: "Che cosa ha fatto Giulia alla fine?", choices: ["L’ha portato a casa sua", "L’ha riportato alla padrona", "Ha chiamato la polizia"], answer: "L’ha riportato alla padrona" }
+  ],
   reading: {
     title: "La gita finita male",
     it:

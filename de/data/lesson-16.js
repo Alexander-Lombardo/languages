@@ -45,6 +45,13 @@ window.COURSE.lessons.push({
     { sp: "Lena", de: "Hast du schon mit Anna telefoniert?", en: "Have you already spoken with Anna on the phone?" },
     { sp: "Tom", de: "Ja, ich habe vorhin mit ihr telefoniert.", en: "Yes, I spoke with her on the phone earlier." }
   ],
+  dialogueQuiz: [
+    { q: "What did Tom do yesterday?", choices: ["He worked all day", "He read a book", "He went to the cinema"], answer: "He worked all day" },
+    { q: "What did Lena do at home?", choices: ["Cooked and cleaned", "Read and listened to music", "Played football"], answer: "Read and listened to music" },
+    { q: "What did Lena eat while watching the film?", choices: ["Pasta", "Pizza", "Salad"], answer: "Pizza" },
+    { q: "What did they drink?", choices: ["Only water", "Wine", "Juice"], answer: "Only water" },
+    { q: "Who did Tom write an email to?", choices: ["Anna", "Lena", "His mother"], answer: "His mother" }
+  ],
   reading: {
     title: "Mein Samstag",
     de: "Am Samstag habe ich lange geschlafen. Um zehn Uhr habe ich gefrühstückt und Kaffee getrunken. Danach habe ich die Wohnung geputzt und Wäsche gewaschen.\n\nAm Nachmittag habe ich für eine Prüfung gelernt und ein bisschen gelesen. Später habe ich mit einer Freundin telefoniert. Wir haben zusammen Kuchen gegessen und über die Woche gesprochen.\n\nAm Abend habe ich einen Film gesehen und eine E-Mail an meine Eltern geschrieben. Es war ein ruhiger, schöner Tag.",

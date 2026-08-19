@@ -47,6 +47,13 @@ window.COURSE.lessons.push({
     { sp: "Mia", fr: "C'est vrai ! On mange ensemble ce soir ?", en: "That's true! Shall we eat together tonight?" },
     { sp: "Hugo", fr: "Avec plaisir !", en: "With pleasure!" }
   ],
+  dialogueQuiz: [
+    { q: "Where does Mia work?", choices: ["In a café", "At a university", "In a cinema"], answer: "In a café" },
+    { q: "What does Hugo study?", choices: ["Spanish", "English", "Music"], answer: "English" },
+    { q: "What does Mia do on weekends?", choices: ["She plays guitar", "She plays tennis", "She sings in a band"], answer: "She plays tennis" },
+    { q: "What does Hugo hate?", choices: ["Dancing", "Traveling", "Singing"], answer: "Dancing" },
+    { q: "What do they decide to do?", choices: ["Watch a film", "Go to Italy", "Eat together tonight"], answer: "Eat together tonight" }
+  ],
   grammarHTML:
     "<h3>The -er pattern</h3>" +
     "<p>Drop <strong>-er</strong>, add the ending. Using <strong>parler</strong> (to speak):</p>" +

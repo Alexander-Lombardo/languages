@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Giulia", it: "Sono di Napoli. A presto, Marco!", en: "I’m from Naples. See you soon, Marco!" },
     { sp: "Marco", it: "A presto! Arrivederci!", en: "See you soon! Goodbye!" }
   ],
+  dialogueQuiz: [
+    { q: "What is the woman’s name?", choices: ["Anna", "Giulia", "Sara"], answer: "Giulia" },
+    { q: "How is Marco?", choices: ["Fine", "So-so", "Tired"], answer: "Fine" },
+    { q: "How is Giulia?", choices: ["Very well", "So-so", "Not well"], answer: "So-so" },
+    { q: "Where is Marco from?", choices: ["Naples", "Milan", "Rome"], answer: "Rome" },
+    { q: "Where is Giulia from?", choices: ["Rome", "Naples", "Florence"], answer: "Naples" }
+  ],
   reading: null,
   grammarHTML: "" +
     "<h3>Formal vs. informal greetings</h3>" +

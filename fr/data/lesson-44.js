@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Nadia", fr: "Tu te débrouilleras très bien tout seul. Tais-toi et propose-lui d'en parler.", en: "You'll manage just fine on your own. Stop fretting and offer to talk it out with him." },
     { sp: "Karim", fr: "Tu as raison. Je me doutais que tu me dirais ça.", en: "You're right. I suspected you'd tell me that." }
   ],
+  dialogueQuiz: [
+    { q: "Pourquoi Karim a-t-il l’air contrarié ?", choices: ["Il a perdu son travail", "Il s’est fâché avec son colocataire", "Il a raté son bus"], answer: "Il s’est fâché avec son colocataire" },
+    { q: "Que reproche Karim à son colocataire ?", choices: ["Il se plaint de tout", "Il ne paie pas le loyer", "Il fait trop de bruit"], answer: "Il se plaint de tout" },
+    { q: "Comment Nadia voit-elle la situation ?", choices: ["Comme une rupture définitive", "Comme un mauvais moment à passer", "Comme la faute de Karim"], answer: "Comme un mauvais moment à passer" },
+    { q: "Que fera Karim si ça continue ?", choices: ["Il partira à la fin du bail", "Il changera de ville", "Il appellera le propriétaire"], answer: "Il partira à la fin du bail" },
+    { q: "Que conseille Nadia à Karim ?", choices: ["De déménager tout de suite", "De proposer d’en parler", "De ne plus lui adresser la parole"], answer: "De proposer d’en parler" }
+  ],
   reading: {
     title: "Le colocataire idéal",
     fr: "Quand Léa a emménagé avec Sophie, elle ne se doutait pas que la vie en colocation serait si compliquée. Au début, tout se passait bien : elles s'entendaient à merveille, se parlaient pendant des heures et se moquaient gentiment l'une de l'autre.\n\nMais peu à peu, Léa s'est rendu compte que les habitudes de Sophie l'agaçaient. Sophie se plaignait du désordre, s'inquiétait du loyer et se fâchait pour des broutilles. Léa, de son côté, n'arrivait pas à s'habituer à ses horaires bizarres.\n\nUn soir, elles se sont disputées. Sophie s'est tue, puis elle a fini par s'en aller en claquant la porte. Léa s'est demandé si elle devait s'excuser.\n\nLe lendemain, elles ont décidé de se parler calmement. Il s'agissait surtout de communication. Elles se sont mises à établir quelques règles simples, et chacune a appris à se débrouiller avec les défauts de l'autre. Aujourd'hui, elles se réjouissent d'avoir surmonté cette crise.",

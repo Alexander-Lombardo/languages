@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Herr Klein", de: "Wäre es möglich, dass Sie mir den Wagen für eine Stunde überlassen?", en: "Would it be possible for you to let me have the car for an hour?" },
     { sp: "Frau Weber", de: "Aber gern. Ich gebe Ihnen den Schlüssel gleich.", en: "Gladly. I'll give you the key right away." }
   ],
+  dialogueQuiz: [
+    { q: "Was möchte Tom von Lena?", choices: ["Ihr Auto leihen","Ihr Fahrrad leihen","Geld leihen"], answer: "Ihr Auto leihen" },
+    { q: "Wo liegt der Schlüssel?", choices: ["In der Küche","Im Flur","Im Wohnzimmer"], answer: "In der Küche" },
+    { q: "Was sagt Lena zum Schluss zu Tom?", choices: ["Fahr vorsichtig","Bring das Auto heute zurück","Tank bitte voll"], answer: "Fahr vorsichtig" },
+    { q: "Wie lange möchte Herr Klein den Wagen?", choices: ["Für eine Stunde","Für einen Tag","Für das Wochenende"], answer: "Für eine Stunde" },
+    { q: "Wie reagiert Frau Weber auf die Bitte?", choices: ["Sie gibt ihm den Schlüssel gleich","Sie muss erst überlegen","Sie lehnt höflich ab"], answer: "Sie gibt ihm den Schlüssel gleich" }
+  ],
   reading: {
     title: "Eine Nachricht, zwei Register",
     de: "Stellen wir uns vor, jemand möchte ein Treffen verschieben. An einen guten Freund schreibt er per Messenger: „Hey, schaffe es morgen doch nicht, sorry! Können wir's auf nächste Woche schieben? Meld dich mal.“ Das ist locker, kurz und voller Abkürzungen.\n\nAn einen Geschäftspartner sieht dieselbe Nachricht völlig anders aus: „Sehr geehrter Herr Bauer, leider muss ich unseren morgigen Termin aus dringenden Gründen absagen. Wäre es möglich, das Treffen auf die kommende Woche zu verschieben? Für Ihr Verständnis danke ich Ihnen im Voraus. Mit freundlichen Grüßen, …“\n\nBeide Texte teilen dieselbe Information mit, doch der Ton ist grundverschieden. Im Deutschen entscheidet die Beziehung zwischen den Personen über Anrede, Wortwahl und Höflichkeitsgrad. Wer das Register verwechselt, wirkt entweder distanziert und steif oder unhöflich und zu vertraulich.",

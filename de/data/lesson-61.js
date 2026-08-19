@@ -39,6 +39,13 @@ window.COURSE.lessons.push({
     { sp: "Tutorin", de: "Morphologie ist dein Verbündeter: Vorsilbe, Stamm, Nachsilbe. Und der Kontext entscheidet im Zweifel.", en: "Morphology is your ally: prefix, stem, suffix. And context decides in case of doubt." },
     { sp: "Lerner", de: "Am Ende frage ich: Was will der Text — informieren, überzeugen, verschleiern?", en: "In the end I ask: what does the text want — to inform, persuade, obscure?" }
   ],
+  dialogueQuiz: [
+    { q: "Was sucht der Lerner jetzt zuerst in langen Sätzen?", choices: ["Das finite Verb", "Das Subjekt", "Das letzte Wort"], answer: "Das finite Verb" },
+    { q: "Was hat der Lerner früher gemacht?", choices: ["Vorne angefangen und sich verloren", "Das Verb gesucht", "Den Satz übersprungen"], answer: "Vorne angefangen und sich verloren" },
+    { q: "Was macht der Lerner mit unbekannten Wörtern?", choices: ["Er zerlegt sie", "Er rät blind", "Er schlägt sie sofort nach"], answer: "Er zerlegt sie" },
+    { q: "Was entscheidet laut Tutorin im Zweifel?", choices: ["Der Kontext", "Die Vorsilbe", "Das Wörterbuch"], answer: "Der Kontext" },
+    { q: "Was fragt der Lerner am Ende?", choices: ["Was der Text will", "Wie lang der Text ist", "Wer den Text geschrieben hat"], answer: "Was der Text will" }
+  ],
   reading: {
     title: "Ein bewusst anspruchsvoller Originaltext (mit Anleitung zur Zerlegung)",
     de: "Die in den letzten Jahren mit bemerkenswerter Hartnäckigkeit geführte, von wechselnden Akteuren immer wieder neu befeuerte Debatte über den angemessenen Umgang mit jenen Datenmengen, die im Zuge der fortschreitenden Digitalisierung beinahe beiläufig anfallen, krankt — so jedenfalls die hier vertretene These — weniger an einem Mangel an technischem Sachverstand als vielmehr an der hartnäckigen Weigerung der Beteiligten, sich auf eine gemeinsame Begrifflichkeit zu einigen.\n\nDenn solange der eine von „Schutz“ spricht und dabei Kontrolle meint, der andere von „Freiheit“ und dabei den ungehinderten Zugriff im Sinn hat, gerät jede noch so gut gemeinte Verständigung zwangsläufig zur Aneinandervorbeirede. Was als sachliche Auseinandersetzung daherkommt, entpuppt sich bei näherem Hinsehen als ein Ringen um Deutungshoheit — ein Streit also nicht über die Sache, sondern über die Worte, mit denen die Sache überhaupt erst beschreibbar wird.\n\nDass die Politik diesen Umstand bislang eher beschwiegen als benannt hat, mag taktisch klug erscheinen; auf lange Sicht jedoch rächt sich das Ausweichen. Wer die Begriffe nicht klärt, überlässt sie anderen.",

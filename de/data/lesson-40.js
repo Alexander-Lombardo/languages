@@ -39,6 +39,13 @@ window.COURSE.lessons.push({
     { sp: "Anna", de: "Genau. Ich bin der Ansicht, dass gute Busse mehr bringen als Verbote.", en: "Exactly. I'm of the view that good buses do more than bans." },
     { sp: "Markus", de: "Da stimme ich dir zu – zumindest teilweise.", en: "I agree with you there – at least partly." }
   ],
+  dialogueQuiz: [
+    { q: "Was fordert Markus am Anfang?", choices: ["Ein Autoverbot in der Innenstadt","Mehr Parkplätze in der Innenstadt","Billigere Busfahrkarten"], answer: "Ein Autoverbot in der Innenstadt" },
+    { q: "Warum widerspricht Anna?", choices: ["Nicht jeder kann mit dem Rad fahren","Autos sind umweltfreundlich","Die Innenstadt ist zu klein"], answer: "Nicht jeder kann mit dem Rad fahren" },
+    { q: "Welchen Vorteil nennt Markus?", choices: ["Die Luft wäre viel sauberer","Es gäbe weniger Lärm","Die Straßen wären sicherer"], answer: "Die Luft wäre viel sauberer" },
+    { q: "Was brauchen laut Anna die Geschäfte?", choices: ["Ihre Kunden","Mehr Personal","Längere Öffnungszeiten"], answer: "Ihre Kunden" },
+    { q: "Was bringt laut Anna mehr als Verbote?", choices: ["Gute Busse","Strenge Strafen","Neue Fahrradwege"], answer: "Gute Busse" }
+  ],
   reading: {
     title: "Sollte man eine Vier-Tage-Woche einführen?",
     de: "Die Vier-Tage-Woche wird in vielen Ländern diskutiert. Befürworter sind der Meinung, dass weniger Arbeitstage die Menschen gesünder und zufriedener machen. Sie behaupten, wer ausgeruht sei, arbeite konzentrierter und mache weniger Fehler. Außerdem bleibe mehr Zeit für Familie und Hobbys.\n\nKritiker sehen das anders. Einerseits klinge die Idee schön, andererseits sei sie nicht für jede Branche machbar. In Krankenhäusern oder Schulen, so argumentieren sie, lasse sich die Arbeit nicht einfach auf vier Tage verteilen. Zwar gebe es erste erfolgreiche Versuche, aber die Ergebnisse seien noch nicht eindeutig.\n\nMeiner Ansicht nach liegt die Wahrheit in der Mitte. Es ist durchaus vorstellbar, dass die Vier-Tage-Woche in manchen Berufen funktioniert. Trotzdem sollte man nichts überstürzen. Ein vernünftiger Kompromiss wäre, das Modell zuerst zu testen und die Erfahrungen ehrlich auszuwerten, bevor man es überall einführt.",

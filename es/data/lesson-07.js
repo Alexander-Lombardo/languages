@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Mesero", es: "Gracias. ¡Buen provecho!", en: "Thank you. Enjoy your meal!" },
     { sp: "Cliente", es: "¡Muy rico! La cuenta, por favor.", en: "Very tasty! The bill, please." }
   ],
+  dialogueQuiz: [
+    { q: "What does the customer order to drink?", choices: ["A black coffee", "A coffee with milk", "A glass of water"], answer: "A coffee with milk" },
+    { q: "What does the customer order to eat?", choices: ["A sandwich and cake", "A salad and cake", "Only a sandwich"], answer: "A sandwich and cake" },
+    { q: "Who is the cake for?", choices: ["A friend", "The customer", "The waiter"], answer: "The customer" },
+    { q: "How much is the total?", choices: ["Five dollars", "Four dollars", "Fifteen dollars"], answer: "Five dollars" },
+    { q: "What does the customer ask for at the end?", choices: ["More coffee", "The menu", "The bill"], answer: "The bill" }
+  ],
   grammarHTML:
     "<h3>The verb <em>querer</em> (to want)</h3>" +
     "<p>To order, you mostly need one verb: <strong>querer</strong>. It is a little irregular — the <em>e</em> becomes <em>ie</em> in most forms. Just say <em>quiero</em> + the thing you want.</p>" +

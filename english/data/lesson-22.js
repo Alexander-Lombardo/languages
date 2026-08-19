@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Nora", en: "Good idea. I should explain the situation.", es: "Buena idea. Debería explicar la situación." },
     { sp: "Paul", en: "Exactly. And tonight you must sleep!", es: "Exacto. ¡Y esta noche tienes que dormir!" }
   ],
+  dialogueQuiz: [
+    { q: "How many hours a day does the first speaker work?", choices: ["Ten", "Twelve", "Eight"], answer: "Twelve" },
+    { q: "Why can’t the first speaker rest?", choices: ["He has to finish a project", "His boss is away", "He has a meeting"], answer: "He has to finish a project" },
+    { q: "Who can help with the work?", choices: ["His family", "His boss", "His team"], answer: "His team" },
+    { q: "What mustn’t they do?", choices: ["Miss the deadline", "Talk to the boss", "Ask for help"], answer: "Miss the deadline" },
+    { q: "What should the first speaker do tomorrow?", choices: ["Take a day off", "Talk to the boss", "Work longer"], answer: "Talk to the boss" }
+  ],
   reading: {
     title: "The Rules of the Office",
     en: "Every workplace has rules. Some are obligations: you must arrive on time, and you have to respect your colleagues. Others are prohibitions: you mustn't share private information, and you mustn't be rude to clients.\n\nBut not everything is a rule. You don't have to wear a suit in this office, and you don't have to eat lunch at your desk. These things are allowed, but they are not obligatory.\n\nIf you are tired or stressed, you should talk to your manager. Good advice is simple: you ought to take breaks, and you shouldn't work when you are sick. A healthy worker is a better worker.",

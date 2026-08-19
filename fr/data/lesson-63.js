@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Léa", fr: "Voilà. On introduit une clé, une idée, un sujet ; on présente une personne. C'est le genre de détail qui te trahit, sinon.", en: "There you go. You insert a key, a notion, a topic; you introduce a person. It's the kind of detail that gives you away otherwise." },
     { sp: "Mark", fr: "Ce n'est pas tout à fait évident, mais je vais éviter de calquer l'anglais. Ça, j'ai compris.", en: "It's not exactly obvious, but I'll avoid calquing English. That much I've understood." }
   ],
+  dialogueQuiz: [
+    { q: "Où Léa cherchait-elle Mark hier ?", choices: ["Au bureau", "À la conférence", "Au restaurant"], answer: "À la conférence" },
+    { q: "Quel mot Mark a-t-il employé à tort ?", choices: ["Énervé", "Excité", "Contrarié"], answer: "Excité" },
+    { q: "Pourquoi « excité » pose-t-il problème ?", choices: ["C’est trop soutenu", "C’est ambigu et glisse vers le grivois", "C’est un mot vieilli"], answer: "C’est ambigu et glisse vers le grivois" },
+    { q: "Que fait-on avec une personne, selon Léa ?", choices: ["On la présente", "On l’introduit", "On l’annonce"], answer: "On la présente" },
+    { q: "Que veut éviter Mark désormais ?", choices: ["De parler en public", "De calquer l’anglais", "De présenter ses collègues"], answer: "De calquer l’anglais" }
+  ],
   reading: {
     title: "Les derniers cinq pour cent",
     fr: "Il existe un seuil étrange dans l'apprentissage d'une langue. On franchit la grammaire, on engrange le vocabulaire, on tient une conversation sans effort apparent. Et pourtant, quelque chose persiste, un léger décalage que l'oreille native repère aussitôt. Ce ne sont plus les grosses fautes ; ce sont les détails.\n\nCe dernier cinq pour cent ne se joue presque jamais sur les règles. Il se joue sur les faux-amis qu'on n'a jamais vraiment désamorcés, sur les collocations légèrement bancales, sur une préposition choisie par réflexe anglais. On dit « assister » en pensant « aider », on traduit « actually » par « actuellement », et la phrase, pourtant correcte, sonne faux.\n\nIl se joue aussi sur le registre. L'étranger soigneux a tendance à parler trop bien : il emploie des tournures soutenues là où le natif lâcherait un « du coup » ou un « quoi » désinvolte. À l'inverse, il calque parfois la familiarité anglaise dans un contexte qui exige de la retenue.\n\nPolir ce dernier vernis demande moins d'étude que d'écoute. Il faut apprendre, non plus ce qui est juste, mais ce qui se dit.",

@@ -50,6 +50,13 @@ window.COURSE.lessons.push({
     { sp: "Мария", ru: "Здесь три комнаты.", en: "There are three rooms here." },
     { sp: "Дмитрий", ru: "Хорошо. Спасибо, Мария!", en: "Good. Thank you, Maria!" }
   ],
+  dialogueQuiz: [
+    { q: "How old is Dmitry?", choices: ["Twenty-one", "Twenty-three", "Thirty"], answer: "Twenty-one" },
+    { q: "How old is Anna?", choices: ["Five", "Twenty-five", "Forty-two"], answer: "Twenty-five" },
+    { q: "Who is forty-two years old?", choices: ["Ivan", "Maria", "Olga"], answer: "Olga" },
+    { q: "What is Dmitry’s phone number?", choices: ["258013", "749600", "258031"], answer: "258013" },
+    { q: "How many rooms are there?", choices: ["Two", "Three", "Four"], answer: "Three" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Numbers 0–10 and the key tens</h3>" +

@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Marco", it: "Vedrai che ti assumeranno. Hai le competenze giuste.", en: "You'll see, they'll hire you. You have the right skills." },
     { sp: "Giulia", it: "Speriamo! Vorrei diventare libera professionista, ma prima serve esperienza.", en: "Let's hope so! I'd like to become a freelancer, but first I need experience." }
   ],
+  dialogueQuiz: [
+    { q: "Da quanto tempo lavora Marco nell’azienda?", choices: ["Da tre anni", "Da sei mesi", "Da un anno"], answer: "Da tre anni" },
+    { q: "Che cosa studia Marco la sera?", choices: ["L’architettura", "L’inglese", "L’ingegneria"], answer: "L’inglese" },
+    { q: "Che cosa ha appena finito Giulia?", choices: ["Un master in ingegneria", "Un contratto a tempo determinato", "Un tirocinio in uno studio di architettura"], answer: "Un tirocinio in uno studio di architettura" },
+    { q: "Che cosa succederà a Giulia la settimana prossima?", choices: ["Avrà un secondo colloquio", "Firmerà un contratto", "Inizierà un nuovo tirocinio"], answer: "Avrà un secondo colloquio" },
+    { q: "Che cosa vorrebbe diventare Giulia?", choices: ["Capo dell’azienda di Marco", "Libera professionista", "Insegnante d’inglese"], answer: "Libera professionista" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>da + present tense: ‘how long’ you’ve been doing something</h3>" +

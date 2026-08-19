@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Giulia", it: "Perfetto. A domani!", en: "Perfect. See you tomorrow!" },
     { sp: "Marco", it: "A domani!", en: "See you tomorrow!" }
   ],
+  dialogueQuiz: [
+    { q: "What time is it?", choices: ["Half past two", "Half past three", "A quarter past three"], answer: "Half past three" },
+    { q: "What day is it today?", choices: ["Monday", "Tuesday", "Sunday"], answer: "Monday" },
+    { q: "What is the date?", choices: ["The fifth of May", "The fifteenth of March", "The fifth of March"], answer: "The fifth of March" },
+    { q: "When is the concert?", choices: ["Today", "Tomorrow", "On Saturday"], answer: "Tomorrow" },
+    { q: "What time does the concert start?", choices: ["At seven", "At eight", "At nine"], answer: "At eight" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Numbers 0–20</h3>" +

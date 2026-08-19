@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Lena", de: "Fertig. Jetzt stehen wir mitten im Zimmer und es sieht super aus.", en: "Done. Now we're standing in the middle of the room and it looks great." },
     { sp: "Tom", de: "Komm, wir setzen uns aufs Sofa und machen eine Pause.", en: "Come on, let's sit down on the sofa and take a break." }
   ],
+  dialogueQuiz: [
+    { q: "Wohin soll Lena die Lampe stellen?", choices: ["Auf den Tisch, neben das Buch", "Auf den Boden, neben das Sofa", "Ins Regal, neben die Bücher"], answer: "Auf den Tisch, neben das Buch" },
+    { q: "Wo liegt das Bild noch?", choices: ["Auf dem Boden", "Auf dem Bett", "Auf dem Sofa"], answer: "Auf dem Boden" },
+    { q: "Wohin soll das Bild?", choices: ["Über den Tisch", "An die Wand über das Sofa", "Neben das Regal"], answer: "An die Wand über das Sofa" },
+    { q: "Wo ist die Katze?", choices: ["Unter dem Bett", "Auf dem Sofa", "Hinter dem Regal"], answer: "Unter dem Bett" },
+    { q: "Was machen die beiden am Ende?", choices: ["Sie räumen weiter auf", "Sie gehen spazieren", "Sie setzen sich aufs Sofa"], answer: "Sie setzen sich aufs Sofa" }
+  ],
   reading: {
     title: "Das neue Zimmer",
     de: "Sara zieht in eine neue Wohnung und richtet ihr Arbeitszimmer ein. Zuerst stellt sie den Schreibtisch an die Wand, direkt unter das Fenster. Dann legt sie den Teppich auf den Boden und stellt den Bürostuhl vor den Schreibtisch.\n\nDie Bücher stehen jetzt im Regal, und zwischen den Büchern stehen zwei kleine Pflanzen. An der Wand über dem Schreibtisch hängt eine Pinnwand. Die Lampe steht in der Ecke neben dem Sofa, und der Drucker liegt noch in einem Karton hinter der Tür.\n\nAm Abend setzt sich Sara auf den Stuhl, schaut sich im Zimmer um und ist zufrieden. Alles hat seinen Platz, und morgen kann sie endlich in Ruhe arbeiten.",

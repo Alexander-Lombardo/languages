@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Cliente", fr: "Pas du tout, j'aimerais beaucoup votre avis.", en: "Not at all, I would very much like your opinion." },
     { sp: "Vendeur", fr: "Avec plaisir. Si j'avais votre silhouette, je choisirais le bleu sans hésiter !", en: "With pleasure. If I had your figure, I would choose the blue without hesitating!" }
   ],
+  dialogueQuiz: [
+    { q: "Que veut essayer la cliente ?", choices: ["Une jupe", "Une robe", "Un manteau"], answer: "Une robe" },
+    { q: "Quelle taille demande-t-elle ?", choices: ["36", "38", "40"], answer: "38" },
+    { q: "Que demande la cliente si la robe ne lui va pas ?", choices: ["Un échange", "Une réduction", "Un remboursement"], answer: "Un remboursement" },
+    { q: "Quel modèle le vendeur conseille-t-il aussi ?", choices: ["Le modèle bleu", "Le modèle noir", "Le modèle rouge"], answer: "Le modèle bleu" },
+    { q: "Comment la cliente réagit-elle aux conseils du vendeur ?", choices: ["Elle refuse poliment", "Elle veut son avis", "Elle hésite à l’écouter"], answer: "Elle veut son avis" }
+  ],
   reading: {
     title: "Une lettre polie",
     fr: "Chère Madame, je vous écris au sujet de mon séjour dans votre hôtel le mois prochain. Je voudrais réserver une chambre double avec vue sur la mer. Pourriez-vous me dire si le petit-déjeuner est inclus ? J'aimerais aussi savoir s'il serait possible d'arriver plus tôt, vers midi. Si je pouvais laisser mes bagages avant l'enregistrement, ce serait vraiment idéal. Auriez-vous également une voiture à louer ? À votre place, je réserverais tout à l'avance, mais je préfère vous demander conseil. Il faudrait peut-être confirmer par téléphone. Si vous aviez un moment, je vous serais très reconnaissante de me répondre rapidement. Je vous remercie d'avance et je vous prie d'agréer mes salutations distinguées.",

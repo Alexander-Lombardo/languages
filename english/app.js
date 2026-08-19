@@ -88,26 +88,48 @@
   }
   var speakChain = null; // holds current utterances: guards stale onend chains + Chrome GC bug
   var audioEl = null;    // single reused element so clips never overlap
+  var speakMode = null;  // "file" | "tts" — which backend is currently playing
+  var speakEnd = null;   // callback fired once when the current playback finishes
+  function fireEnd(mode) {
+    if (speakMode !== mode || !speakEnd) return;
+    var cb = speakEnd; speakEnd = null; speakMode = null;
+    cb();
+  }
   function playFile(file, fallbackText) {
-    if (!audioEl) audioEl = new Audio();
+    if (!audioEl) {
+      audioEl = new Audio();
+      audioEl.addEventListener("ended", function () { fireEnd("file"); });
+    }
     audioEl.pause();
     audioEl.src = "audio/" + file;
+    speakMode = "file";
     var p = audioEl.play();
     if (p && p.catch) p.catch(function (err) {
       // missing/broken file -> use device TTS; autoplay-block -> nothing to do
       if (err && err.name !== "NotAllowedError") ttsSpeak(fallbackText);
+      else fireEnd("file");
     });
     return true;
   }
-  function speak(text) {
+  function speak(text, onEnd) {
     if (!text) return false;
     var t = String(text).trim();
     if (TTS) window.speechSynthesis.cancel();
     if (audioEl) audioEl.pause();
     speakChain = null;
+    speakMode = null;
+    speakEnd = typeof onEnd === "function" ? onEnd : null;
     var file = HAS_FILES && window.AUDIO_FILES[t];
     if (file && playFile(file, t)) return true;
     return ttsSpeak(t);
+  }
+  function pauseSpeak() {
+    if (speakMode === "file" && audioEl) audioEl.pause();
+    else if (speakMode === "tts" && TTS) window.speechSynthesis.pause();
+  }
+  function resumeSpeak() {
+    if (speakMode === "file" && audioEl) audioEl.play();
+    else if (speakMode === "tts" && TTS) window.speechSynthesis.resume();
   }
   function ttsSpeak(text) {
     if (!TTS || !text) return false;
@@ -129,8 +151,10 @@
             if (speakChain === utts) window.speechSynthesis.speak(utts[i + 1]);
           }, 300);
         };
+        else u.onend = function () { if (speakChain === utts) fireEnd("tts"); };
       });
       speakChain = utts;
+      speakMode = "tts";
       window.speechSynthesis.speak(utts[0]);
       return true;
     } catch (e) { return false; }
@@ -530,15 +554,85 @@
         el("span", { class: "gloss", text: " — " + d.es })
       ]);
     });
-    var wrap = el("div", { class: "dialogue" }, lines);
-    var toggle = el("button", { class: "btn small", onclick: function () {
+    var wrap = el("div", { class: "dialogue" }, lines.concat([
+      el("p", { class: "hidden-note muted", text: "Transcripción oculta — solo escucha." })
+    ]));
+    var toggleTr = el("button", { class: "btn small", onclick: function () {
       wrap.classList.toggle("show-tr");
-      toggle.textContent = wrap.classList.contains("show-tr") ? "Ocultar español" : "Mostrar español";
+      toggleTr.textContent = wrap.classList.contains("show-tr") ? "Ocultar español" : "Mostrar español";
     } }, ["Mostrar español"]);
-    var playAll = CAN_AUDIO ? el("button", { class: "btn small ghost", onclick: function () {
-      speak(lesson.dialogue.map(function (d) { return d.en; }).join(". "));
-    } }, ["🔊 Reproducir todo"]) : null;
-    return el("section", {}, [sectionTitle("Diálogo"), el("div", { class: "row-controls" }, [toggle, playAll]), wrap]);
+    var toggleText = el("button", { class: "btn small", onclick: function () {
+      var hidden = wrap.classList.toggle("hide-text");
+      toggleText.textContent = hidden ? "Mostrar texto" : "Ocultar texto";
+      toggleTr.disabled = hidden;
+    } }, ["Ocultar texto"]);
+
+    // ▶ Reproducir → ⏸ Pausa → ▶ Continuar → (fin) ▶ Reproducir
+    var playBtn = null;
+    if (CAN_AUDIO) {
+      var joined = lesson.dialogue.map(function (d) { return d.en; }).join(". ");
+      var state = "idle";
+      function setState(st) {
+        state = st;
+        playBtn.textContent = st === "playing" ? "⏸ Pausa" : st === "paused" ? "▶ Continuar" : "▶ Reproducir";
+      }
+      playBtn = el("button", { class: "btn small ghost", onclick: function () {
+        if (state === "playing") { pauseSpeak(); setState("paused"); }
+        else if (state === "paused") { resumeSpeak(); setState("playing"); }
+        else {
+          var ok = speak(joined, function () { setState("idle"); });
+          setState(ok ? "playing" : "idle");
+        }
+      } }, ["▶ Reproducir"]);
+    }
+
+    var quiz = renderDialogueQuiz(lesson.dialogueQuiz);
+    return el("section", {}, [
+      sectionTitle("Diálogo"),
+      el("div", { class: "row-controls" }, [toggleTr, toggleText, playBtn]),
+      wrap, quiz
+    ]);
+  }
+
+  function renderDialogueQuiz(questions) {
+    if (!questions || !questions.length) return null;
+    var box = el("div", { class: "dq" });
+    function build() {
+      box.innerHTML = "";
+      box.appendChild(el("h4", { class: "dq-title", text: "Comprensión auditiva" }));
+      box.appendChild(el("p", { class: "muted", text: "Responde según lo que escuchaste." }));
+      var answered = 0, correct = 0;
+      var score = el("p", { class: "score-line" });
+      questions.forEach(function (q, qi) {
+        var locked = false;
+        var choicesWrap = el("div", { class: "mc-choices" });
+        (q.choices || []).forEach(function (choice) {
+          var b = el("button", { class: "mc-choice", type: "button", onclick: function () {
+            if (locked) return;
+            locked = true; answered++;
+            if (normalize(choice) === normalize(q.answer)) { b.classList.add("right"); correct++; }
+            else {
+              b.classList.add("wrong");
+              Array.prototype.forEach.call(choicesWrap.children, function (cb) {
+                if (normalize(cb.textContent) === normalize(q.answer)) cb.classList.add("right");
+              });
+            }
+            if (answered === questions.length) {
+              score.textContent = "Acertaste " + correct + "/" + questions.length + ".";
+              score.appendChild(el("a", { class: "ex-show", href: "javascript:void 0", onclick: build, text: "↻ Intentar de nuevo" }));
+            }
+          } }, [choice]);
+          choicesWrap.appendChild(b);
+        });
+        box.appendChild(el("div", { class: "dq-q" }, [
+          el("p", { class: "ex-prompt", text: (qi + 1) + ". " + q.q }),
+          choicesWrap
+        ]));
+      });
+      box.appendChild(score);
+    }
+    build();
+    return box;
   }
 
   function renderReading(lesson) {

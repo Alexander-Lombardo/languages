@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Mateo", es: "¿Cómo se llaman tus gatos?", en: "What are your cats' names?" },
     { sp: "Sofía", es: "Mis gatos se llaman Luna y Sol.", en: "My cats' names are Luna and Sol." }
   ],
+  dialogueQuiz: [
+    { q: "How does Mateo describe his family?", choices: ["Big", "Small", "Happy"], answer: "Small" },
+    { q: "What is Mateo’s brother’s name?", choices: ["Carlos", "Diego", "Mateo"], answer: "Diego" },
+    { q: "What is Mateo’s mother’s name?", choices: ["Elena", "Luna", "Sofía"], answer: "Elena" },
+    { q: "What is Mateo’s dog’s name?", choices: ["Sol", "Luna", "Toby"], answer: "Toby" },
+    { q: "How many cats does Sofía have?", choices: ["One", "Two", "Three"], answer: "Two" }
+  ],
   grammarHTML:
     "<h3>Possessive adjectives</h3>" +
     "<p>A possessive adjective tells you <em>whose</em> something is. It goes <strong>before</strong> the noun, just like English 'my' or 'your': <em>mi madre</em> = my mother.</p>" +

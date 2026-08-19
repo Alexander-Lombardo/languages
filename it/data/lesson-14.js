@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Sara", it: "Bene! A che ora ti sei addormentato?", en: "Good! What time did you fall asleep?" },
     { sp: "Luca", it: "Mi sono addormentato a mezzanotte. Sono stanco oggi!", en: "I fell asleep at midnight. I'm tired today!" }
   ],
+  dialogueQuiz: [
+    { q: "What time does Sara wake up?", choices: ["At six", "At seven", "At half past seven"], answer: "At seven" },
+    { q: "When does Luca usually take a shower?", choices: ["In the morning", "In the evening", "After lunch"], answer: "In the evening" },
+    { q: "What happened to Luca yesterday morning?", choices: ["He woke up late", "He got up early", "He skipped breakfast"], answer: "He woke up late" },
+    { q: "What did Luca do last night?", choices: ["He stayed home alone", "He had fun with friends", "He worked late"], answer: "He had fun with friends" },
+    { q: "What time did Luca fall asleep?", choices: ["At ten", "At eleven", "At midnight"], answer: "At midnight" }
+  ],
   reading: {
     title: "La giornata di Giulia",
     it: "Giulia si sveglia ogni mattina alle sei e mezza. Si alza subito, si lava e si veste in dieci minuti. Di solito fa colazione con un caffè e poi va al lavoro. La sera si diverte con gli amici e si addormenta presto perché è sempre stanca.",

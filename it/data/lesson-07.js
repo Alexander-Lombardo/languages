@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Cameriere", it: "Subito. Fanno cinque euro in tutto.", en: "Right away. That's five euros in total." },
     { sp: "Luca", it: "Ecco a Lei. Grazie!", en: "Here you go. Thank you!" }
   ],
+  dialogueQuiz: [
+    { q: "What does Anna order?", choices: ["A coffee and water", "A cappuccino and a croissant", "A tea and a cake"], answer: "A cappuccino and a croissant" },
+    { q: "What kind of water does Luca want?", choices: ["Still", "Sparkling", "Hot"], answer: "Still" },
+    { q: "How much is the croissant?", choices: ["One euro", "One euro twenty", "Two euros"], answer: "One euro twenty" },
+    { q: "What does Anna ask for?", choices: ["More coffee", "The menu", "The bill"], answer: "The bill" },
+    { q: "What is the total?", choices: ["Four euros", "Five euros", "Six euros"], answer: "Five euros" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Three polite ways to order</h3>" +

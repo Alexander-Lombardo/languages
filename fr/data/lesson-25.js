@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Camille", fr: "Bien sûr ! J'ai hâte que tu sois installé pour visiter la ville.", en: "Of course! I can't wait for you to be settled so I can visit the city." },
     { sp: "Yanis", fr: "Parfait. Je suis heureux que tu me soutiennes autant.", en: "Perfect. I'm happy that you support me so much." }
   ],
+  dialogueQuiz: [
+    { q: "Qu’est-ce que Yanis a décidé ?", choices: ["De partir à Lyon pour un poste", "De rester à Paris", "De changer d’université"], answer: "De partir à Lyon pour un poste" },
+    { q: "Quand doit-il partir ?", choices: ["La semaine prochaine", "Le mois prochain", "L’année prochaine"], answer: "Le mois prochain" },
+    { q: "De quoi Yanis a-t-il un peu peur ?", choices: ["Que le poste soit mal payé", "Que la ville soit trop grande", "Que ce soit difficile au début"], answer: "Que ce soit difficile au début" },
+    { q: "Que conseille Camille ?", choices: ["D’attendre encore un peu", "D’essayer plutôt que de regretter", "De refuser le poste"], answer: "D’essayer plutôt que de regretter" },
+    { q: "Que souhaite Yanis à la fin ?", choices: ["Que Camille vienne le voir", "Que Camille parte avec lui", "Que Camille trouve un poste"], answer: "Que Camille vienne le voir" }
+  ],
   reading: {
     title: "Le grand projet de Sofia",
     fr: "Sofia rêve depuis longtemps d'ouvrir sa propre boulangerie. Ses parents veulent qu'elle finisse d'abord ses études, mais elle a peur que le temps passe trop vite. \"Il faut que je commence maintenant\", dit-elle souvent à ses amis. Sa meilleure amie, Léa, l'encourage : \"Je suis contente que tu aies un vrai projet. Il vaut mieux que tu essaies que de rester avec des regrets.\" Sofia est un peu déçue que la banque hésite à lui prêter de l'argent, mais elle ne perd pas espoir. Elle souhaite que ses gâteaux rendent les gens heureux. Le soir, elle prépare son plan et imagine son avenir. Elle veut réussir, non pas pour devenir riche, mais pour le bonheur de créer quelque chose. Ses amis ont hâte que la boulangerie ouvre enfin ses portes.",

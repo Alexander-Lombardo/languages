@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Lena", de: "Man liest zwischen den Zeilen eine Andeutung von Vergänglichkeit, ohne dass der Erzähler sie je ausspricht.", en: "Between the lines one reads a hint of transience, without the narrator ever stating it." },
     { sp: "Dr. Wendt", de: "Genau das ist die Kunst des Andeutens. Halten wir das als Ihre Kerninterpretation fest.", en: "That is precisely the art of suggestion. Let's record that as your core interpretation." }
   ],
+  dialogueQuiz: [
+    { q: "Was ist laut Lena das zentrale Motiv?", choices: ["Das Licht","Der Regen","Die Stille"], answer: "Das Licht" },
+    { q: "Wofür steht das Licht laut Lena?", choices: ["Für Hoffnung und deren Schwinden","Für Glück und Wärme","Für Wahrheit und Klarheit"], answer: "Für Hoffnung und deren Schwinden" },
+    { q: "Woran macht Lena ihre Deutung fest?", choices: ["An der Wortwahl","An der Handlung","Am Titel"], answer: "An der Wortwahl" },
+    { q: "Welche Stimmung erzeugt die Personifikation?", choices: ["Eine fast bedrohliche","Eine fröhliche","Eine romantische"], answer: "Eine fast bedrohliche" },
+    { q: "Was liest man zwischen den Zeilen?", choices: ["Eine Andeutung von Vergänglichkeit","Eine Liebeserklärung","Eine Warnung vor Gefahr"], answer: "Eine Andeutung von Vergänglichkeit" }
+  ],
   reading: {
     title: "Der letzte Sommer (Auszug)",
     de: "Das Haus stand am Rand des Dorfes, und das Licht der späten Sonne kroch jeden Abend langsam über die Dielen, als suchte es etwas, das längst fortgezogen war. Klara saß am Fenster und zählte nicht die Stunden, sondern die Staubkörner, die im goldenen Strahl tanzten — winzige Welten, die aufleuchteten und wieder erloschen.\n\nDraußen verlor der Garten seine Farben. Die Rosen, die ihre Mutter gepflanzt hatte, beugten sich unter dem Gewicht ihrer eigenen Blüten, und der Wind trug den Geruch von nassem Laub und vergangenen Jahren herein. Klara wusste, dass dies der letzte Sommer in diesem Haus sein würde. Sie sprach es nicht aus; sie ließ es einfach im Raum stehen, schwer und still wie die Möbel, die niemand mehr rückte.\n\nAls das Licht schließlich erlosch, blieb sie sitzen. Nicht aus Trauer, dachte sie, sondern weil das Dunkel ehrlicher war als jeder Abschied.",

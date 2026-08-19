@@ -50,6 +50,13 @@ window.COURSE.lessons.push({
     { sp: "Ольга", ru: "Понятно. Спасибо, Дмитрий!", en: "I see. Thank you, Dmitry!" },
     { sp: "Дмитрий", ru: "Пожалуйста, Ольга. Ты молодец!", en: "You're welcome, Olga. Well done!" }
   ],
+  dialogueQuiz: [
+    { q: "What does Dmitry say about the table?", choices: ["It is new", "It is big", "It is small"], answer: "It is big" },
+    { q: "What is Olga learning about the words?", choices: ["Their gender (он/она/оно)", "Their plural forms", "Their stress"], answer: "Their gender (он/она/оно)" },
+    { q: "Who is Sergei?", choices: ["A teacher", "A student", "A doctor"], answer: "A student" },
+    { q: "Why is «музей» masculine («он»)?", choices: ["It ends in «-й»", "It ends in «-а»", "It ends in «-о»"], answer: "It ends in «-й»" },
+    { q: "How does Dmitry react at the end?", choices: ["He says Olga did well", "He says it is hard", "He asks another question"], answer: "He says Olga did well" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Every Russian noun has a gender</h3>" +

@@ -52,6 +52,13 @@ window.COURSE.lessons.push({
     { sp: "Олег", ru: "Точно. До воскресенья, Маша!", en: "Exactly. See you Sunday, Masha!" },
     { sp: "Маша", ru: "Пока, Олег! Я тебе позвоню вечером.", en: "Bye, Oleg! I'll call you in the evening." }
   ],
+  dialogueQuiz: [
+    { q: "What will Masha do tomorrow morning?", choices: ["Work", "Rest", "Read a book"], answer: "Work" },
+    { q: "What does Masha plan for Saturday?", choices: ["Buy a phone", "Read a whole book", "Visit her grandmother"], answer: "Read a whole book" },
+    { q: "What does Oleg want to do for his grandmother?", choices: ["Visit her", "Buy her a gift", "Write her a letter"], answer: "Write her a letter" },
+    { q: "Where will Oleg buy his new phone?", choices: ["In a shop near the station", "Online", "Near the metro"], answer: "In a shop near the station" },
+    { q: "What will they do on Sunday evening?", choices: ["Call grandmother", "Watch a film", "Go shopping"], answer: "Watch a film" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Two futures, one idea: aspect again</h3>" +

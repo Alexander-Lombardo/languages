@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Luca", it: "Sì, lo conosco dai tempi dell’università. Vivo qui da tre anni con lui vicino.", en: "Yes, I've known him since university days. I've lived here for three years near him." },
     { sp: "Sara", it: "Bello. Allora ci vediamo per cena, verso le otto.", en: "Nice. So we'll see each other for dinner, around eight." }
   ],
+  dialogueQuiz: [
+    { q: "Cosa chiede Luca a Sara di comprare?", choices: ["Pane e latte", "Frutta e verdura", "Caffè e zucchero"], answer: "Pane e latte" },
+    { q: "Di chi è il libro sul tavolo?", choices: ["Di Sara", "Di Luca", "Della biblioteca"], answer: "Della biblioteca" },
+    { q: "Fino a che ora Sara sta dai suoi?", choices: ["Fino alle sei", "Fino alle sette", "Fino alle otto"], answer: "Fino alle sette" },
+    { q: "Cosa deve finire Luca?", choices: ["Un progetto degli studenti", "Un libro", "La cena"], answer: "Un progetto degli studenti" },
+    { q: "Da quanto tempo Luca vive lì?", choices: ["Da un anno", "Da tre anni", "Da dieci anni"], answer: "Da tre anni" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Forming the articulated prepositions</h3>" +

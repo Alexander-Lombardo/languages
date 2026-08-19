@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Léa", fr: "Par conséquent, je nuancerais la thèse, quitte à la reformuler entièrement.", en: "Consequently, I'd qualify the thesis, even if it means reformulating it entirely." },
     { sp: "Hugo", fr: "En somme, prudence sur les chiffres ; en revanche, la problématique, elle, est juste.", en: "In short, caution on the figures; the central question, on the other hand, is sound." }
   ],
+  dialogueQuiz: [
+    { q: "Sur quoi s’appuie l’argument d’Hugo, selon Léa ?", choices: ["Sur des témoignages", "Sur des chiffres récents", "Sur des théories"], answer: "Sur des chiffres récents" },
+    { q: "Que conteste Hugo ?", choices: ["Les chiffres", "La méthodologie", "La conclusion de Léa"], answer: "La méthodologie" },
+    { q: "Que reproche Léa au rapport ?", choices: ["Il est trop long", "Il n’aborde jamais ce point", "Il manque de chiffres"], answer: "Il n’aborde jamais ce point" },
+    { q: "Comment Hugo qualifie-t-il les conclusions ?", choices: ["Prématurées, voire trompeuses", "Solides et claires", "Trop prudentes"], answer: "Prématurées, voire trompeuses" },
+    { q: "Qu’est-ce qui reste juste, selon Hugo ?", choices: ["Les chiffres", "La méthodologie", "La problématique"], answer: "La problématique" }
+  ],
   reading: {
     title: "Bien manier les connecteurs",
     fr: "Un argument convaincant ne se résume pas à une accumulation d'idées ; il repose sur la manière dont ces idées s'articulent. Les connecteurs logiques sont, à cet égard, l'ossature invisible du raisonnement. Encore faut-il les employer à bon escient. On confond souvent en effet et en fait : le premier confirme ce qui précède, tandis que le second introduit une rectification. De même, voire ne signifie pas voir : il renforce et signifie « et même ». Quant à or, il ne marque ni le temps ni l'addition, mais un tournant décisif dans le raisonnement, là où l'on oppose un fait nouveau à ce qui vient d'être posé. Maîtriser ces nuances, c'est gagner en précision comme en élégance. Un texte truffé de donc et de mais paraît scolaire ; en revanche, un usage mesuré de néanmoins, dès lors ou par ailleurs lui confère de la tenue. En somme, le connecteur n'est pas un ornement : il est le signe que la pensée avance.",

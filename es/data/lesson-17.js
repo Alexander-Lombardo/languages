@@ -44,6 +44,13 @@ window.COURSE.lessons.push({
     { sp: "Sofía", es: "Entonces, ¡vamos a la playa hoy!", en: "Then, let's go to the beach today!" },
     { sp: "Mateo", es: "Vale. Llevo agua y protector solar.", en: "Okay. I'll bring water and sunscreen." }
   ],
+  dialogueQuiz: [
+    { q: "What is the weather like today?", choices: ["Sunny with some wind", "Cloudy and cold", "Rainy"], answer: "Sunny with some wind" },
+    { q: "What is the temperature?", choices: ["Fifteen degrees", "Twenty degrees", "Twenty-five degrees"], answer: "Twenty-five degrees" },
+    { q: "What will the weather be like tomorrow?", choices: ["Very hot", "Rainy", "Windy"], answer: "Rainy" },
+    { q: "Which season does the second speaker prefer?", choices: ["Spring", "Summer", "Winter"], answer: "Summer" },
+    { q: "What will they take to the beach?", choices: ["Water and sunscreen", "Food and towels", "An umbrella"], answer: "Water and sunscreen" }
+  ],
   grammarHTML:
     "<h3>Talking about the weather: three little verbs</h3>" +
     "<p>Spanish doesn't say \"the weather is hot.\" It uses three different verbs depending on the word. Learn which one goes with which.</p>" +

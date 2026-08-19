@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Tom", de: "Ich arbeite in einem Café. Heute koche ich aber zu Hause.", en: "I work in a café. But today I'm cooking at home." },
     { sp: "Lena", de: "Schön! Dann lernen wir morgen zusammen.", en: "Nice! Then we'll study together tomorrow." }
   ],
+  dialogueQuiz: [
+    { q: "Where does Lena live?", choices: ["Berlin", "Hamburg", "Munich"], answer: "Hamburg" },
+    { q: "What is Tom doing today?", choices: ["Playing football with Max", "Playing tennis with Max", "Working in the café"], answer: "Playing football with Max" },
+    { q: "What does Tom do in the evening?", choices: ["He cooks", "He studies German", "He listens to music"], answer: "He studies German" },
+    { q: "Where does Tom work?", choices: ["In a café", "In a school", "In an office"], answer: "In a café" },
+    { q: "When will they study together?", choices: ["Today", "Tomorrow", "On the weekend"], answer: "Tomorrow" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Regular (weak) verbs in the present</h3>" +

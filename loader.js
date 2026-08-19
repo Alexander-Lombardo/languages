@@ -7,6 +7,7 @@
   "use strict";
 
   var LANG_KEY = "activeLanguage.v1";
+  var DATA_V = 2; // cache-buster for <code>/data/*.js — bump when lesson content changes
   var LANGS = window.SITE_LANGS;
   var MANIFEST = window.SITE_MANIFEST;
 
@@ -139,7 +140,7 @@
     }
     files.forEach(function (f) {
       var s = document.createElement("script");
-      s.src = code + "/data/" + f;
+      s.src = code + "/data/" + f + "?v=" + DATA_V; // bump DATA_V when lesson content changes
       s.async = false; // preserve execution order (course.js first, lessons in order)
       s.onload = tick;
       s.onerror = function () {

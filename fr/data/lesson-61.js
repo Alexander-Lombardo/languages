@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Tutrice", fr: "Exactement. Maintenant, reformule sa thèse en une phrase, sans « je pense » et sans recopier ses mots.", en: "Exactly. Now reformulate his thesis in one sentence, without 'I think' and without copying his words." },
     { sp: "Élève", fr: "L'auteur met en évidence le coût caché de la vitesse : à force de tout survoler, on cesse de comprendre.", en: "The author highlights the hidden cost of speed: by skimming everything, we stop understanding." }
   ],
+  dialogueQuiz: [
+    { q: "Quel est le type du texte étudié ?", choices: ["Narratif", "Descriptif", "Argumentatif"], answer: "Argumentatif" },
+    { q: "Quelle thèse l’auteur défend-il ?", choices: ["La lecture rapide appauvrit le sens", "La lecture rapide fait gagner du temps", "Il faut lire davantage"], answer: "La lecture rapide appauvrit le sens" },
+    { q: "Que demande la tutrice de repérer ?", choices: ["Les figures de style", "Les marqueurs d’opinion", "Les connecteurs logiques"], answer: "Les marqueurs d’opinion" },
+    { q: "Pourquoi « soi-disant efficace » est-il ironique ?", choices: ["Il sous-entend le contraire", "Il exagère", "Il est familier"], answer: "Il sous-entend le contraire" },
+    { q: "Comment l’élève doit-il reformuler la thèse ?", choices: ["En citant l’auteur", "Sans « je pense » ni recopier", "En deux paragraphes"], answer: "Sans « je pense » ni recopier" }
+  ],
   reading: {
     title: "Éloge de la lenteur, ou le procès de la lecture pressée",
     fr: "On nous vend la lecture rapide comme une compétence indispensable, soi-disant taillée pour l'époque. Avalez trois cents pages en une heure, nous promet-on, et le savoir sera vôtre. L'argument séduit ; il est pourtant trompeur. Lire, ce n'est pas transvaser de l'information d'une page vers un cerveau, comme on remplit un seau. C'est dialoguer, suspendre, revenir en arrière, laisser une phrase résonner. Or la vitesse, par définition, interdit ce retour. Le lecteur pressé croit gagner du temps ; en réalité, il perd le texte. Qu'on ne s'y trompe pas : je ne plaide pas pour la lenteur béate, ni contre la lecture utilitaire d'un mode d'emploi. Je distingue. Certains textes se consomment, d'autres se méditent. Confondre les deux, c'est traiter un poème comme une facture. La culture véritable ne se mesure pas au nombre de pages parcourues, mais à la profondeur des traces qu'elles laissent. À force de tout survoler, nous finissons par ne plus rien habiter. Ralentir, dès lors, n'est pas une coquetterie nostalgique : c'est, peut-être, la dernière manière de lire vraiment.",

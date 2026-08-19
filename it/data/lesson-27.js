@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Marco", it: "Certo, fallo tu il caffè mentre io vado in biglietteria.", en: "Sure, you make the coffee while I go to the ticket office." },
     { sp: "Anna", it: "D’accordo. Ragazzi, venite, andiamo verso il binario tre!", en: "Okay. Guys, come on, let's head to platform three!" }
   ],
+  dialogueQuiz: [
+    { q: "Che cosa cerca il cliente?", choices: ["La fermata dell’autobus", "La stazione più vicina", "La biglietteria"], answer: "La stazione più vicina" },
+    { q: "Quanto dista la stazione a piedi?", choices: ["Dieci minuti", "Cinque minuti", "Un quarto d’ora"], answer: "Cinque minuti" },
+    { q: "Tra quanto parte il treno?", choices: ["Tra cinque minuti", "Tra dieci minuti", "Tra venti minuti"], answer: "Tra dieci minuti" },
+    { q: "Che cosa chiede Anna a Marco di prendere per lei?", choices: ["Un’acqua", "Un caffè", "Un biglietto"], answer: "Un’acqua" },
+    { q: "Dove devono andare i ragazzi?", choices: ["Al binario tre", "In Via Roma", "Alla biglietteria"], answer: "Al binario tre" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>The informal imperative: tu, noi, voi</h3>" +

@@ -50,6 +50,13 @@ window.COURSE.lessons.push({
     { sp: "Анна", ru: "Хорошо! Мы все учим языки.", en: "Good! We're all studying languages." },
     { sp: "Том", ru: "Да! Это интересно.", en: "Yes! It's interesting." }
   ],
+  dialogueQuiz: [
+    { q: "Where does Tom work?", choices: ["At a school", "At a shop", "At a café"], answer: "At a school" },
+    { q: "Why does the speaker understand Tom?", choices: ["Tom speaks slowly", "Tom speaks English", "Tom writes everything"], answer: "Tom speaks slowly" },
+    { q: "What is Ivan doing now?", choices: ["Reading a book", "Listening to music", "Learning English"], answer: "Listening to music" },
+    { q: "How do they feel about music?", choices: ["They love it", "They don’t like it", "They rarely listen"], answer: "They love it" },
+    { q: "How well do Ivan and Maria know English?", choices: ["Very well", "A little", "Not at all"], answer: "A little" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Russian verbs change their ending for every person</h3>" +

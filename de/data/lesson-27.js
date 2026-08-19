@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Lena", de: "Abgemacht. Ich hoffe nur, dass das Wetter besser wird.", en: "Deal. I just hope (that) the weather gets better." },
     { sp: "Tom", de: "Und wenn nicht, bleiben wir eben drinnen.", en: "And if not, we'll just stay inside." }
   ],
+  dialogueQuiz: [
+    { q: "Was glaubt Lena über das Wetter?", choices: ["Es wird heute noch regnen", "Es wird sonnig", "Es wird schneien"], answer: "Es wird heute noch regnen" },
+    { q: "Warum will Tom zu Hause bleiben?", choices: ["Weil er krank ist", "Weil er müde ist", "Weil er kein Geld hat"], answer: "Weil er müde ist" },
+    { q: "Was hat Tom morgen?", choices: ["Ein Vorstellungsgespräch", "Einen Arzttermin", "Eine Prüfung"], answer: "Eine Prüfung" },
+    { q: "Was macht Tom, bevor er anfängt zu lernen?", choices: ["Er trinkt einen Kaffee", "Er schaut einen Film", "Er geht spazieren"], answer: "Er trinkt einen Kaffee" },
+    { q: "Was wollen sie nach dem Lernen machen?", choices: ["Essen gehen", "Einen Film schauen", "In die Bibliothek gehen"], answer: "Einen Film schauen" }
+  ],
   reading: {
     title: "Warum Jonas Deutsch lernt",
     de: "Jonas lernt seit zwei Jahren Deutsch, weil er später in Deutschland studieren möchte. Er weiß, dass die Sprache nicht leicht ist, aber er gibt nicht auf. Obwohl er manchmal Fehler macht, spricht er jeden Tag ein bisschen mehr.\n\nWenn er ein neues Wort lernt, schreibt er es sofort in ein Heft. Bevor er schlafen geht, wiederholt er die Wörter noch einmal, damit er sie nicht vergisst. Nachdem er einen Film auf Deutsch gesehen hat, notiert er die Sätze, die ihm gefallen.\n\nSeine Lehrerin sagt, dass Jonas große Fortschritte macht. Er hofft, dass er nächstes Jahr die Prüfung besteht, denn dann kann sein neues Leben in Berlin beginnen.",

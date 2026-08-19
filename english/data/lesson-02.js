@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Noah", en: "A little, but I'm happy. The students are great.", es: "Un poco, pero estoy contento. Los estudiantes son geniales." },
     { sp: "Mia", en: "We're happy too. See you!", es: "Nosotros también estamos contentos. ¡Hasta luego!" }
   ],
+  dialogueQuiz: [
+    { q: "¿Qué es Mia?", choices: ["Profesora", "Estudiante", "Directora"], answer: "Estudiante" },
+    { q: "¿Quién es la profesora de Mia?", choices: ["El señor Brown", "La señora Lee", "La señora Brown"], answer: "La señora Lee" },
+    { q: "¿Cómo es la profesora?", choices: ["Muy estricta", "Muy simpática", "Muy cansada"], answer: "Muy simpática" },
+    { q: "¿Qué es Noah?", choices: ["Estudiante", "Profesor", "Padre de un alumno"], answer: "Profesor" },
+    { q: "¿Cómo se siente Noah hoy?", choices: ["Un poco cansado pero contento", "Muy cansado y triste", "Enfermo y preocupado"], answer: "Un poco cansado pero contento" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>¿Para qué sirve <em>to be</em>?</h3>" +

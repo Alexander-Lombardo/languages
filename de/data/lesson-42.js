@@ -39,6 +39,13 @@ window.COURSE.lessons.push({
     { sp: "Frau Weber", de: "Das stimmt. Ich stelle Ihnen die Daten zur Verfügung, dann können Sie die Lösung ausarbeiten.", en: "That's true. I'll make the data available to you, then you can work out the solution." },
     { sp: "Herr Klein", de: "Gut. Die Bedeutung dieser Entwicklung sollten wir auf keinen Fall in Frage stellen.", en: "Good. We should under no circumstances call the importance of this development into question." }
   ],
+  dialogueQuiz: [
+    { q: "Welchen Stil sollen sie im Bericht verwenden?", choices: ["Den Nominalstil","Den Verbalstil","Den Umgangston"], answer: "Den Nominalstil" },
+    { q: "Warum empfiehlt Frau Weber diesen Stil?", choices: ["Er wirkt sachlicher","Er ist leichter zu lesen","Er ist kürzer"], answer: "Er wirkt sachlicher" },
+    { q: "Was bewirkt die Substantivierung laut Frau Weber?", choices: ["Der Text wird dichter und formeller","Der Text wird lockerer","Der Text wird persönlicher"], answer: "Der Text wird dichter und formeller" },
+    { q: "Wovor warnt Herr Klein?", choices: ["Sie verlieren sonst Zeit","Sie verlieren sonst Kunden","Sie verlieren sonst Geld"], answer: "Sie verlieren sonst Zeit" },
+    { q: "Was stellt Frau Weber Herrn Klein zur Verfügung?", choices: ["Die Daten","Ein Büro","Ein Team"], answer: "Die Daten" }
+  ],
   reading: {
     title: "Der Reiz des Nominalstils",
     de: "Die deutsche Verwaltungs- und Wissenschaftssprache liebt das Nomen. Statt zu schreiben „nachdem man die Daten ausgewertet hatte“, formuliert man lieber „nach der Auswertung der Daten“. Diese Substantivierung führt zu einer höheren Informationsdichte, weil viele Inhalte in wenige Wörter gepackt werden.\n\nDer Vorteil liegt in der Sachlichkeit und Knappheit. Der Nachteil ist die Schwerfälligkeit: Eine Häufung von Nomen auf -ung, -heit und -keit kann einen Text trocken und unpersönlich machen. Gute Autoren achten deshalb auf ein Gleichgewicht zwischen verbalem und nominalem Stil.\n\nWer Deutsch auf hohem Niveau beherrschen will, muss beide Register kennen. Im Gespräch klingt der Verbalstil natürlicher und lebendiger; in Berichten, Anträgen und Gesetzestexten dagegen herrscht die Nominalisierung. Die bewusste Wahl des Stils ist letztlich eine Frage der Wirkung.",

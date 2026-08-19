@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Manager", en: "Not to worry. Kind regards, and enjoy your day off.", es: "No se preocupe. Un saludo y que disfrute su día libre." },
     { sp: "Employee", en: "Thanks a lot. Cheers!", es: "Muchas gracias. ¡Hasta luego!" }
   ],
+  dialogueQuiz: [
+    { q: "What does the narrator compare?", choices: ["Two ways of asking for time off", "Two job interviews", "Two ways of saying sorry"], answer: "Two ways of asking for time off" },
+    { q: "Which day does the employee want off?", choices: ["Next Monday", "Next Friday", "Next Wednesday"], answer: "Next Friday" },
+    { q: "What does the manager ask the employee to send?", choices: ["A short email", "A signed form", "A doctor’s note"], answer: "A short email" },
+    { q: "What should the employee finish first?", choices: ["The budget", "The report", "The presentation"], answer: "The report" },
+    { q: "What does the employee apologise for?", choices: ["Being late", "The short notice", "Missing a meeting"], answer: "The short notice" }
+  ],
   reading: {
     title: "Reading the Room",
     en: "Knowing what to say is only half of communication in English. Knowing how to say it is the other half. The same idea can sound friendly, neutral or stiff depending on the words and structures you choose. This is called register, and native speakers switch between levels almost without thinking.\n\nInformal English is relaxed. It uses contractions (I'm, don't, we'll), phrasal verbs (get on with, put up with), and short, common words. You hear it among friends, in text messages and on social media. Formal English is more careful. It avoids contractions, prefers single precise verbs (receive instead of get, request instead of ask for), and uses connectors like however and therefore.\n\nThe danger is using the wrong level. Writing \"Hey, give me the money you owe me\" to a client sounds rude, even if every word is correct. Saying \"I would be most grateful for your assistance\" to a close friend sounds cold and strange. Good speakers read the situation first, then match their language to it.\n\nWhen in doubt, lean slightly more formal with strangers and in writing, and relax once the other person sets a friendlier tone. Softening words such as could, would, possibly and I was wondering make almost any request more polite.",

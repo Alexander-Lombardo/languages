@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Théo", fr: "Si on était partis ce jour-là, on aurait raté l'examen.", en: "If we had left that day, we would have missed the exam." },
     { sp: "Léa", fr: "C'est vrai. Au fond, on avait bien fait de rester.", en: "True. Deep down, we had done well to stay." }
   ],
+  dialogueQuiz: [
+    { q: "Qui est Monsieur Roche ?", choices: ["Un ancien voisin", "Un vieux professeur", "Le directeur du lycée"], answer: "Un vieux professeur" },
+    { q: "Depuis combien de temps enseignait-il quand Théo est arrivé ?", choices: ["Dix ans", "Vingt ans", "Trente ans"], answer: "Vingt ans" },
+    { q: "Qu’a remarqué Léa en passant devant l’école ?", choices: ["Elle avait fermé", "Elle était rénovée", "Elle était en travaux"], answer: "Elle avait fermé" },
+    { q: "Qu’est-il arrivé au voyage organisé ?", choices: ["Il a été annulé", "Il a été reporté", "Il a eu lieu"], answer: "Il a été annulé" },
+    { q: "Que se serait-il passé s’ils étaient partis ?", choices: ["Ils auraient raté l’examen", "Ils auraient perdu de l’argent", "Ils auraient été malades"], answer: "Ils auraient raté l’examen" }
+  ],
   reading: {
     title: "Le retour au village",
     fr: "Quand Camille est revenue dans le village de son enfance, elle a eu un choc. Tout avait changé. La petite boulangerie où sa grand-mère l'avait emmenée chaque dimanche avait disparu. À sa place, on avait construit un supermarché impersonnel.\n\nElle s'est promenée dans les rues qu'elle avait parcourues mille fois. La maison familiale, qu'on avait vendue après la mort de ses parents, semblait plus petite que dans ses souvenirs. Les arbres qu'elle avait plantés enfant étaient devenus immenses.\n\nDevant l'ancienne école, elle s'est arrêtée. Les amis avec qui elle avait grandi étaient tous partis vivre ailleurs. À l'époque, ils avaient juré de rester toujours ensemble. La vie en avait décidé autrement.\n\nCamille a souri tristement. Elle regrettait de ne pas être revenue plus tôt. Si elle avait su que tout disparaîtrait si vite, elle aurait gardé plus de photos, plus de souvenirs. Mais ce jour-là, elle a compris une chose : le passé, on ne peut que le raconter.",

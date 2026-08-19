@@ -80,27 +80,49 @@ window.startCourse = function (cfg) {
   }
   var speakChain = null; // holds current utterances: guards stale onend chains + Chrome GC bug
   var audioEl = null;    // single reused element so clips never overlap
+  var speakMode = null;  // "file" | "tts" — which backend is currently playing
+  var speakEnd = null;   // callback fired once when the current playback finishes
+  function fireEnd(mode) {
+    if (speakMode !== mode || !speakEnd) return;
+    var cb = speakEnd; speakEnd = null; speakMode = null;
+    cb();
+  }
   function playFile(file, fallbackText) {
     if (typeof Audio === "undefined") return false;
-    if (!audioEl) audioEl = new Audio();
+    if (!audioEl) {
+      audioEl = new Audio();
+      audioEl.addEventListener("ended", function () { fireEnd("file"); });
+    }
     audioEl.pause();
     audioEl.src = cfg.code + "/audio/" + file;
+    speakMode = "file";
     var p = audioEl.play();
     if (p && p.catch) p.catch(function (err) {
       // missing/broken file -> use device TTS; autoplay-block -> nothing to do
       if (err && err.name !== "NotAllowedError") ttsSpeak(fallbackText);
+      else fireEnd("file");
     });
     return true;
   }
-  function speak(text) {
+  function speak(text, onEnd) {
     if (!text) return false;
     var t = String(text).trim();
     if (TTS) window.speechSynthesis.cancel();
     if (audioEl) audioEl.pause();
     speakChain = null;
+    speakMode = null;
+    speakEnd = typeof onEnd === "function" ? onEnd : null;
     var file = cfg.audio && window.AUDIO_FILES && window.AUDIO_FILES[t];
     if (file && playFile(file, t)) return true;
     return ttsSpeak(t);
+  }
+  function pauseSpeak() {
+    if (speakMode === "file" && audioEl) audioEl.pause();
+    else if (speakMode === "tts" && TTS) window.speechSynthesis.pause();
+  }
+  function resumeSpeak() {
+    if (speakMode === "file" && audioEl) audioEl.play();
+    else if (speakMode === "tts" && TTS) window.speechSynthesis.resume();
   }
   function ttsSpeak(text) {
     if (!TTS) return false;
@@ -121,8 +143,10 @@ window.startCourse = function (cfg) {
             if (speakChain === utts) window.speechSynthesis.speak(utts[i + 1]);
           }, 300);
         };
+        else u.onend = function () { if (speakChain === utts) fireEnd("tts"); };
       });
       speakChain = utts;
+      speakMode = "tts";
       window.speechSynthesis.speak(utts[0]);
       return true;
     } catch (e) { return false; }
@@ -522,15 +546,85 @@ window.startCourse = function (cfg) {
         el("span", { class: "en", text: " — " + d.en })
       ]);
     });
-    var wrap = el("div", { class: "dialogue show-en" }, lines);
-    var toggle = el("button", { class: "btn small", onclick: function () {
+    var wrap = el("div", { class: "dialogue show-en" }, lines.concat([
+      el("p", { class: "hidden-note muted", text: "Transcript hidden — just listen." })
+    ]));
+    var toggleEn = el("button", { class: "btn small", onclick: function () {
       wrap.classList.toggle("show-en");
-      toggle.textContent = wrap.classList.contains("show-en") ? "Hide English" : "Show English";
+      toggleEn.textContent = wrap.classList.contains("show-en") ? "Hide English" : "Show English";
     } }, ["Hide English"]);
-    var playAll = CAN_AUDIO ? el("button", { class: "btn small ghost", onclick: function () {
-      speak(lesson.dialogue.map(function (d) { return d[F]; }).join(". "));
-    } }, ["🔊 Play all"]) : null;
-    return el("section", {}, [sectionTitle("Dialogue"), el("div", { class: "row-controls" }, [toggle, playAll]), wrap]);
+    var toggleText = el("button", { class: "btn small", onclick: function () {
+      var hidden = wrap.classList.toggle("hide-text");
+      toggleText.textContent = hidden ? "Show text" : "Hide text";
+      toggleEn.disabled = hidden;
+    } }, ["Hide text"]);
+
+    // ▶ Play → ⏸ Pause → ▶ Resume → (ends) ▶ Play
+    var playBtn = null;
+    if (CAN_AUDIO) {
+      var joined = lesson.dialogue.map(function (d) { return d[F]; }).join(". ");
+      var state = "idle";
+      function setState(st) {
+        state = st;
+        playBtn.textContent = st === "playing" ? "⏸ Pause" : st === "paused" ? "▶ Resume" : "▶ Play";
+      }
+      playBtn = el("button", { class: "btn small ghost", onclick: function () {
+        if (state === "playing") { pauseSpeak(); setState("paused"); }
+        else if (state === "paused") { resumeSpeak(); setState("playing"); }
+        else {
+          var ok = speak(joined, function () { setState("idle"); });
+          setState(ok ? "playing" : "idle");
+        }
+      } }, ["▶ Play"]);
+    }
+
+    var quiz = renderDialogueQuiz(lesson.dialogueQuiz);
+    return el("section", {}, [
+      sectionTitle("Dialogue"),
+      el("div", { class: "row-controls" }, [toggleEn, toggleText, playBtn]),
+      wrap, quiz
+    ]);
+  }
+
+  function renderDialogueQuiz(questions) {
+    if (!questions || !questions.length) return null;
+    var box = el("div", { class: "dq" });
+    function build() {
+      box.innerHTML = "";
+      box.appendChild(el("h4", { class: "dq-title", text: "Listening check" }));
+      box.appendChild(el("p", { class: "muted", text: "Answer from what you heard." }));
+      var answered = 0, correct = 0;
+      var score = el("p", { class: "score-line" });
+      questions.forEach(function (q, qi) {
+        var locked = false;
+        var choicesWrap = el("div", { class: "mc-choices" });
+        (q.choices || []).forEach(function (choice) {
+          var b = el("button", { class: "mc-choice", type: "button", onclick: function () {
+            if (locked) return;
+            locked = true; answered++;
+            if (normalize(choice) === normalize(q.answer)) { b.classList.add("right"); correct++; }
+            else {
+              b.classList.add("wrong");
+              Array.prototype.forEach.call(choicesWrap.children, function (cb) {
+                if (normalize(cb.textContent) === normalize(q.answer)) cb.classList.add("right");
+              });
+            }
+            if (answered === questions.length) {
+              score.textContent = "You got " + correct + "/" + questions.length + " correct.";
+              score.appendChild(el("a", { class: "ex-show", href: "javascript:void 0", onclick: build, text: "↻ Try again" }));
+            }
+          } }, [choice]);
+          choicesWrap.appendChild(b);
+        });
+        box.appendChild(el("div", { class: "dq-q" }, [
+          el("p", { class: "ex-prompt", text: (qi + 1) + ". " + q.q }),
+          choicesWrap
+        ]));
+      });
+      box.appendChild(score);
+    }
+    build();
+    return box;
   }
 
   function renderReading(lesson) {

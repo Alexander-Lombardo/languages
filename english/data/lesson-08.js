@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Holly", en: "Oh, why? Have you got car problems?", es: "Ah, ¿por qué? ¿Tienes problemas con el coche?" },
     { sp: "Ryan", en: "Yes. But my brother made a plan to help me.", es: "Sí. Pero mi hermano hizo un plan para ayudarme." }
   ],
+  dialogueQuiz: [
+    { q: "¿Qué mascota tiene Ryan?", choices: ["Un gato", "Un perro", "No tiene mascotas"], answer: "Un perro" },
+    { q: "¿Quién tiene un gato?", choices: ["Holly", "La hermana de Holly", "El hermano de Ryan"], answer: "La hermana de Holly" },
+    { q: "¿Cómo es la casa de la hermana de Holly?", choices: ["Grande", "Pequeña", "Nueva"], answer: "Pequeña" },
+    { q: "¿Cómo fue Ryan al trabajo ayer?", choices: ["En coche", "En autobús", "En tren"], answer: "En autobús" },
+    { q: "¿Por qué no fue en coche?", choices: ["Tiene problemas con el coche", "No tiene coche", "Prefiere el autobús"], answer: "Tiene problemas con el coche" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Dos formas de decir «tener»</h3>" +

@@ -46,6 +46,13 @@ window.COURSE.lessons.push({
     { sp: "Anna", de: "Das ist das Wichtigste. Viel Erfolg im Studium!", en: "That's the most important thing. Good luck with your studies!" },
     { sp: "Markus", de: "Danke! Und dir viel Kraft im Krankenhaus.", en: "Thanks! And lots of strength to you at the hospital." }
   ],
+  dialogueQuiz: [
+    { q: "What is Anna’s job?", choices: ["Nurse", "Doctor", "Teacher"], answer: "Doctor" },
+    { q: "Where does Anna work?", choices: ["In a hospital", "In a school", "In an office"], answer: "In a hospital" },
+    { q: "What does Markus study?", choices: ["Medicine", "Computer science", "Economics"], answer: "Computer science" },
+    { q: "What does Markus do on the side?", choices: ["He works as a programmer", "He works in a café", "He teaches German"], answer: "He works as a programmer" },
+    { q: "What does Markus say about his earnings?", choices: ["He earns very well", "They are okay", "He earns nothing"], answer: "They are okay" }
+  ],
   reading: {
     title: "Mein Beruf",
     de: "Ich heiße Sabine und ich bin Lehrerin. Ich arbeite an einer Schule in Hamburg und unterrichte Englisch und Geschichte. Mein Mann ist Ingenieur und arbeitet bei einer großen Firma.\n\nFrüher habe ich an der Universität studiert. Mein Studium hat fünf Jahre gedauert. Die Arbeit mit den Kindern macht mir viel Spaß, aber sie ist auch anstrengend. Am Wochenende muss ich oft die Hefte korrigieren. Trotzdem liebe ich meinen Beruf.",

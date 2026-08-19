@@ -51,6 +51,13 @@ window.COURSE.lessons.push({
     { sp: "Саша", ru: "Понятно. А вечером, после работы?", en: "I see. And in the evening, after work?" },
     { sp: "Нина", ru: "Вечером я свободна. Пойдём гулять с собакой!", en: "In the evening I'm free. Let's go walk the dog!" }
   ],
+  dialogueQuiz: [
+    { q: "Who was Sasha at the café with?", choices: ["A friend", "His brother", "His teacher"], answer: "His brother" },
+    { q: "What does Sasha want to become?", choices: ["An engineer", "A teacher", "A doctor"], answer: "A teacher" },
+    { q: "What does Sasha usually write with?", choices: ["A pen", "A pencil", "A computer"], answer: "A pencil" },
+    { q: "Where is the phone?", choices: ["Under the book, on the table", "In the bag", "Behind the lamp"], answer: "Under the book, on the table" },
+    { q: "What do they plan to do in the evening?", choices: ["Have lunch", "Walk the dog", "Go to work"], answer: "Walk the dog" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>What the instrumental does</h3>" +

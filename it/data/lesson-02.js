@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Anna", it: "Perfetto. Ci sono anche dei panini?", en: "Perfect. Are there sandwiches too?" },
     { sp: "Marco", it: "Sì, ci sono panini e caffè. Andiamo!", en: "Yes, there are sandwiches and coffee. Let’s go!" }
   ],
+  dialogueQuiz: [
+    { q: "Where is Marco from?", choices: ["Milan", "Rome", "Naples"], answer: "Rome" },
+    { q: "What nationality is Anna?", choices: ["Italian", "French", "Spanish"], answer: "Spanish" },
+    { q: "How old is Anna?", choices: ["Twenty-two", "Twenty-three", "Thirty-two"], answer: "Twenty-two" },
+    { q: "How do they both feel?", choices: ["Tired", "Hungry", "Thirsty"], answer: "Hungry" },
+    { q: "What is at the café nearby?", choices: ["Pizza and wine", "Sandwiches and coffee", "Cake and tea"], answer: "Sandwiches and coffee" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Essere — the verb “to be”</h3>" +

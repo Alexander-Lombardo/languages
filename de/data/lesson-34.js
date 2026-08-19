@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Lena", de: "Genau. Dann treffen wir uns um acht, jedoch nicht später!", en: "Exactly. Then we'll meet at eight, but not later!" },
     { sp: "Markus", de: "Abgemacht. Ich drücke mir selbst die Daumen, dass ich wach bleibe.", en: "Deal. I'll keep my own fingers crossed that I stay awake." }
   ],
+  dialogueQuiz: [
+    { q: "Warum ist Markus erschöpft?", choices: ["Die Woche war anstrengend", "Er war krank", "Er hat schlecht geschlafen"], answer: "Die Woche war anstrengend" },
+    { q: "Was wollte Markus eigentlich tun?", choices: ["Früher kommen", "Absagen", "Lena überreden"], answer: "Absagen" },
+    { q: "Was rät Lena Markus?", choices: ["Mehr zu arbeiten", "Früh ins Bett zu gehen", "Die Seele baumeln zu lassen"], answer: "Die Seele baumeln zu lassen" },
+    { q: "Wie entscheidet sich Markus?", choices: ["Er kommt mit", "Er bleibt zu Hause", "Er überlegt noch"], answer: "Er kommt mit" },
+    { q: "Wann treffen sie sich?", choices: ["Um sieben", "Um acht", "Um neun"], answer: "Um acht" }
+  ],
   reading: {
     title: "Eine anstrengende Woche",
     de: "Diese Woche war wirklich stressig. Ich hatte jeden Tag Termine, deshalb hatte ich kaum Zeit zum Essen. Außerdem war mein Computer kaputt, also musste ich vieles mit dem Handy erledigen. Das war anstrengend, trotzdem habe ich alles geschafft.\n\nAm Freitag wollte ich eigentlich früh ins Bett. Meine Freunde haben jedoch eine kleine Feier geplant, und absagen wollte ich nicht. Ich dachte: Jetzt habe ich so viel gearbeitet, also habe ich auch eine Pause verdient. Sonst werde ich am Ende noch krank.\n\nAuf der Feier habe ich endlich die Seele baumeln lassen. Zuerst war ich noch müde, dann aber wurde es ein schöner Abend. Manchmal muss man eben über seinen eigenen Schatten springen und einfach Ja sagen.",

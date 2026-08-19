@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Tara", en: "And less exhausting than two hours in that hall.", es: "Y menos agotador que dos horas en esa sala." },
     { sp: "Noor", en: "Anything is. I felt completely overwhelmed by the end.", es: "Cualquier cosa lo es. Me sentí completamente abrumada al final." }
   ],
+  dialogueQuiz: [
+    { q: "How did Noor feel during the lecture?", choices: ["Fascinated", "Bored", "Nervous"], answer: "Bored" },
+    { q: "What was the problem with the lecture?", choices: ["The topic was boring", "The speaker was boring", "The room was noisy"], answer: "The speaker was boring" },
+    { q: "What frustrates Tara?", choices: ["Long lectures", "People reading their slides", "Late speakers"], answer: "People reading their slides" },
+    { q: "What might Tara do about the subject?", choices: ["Read about it", "Attend another lecture", "Forget about it"], answer: "Read about it" },
+    { q: "How long was the lecture?", choices: ["One hour", "Two hours", "Three hours"], answer: "Two hours" }
+  ],
   reading: {
     title: "Words for What We Feel",
     en: "Some of the most important things in life cannot be touched. Freedom, loneliness, ambition, fear: these are abstract nouns, ideas rather than objects. We cannot point at happiness the way we point at a chair, yet we all know it when we feel it.\n\nEnglish is careful about the difference between what causes a feeling and the feeling itself. A long, grey afternoon can be boring, and as a result you feel bored. A piece of news can be shocking, and so you are shocked. The trap for many learners is to mix these up and say \"I am boring\" when they mean they feel nothing is happening.\n\nLearning to name emotions precisely is more meaningful than it sounds. People who can describe what they feel tend to handle it better. To say \"I am overwhelmed\" or \"I long for some quiet\" is the first step toward doing something about it.",

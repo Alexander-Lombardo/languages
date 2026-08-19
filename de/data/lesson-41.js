@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Markus", de: "Die ärmeren Länder leiden am meisten, obwohl sie am wenigsten verursacht haben. Das hat soziale Folgen.", en: "The poorer countries suffer the most, although they have caused the least. That has social consequences." },
     { sp: "Lena", de: "Da hast du recht. Umweltschutz und Gerechtigkeit gehören zusammen.", en: "You're right there. Environmental protection and justice belong together." }
   ],
+  dialogueQuiz: [
+    { q: "Worüber hat Lena einen Bericht gelesen?", choices: ["Über den Energieverbrauch","Über die Arbeitslosigkeit","Über den Straßenverkehr"], answer: "Über den Energieverbrauch" },
+    { q: "Wie hat sich der CO₂-Ausstoß verändert?", choices: ["Er ist nur leicht gesunken","Er ist stark gestiegen","Er ist gleich geblieben"], answer: "Er ist nur leicht gesunken" },
+    { q: "Woran liegt das laut Lena vor allem?", choices: ["Wir verschwenden zu viel Energie","Es gibt zu viele Autos","Die Industrie wächst zu schnell"], answer: "Wir verschwenden zu viel Energie" },
+    { q: "Warum ist Lena nicht ganz pessimistisch?", choices: ["Erneuerbare Energien nehmen rasant zu","Die Politik handelt endlich","Der Verbrauch sinkt überall"], answer: "Erneuerbare Energien nehmen rasant zu" },
+    { q: "Wer leidet laut Markus am meisten?", choices: ["Die ärmeren Länder","Die reichen Länder","Die großen Städte"], answer: "Die ärmeren Länder" }
+  ],
   reading: {
     title: "Wohlstand auf Kosten der Umwelt?",
     de: "Der Wohlstand der Industrieländer beruht seit Jahrzehnten auf einem hohen Verbrauch von Energie und Rohstoffen. Diese Lebensweise hat zur Folge, dass die natürlichen Ressourcen immer knapper werden und die Umwelt zunehmend belastet wird.\n\nLaut einer aktuellen Studie ist der Pro-Kopf-Verbrauch in den reichen Ländern fast doppelt so hoch wie im weltweiten Durchschnitt. Gleichzeitig steigen die Temperaturen weiter, während die Artenvielfalt sinkt. Viele Wissenschaftler warnen, dass die Auswirkungen des Klimawandels vor allem die ärmeren Regionen treffen werden.\n\nDie Lösung liegt nach Meinung vieler Experten nicht im völligen Verzicht, sondern in einem klugen Umgang mit Ressourcen. Nachhaltigkeit bedeutet, heutige Bedürfnisse zu erfüllen, ohne den kommenden Generationen die Grundlage zu nehmen. Das erfordert sowohl politische Maßnahmen als auch ein Umdenken in der Gesellschaft.",

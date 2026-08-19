@@ -44,6 +44,13 @@ window.COURSE.lessons.push({
     { sp: "Markus", de: "Sie sind aus der Schweiz. Wir sind alle Studenten.", en: "They're from Switzerland. We're all students." },
     { sp: "Sofia", de: "Toll! Ihr seid eine internationale Gruppe.", en: "Great! You're an international group." }
   ],
+  dialogueQuiz: [
+    { q: "Where is Sofia from?", choices: ["Spain", "Italy", "Austria"], answer: "Italy" },
+    { q: "Which city is Markus from?", choices: ["Munich", "Berlin", "Vienna"], answer: "Berlin" },
+    { q: "What does Markus do?", choices: ["He is a teacher", "He is a student", "He is a waiter"], answer: "He is a student" },
+    { q: "Where is Lena from?", choices: ["Austria", "Switzerland", "Germany"], answer: "Austria" },
+    { q: "What does Sofia call the group?", choices: ["A big group", "An international group", "A friendly group"], answer: "An international group" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Subject pronouns: the words that do the action</h3>" +

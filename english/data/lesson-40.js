@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Dana", en: "Don't second-guess yourself. It turned out fine in the end.", es: "No te cuestiones tanto. Al final salió bien." },
     { sp: "Theo", en: "I suppose. Next time I'd rather take the morning off than burn out.", es: "Supongo. La próxima vez preferiría tomarme la mañana libre antes que quemarme." }
   ],
+  dialogueQuiz: [
+    { q: "Why is Theo exhausted?", choices: ["He accepted an extra shift", "He couldn’t sleep", "He was out all night"], answer: "He accepted an extra shift" },
+    { q: "How does Theo feel about taking the shift now?", choices: ["He wishes he had said no", "He’s glad he did it", "He doesn’t care"], answer: "He wishes he had said no" },
+    { q: "What does Theo ask Dana not to do?", choices: ["Tell the boss", "Lecture him today", "Wake him up early"], answer: "Lecture him today" },
+    { q: "What would Theo have done had he known how busy it would get?", choices: ["Quit the job", "Asked for help", "Planned better"], answer: "Planned better" },
+    { q: "What would Theo rather do next time?", choices: ["Work a double shift", "Take the morning off", "Change jobs"], answer: "Take the morning off" }
+  ],
   reading: {
     title: "The Road Not Taken",
     en: "Maya often catches herself replaying a single decision from a decade ago. If she had accepted the job in Berlin, she sometimes thinks, she would be living an entirely different life now. She would speak fluent German, she would have a circle of friends scattered across Europe, and she would probably never have met the people who matter most to her today.\n\nBut that is the trap of hypothetical thinking. If only I had done X, we tell ourselves, then everything would be better now. The logic feels airtight, yet it quietly ignores everything that could have gone wrong. Had she moved abroad, she might have been miserable, homesick, and broke. The grass is not always greener; it simply looks that way from a distance.\n\nWhat psychologists have found is that we rarely regret the things we did. We regret the things we didn't do. A failed venture stings for a season, but a missed opportunity can ache for years. \"I wish I had at least tried\" is one of the most common sentences people utter when looking back on their lives.\n\nMaya has made her peace with it. She would rather live forward than backward. \"If I had taken that job,\" she says, \"I wouldn't be the person sitting here telling you this story. And I rather like her.\"",

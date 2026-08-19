@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Lina", en: "Well put. Incidentally, who would lead the trial?", es: "Bien dicho. Por cierto, ¿quién dirigiría la prueba?" },
     { sp: "Omar", en: "We'll decide that later. For now, all the same, let's draft it.", es: "Eso lo decidimos luego. Por ahora, de todos modos, redactémoslo." }
   ],
+  dialogueQuiz: [
+    { q: "What worries Lina about the proposal?", choices: ["The timeline", "The budget", "The staff"], answer: "The budget" },
+    { q: "What does Omar say about the long-term savings?", choices: ["They are huge", "They are uncertain", "They are small"], answer: "They are huge" },
+    { q: "What are the competitors doing?", choices: ["Cutting costs", "Already moving in this direction", "Waiting another year"], answer: "Already moving in this direction" },
+    { q: "What does Omar suggest doing first?", choices: ["Running a small trial", "Hiring a consultant", "Asking the board"], answer: "Running a small trial" },
+    { q: "What will they do for now?", choices: ["Decide who leads the trial", "Draft the proposal", "Postpone the decision"], answer: "Draft the proposal" }
+  ],
   reading: {
     title: "The Glue of Good Writing",
     en: "Anyone can list facts. What separates a polished writer from a beginner is the invisible glue between those facts: the discourse markers that guide a reader from one idea to the next. Without them, even brilliant points feel like a pile of bricks rather than a wall.\n\nConsider the word \"however.\" It does more than mean \"but.\" It signals a turn, a moment when the writer asks you to revise the expectation just created. \"Moreover\" and \"furthermore\" do the opposite: they pile on, telling you another reason is coming. \"On the contrary\" is stronger still; it does not merely add a contrast but flatly rejects what was just said.\n\nThe subtlety lies in the differences. \"Nevertheless\" concedes a point and then pushes past it. \"Having said that\" softens a claim you have just made, as if turning to look at it from the other side. \"In fact\" intensifies, often correcting an understatement: \"It was good. In fact, it was extraordinary.\"\n\nUsed well, these markers are nearly invisible; the reader simply feels carried along. Used badly, they clutter a sentence and signal a writer trying too hard. As a result, the best advice is the same as for spices in cooking: enough to bring out the flavour, never so much that you taste only them.",

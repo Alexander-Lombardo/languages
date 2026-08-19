@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Mark", en: "I loved it! And you? What did you do?", es: "¡Me encantó! ¿Y tú? ¿Qué hiciste?" },
     { sp: "Ana", en: "I visited my grandmother and bought a new dress.", es: "Visité a mi abuela y compré un vestido nuevo." }
   ],
+  dialogueQuiz: [
+    { q: "¿Adónde fue Mark el fin de semana?", choices: ["A la playa", "A la montaña", "Al cine"], answer: "A la playa" },
+    { q: "¿Qué hicieron Mark y sus amigos?", choices: ["Nadaron y comieron pizza", "Jugaron al fútbol y comieron pizza", "Jugaron al tenis y cenaron"], answer: "Jugaron al fútbol y comieron pizza" },
+    { q: "¿Por qué no nadó Mark?", choices: ["El agua estaba muy fría", "No sabe nadar", "No tenía tiempo"], answer: "El agua estaba muy fría" },
+    { q: "¿Qué hizo Mark el domingo?", choices: ["Fue al cine", "Se quedó en casa y vio una película", "Visitó a su abuela"], answer: "Se quedó en casa y vio una película" },
+    { q: "¿Qué compró Ana?", choices: ["Un vestido nuevo", "Unos zapatos", "Un regalo para su abuela"], answer: "Un vestido nuevo" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>El past simple: acciones terminadas</h3>" +

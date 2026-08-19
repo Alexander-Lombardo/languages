@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Tom", de: "Wie heißt deine Katze?", en: "What is your cat's name?" },
     { sp: "Anna", de: "Sie heißt Mimi. Sie ist sehr klein.", en: "She is called Mimi. She is very small." }
   ],
+  dialogueQuiz: [
+    { q: "What siblings does Tom have?", choices: ["Two brothers", "A brother and a sister", "Two sisters"], answer: "A brother and a sister" },
+    { q: "What is Tom's brother called?", choices: ["Max", "Bello", "Tom"], answer: "Max" },
+    { q: "What pet does Tom's family have?", choices: ["A cat", "A dog", "A bird"], answer: "A dog" },
+    { q: "How many people are in Tom's family?", choices: ["Four", "Five", "Six"], answer: "Five" },
+    { q: "What is Anna's cat like?", choices: ["Very small", "Very big", "Very old"], answer: "Very small" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>The verb haben (to have)</h3>" +

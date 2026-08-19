@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Lena", de: "Du hast recht. Ohne deinen Rat wäre ich gar nicht auf die Idee gekommen.", en: "You're right. Without your advice I wouldn't even have had the idea." },
     { sp: "Markus", de: "Dann lass uns rechnen — vielleicht ginge es ja doch schon dieses Jahr.", en: "Then let's do the math — maybe it would even work this year after all." }
   ],
+  dialogueQuiz: [
+    { q: "Was würde Lena machen, wenn sie mehr Zeit hätte?", choices: ["Ein Sabbatical nehmen", "Ein Haus kaufen", "Eine neue Stelle suchen"], answer: "Ein Sabbatical nehmen" },
+    { q: "Wohin würde Lena gern reisen?", choices: ["Nach Asien", "Nach Südamerika", "Nach Australien"], answer: "Nach Südamerika" },
+    { q: "Was ist Lenas Hauptproblem?", choices: ["Das Geld", "Die Sprache", "Die Arbeit"], answer: "Das Geld" },
+    { q: "Was hätte Lena laut Markus letztes Jahr tun sollen?", choices: ["Mehr reisen", "Mehr sparen", "Mehr arbeiten"], answer: "Mehr sparen" },
+    { q: "Was schlägt Markus am Ende vor?", choices: ["Den Plan aufzugeben", "Zusammen zu rechnen", "Einen Kredit aufzunehmen"], answer: "Zusammen zu rechnen" }
+  ],
   reading: {
     title: "Was wäre, wenn?",
     de: "Sophie sitzt am Fenster und denkt nach. Wenn sie damals das Stipendium angenommen hätte, wäre sie heute vermutlich Ärztin in Hamburg. Stattdessen blieb sie in ihrer Heimatstadt, und manchmal fragt sie sich, wie ihr Leben sonst verlaufen wäre.\n\nNatürlich weiß sie, dass solche Gedanken irreal sind. Wenn sie könnte, würde sie nichts ändern, denn hier hat sie ihren Mann kennengelernt. Hätte sie das Angebot angenommen, wären die beiden sich nie begegnet. „Manchmal“, sagt sie, „ist der Zufall klüger als jeder Plan.“\n\nTrotzdem bleibt eine kleine Neugier. An ihrer Stelle würden viele Menschen denselben Wunsch verspüren: einmal sehen zu dürfen, was gewesen wäre. Aber Sophie lächelt. Wenn das Leben keine offenen Fragen hätte, wäre es vermutlich nur halb so spannend.",

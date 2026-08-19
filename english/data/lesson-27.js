@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Mum", en: "Good. Now turn off the computer and have breakfast.", es: "Bien. Ahora apaga el ordenador y desayuna." },
     { sp: "Tom", en: "Okay, okay, I'm getting up now!", es: "Vale, vale, ¡ya me levanto!" }
   ],
+  dialogueQuiz: [
+    { q: "What time is it when Mum wakes Tom?", choices: ["Seven o’clock", "Eight o’clock", "Nine o’clock"], answer: "Eight o’clock" },
+    { q: "What does Mum tell Tom to put on?", choices: ["A jacket", "A jumper", "His shoes"], answer: "A jumper" },
+    { q: "Where is Tom’s phone?", choices: ["On the table", "In his bag", "On the bed"], answer: "On the table" },
+    { q: "Who must Tom pick up later?", choices: ["His brother", "His friend", "His sister"], answer: "His sister" },
+    { q: "What did Mum find out this morning?", choices: ["The bus prices", "The train times", "The hotel address"], answer: "The train times" }
+  ],
   reading: {
     title: "A Busy Morning",
     en: "Every morning is the same in our house. My alarm goes off at seven, but I don't get up immediately. I wake up slowly and look for my glasses.\n\nThen I turn on the radio and make some coffee. My brother always uses all the milk, so I often run out of it. He never throws away the empty bottle either!\n\nBefore I leave, I have to fill in some forms for work and pick up my keys. I get on well with my colleagues, so I don't want to be late. I will never give up trying to have a calm morning, but it is not easy.",

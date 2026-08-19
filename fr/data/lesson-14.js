@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Anna", fr: "Moi, je préfère le vélo. C'est le plus sain !", en: "Me, I prefer the bike. It's the healthiest!" },
     { sp: "Yanis", fr: "Sur ça, je suis d'accord avec toi.", en: "On that, I agree with you." }
   ],
+  dialogueQuiz: [
+    { q: "According to Yanis, why is the bus good?", choices: ["It is faster than the train", "It is cheaper than the train", "It is more comfortable"], answer: "It is cheaper than the train" },
+    { q: "What is Yanis’s favourite means of transport?", choices: ["The bike", "The metro", "The train"], answer: "The bike" },
+    { q: "When does Anna prefer the metro?", choices: ["When it is late", "When it rains", "When it is cold"], answer: "When it rains" },
+    { q: "Why is the train best for going to Lyon?", choices: ["It is faster than the plane", "It is the only option", "As fast as the plane, and cheaper"], answer: "As fast as the plane, and cheaper" },
+    { q: "Why does Yanis travel a lot?", choices: ["For work", "For holidays", "To visit family"], answer: "For work" }
+  ],
   reading: {
     title: "Le meilleur moyen de transport",
     fr: "Pour aller au travail, j'ai trois options. Le bus est moins cher que le métro, mais il est plus lent. Le métro est plus rapide que le bus, et il est aussi pratique que le vélo. Pour moi, le vélo est le meilleur choix : c'est le moins cher et le plus écologique. Quand il pleut, le métro est mieux que le vélo. En général, le train est le plus confortable pour les longs voyages.",

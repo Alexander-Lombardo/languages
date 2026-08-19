@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Clerk", en: "Almost. The camera is a little worse.", es: "Casi. La cámara es un poco peor." },
     { sp: "Tom", en: "Okay. I'll take the cheaper one, thanks.", es: "Vale. Me llevo el más barato, gracias." }
   ],
+  dialogueQuiz: [
+    { q: "¿Qué quiere comprar la clienta?", choices: ["Un ordenador", "Un teléfono", "Una cámara"], answer: "Un teléfono" },
+    { q: "¿Cómo es este teléfono según el vendedor?", choices: ["Más rápido pero más caro", "Más barato pero más lento", "Más grande y más barato"], answer: "Más rápido pero más caro" },
+    { q: "¿Cuál es el modelo más popular?", choices: ["El blanco", "El más caro", "El negro"], answer: "El negro" },
+    { q: "¿Qué es un poco peor en el modelo popular?", choices: ["La batería", "La cámara", "La pantalla"], answer: "La cámara" },
+    { q: "¿Cuál decide comprar la clienta?", choices: ["El más caro", "El más barato", "Ninguno"], answer: "El más barato" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Comparar: comparativos y superlativos</h3>" +

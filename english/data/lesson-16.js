@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Kim", en: "I'd love to! What time?", es: "¡Me encantaría! ¿A qué hora?" },
     { sp: "Raj", en: "At nine. I prefer going out late.", es: "A las nueve. Prefiero salir tarde." }
   ],
+  dialogueQuiz: [
+    { q: "¿Qué le encanta hacer a Tom en su tiempo libre?", choices: ["Leer y cocinar", "Correr y pintar", "Ver la tele y dormir"], answer: "Leer y cocinar" },
+    { q: "¿Qué odia Ana?", choices: ["Comer", "Cocinar", "Leer"], answer: "Cocinar" },
+    { q: "¿Qué no le importa hacer a Ana?", choices: ["Lavar los platos", "Limpiar la casa", "Ir de compras"], answer: "Lavar los platos" },
+    { q: "¿Qué deportes le encantan a Ana?", choices: ["Fútbol y tenis", "Nadar y bailar", "Correr y ciclismo"], answer: "Nadar y bailar" },
+    { q: "¿A qué hora van a salir a bailar?", choices: ["A las ocho", "A las nueve", "A las diez"], answer: "A las nueve" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Hablar de gustos + verbo en -ing</h3>" +

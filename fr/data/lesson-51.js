@@ -39,6 +39,13 @@ window.COURSE.lessons.push({
     { sp: "Inès", fr: "Le dénouement m'a bouleversée. Le registre devient soudain lyrique au moment où Meursault accepte sa condition.", en: "The ending overwhelmed me. The register suddenly becomes lyrical at the moment Meursault accepts his fate." },
     { sp: "Théo", fr: "C'est ce qui fait la force de l'œuvre : elle te dérange longtemps après la dernière page.", en: "That's what makes the work so powerful: it disturbs you long after the last page." }
   ],
+  dialogueQuiz: [
+    { q: "De quel livre parlent Inès et Théo ?", choices: ["La Peste", "L’Étranger", "Le Petit Prince"], answer: "L’Étranger" },
+    { q: "Comment le narrateur raconte-t-il la mort de sa mère ?", choices: ["Avec beaucoup d’émotion", "Sans la moindre émotion", "Avec colère"], answer: "Sans la moindre émotion" },
+    { q: "Que dénonce Camus, selon Inès ?", choices: ["L’absurdité de l’existence", "La guerre", "La pauvreté"], answer: "L’absurdité de l’existence" },
+    { q: "Comment Théo décrit-il le style ?", choices: ["Riche en métaphores", "D’une sobriété frappante", "Très lyrique du début à la fin"], answer: "D’une sobriété frappante" },
+    { q: "Que devient le registre au dénouement ?", choices: ["Ironique", "Lyrique", "Tragique"], answer: "Lyrique" }
+  ],
   reading: {
     title: "Victor Hugo et la voix des humbles",
     fr: "Lorsqu'on lit Les Misérables, on est d'abord frappé par l'ampleur de l'œuvre. Victor Hugo n'y raconte pas seulement le destin de Jean Valjean ; à travers son intrigue, il dresse le portrait de toute une société et dénonce la misère qui broie les plus faibles.\n\nLe narrateur, omniscient, se permet de longues digressions sur l'histoire, la justice ou l'argot. Cette focalisation lui donne le recul d'un témoin qui juge son époque. Hugo manie les figures de style avec une rare puissance : l'anaphore martèle ses indignations, l'hyperbole grandit ses héros, et la métaphore transforme Paris en un être vivant qui respire et souffre.\n\nLe registre passe sans cesse du pathétique au sublime. Quand Hugo décrit Cosette enfant, le champ lexical de l'ombre et du froid serre le cœur du lecteur. Puis, dans le même chapitre, un éclat d'espoir illumine la page.\n\nC'est sans doute pour cela que ce roman, publié en 1862, émeut encore : il ne se contente pas de raconter, il interpelle la conscience.",

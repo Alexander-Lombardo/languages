@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Anna", de: "Mache ich. Und danke dir für die Hilfe!", en: "I will. And thank you for the help!" },
     { sp: "Tom", de: "Gern geschehen. Ich glaube dir, die Tasche war wirklich schwer.", en: "You're welcome. I believe you, the bag really was heavy." }
   ],
+  dialogueQuiz: [
+    { q: "Why does Anna ask Tom for help?", choices: ["The bag is heavy", "She is lost", "She forgot her keys"], answer: "The bag is heavy" },
+    { q: "Who does the bag belong to?", choices: ["Anna’s sister", "Anna’s mother", "Tom’s mother"], answer: "Anna’s mother" },
+    { q: "What is Anna giving her mother?", choices: ["A book", "A scarf", "Flowers"], answer: "A book" },
+    { q: "What does Anna give the child?", choices: ["A toy car", "A book", "A ball"], answer: "A ball" },
+    { q: "What does Tom ask Anna to pass on?", choices: ["A letter", "Warm regards", "A phone number"], answer: "Warm regards" }
+  ],
   reading: {
     title: "Ein Geschenk für die Großmutter",
     de: "Heute ist der Geburtstag meiner Großmutter. Ich möchte ihr eine Freude machen. Zuerst gehe ich in den Laden und kaufe ihr Blumen. Dem Verkäufer danke ich für seine Hilfe. Dann schenke ich meiner Großmutter ein Foto von der Familie. Das Foto gefällt ihr sehr, und sie zeigt es allen Nachbarn. Meine Großmutter glaubt mir, dass ich sie sehr liebe.",

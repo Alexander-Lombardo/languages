@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Bruno", fr: "Ma collègue m'a justement demandé de ne rien répéter avant demain.", en: "My colleague actually asked me not to repeat anything before tomorrow." },
     { sp: "Camille", fr: "Sage conseil. Elle t'a dit de te méfier des rumeurs, j'imagine.", en: "Wise advice. She told you to be wary of rumours, I imagine." }
   ],
+  dialogueQuiz: [
+    { q: "Qu’est-ce que le maire a annoncé ?", choices: ["Qu’il allait démissionner", "Qu’il se représentait", "Qu’il partait en vacances"], answer: "Qu’il allait démissionner" },
+    { q: "Quand aurait-il pris sa décision ?", choices: ["Le lendemain", "La veille", "Ce matin"], answer: "La veille" },
+    { q: "Qu’a-t-il répondu au journaliste ?", choices: ["Qu’il ne dirait rien", "Qu’il expliquerait tout le lendemain", "Qu’il était innocent"], answer: "Qu’il expliquerait tout le lendemain" },
+    { q: "Selon un témoin, qu’aurait fait le maire ?", choices: ["Avoué quelque chose", "Nié les faits", "Quitté la ville"], answer: "Avoué quelque chose" },
+    { q: "Que lui a demandé sa collègue ?", choices: ["De répéter la nouvelle", "De ne rien répéter avant demain", "D’appeler le maire"], answer: "De ne rien répéter avant demain" }
+  ],
   reading: {
     title: "Une rumeur au bureau",
     fr: "Hier, à la pause-café, Sophie m'a annoncé une grande nouvelle. Elle m'a dit que notre directeur allait quitter l'entreprise. Je lui ai demandé si elle en était sûre, et elle a répondu qu'un collègue le lui avait confié la veille. Elle a ajouté qu'il avait déjà signé son contrat ailleurs et qu'il partirait le mois suivant. Curieux, j'ai voulu savoir ce qui s'était vraiment passé. Sophie a précisé qu'elle ignorait les détails, mais que, selon un témoin, le directeur aurait avoué qu'il n'était plus heureux ici. Elle m'a demandé pourquoi je posais autant de questions. Je lui ai expliqué que je détestais les rumeurs et que je préférais attendre une déclaration officielle. Enfin, elle m'a conseillé de ne rien répéter à personne avant le lendemain. J'ai promis de me taire ; après tout, un potin reste un potin tant que personne ne l'a confirmé.",

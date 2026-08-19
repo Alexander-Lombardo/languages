@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Markus", de: "Super! Vergiss bitte das Frühstück nicht.", en: "Great! Please don't forget breakfast." },
     { sp: "Lena", de: "Keine Sorge. Ich habe es nicht vergessen.", en: "No worries. I haven't forgotten it." }
   ],
+  dialogueQuiz: [
+    { q: "When is Lena getting up tomorrow?", choices: ["At six", "At seven", "At nine"], answer: "At six" },
+    { q: "What will Lena do before going to the station?", choices: ["Call her mother", "Do some shopping", "Watch TV"], answer: "Do some shopping" },
+    { q: "What did Lena do last night?", choices: ["Watched TV", "Called her mother", "Bought the tickets"], answer: "Called her mother" },
+    { q: "When does the train arrive?", choices: ["At six", "At eight", "At nine"], answer: "At nine" },
+    { q: "What does Markus remind Lena about?", choices: ["The tickets", "Breakfast", "The timetable"], answer: "Breakfast" }
+  ],
   reading: {
     title: "Ein typischer Arbeitstag",
     de: "Jeden Morgen stehe ich um halb sieben auf. Ich räume kurz die Küche auf und kaufe auf dem Weg zur Arbeit schnell ein. Der Bus fährt um acht Uhr ab und kommt zwanzig Minuten später am Büro an. Im Büro rufe ich zuerst meine Kollegen an und erzähle ihnen die Neuigkeiten. Manchmal verstehe ich die Aufgaben nicht sofort, aber mein Chef erklärt sie mir. Am Abend sehe ich ein bisschen fern, dann gehe ich ins Bett.",

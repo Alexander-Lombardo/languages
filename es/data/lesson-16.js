@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Sara", es: "Ay, lo siento. ¿El domingo entonces?", en: "Oh, I'm sorry. Sunday then?" },
     { sp: "Diego", es: "Perfecto. A mí me encanta esa idea.", en: "Perfect. I love that idea." }
   ],
+  dialogueQuiz: [
+    { q: "What does the first speaker prefer instead of coffee?", choices: ["Juice", "Tea", "Water"], answer: "Tea" },
+    { q: "What does the second speaker love to do?", choices: ["Dance", "Sing", "Cook"], answer: "Dance" },
+    { q: "What does the first speaker NOT like?", choices: ["Dancing", "Singing", "Concerts"], answer: "Singing" },
+    { q: "What kind of films interest the second speaker?", choices: ["New films", "Old films", "Horror films"], answer: "Old films" },
+    { q: "Why can’t the second speaker go to the cinema on Saturday?", choices: ["He has a headache", "He has to work", "He has no money"], answer: "He has a headache" }
+  ],
   grammarHTML:
     "<h3>How <em>gustar</em> really works</h3>" +
     "<p>In Spanish you don't “like” something the way you do in English. Instead, something <strong>is pleasing to you</strong>. So <em>Me gusta el café</em> literally means “Coffee is pleasing to me.” The thing you like is the <strong>subject</strong>, and it decides whether the verb is singular or plural.</p>" +

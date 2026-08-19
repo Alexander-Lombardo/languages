@@ -46,6 +46,13 @@ window.COURSE.lessons.push({
     { sp: "Anna", de: "Und wie bist du zurückgekommen?", en: "And how did you get back?" },
     { sp: "Markus", de: "Ich bin am Sonntag mit dem Flugzeug nach Hause geflogen.", en: "I flew home by plane on Sunday." }
   ],
+  dialogueQuiz: [
+    { q: "Where did Markus go on the weekend?", choices: ["Berlin", "Hamburg", "Munich"], answer: "Hamburg" },
+    { q: "How did he get there?", choices: ["By car", "By plane", "By train"], answer: "By train" },
+    { q: "When did he arrive?", choices: ["Around noon", "In the morning", "In the evening"], answer: "Around noon" },
+    { q: "What did he think of the Elbphilharmonie?", choices: ["It was too crowded", "It was wonderful", "It was closed"], answer: "It was wonderful" },
+    { q: "How did Markus get home?", choices: ["By plane on Sunday", "By train on Saturday", "By bus on Monday"], answer: "By plane on Sunday" }
+  ],
   reading: {
     title: "Ein Tag in Wien",
     de: "Letzten Sommer bin ich mit dem Zug nach Wien gefahren. Ich bin früh am Morgen am Bahnhof angekommen und zu Fuß ins Zentrum gegangen.\n\nDen ganzen Tag bin ich durch die Stadt gelaufen. Ich bin in einen alten Park gegangen und lange auf einer Bank geblieben. Am Nachmittag bin ich sehr müde geworden.\n\nAm Abend bin ich zum Flughafen gefahren und nach Hause geflogen. Im Flugzeug bin ich sofort eingeschlafen. Es war ein langer, aber schöner Tag.",

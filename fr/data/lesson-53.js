@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Nadia", fr: "D'accord. Instaurons une revue hebdomadaire, et on tirera des conclusions plus fiables.", en: "All right. Let's establish a weekly review, and we'll draw more reliable conclusions." },
     { sp: "Théo", fr: "Bonne idée. J'assisterai à la première séance ; éventuellement, j'inviterai la direction.", en: "Good idea. I'll attend the first session; possibly, I'll invite management." }
   ],
+  dialogueQuiz: [
+    { q: "Selon Théo, quel type d’erreurs ont-ils commis ?", choices: ["Des erreurs de calcul", "Des erreurs de méthode", "Des erreurs de communication"], answer: "Des erreurs de méthode" },
+    { q: "Que craint Nadia ?", choices: ["Courir un vrai risque", "Perdre le dossier", "Décevoir la direction"], answer: "Courir un vrai risque" },
+    { q: "Que propose Théo ?", choices: ["Tout bouleverser", "Abandonner le dossier", "Modifier deux ou trois paramètres"], answer: "Modifier deux ou trois paramètres" },
+    { q: "Qu’instaurent-ils finalement ?", choices: ["Une revue hebdomadaire", "Une réunion mensuelle", "Un audit externe"], answer: "Une revue hebdomadaire" },
+    { q: "Qui Théo pourrait-il éventuellement inviter ?", choices: ["Un consultant", "La direction", "Les clients"], answer: "La direction" }
+  ],
   reading: {
     title: "L'art de choisir le mot juste",
     fr: "Écrire avec précision, ce n'est pas employer des mots rares ; c'est refuser la facilité. Trop de rédacteurs s'appuient sur quelques verbes passe-partout — faire, mettre, dire, avoir — qui finissent par tout aplatir. Or, on ne fait pas un projet : on le mène, on l'élabore, on le conduit. On ne fait pas une erreur de jugement : on la commet. On ne met pas une règle : on l'instaure. À chaque idée correspond un verbe plus exact, plus dense, qui en dit davantage en moins de mots. La langue française regorge aussi de cooccurrences : on pousse un cri, on prend une décision, on court un risque, on nourrit un espoir, on livre un combat. Ces alliances ne s'inventent pas ; elles s'apprennent. Enfin, méfions-nous des faux-amis qui trahissent l'anglophone : actuellement ne veut pas dire « actually », mais « en ce moment » ; éventuellement signifie « peut-être », non « finalement » ; sensible décrit la sensibilité, non le bon sens. Choisir le mot juste, c'est donc penser plus clairement : la précision du vocabulaire reflète, et nourrit, la précision de la pensée.",

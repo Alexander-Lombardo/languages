@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Marta", es: "Tengo veintidós. Bueno, ¡tienes razón, vete!", en: "I'm twenty-two. Okay, you're right, go!" },
     { sp: "Diego", es: "Gracias. ¡Vengo luego! Adiós.", en: "Thanks. I'll come by later! Bye." }
   ],
+  dialogueQuiz: [
+    { q: "How is Diego feeling?", choices: ["Very tired", "Very hungry", "Very sleepy"], answer: "Very hungry" },
+    { q: "Why can’t Diego eat now?", choices: ["He has to work", "He has no money", "He is not hungry"], answer: "He has to work" },
+    { q: "What does Diego do at work?", choices: ["He makes coffee", "He sells books", "He cooks food"], answer: "He makes coffee" },
+    { q: "How old is Diego?", choices: ["Twenty", "Twenty-two", "Twelve"], answer: "Twenty" },
+    { q: "How old is Marta?", choices: ["Twenty", "Twenty-two", "Twenty-five"], answer: "Twenty-two" }
+  ],
   grammarHTML:
     "<h3>Tener — \"to have\"</h3>" +
     "<p><strong>Tener</strong> is one of the most useful verbs in Spanish. It is irregular: the <em>yo</em> form ends in <strong>-go</strong>, and the <em>e</em> changes to <em>ie</em> in three forms.</p>" +

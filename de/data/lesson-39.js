@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Lena", de: "Angeblich gebe es nächste Woche eine weitere Pressekonferenz.", en: "Allegedly there's going to be another press conference next week." },
     { sp: "Tom", de: "Mal sehen, ob die Zahlen wirklich besser würden.", en: "Let's see whether the figures really do get better." }
   ],
+  dialogueQuiz: [
+    { q: "Worüber sprechen Lena und Tom?", choices: ["Über eine Rede des Ministers","Über ein Fußballspiel","Über ihren Urlaub"], answer: "Über eine Rede des Ministers" },
+    { q: "Was hat der Minister laut Lena gesagt?", choices: ["Die Lage sei ernst, aber unter Kontrolle","Die Lage sei völlig harmlos","Die Lage sei außer Kontrolle"], answer: "Die Lage sei ernst, aber unter Kontrolle" },
+    { q: "Was behauptet die Opposition?", choices: ["Die Regierung habe zu spät reagiert","Die Regierung habe zu viel Geld ausgegeben","Die Regierung habe gelogen"], answer: "Die Regierung habe zu spät reagiert" },
+    { q: "Was meinte der Sprecher dazu?", choices: ["Alles sei rechtzeitig geschehen","Man habe tatsächlich Fehler gemacht","Er wolle sich nicht äußern"], answer: "Alles sei rechtzeitig geschehen" },
+    { q: "Was soll angeblich nächste Woche stattfinden?", choices: ["Eine weitere Pressekonferenz","Eine Wahl","Eine Demonstration"], answer: "Eine weitere Pressekonferenz" }
+  ],
   reading: {
     title: "Bericht: Streit um das neue Gesetz",
     de: "Bei der gestrigen Pressekonferenz hat die Regierung das neue Klimagesetz verteidigt. Eine Sprecherin erklärte, das Gesetz sei ein wichtiger Schritt und werde die Emissionen deutlich senken. Man habe alle Bürger im Blick, betonte sie; niemand werde benachteiligt.\n\nDie Opposition sieht das anders. Ihr Vorsitzender behauptete, die Pläne seien unrealistisch und kämen viel zu spät. Die Kosten für normale Familien würden steigen, sagte er, und die Regierung habe keine klaren Antworten.\n\nLaut mehreren Experten ist die Wahrheit komplizierter. Eine Forscherin teilte mit, das Gesetz könne durchaus wirken, aber nur, wenn es konsequent umgesetzt werde. Sie fügte hinzu, man dürfe die Erwartungen nicht zu hoch schrauben. Ob das Gesetz wie geplant in Kraft trete, werde sich erst in den nächsten Monaten zeigen.",

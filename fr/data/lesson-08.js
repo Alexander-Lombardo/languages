@@ -44,6 +44,13 @@ window.COURSE.lessons.push({
     { sp: "Journaliste", fr: "Est-ce que je peux prendre une photo ?", en: "May I take a photo?" },
     { sp: "Passant", fr: "Bien sûr !", en: "Of course!" }
   ],
+  dialogueQuiz: [
+    { q: "Where does the passer-by live?", choices: ["Paris", "Nice", "Lyon"], answer: "Nice" },
+    { q: "What is his job?", choices: ["Journalist", "Cook", "Waiter"], answer: "Cook" },
+    { q: "Where is the café the journalist mentions?", choices: ["Across from the station", "Next to the restaurant", "Far from the center"], answer: "Across from the station" },
+    { q: "When is he leaving Paris?", choices: ["Friday", "Saturday", "Sunday"], answer: "Sunday" },
+    { q: "Why does the journalist ask about his favorite dish?", choices: ["She is a cook too", "She works for a cooking magazine", "She wants a restaurant tip"], answer: "She works for a cooking magazine" }
+  ],
   grammarHTML:
     "<h3>Three ways to ask a yes/no question</h3>" +
     "<p>From <em>Tu parles français</em>:</p>" +

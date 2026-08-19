@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Sara", it: "Sì, e ho ricevuto tanti messaggi.", en: "Yes, and I got lots of messages." },
     { sp: "Luca", it: "Allora stasera prendo un caffè e lo leggo!", en: "Then tonight I'll have a coffee and read it!" }
   ],
+  dialogueQuiz: [
+    { q: "What did Luca do yesterday?", choices: ["He worked and read a book", "He went to the cinema", "He bought a present"], answer: "He worked and read a book" },
+    { q: "Who did Sara buy a present for?", choices: ["Her mother", "Her sister", "Marta"], answer: "Her sister" },
+    { q: "When did Sara see the film?", choices: ["Yesterday", "Last week", "Last month"], answer: "Last week" },
+    { q: "What did Sara write?", choices: ["A review", "An email", "A letter"], answer: "A review" },
+    { q: "What will Luca do tonight?", choices: ["Watch the film", "Read Sara’s review", "Write to Marta"], answer: "Read Sara’s review" }
+  ],
   reading: {
     title: "Il mio fine settimana",
     it: "Sabato scorso ho passato una bella giornata. La mattina ho preso un caffè al bar e ho letto il giornale. Poi ho comprato del pane fresco e ho preparato il pranzo per la mia famiglia. La sera ho visto un film e ho scritto un messaggio a un amico.",

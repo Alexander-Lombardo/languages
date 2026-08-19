@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Dan", en: "So you regret it?", es: "¿Entonces te arrepientes?" },
     { sp: "Lena", en: "A little. That's why I'm telling you: think before you decide.", es: "Un poco. Por eso te lo digo: piensa antes de decidir." }
   ],
+  dialogueQuiz: [
+    { q: "What is Dan thinking about?", choices: ["Moving abroad", "Quitting his job", "Buying a house"], answer: "Quitting his job" },
+    { q: "What does Lena advise Dan to do?", choices: ["Wait a bit", "Quit right away", "Ask for a raise"], answer: "Wait a bit" },
+    { q: "What would Dan do with more free time?", choices: ["Travel the world", "Study again", "Start his own company"], answer: "Start his own company" },
+    { q: "What did Lena do last year?", choices: ["Started a company", "Turned down a great offer", "Changed jobs"], answer: "Turned down a great offer" },
+    { q: "How does Lena feel about her decision?", choices: ["She regrets it a little", "She is very happy", "She doesn’t care"], answer: "She regrets it a little" }
+  ],
   reading: {
     title: "Two Roads",
     en: "Sometimes a single decision changes everything. If I won the lottery tomorrow, I would probably travel the world and never work again. That is a pleasant daydream, but it isn't real: I'm imagining a situation that almost certainly won't happen.\n\nThe past is different. I once had the chance to study abroad, but I said no because I was afraid. If I had been braver, I would have taken it. If I had taken it, my whole life might have looked different today.\n\nWe can't change the past, but thinking about it helps us decide now. So when a friend asks for advice, I don't say what I would have done. I ask them what they would do if they weren't afraid.",

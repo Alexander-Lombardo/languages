@@ -49,6 +49,13 @@ window.COURSE.lessons.push({
     { sp: "Léa", fr: "Oui ! Et nous sommes amis maintenant.", en: "Yes! And we're friends now." },
     { sp: "Ana", fr: "Parfait !", en: "Perfect!" }
   ],
+  dialogueQuiz: [
+    { q: "Where is Tom from?", choices: ["Paris", "New York", "Lyon"], answer: "New York" },
+    { q: "What nationality is Ana?", choices: ["French", "American", "Spanish"], answer: "Spanish" },
+    { q: "What do Léa and Ana do for a living?", choices: ["They are students", "They are teachers", "They are engineers"], answer: "They are teachers" },
+    { q: "What does Tom say about French coffee?", choices: ["It is very strong", "It is too sweet", "It is very cheap"], answer: "It is very strong" },
+    { q: "Who is Ana in Paris with?", choices: ["Her family", "A friend", "Her colleagues"], answer: "A friend" }
+  ],
   grammarHTML:
     "<h3>être (to be) — memorise this</h3>" +
     "<table><tr><td>je <strong>suis</strong></td><td>I am</td></tr>" +

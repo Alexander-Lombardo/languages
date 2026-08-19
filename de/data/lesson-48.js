@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Lektorin", de: "Eben. Das Register muss zum Text passen, sonst verraten ein, zwei Wörter den ganzen Stil.", en: "Precisely. The register has to fit the text, otherwise one or two words give away the whole style." },
     { sp: "Autor", de: "Ich notiere mir das. Wortwahl ist eben keine Geschmackssache, sondern Präzision.", en: "I'll make a note. Word choice isn't a matter of taste after all, but precision." }
   ],
+  dialogueQuiz: [
+    { q: "Welches Wort bevorzugt die Lektorin im Nachruf?", choices: ["„verstorben“","„gestorben“","„abgekratzt“"], answer: "„verstorben“" },
+    { q: "Wie wirkt „versterben“ laut Autor?", choices: ["Würdevoller","Neutraler","Derber"], answer: "Würdevoller" },
+    { q: "Wie beschreibt die Lektorin „abkratzen“?", choices: ["Derb und respektlos","Neutral und sachlich","Feierlich und pietätvoll"], answer: "Derb und respektlos" },
+    { q: "Was ist bei den drei Wörtern identisch?", choices: ["Die Denotation","Die Konnotation","Das Register"], answer: "Die Denotation" },
+    { q: "Welches Wort klingt nach minderer Qualität?", choices: ["„billig“","„preiswert“","„preisgünstig“"], answer: "„billig“" }
+  ],
   reading: {
     title: "Über das Gewicht der Wörter",
     de: "Wer behauptet, Synonyme seien austauschbar, hat noch nie einen Text redigiert. Zwei Wörter mögen dasselbe bezeichnen — ihre <em>Denotation</em> ist gleich —, und dennoch trennt sie eine Welt an <em>Konnotation</em>. Man kann jemanden „sparsam“ nennen, und es klingt wie ein Lob; nennt man ihn „geizig“, ist es ein Vorwurf. Beide Wörter beschreiben denselben Umgang mit Geld, doch das eine ist wohlwollend, das andere abwertend.\n\nÄhnlich verhält es sich mit dem Register. „Essen“ ist wertneutral und passt überall; „speisen“ ist gehoben und gehört in die festliche Einladung; „fressen“ hingegen ist derb und gilt eigentlich den Tieren — auf einen Menschen gemünzt, ist es eine Beleidigung. Wer im falschen Register schreibt, wirkt unfreiwillig komisch oder unhöflich.\n\nDie hohe Kunst besteht darin, nicht das erstbeste, sondern das treffende Wort zu wählen — jenes, dessen Beiklang genau die Haltung trifft, die man ausdrücken will. Sprache ist nie bloß Information; sie ist immer auch Wertung.",

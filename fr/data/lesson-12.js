@@ -45,6 +45,13 @@ window.COURSE.lessons.push({
     { sp: "Caissier", fr: "Pas de problème. Bonne journée !", en: "No problem. Have a good day!" },
     { sp: "Client", fr: "Au revoir !", en: "Goodbye!" }
   ],
+  dialogueQuiz: [
+    { q: "What is the total at first?", choices: ["€93.50", "€90.00", "€83.50"], answer: "€93.50" },
+    { q: "How does the customer first want to pay?", choices: ["By card", "In cash", "By check"], answer: "By card" },
+    { q: "Why does the price go down?", choices: ["There is a sale", "The customer has a loyalty card", "The cashier made a mistake"], answer: "The customer has a loyalty card" },
+    { q: "How does the customer finally pay?", choices: ["By card", "In cash", "Half and half"], answer: "In cash" },
+    { q: "How much change does the customer get?", choices: ["Ten euros", "Three euros fifty", "Six euros fifty"], answer: "Ten euros" }
+  ],
   grammarHTML:
     "<h3>Why 70–99 are odd (in France)</h3>" +
     "<p>Base-20 logic: <strong>70 = 60 + 10</strong> → soixante-dix; <strong>71</strong> → soixante et onze; <strong>80 = 4×20</strong> → quatre-vingts; <strong>90</strong> → quatre-vingt-dix; <strong>99</strong> → quatre-vingt-dix-neuf.</p>" +

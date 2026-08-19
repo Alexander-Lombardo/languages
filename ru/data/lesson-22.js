@@ -52,6 +52,13 @@ window.COURSE.lessons.push({
     { sp: "Лена", ru: "Да. Красивая куртка, удобная рубашка.", en: "Yes. A beautiful jacket, a comfortable shirt." },
     { sp: "Игорь", ru: "И всё это недорого. Идём домой.", en: "And all inexpensive. Let's go home." }
   ],
+  dialogueQuiz: [
+    { q: "Why don’t they take the dress?", choices: ["It’s expensive", "It’s old", "It’s too big"], answer: "It’s expensive" },
+    { q: "What colour is the jacket she likes?", choices: ["Red", "White", "Blue"], answer: "Blue" },
+    { q: "What size was the first jacket?", choices: ["Small", "Large", "Medium"], answer: "Small" },
+    { q: "What does the friend need?", choices: ["A red jacket", "A white shirt", "A new dress"], answer: "A white shirt" },
+    { q: "How do they feel about the shopping?", choices: ["It was too expensive", "It was a good day", "They bought nothing"], answer: "It was a good day" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Adjectives copy their noun</h3>" +

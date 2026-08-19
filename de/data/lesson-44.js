@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Anna", de: "An die Organisatorin. Auf ihre Antwort warten wir aber schon seit Tagen.", en: "To the organiser. But we've been waiting for her reply for days now." },
     { sp: "Markus", de: "Typisch. Na ja, das hängt wohl vom vollen Programm ab.", en: "Typical. Well, that probably depends on the full programme." }
   ],
+  dialogueQuiz: [
+    { q: "Worauf freut sich Markus vor allem?", choices: ["Neue Leute kennenzulernen","Auf die Vorträge","Auf das Essen"], answer: "Neue Leute kennenzulernen" },
+    { q: "Nimmt Markus am Workshop teil?", choices: ["Ja, auf jeden Fall","Nein, er hat keine Zeit","Er weiß es noch nicht"], answer: "Ja, auf jeden Fall" },
+    { q: "Worum geht es im Workshop?", choices: ["Um künstliche Intelligenz","Um Klimaschutz","Um Marketing"], answer: "Um künstliche Intelligenz" },
+    { q: "An wen kann man sich mit Fragen wenden?", choices: ["An die Organisatorin","An den Chef","An die Teilnehmer"], answer: "An die Organisatorin" },
+    { q: "Worauf warten sie schon seit Tagen?", choices: ["Auf ihre Antwort","Auf das Programm","Auf die Einladung"], answer: "Auf ihre Antwort" }
+  ],
   reading: {
     title: "Worauf es ankommt",
     de: "Viele deutsche Verben verlangen eine feste Präposition, und diese bestimmt zugleich den Fall. Man wartet <em>auf</em> jemanden (Akkusativ), man nimmt <em>an</em> etwas teil (Dativ), und der Erfolg hängt <em>von</em> vielen Faktoren ab (Dativ). Diese Verbindungen muss man leider auswendig lernen, denn sie folgen keiner durchgehenden Logik.\n\nNoch wichtiger ist die Frage, wie man sich auf das Genannte zurückbezieht. Geht es um eine Sache, benutzt man ein da-Kompositum: „Ich denke oft daran.“ Geht es dagegen um eine Person, bleibt die Präposition mit einem Pronomen erhalten: „Ich denke oft an sie.“ Genau darauf muss man achten.\n\nBeim Fragen gilt dasselbe Prinzip. Nach einer Sache fragt man mit einem wo-Kompositum: „Worauf wartest du?“ Nach einer Person dagegen mit Präposition und Fragewort: „Auf wen wartest du?“ Wer diesen Unterschied beherrscht, klingt sofort deutlich natürlicher.",

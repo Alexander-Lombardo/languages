@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Turista", it: "Grazie mille, molto gentile!", en: "Thank you very much, very kind!" },
     { sp: "Signora", it: "Prego, buona giornata!", en: "You're welcome, have a good day!" }
   ],
+  dialogueQuiz: [
+    { q: "What is the tourist looking for?", choices: ["The station", "The bank", "The square"], answer: "The station" },
+    { q: "How far away is it?", choices: ["Two minutes", "Five minutes", "Ten minutes"], answer: "Five minutes" },
+    { q: "What should the tourist do first?", choices: ["Turn left", "Go straight to the traffic light", "Cross the square"], answer: "Go straight to the traffic light" },
+    { q: "What is on the corner?", choices: ["A bank", "A bar", "A pharmacy"], answer: "A bank" },
+    { q: "How many bars are in the square?", choices: ["One", "Two", "Three"], answer: "Two" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Question words</h3>" +

@@ -50,6 +50,13 @@ window.COURSE.lessons.push({
     { sp: "Мария", ru: "Здорово! Это интересно.", en: "Great! That's interesting." },
     { sp: "Сергей", ru: "Да! Завтра будет хороший день.", en: "Yes! Tomorrow will be a good day." }
   ],
+  dialogueQuiz: [
+    { q: "What is the speaker’s profession?", choices: ["A student", "A doctor", "A teacher"], answer: "A doctor" },
+    { q: "What does the speaker say about the house?", choices: ["It is new", "It is old", "It is big"], answer: "It is new" },
+    { q: "Whose car is it?", choices: ["The speaker’s", "Ivan’s", "Not the speaker’s"], answer: "Not the speaker’s" },
+    { q: "What is there nearby?", choices: ["A shop", "A café", "A school"], answer: "A café" },
+    { q: "When will the speaker be in Moscow?", choices: ["Tomorrow", "Today", "Next week"], answer: "Tomorrow" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Russian has no «am / is / are» in the present</h3>" +

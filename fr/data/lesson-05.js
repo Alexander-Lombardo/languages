@@ -45,6 +45,13 @@ window.COURSE.lessons.push({
     { sp: "Nadia", fr: "De rien. Tu es notre ami !", en: "You're welcome. You're our friend!" },
     { sp: "Sam", fr: "Merci beaucoup, Nadia.", en: "Thank you very much, Nadia." }
   ],
+  dialogueQuiz: [
+    { q: "How many siblings does Sam have?", choices: ["One brother and two sisters", "Two brothers and one sister", "Only one sister"], answer: "One brother and two sisters" },
+    { q: "What pet does Nadia have?", choices: ["A cat", "A dog", "Two birds"], answer: "A dog" },
+    { q: "What pets do Sam’s parents have?", choices: ["A dog", "A cat", "Two birds"], answer: "Two birds" },
+    { q: "Where is Sam’s house?", choices: ["In Paris", "In Lyon", "In Nice"], answer: "In Lyon" },
+    { q: "How does Sam feel before dinner?", choices: ["Tired and cold", "Hungry and thirsty", "Sad and bored"], answer: "Hungry and thirsty" }
+  ],
   grammarHTML:
     "<h3>avoir (to have) — memorise this</h3>" +
     "<table><tr><td>j'<strong>ai</strong></td><td>I have</td></tr>" +

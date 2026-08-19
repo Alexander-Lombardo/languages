@@ -44,6 +44,13 @@ window.COURSE.lessons.push({
     { sp: "Marta", es: "Gracias por todo, Pablo.", en: "Thanks for everything, Pablo." },
     { sp: "Pablo", es: "De nada. ¡Hasta luego!", en: "You're welcome. See you later!" }
   ],
+  dialogueQuiz: [
+    { q: "What is the first object Marta asks about?", choices: ["A table", "A book", "A chair"], answer: "A book" },
+    { q: "How many chairs are there?", choices: ["Two", "Three", "Four"], answer: "Two" },
+    { q: "Whose is the dog?", choices: ["Pablo’s", "Marta’s", "Pablo’s friend’s"], answer: "Pablo’s friend’s" },
+    { q: "What is the dog’s name?", choices: ["Luna", "Sol", "Toby"], answer: "Luna" },
+    { q: "What is old?", choices: ["The cars", "The house", "The book"], answer: "The house" }
+  ],
   grammarHTML:
     "<h3>Every noun has a gender</h3>" +
     "<p>In Spanish, every noun is either <strong>masculine</strong> or <strong>feminine</strong> — even objects. This is not about real-life gender; it's just grammar. The good news: the ending usually tells you which one.</p>" +

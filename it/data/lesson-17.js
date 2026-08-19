@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Marco", it: "Certo. E se nevica ancora, andiamo a sciare!", en: "Of course. And if it snows again, we’ll go skiing!" },
     { sp: "Giulia", it: "Affare fatto. Ci sentiamo sabato sera, allora.", en: "It’s a deal. We’ll talk Saturday evening, then." }
   ],
+  dialogueQuiz: [
+    { q: "What is the weather like in Turin?", choices: ["Cold and foggy", "Sunny and warm", "Windy and dry"], answer: "Cold and foggy" },
+    { q: "How long has it been raining in Turin?", choices: ["Since yesterday", "For three days", "For a week"], answer: "For three days" },
+    { q: "What is the forecast for Sunday in the North?", choices: ["Rain all day", "Sunny, no rain", "Snow"], answer: "Sunny, no rain" },
+    { q: "What do they plan to do if the weather is nice?", choices: ["Go to the beach", "Go to the mountains", "Stay in Naples"], answer: "Go to the mountains" },
+    { q: "When will they speak again?", choices: ["Saturday evening", "Sunday morning", "Friday night"], answer: "Saturday evening" }
+  ],
   reading: {
     title: "Le quattro stagioni in Italia",
     it: "In Italia ci sono quattro stagioni. In primavera, da marzo a maggio, fa bello e spesso piove un po’. In estate, da giugno ad agosto, fa molto caldo e c’è il sole. In autunno fa fresco, tira vento e cadono le foglie. In inverno, da dicembre a febbraio, fa freddo e in montagna nevica.",

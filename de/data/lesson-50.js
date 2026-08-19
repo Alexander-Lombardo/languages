@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Volontär", de: "Und „mutmaßlich“ schützt uns rechtlich, solange nichts bewiesen ist.", en: "And \"allegedly\" protects us legally as long as nothing is proven." },
     { sp: "Redakteurin", de: "So ist es. Streichen Sie aber das „Breaking News“ — schreiben Sie „Eilmeldung“.", en: "That's right. But cut the \"Breaking News\" — write \"Eilmeldung\"." }
   ],
+  dialogueQuiz: [
+    { q: "Was fehlt in der Schlagzeile?", choices: ["Artikel","Namen","Zahlen"], answer: "Artikel" },
+    { q: "Was bewirkt das fehlende Verb laut Volontär?", choices: ["Es spart Platz","Es wirkt dramatischer","Es klingt neutraler"], answer: "Es spart Platz" },
+    { q: "Was drückt der Konjunktiv I „sei“ aus?", choices: ["Distanz zur Aussage","Zustimmung zur Aussage","Zweifel an der Ministerin"], answer: "Distanz zur Aussage" },
+    { q: "Wovor schützt „mutmaßlich“ die Redaktion?", choices: ["Vor rechtlichen Problemen","Vor Platzmangel","Vor Leserbeschwerden"], answer: "Vor rechtlichen Problemen" },
+    { q: "Was soll statt „Breaking News“ stehen?", choices: ["„Eilmeldung“","„Aktuell“","„Sondermeldung“"], answer: "„Eilmeldung“" }
+  ],
   reading: {
     title: "Eilmeldung: Stadtrat beschließt Nahverkehrsausbau",
     de: "Milliardeninvestition beschlossen — Pendler hoffen auf Entlastung\n\nDer Stadtrat hat gestern Abend den umfassenden Ausbau des öffentlichen Nahverkehrs beschlossen. Wie aus der Verlautbarung der Stadtverwaltung hervorgeht, sollen bis 2032 drei neue Straßenbahnlinien gebaut werden. Die Finanzierung sei gesichert, erklärte die Bürgermeisterin; das Projekt werde „die Lebensqualität spürbar verbessern“.\n\nNach Angaben der Verwaltung wird mit täglich 80.000 zusätzlichen Fahrgästen gerechnet. Kritiker bemängeln jedoch, der Zeitplan sei zu optimistisch. Der mutmaßlich höhere Kostenrahmen werde, so heißt es aus der Opposition, erst nach der Wahl offengelegt.\n\nDie Maßnahme gilt als Teil eines größeren Mobilitätskonzepts. Beobachter zufolge dürfte die Entscheidung bundesweit Signalwirkung entfalten.",

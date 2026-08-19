@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Tom", de: "Ja, ich esse ihn gleich. Ich habe Hunger!", en: "Yes, I'll eat it in a moment. I'm hungry!" },
     { sp: "Anna", de: "Dann suchen wir zusammen den Stuhl, ja?", en: "Then let's look for the chair together, okay?" }
   ],
+  dialogueQuiz: [
+    { q: "What is Anna looking for?", choices: ["A table", "A chair", "A lamp"], answer: "A chair" },
+    { q: "Does Tom still need the computer?", choices: ["Yes, all day", "No, not today", "Yes, this evening"], answer: "No, not today" },
+    { q: "What does Tom give Anna?", choices: ["A lamp", "A newspaper", "A chair"], answer: "A lamp" },
+    { q: "What is Tom buying?", choices: ["A newspaper", "An apple", "A newspaper and an apple"], answer: "An apple" },
+    { q: "What do they decide to do?", choices: ["Eat together", "Look for the chair together", "Buy a computer"], answer: "Look for the chair together" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>What the accusative is</h3>" +

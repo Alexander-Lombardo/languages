@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Davide", it: "Bene! A che ora siete arrivati?", en: "Good! What time did you arrive?" },
     { sp: "Lucia", it: "Siamo arrivati alle otto, giusto in tempo.", en: "We arrived at eight, just in time." }
   ],
+  dialogueQuiz: [
+    { q: "Where did Davide go this weekend?", choices: ["To the sea", "To the mountains", "To the city"], answer: "To the mountains" },
+    { q: "When did they leave?", choices: ["Friday evening", "Saturday morning", "Sunday"], answer: "Friday evening" },
+    { q: "What did Davide’s sister do?", choices: ["She came with them", "She stayed home", "She went to the cinema"], answer: "She stayed home" },
+    { q: "What did Lucia do on Saturday?", choices: ["Went to the mountains", "Stayed at home", "Went to the cinema"], answer: "Went to the cinema" },
+    { q: "What time did Lucia and Marco arrive?", choices: ["At seven", "At eight", "At nine"], answer: "At eight" }
+  ],
   reading: {
     title: "Il viaggio di Sofia",
     it: "L'estate scorsa Sofia è partita per la Sicilia. È arrivata a Palermo di mattina ed è andata subito al mare. La sera è uscita con i suoi cugini e sono tornati a casa molto tardi. Dopo una settimana è tornata a Milano, ma è rimasta innamorata dell'isola.",

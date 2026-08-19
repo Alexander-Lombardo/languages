@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Sophie", fr: "Au contraire, j'estime que rien ne remplace le contact humain au bureau.", en: "On the contrary, I believe nothing replaces human contact at the office." },
     { sp: "Animateur", fr: "D'une part la liberté, d'autre part le lien social. Le débat reste ouvert.", en: "On the one hand freedom, on the other social connection. The debate stays open." }
   ],
+  dialogueQuiz: [
+    { q: "Sur quoi porte le débat ?", choices: ["Le télétravail", "Les transports", "Les salaires"], answer: "Le télétravail" },
+    { q: "Que pense Karim du télétravail ?", choices: ["C’est un vrai progrès", "C’est une mode passagère", "C’est trop coûteux"], answer: "C’est un vrai progrès" },
+    { q: "Quel risque Sophie souligne-t-elle ?", choices: ["La perte de productivité", "L’isolement complet de certains", "Les frais de bureau"], answer: "L’isolement complet de certains" },
+    { q: "Comment Karim propose-t-il d’éviter l’isolement ?", choices: ["En revenant au bureau", "Avec des règles", "Avec des primes"], answer: "Avec des règles" },
+    { q: "Selon Sophie, que rien ne remplace ?", choices: ["La liberté", "Le contact humain au bureau", "Les horaires fixes"], answer: "Le contact humain au bureau" }
+  ],
   reading: {
     title: "Faut-il interdire les téléphones à l'école ?",
     fr: "La question revient souvent dans l'actualité : faut-il interdire les téléphones portables à l'école ? D'une part, les partisans de l'interdiction soutiennent que les écrans nuisent à la concentration. Selon eux, les élèves apprennent mieux sans cette distraction permanente. D'autre part, certains parents estiment que le téléphone reste utile pour joindre leur enfant en cas d'urgence. Il est vrai que cet argument a du poids ; cependant, il ne justifie pas un usage libre en classe. À mon avis, la solution se trouve dans la nuance. Je ne pense pas qu'une interdiction totale soit la réponse, mais je ne crois pas non plus que l'absence de règles fonctionne. Certes, le débat divise les enseignants, les familles et les élèves. Pourtant, la plupart s'accordent sur un point : il faut apprendre aux jeunes à utiliser ces outils de manière responsable. C'est peut-être là le vrai enjeu, bien au-delà d'une simple interdiction.",

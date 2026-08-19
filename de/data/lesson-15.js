@@ -44,6 +44,13 @@ window.COURSE.lessons.push({
     { sp: "Anna", de: "Dann bleibe ich lieber zu Hause!", en: "Then I'd rather stay at home!" },
     { sp: "Tom", de: "Keine Sorge, morgen wird es wieder warm und sonnig.", en: "Don't worry, tomorrow it'll be warm and sunny again." }
   ],
+  dialogueQuiz: [
+    { q: "What is the weather like today?", choices: ["Warm and sunny", "Cold and rainy", "Windy and snowy"], answer: "Cold and rainy" },
+    { q: "What was the weather like yesterday?", choices: ["Sunny", "Rainy", "Stormy"], answer: "Sunny" },
+    { q: "What does Tom tell Anna to put on?", choices: ["A jacket", "The coat and a scarf", "A sweater and boots"], answer: "The coat and a scarf" },
+    { q: "What might happen outside today?", choices: ["Snow", "Fog", "A thunderstorm"], answer: "A thunderstorm" },
+    { q: "What will the weather be like tomorrow?", choices: ["Warm and sunny", "Cold again", "Rainy all day"], answer: "Warm and sunny" }
+  ],
   reading: {
     title: "Die vier Jahreszeiten",
     de: "In Deutschland gibt es vier Jahreszeiten. Im Frühling wird es wärmer und die Blumen blühen. Im Sommer ist es oft heiß und sonnig, und viele Leute fahren in den Urlaub. Im Herbst regnet es viel, der Wind weht und die Blätter fallen. Im Winter ist es kalt und manchmal schneit es. Dann tragen die Menschen einen warmen Mantel, einen Schal und feste Schuhe.",

@@ -51,6 +51,13 @@ window.COURSE.lessons.push({
     { sp: "Маша", ru: "Отлично! Тогда после работы, у магазина.", en: "Great! Then after work, by the shop." },
     { sp: "Олег", ru: "Договорились. До встречи!", en: "Agreed. See you!" }
   ],
+  dialogueQuiz: [
+    { q: "Whose car is it?", choices: ["Masha’s", "Masha’s brother’s", "A friend’s"], answer: "Masha’s brother’s" },
+    { q: "How does Masha want her tea?", choices: ["With sugar", "Without sugar", "With milk"], answer: "Without sugar" },
+    { q: "Why has Masha no time today?", choices: ["Lots of work", "She is travelling", "She has an exam"], answer: "Lots of work" },
+    { q: "How much does a cinema ticket cost?", choices: ["Two hundred roubles", "Three hundred roubles", "Five hundred roubles"], answer: "Three hundred roubles" },
+    { q: "Where will they meet?", choices: ["At the cinema", "By the shop", "At home"], answer: "By the shop" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>What the genitive does</h3>" +

@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Emma", en: "No, I don't. I drink tea.", es: "No. Tomo té." },
     { sp: "Jack", en: "My brother doesn't drink coffee either.", es: "Mi hermano tampoco toma café." }
   ],
+  dialogueQuiz: [
+    { q: "¿A qué hora se levanta Jack?", choices: ["A las seis", "A las siete", "A las ocho"], answer: "A las siete" },
+    { q: "¿Por qué se levanta Emma a las seis?", choices: ["Trabaja por la mañana", "Va al gimnasio", "Lleva a los niños al colegio"], answer: "Trabaja por la mañana" },
+    { q: "¿Dónde trabaja Emma?", choices: ["En un hospital", "En una oficina", "En una escuela"], answer: "En una escuela" },
+    { q: "¿Quién trabaja con Emma?", choices: ["Su hermano", "Su hermana", "Su madre"], answer: "Su hermana" },
+    { q: "¿Qué toma Emma por la mañana?", choices: ["Café", "Té", "Leche"], answer: "Té" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>¿Cuándo se usa el present simple?</h3>" +

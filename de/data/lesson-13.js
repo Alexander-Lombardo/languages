@@ -44,6 +44,13 @@ window.COURSE.lessons.push({
     { sp: "Lena", de: "Ja, ich bin sehr glücklich. Die Stimmung im Büro ist gut.", en: "Yes, I'm very happy. The mood in the office is good." },
     { sp: "Anna", de: "Schön! Hoffentlich bleibt das so.", en: "Lovely! Hopefully it stays that way." }
   ],
+  dialogueQuiz: [
+    { q: "Who is Tom?", choices: ["Lena’s new colleague", "Anna’s brother", "Lena’s new boss"], answer: "Lena’s new colleague" },
+    { q: "How does Lena describe Tom?", choices: ["Shy and short", "Friendly and quite tall", "Quiet and serious"], answer: "Friendly and quite tall" },
+    { q: "What color are Tom’s eyes?", choices: ["Brown", "Green", "Blue"], answer: "Blue" },
+    { q: "How does Lena feel in the evening?", choices: ["Always tired", "Full of energy", "A bit bored"], answer: "Always tired" },
+    { q: "What does Lena say about the office?", choices: ["The mood is good", "It is too noisy", "It is far from home"], answer: "The mood is good" }
+  ],
   reading: {
     title: "Meine beste Freundin",
     de: "Meine beste Freundin heißt Sara. Sie ist nicht sehr groß, aber sehr sportlich. Ihre Haare sind lang und dunkel, und ihre Augen sind grün. Sara ist immer freundlich und total ehrlich. Manchmal ist sie ein bisschen chaotisch, aber nie langweilig. Wir sind seit zehn Jahren Freundinnen, und ich bin sehr glücklich darüber.",

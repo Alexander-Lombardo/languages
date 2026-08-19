@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Tom", de: "Hm, mein Kaffee ist kalt. Er muss schon lange hier gestanden haben.", en: "Hmm, my coffee is cold. It must have been standing here for a long time." },
     { sp: "Lena", de: "Genau — ‚muss … gestanden haben‘ ist hier kein Befehl, sondern eine logische Schlussfolgerung.", en: "Exactly — 'must have been standing' here isn't a command, but a logical inference." }
   ],
+  dialogueQuiz: [
+    { q: "Was verwechselt Tom noch?", choices: ["„wenn“ und „als“", "„stellen“ und „stehen“", "„muss“ und „soll“"], answer: "„wenn“ und „als“" },
+    { q: "Wann benutzt man laut Lena „als“?", choices: ["Für ein einziges Ereignis in der Vergangenheit", "Für Wiederholungen", "Für Bedingungen"], answer: "Für ein einziges Ereignis in der Vergangenheit" },
+    { q: "Was soll Tom mit dem Glas machen?", choices: ["Es auf den Tisch stellen", "Es vom Tisch nehmen", "Es in die Küche bringen"], answer: "Es auf den Tisch stellen" },
+    { q: "Welchen Kasus verlangt „stehen“ hier?", choices: ["Dativ", "Akkusativ", "Genitiv"], answer: "Dativ" },
+    { q: "Was drückt „muss … gestanden haben“ aus?", choices: ["Eine logische Schlussfolgerung", "Einen Befehl", "Eine Bitte"], answer: "Eine logische Schlussfolgerung" }
+  ],
   reading: {
     title: "Sie muss es gewusst haben",
     de: "Der Kommissar betrachtete den Tatort. Die Vase lag zerbrochen auf dem Boden, das Fenster stand offen, und auf dem Tisch lag noch der halbe Kaffee. „Jemand muss in Eile gewesen sein“, dachte er. Das war keine Anweisung an einen Verdächtigen, sondern ein Schluss aus den Spuren: ‚muss‘ drückte hier seine feste Überzeugung aus.\n\nDie Nachbarin behauptete, sie wisse von nichts. Doch der Kommissar war skeptisch. „Sie will es nicht gesehen haben“, notierte er — was bedeutete, dass sie es zwar behauptete, er es ihr aber nicht recht glaubte. Und als der Hausmeister sagte, der Mieter solle verreist sein, hörte der Kommissar darin nur ein Gerücht: ‚soll‘ stand für fremdes Hörensagen, nicht für eine Pflicht.\n\nEr stellte die Kaffeetasse vorsichtig auf den Tisch zurück — Bewegung, also Akkusativ — und ließ sie dort stehen. Dann hängte er sein Notizbuch wieder an den Gürtel. „Wenn die Aussagen stimmen, kann der Täter nicht weit sein. Wann genau er floh, wissen wir noch nicht — aber wir werden es herausfinden.“",

@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Traveller", en: "Thank you. Is the train on time?", es: "Gracias. ¿El tren va a su hora?" },
     { sp: "Clerk", en: "There's a short delay of ten minutes. Have a good trip!", es: "Hay un pequeño retraso de diez minutos. ¡Buen viaje!" }
   ],
+  dialogueQuiz: [
+    { q: "Where does the traveller want to go?", choices: ["London", "Edinburgh", "York"], answer: "Edinburgh" },
+    { q: "What kind of ticket does she buy?", choices: ["A single", "A return", "A day pass"], answer: "A return" },
+    { q: "What time does the next train leave?", choices: ["At 10:15", "At 10:50", "At 11:15"], answer: "At 10:15" },
+    { q: "Where does she have to change?", choices: ["In Edinburgh", "In York", "She doesn’t change"], answer: "In York" },
+    { q: "How long is the delay?", choices: ["Five minutes", "Ten minutes", "Twenty minutes"], answer: "Ten minutes" }
+  ],
   reading: {
     title: "A Long Journey",
     en: "Last summer Marco travelled from Madrid to London by train and plane. First, he took a high-speed train to Barcelona. The journey was fast and comfortable, and he arrived with plenty of time.\n\nAt the airport, he checked in his luggage and went to the gate. Unfortunately, his flight had a delay of two hours, so he waited and read a book.\n\nWhen he finally landed in London, he was tired but happy. He asked a worker, \"How do I get to the city centre?\" The man told him to take the train and then change to the underground. Marco bought a return ticket and started the last part of his trip.",

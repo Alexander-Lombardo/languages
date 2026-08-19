@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Grand-père", fr: "Un peu. Mais aujourd'hui, j'ai une petite-fille formidable !", en: "A little. But today, I have a wonderful granddaughter!" },
     { sp: "Léa", fr: "Oh, merci, papi !", en: "Oh, thanks, grandpa!" }
   ],
+  dialogueQuiz: [
+    { q: "Where did Grandpa live when he was young?", choices: ["In the city", "In the countryside", "By the sea"], answer: "In the countryside" },
+    { q: "What animal came into the garden one day?", choices: ["A cow", "A dog", "A horse"], answer: "A horse" },
+    { q: "How did Grandpa get to school?", choices: ["On foot", "By bus", "By bike"], answer: "On foot" },
+    { q: "What happened during a football match?", choices: ["It started to rain", "It started to snow", "A horse arrived"], answer: "It started to snow" },
+    { q: "How does Grandpa describe life back then?", choices: ["Simpler, but happy", "Harder and sad", "Richer and busier"], answer: "Simpler, but happy" }
+  ],
   reading: {
     title: "Les vacances d'autrefois",
     fr: "Quand j'étais petite, nous passions toujours l'été chez ma grand-mère. La maison était grande et le jardin était plein de fleurs. Tous les matins, je me levais tôt et nous allions au marché. D'habitude, il faisait beau et nous mangions dehors. Un jour, pendant que nous déjeunions, il a commencé à pleuvoir très fort. Nous sommes vite rentrés dans la maison en riant. C'était une belle époque et nous étions très heureux.",

@@ -45,6 +45,13 @@ window.COURSE.lessons.push({
     { sp: "Médecin", fr: "Reposez-vous bien. Et si ça ne va pas mieux, revenez.", en: "Rest well. And if it doesn't get better, come back." },
     { sp: "Patient", fr: "D'accord. Au revoir !", en: "OK. Goodbye!" }
   ],
+  dialogueQuiz: [
+    { q: "What hurts the patient at first?", choices: ["His head and throat", "His legs and back", "His eyes and stomach"], answer: "His head and throat" },
+    { q: "How long has the patient been sick?", choices: ["Two days", "Three days", "A week"], answer: "Two days" },
+    { q: "What is the doctor’s diagnosis?", choices: ["The flu", "A cold", "A stomach infection"], answer: "A cold" },
+    { q: "How often should he take the medicine?", choices: ["Once a day", "Twice a day", "Three times a day"], answer: "Twice a day" },
+    { q: "Can the patient go to work tomorrow?", choices: ["Yes, if he feels better", "No, he must stay home", "Yes, but only half a day"], answer: "No, he must stay home" }
+  ],
   reading: {
     title: "Paul est malade",
     fr: "Depuis deux jours, Paul est malade. Il a mal à la tête et à la gorge, et il a un peu de fièvre. Il est très fatigué et il a aussi mal au ventre. Le médecin dit que ce n'est pas grave : c'est un rhume. Il faut se reposer et boire beaucoup d'eau. Paul doit prendre un médicament deux fois par jour et rester à la maison. Pour la gorge, le médecin conseille du thé chaud avec du miel. Demain, Paul ne peut pas aller au travail.",

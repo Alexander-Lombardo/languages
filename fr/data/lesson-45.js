@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Hélène", fr: "Et là, regarde : « il eût voulu fuir ». Ça, c'est l'imparfait du subjonctif, presque disparu.", en: "And there, look: \"he would have liked to flee.\" That's the imperfect subjunctive, almost extinct." },
     { sp: "Marc", fr: "On le reconnaît, mais personne ne le produit plus. Une plume d'autrefois !", en: "We recognise it, but nobody produces it anymore. A pen from days gone by!" }
   ],
+  dialogueQuiz: [
+    { q: "Que lit Marc ?", choices: ["Un vieux roman", "Un journal", "Un manuel de grammaire"], answer: "Un vieux roman" },
+    { q: "Que pense Hélène de la langue du livre ?", choices: ["Elle est trop moderne", "Elle paraît datée", "Elle est trop simple"], answer: "Elle paraît datée" },
+    { q: "Où emploie-t-on encore le passé simple ?", choices: ["À l’oral", "À l’écrit, dans les récits", "Dans les conversations"], answer: "À l’écrit, dans les récits" },
+    { q: "Que dirait Marc à l’oral ?", choices: ["« il entra »", "« il est entré »", "« il eût voulu »"], answer: "« il est entré »" },
+    { q: "Quel temps est « presque disparu » ?", choices: ["Le passé simple", "Le passé composé", "L’imparfait du subjonctif"], answer: "L’imparfait du subjonctif" }
+  ],
   reading: {
     title: "L'arrivée de l'étranger (extrait)",
     fr: "Le voyageur poussa la lourde porte de l'auberge et entra. Personne ne le reconnut, car nul ne l'avait jamais vu dans le village. Il ôta son manteau trempé, s'avança vers la cheminée et demanda une chambre. L'aubergiste, méfiant, le dévisagea longuement ; puis il prit la clé et la lui tendit sans un mot. L'étranger monta l'escalier, ouvrit la fenêtre et contempla la nuit. Au loin, les cloches sonnèrent minuit. Lorsqu'il eut refermé les volets, un frisson le parcourut : il sut alors qu'il ne repartirait pas le lendemain. Les villageois, eux, ne comprirent rien à cette visite. Le maire voulut l'interroger, mais l'homme ne répondit pas. Il resta trois jours, dit peu de mots, et disparut une nuit sans que personne ne s'en aperçût. On raconta longtemps son histoire au coin du feu, et chacun, à sa manière, inventa une fin que jamais nul ne put vérifier. Ainsi naquit, dans ce hameau oublié, une légende dont on parle encore.",

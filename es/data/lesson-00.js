@@ -36,6 +36,13 @@ window.COURSE.lessons.push({
     { sp: "Luis", es: "No pasa nada. ¡Hasta luego!", en: "No worries. See you later!" },
     { sp: "Ana", es: "Adiós, ¡buenas tardes!", en: "Bye, good afternoon!" }
   ],
+  dialogueQuiz: [
+    { q: "How is Ana feeling?", choices: ["Well", "Tired", "So-so"], answer: "Well" },
+    { q: "What does Luis ask Ana?", choices: ["If she speaks English", "Where she lives", "What her name is"], answer: "If she speaks English" },
+    { q: "How much English does Ana speak?", choices: ["None", "A little", "Very well"], answer: "A little" },
+    { q: "Why does Ana say “¿Cómo?”", choices: ["She doesn’t understand", "She is surprised", "She is angry"], answer: "She doesn’t understand" },
+    { q: "How does Luis say goodbye?", choices: ["Good afternoon", "See you later", "Good night"], answer: "See you later" }
+  ],
   grammarHTML:
     "<h3>Spanish is phonetic</h3>" +
     "<p>Unlike English, Spanish is spelled almost exactly as it sounds. Learn a handful of rules and you can pronounce <em>any</em> word.</p>" +

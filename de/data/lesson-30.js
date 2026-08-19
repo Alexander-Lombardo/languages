@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Lena", de: "Statt eines neuen Hauses ein altes zu erben — wie schön.", en: "Inheriting an old house instead of a new one — how lovely." },
     { sp: "Tom", de: "Im Gespräch sagen wir aber meistens „das Auto von meinem Vater“.", en: "In conversation, though, we mostly say “my father's car” (with von)." }
   ],
+  dialogueQuiz: [
+    { q: "Wessen Auto steht vor dem Haus?", choices: ["Das Auto von Toms Vater", "Das Auto von Lenas Bruder", "Das Auto der Großeltern"], answer: "Das Auto von Toms Vater" },
+    { q: "Was wollten sie eigentlich machen?", choices: ["Karten spielen", "Spazieren gehen", "Das Haus renovieren"], answer: "Spazieren gehen" },
+    { q: "Was schlägt Lena für den Besuch vor?", choices: ["Karten spielen", "Einen Film schauen", "Zusammen kochen"], answer: "Karten spielen" },
+    { q: "Wem hat das Haus früher gehört?", choices: ["Toms Eltern", "Toms Großeltern", "Einem Nachbarn"], answer: "Toms Großeltern" },
+    { q: "Was sagt man laut Tom meistens im Gespräch?", choices: ["„das Auto meines Vaters“", "„das Auto von meinem Vater“", "„Vaters Auto“"], answer: "„das Auto von meinem Vater“" }
+  ],
   reading: {
     title: "Das Haus der Familie",
     de: "Das alte Haus am Ende der Straße gehört seit Generationen der Familie Weber. Die Eltern meines Freundes leben dort, und während des Sommers kommen oft die Kinder der Verwandten zu Besuch.\n\nDie Farbe der Fassade ist verblasst, und wegen des Alters braucht das Dach bald eine Reparatur. Trotz der hohen Kosten will niemand das Haus verkaufen. „Der Wert dieses Hauses ist nicht das Geld“, sagt die Großmutter. „Es ist die Bedeutung der Erinnerungen.“\n\nInnerhalb der Familie spricht man oft über die Zukunft des Hauses. Statt eines Verkaufs planen sie eine Renovierung. So bleibt das Haus der Familie auch in den Händen der nächsten Generation.",

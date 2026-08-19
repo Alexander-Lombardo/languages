@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Jess", en: "I think you'll love the new one. It's great.", es: "Creo que te encantará la nueva. Es genial." },
     { sp: "Dan", en: "Okay! When I get home, I'll watch it.", es: "¡Vale! Cuando llegue a casa, la veré." }
   ],
+  dialogueQuiz: [
+    { q: "¿Qué va a hacer Dan este verano?", choices: ["Viajar a España con su familia", "Quedarse en casa", "Trabajar en un restaurante"], answer: "Viajar a España con su familia" },
+    { q: "¿Cuándo se va a ir?", choices: ["La semana que viene", "El mes que viene", "El año que viene"], answer: "El mes que viene" },
+    { q: "¿Cuánto tiempo se van a quedar?", choices: ["Dos semanas", "Una semana", "Un mes"], answer: "Dos semanas" },
+    { q: "¿Qué va a llevar Dan porque va a llover?", choices: ["Una chaqueta", "Un paraguas", "Unas botas"], answer: "Un paraguas" },
+    { q: "¿Qué hará Dan cuando llegue a casa?", choices: ["Verá la película", "Llamará a Jess", "Hará la maleta"], answer: "Verá la película" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Dos formas de hablar del futuro</h3>" +

@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Giulia", it: "Figurati! Allora a stasera, e per domani… in bocca al lupo!", en: "Don’t mention it! See you tonight then, and for tomorrow… good luck!" },
     { sp: "Marco", it: "Crepi il lupo! Domani a quest’ora avrò la patente in tasca.", en: "Thanks (lit. “may the wolf die”)! By this time tomorrow I’ll have my licence in my pocket." }
   ],
+  dialogueQuiz: [
+    { q: "Che cosa ha Marco domani?", choices: ["Un colloquio di lavoro", "L’esame di guida", "Una lezione di guida"], answer: "L’esame di guida" },
+    { q: "Di che cosa ha paura Marco?", choices: ["Del parcheggio", "Delle regole", "Dell’autostrada"], answer: "Del parcheggio" },
+    { q: "Secondo Giulia, il parcheggio è questione di…", choices: ["Fortuna", "Velocità", "Calma"], answer: "Calma" },
+    { q: "Che cosa propone Giulia per stasera?", choices: ["Un ultimo giro di prova", "Una cena insieme", "Ripassare le regole"], answer: "Un ultimo giro di prova" },
+    { q: "Con quale macchina usciranno?", choices: ["Con quella di Giulia", "Con quella del padre di Marco", "Con quella della scuola guida"], answer: "Con quella del padre di Marco" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Everyday idioms you’ll hear daily</h3>" +

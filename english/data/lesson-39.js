@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Editor", en: "Back up every claim with a source. We can't put this off.", es: "Respalda cada afirmación con una fuente. No podemos posponer esto." },
     { sp: "Reporter", en: "Understood. I'll have it ready by tonight.", es: "Entendido. Lo tendré listo para esta noche." }
   ],
+  dialogueQuiz: [
+    { q: "What does the committee say it will do?", choices: ["Look into the scandal", "Resign immediately", "Hold a press conference"], answer: "Look into the scandal" },
+    { q: "What did the reporter come across?", choices: ["A leaked recording", "Documents pointing out who was responsible", "An anonymous witness"], answer: "Documents pointing out who was responsible" },
+    { q: "What does the editor insist on?", choices: ["Publishing quickly", "Not making anything up", "Interviewing the minister"], answer: "Not making anything up" },
+    { q: "How many times was the interview request turned down?", choices: ["Once", "Twice", "Three times"], answer: "Twice" },
+    { q: "When will the reporter have the story ready?", choices: ["By tonight", "By tomorrow morning", "By the end of the week"], answer: "By tonight" }
+  ],
   reading: {
     title: "Why Phrasal Verbs Matter",
     en: "Phrasal verbs are one of the hardest parts of English for learners, and one of the most important. A phrasal verb is a verb plus a small word like up, out, into or off, and together they often mean something you could never guess from the parts. \"Look into\" has nothing to do with looking, and \"put up with\" has nothing to do with putting.\n\nWhat makes them tricky is that many have several meanings. \"Make up\" can mean to invent a story, to apply cosmetics, or to become friends again after an argument. Only the context tells you which one is meant. \"Bring up\" can mean to raise a child or to mention a topic in conversation.\n\nRegister matters too. In everyday speech, English prefers the phrasal verb: we say \"the police are looking into it.\" In a formal report, the single-word equivalent sounds better: \"the police are investigating.\" Knowing both, and when to use each, is a mark of an advanced speaker.\n\nFinally, some phrasal verbs are separable and some are not. You can say \"turn the music down\" or \"turn down the music,\" but with \"look into\" the words never split: \"look into the matter,\" never \"look the matter into.\"",

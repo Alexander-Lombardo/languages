@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Davide", it: "La tua è una famiglia molto simpatica.", en: "Yours is a very nice family." },
     { sp: "Lucia", it: "Grazie! Domenica pranziamo tutti insieme. Vieni anche tu?", en: "Thanks! On Sunday we all have lunch together. Will you come too?" }
   ],
+  dialogueQuiz: [
+    { q: "What is Lucia showing Davide?", choices: ["A photo of her family", "A photo of her house", "A photo of her friends"], answer: "A photo of her family" },
+    { q: "Who is the lady on the left?", choices: ["Lucia’s grandmother", "Lucia’s mother", "Lucia’s aunt"], answer: "Lucia’s mother" },
+    { q: "How many brothers does Lucia have?", choices: ["One", "Two", "Three"], answer: "Two" },
+    { q: "Who is the elderly lady?", choices: ["Lucia’s mother", "A neighbor", "Lucia’s grandmother"], answer: "Lucia’s grandmother" },
+    { q: "What does Lucia invite Davide to?", choices: ["Dinner on Saturday", "Lunch on Sunday", "A party tonight"], answer: "Lunch on Sunday" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Possessive adjectives: the four forms</h3>" +

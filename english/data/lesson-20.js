@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Sam", en: "Then she can give you tips. Has she sent photos?", es: "Entonces puede darte consejos. ¿Ha enviado fotos?" },
     { sp: "Nora", en: "Yes, she's already sent fifty!", es: "Sí, ¡ya ha enviado cincuenta!" }
   ],
+  dialogueQuiz: [
+    { q: "How many times has the second speaker been to London?", choices: ["Once", "Twice", "Never"], answer: "Twice" },
+    { q: "Where has the first speaker just booked a trip to?", choices: ["Italy", "France", "Spain"], answer: "Italy" },
+    { q: "What has the first speaker already done?", choices: ["Packed the bags", "Bought the tickets", "Sent photos"], answer: "Bought the tickets" },
+    { q: "How long has the first speaker wanted to go?", choices: ["Since last year", "For a few months", "Since childhood"], answer: "Since childhood" },
+    { q: "How many photos has the sister sent?", choices: ["Fifteen", "Fifty", "Five"], answer: "Fifty" }
+  ],
   reading: {
     title: "A Life of Travel",
     en: "Maria has worked as a flight attendant for ten years. In that time she has visited more than forty countries and has made friends all over the world. She loves her job because every week is different.\n\nShe has just come back from Japan, and she has already planned her next trip. \"I have never felt bored,\" she says. \"I have seen amazing places, and I have learned so much about other cultures.\"\n\nThere is still one country she hasn't visited yet: New Zealand. \"I haven't been there, but I will go soon,\" she promises. \"My sister has gone there this year, and she says it is beautiful.\"",

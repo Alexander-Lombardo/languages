@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Rosa", es: "Me da igual cómo, con tal de acabar hoy.", en: "I don't care how, as long as we finish today." },
     { sp: "Diego", es: "Por lo tanto, empecemos ya. En resumen: una hora más.", en: "Therefore, let's start now. In short: one more hour." }
   ],
+  dialogueQuiz: [
+    { q: "¿Cómo se siente ella con el proyecto?", choices: ["Está harta", "Está entusiasmada", "Está tranquila"], answer: "Está harta" },
+    { q: "¿Por qué la ayuda él aunque tiene poco tiempo?", choices: ["Porque se lo manda el jefe", "Porque vale la pena", "Porque le pagan"], answer: "Porque vale la pena" },
+    { q: "¿Qué falta por hacer en el proyecto?", choices: ["La introducción", "El resumen", "Las fotos"], answer: "El resumen" },
+    { q: "¿Qué ventaja dice él que tiene?", choices: ["Escribe rápido", "Nunca se equivoca", "Tiene mucho tiempo"], answer: "Escribe rápido" },
+    { q: "¿Cuánto tiempo más calculan que necesitan?", choices: ["Media hora", "Una hora", "Todo el día"], answer: "Una hora" }
+  ],
   grammarHTML:
     "<h3>Connectors: linking ideas like a native</h3>" +
     "<p>Connectors (<em>conectores</em>) glue sentences together so your Spanish flows instead of sounding like a list. They fall into a few families by the job they do.</p>" +

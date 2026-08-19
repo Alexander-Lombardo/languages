@@ -45,6 +45,13 @@ window.COURSE.lessons.push({
     { sp: "Nora", fr: "Ha ha ! Nous avons tous le même problème.", en: "Ha ha! We all have the same problem." },
     { sp: "Lucas", fr: "C'est sûr !", en: "For sure!" }
   ],
+  dialogueQuiz: [
+    { q: "What did Lucas do yesterday morning?", choices: ["He worked", "He saw a film", "He visited a museum"], answer: "He worked" },
+    { q: "What kind of film did Lucas see?", choices: ["An American film", "A French film", "An Italian film"], answer: "A French film" },
+    { q: "Until what time did Nora work?", choices: ["Six o’clock", "Eight o’clock", "Ten o’clock"], answer: "Eight o’clock" },
+    { q: "What did Nora have instead of dinner?", choices: ["A sandwich", "A tea", "A coffee"], answer: "A coffee" },
+    { q: "What did Lucas buy at the museum shop?", choices: ["A book", "A poster", "Some photos"], answer: "A book" }
+  ],
   reading: {
     title: "Mon week-end dernier",
     fr: "Le week-end dernier, j'ai fait beaucoup de choses. Samedi, j'ai travaillé le matin, puis j'ai mangé au restaurant avec un ami. L'après-midi, nous avons visité un musée et nous avons pris beaucoup de photos. J'ai acheté un livre à la boutique, mais je n'ai pas encore lu le livre. Le soir, j'ai vu un film français et j'ai beaucoup aimé. Dimanche, je n'ai pas eu le temps de me reposer !",

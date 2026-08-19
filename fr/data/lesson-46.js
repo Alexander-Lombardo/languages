@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Léa", fr: "À condition qu'ils acceptent. À moins que je ne change carrément d'entreprise.", en: "Provided they agree. Unless I change companies altogether." },
     { sp: "Marc", fr: "Quand bien même tu partirais ailleurs, tes compétences te suivraient. Ne renonce pas trop vite.", en: "Even if you left for somewhere else, your skills would follow you. Don't give up too fast." }
   ],
+  dialogueQuiz: [
+    { q: "Qu’est-ce que Léa n’avait pas prévu ?", choices: ["Le salaire trop bas", "Les nombreux voyages", "Les horaires de nuit"], answer: "Les nombreux voyages" },
+    { q: "Selon Marc, si elle avait refusé, où serait-elle ?", choices: ["Dans une autre entreprise", "Au même bureau", "Au chômage"], answer: "Au même bureau" },
+    { q: "Qu’accepterait Léa pour avoir ses week-ends ?", choices: ["Gagner un peu moins", "Travailler plus tôt", "Changer de ville"], answer: "Gagner un peu moins" },
+    { q: "Que suggère Marc si ça devient invivable ?", choices: ["Démissionner", "Demander un poste sédentaire", "Prendre des vacances"], answer: "Demander un poste sédentaire" },
+    { q: "Quel est le conseil final de Marc ?", choices: ["De partir au plus vite", "De ne pas renoncer trop vite", "De parler à son chef"], answer: "De ne pas renoncer trop vite" }
+  ],
   reading: {
     title: "Et si tout avait été différent ?",
     fr: "Le soir, quand le silence s'installe, Hélène se prend souvent à refaire le passé. Si elle avait accepté la bourse pour Montréal à vingt ans, sa vie aurait sans doute pris un tout autre tournant. Elle parlerait peut-être deux langues couramment, elle dirigerait une équipe de chercheurs, elle habiterait au bord du Saint-Laurent. Mais elle avait eu peur, et elle était restée. Aujourd'hui, elle ne regrette pas vraiment ; elle s'interroge, simplement. Car si l'on refaisait chaque choix, on ne vivrait jamais : on passerait son temps à hésiter. Supposons qu'elle puisse remonter le temps : choisirait-elle autrement ? Rien n'est moins sûr. À condition d'être honnête, elle reconnaît que sa vie actuelle lui plaît. Au cas où une nouvelle occasion se présenterait, pourtant, elle sait désormais qu'elle ne reculerait pas. Quand bien même elle se tromperait, elle préférerait agir plutôt que de nourrir, des années plus tard, le doux poison du « et si ».",

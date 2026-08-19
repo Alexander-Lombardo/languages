@@ -44,6 +44,13 @@ window.COURSE.lessons.push({
     { sp: "Anna", de: "Moment… null, eins, sieben, vier… okay, ich habe sie!", en: "One moment… zero, one, seven, four… okay, I've got it!" },
     { sp: "Tom", de: "Super. Bis bald, Anna!", en: "Great. See you soon, Anna!" }
   ],
+  dialogueQuiz: [
+    { q: "How old is Tom?", choices: ["Nineteen", "Twenty", "Twenty-one"], answer: "Twenty-one" },
+    { q: "Who is also twenty-one?", choices: ["Anna's sister", "Anna's brother", "Anna's friend"], answer: "Anna's brother" },
+    { q: "How many siblings does Anna have?", choices: ["One", "Two", "Three"], answer: "Two" },
+    { q: "What does Tom ask Anna?", choices: ["If she has his phone number", "If she has his address", "If she has his email"], answer: "If she has his phone number" },
+    { q: "How does Tom's number begin?", choices: ["0174", "0147", "0417"], answer: "0174" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Numbers 0 to 20</h3>" +

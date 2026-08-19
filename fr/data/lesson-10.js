@@ -46,6 +46,13 @@ window.COURSE.lessons.push({
     { sp: "Serveur", fr: "Bien sûr, j'arrive.", en: "Of course, coming right up." },
     { sp: "Client", fr: "Merci beaucoup !", en: "Thank you very much!" }
   ],
+  dialogueQuiz: [
+    { q: "What does the customer order first?", choices: ["A croissant", "A coffee", "A sandwich"], answer: "A coffee" },
+    { q: "What size coffee does the customer choose?", choices: ["A small one", "A large one", "A medium one"], answer: "A large one" },
+    { q: "What kind of sandwich does the customer take?", choices: ["Cheese", "Chicken", "Salad"], answer: "Cheese" },
+    { q: "What is missing on the table?", choices: ["Water", "Sugar", "A spoon"], answer: "Sugar" },
+    { q: "What does the customer ask for at the end?", choices: ["A dessert", "More coffee", "The bill"], answer: "The bill" }
+  ],
   grammarHTML:
     "<h3>je voudrais — the polite “I would like”</h3>" +
     "<p>Softer than <em>Je veux</em> (“I want”). Use it to order: <em>Je voudrais un café. Je voudrais de l'eau.</em></p>" +

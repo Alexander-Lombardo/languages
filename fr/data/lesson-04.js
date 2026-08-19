@@ -48,6 +48,13 @@ window.COURSE.lessons.push({
     { sp: "Prof", fr: "Parfait ! C'est une belle classe.", en: "Perfect! It's a nice classroom." },
     { sp: "Élève", fr: "Merci, monsieur !", en: "Thank you, sir!" }
   ],
+  dialogueQuiz: [
+    { q: "What is the first object the student names?", choices: ["A pen", "A book", "A table"], answer: "A book" },
+    { q: "What does the teacher say about the table?", choices: ["It is big", "It is small", "It is new"], answer: "It is big" },
+    { q: "Is the computer small or big?", choices: ["Small", "Big", "Medium"], answer: "Small" },
+    { q: "How many books are there?", choices: ["Two", "Three", "Four"], answer: "Three" },
+    { q: "What is in the bag?", choices: ["A notebook", "A phone", "A pen"], answer: "A phone" }
+  ],
   grammarHTML:
     "<h3>Gender: every noun has one</h3>" +
     "<p>There's no perfect rule, so <strong>learn each noun with its article</strong>: <em>une table</em>, <em>un livre</em>. Tendencies: often feminine endings -e, -tion, -té, -ette; often masculine -age, -ment, -eau, -isme.</p>" +

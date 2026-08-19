@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Marco", it: "Bene, la prendo. Posso pagare con la carta?", en: "Good, I'll take it. Can I pay by card?" },
     { sp: "Commessa", it: "Certo. Grazie e buona giornata!", en: "Of course. Thank you and have a good day!" }
   ],
+  dialogueQuiz: [
+    { q: "What is Marco looking for?", choices: ["A white shirt", "A light blue shirt", "A blue jacket"], answer: "A light blue shirt" },
+    { q: "What size does he wear?", choices: ["Small", "Medium", "Large"], answer: "Medium" },
+    { q: "What is wrong with the first shirt?", choices: ["It is too big", "It is too small", "He dislikes the colour"], answer: "It is too big" },
+    { q: "How much does the shirt cost?", choices: ["Fifteen euros", "Twenty euros", "Twenty-five euros"], answer: "Twenty-five euros" },
+    { q: "How does Marco want to pay?", choices: ["In cash", "By card", "By bank transfer"], answer: "By card" }
+  ],
   reading: {
     title: "Lo shopping di Anna",
     it: "Oggi Anna va al centro commerciale per comprare un vestito nuovo. Entra in un negozio e vede una gonna rossa molto bella, ma è troppo cara. La commessa le porta una gonna verde più economica. Anna la prova nel camerino, le piace e la prende.",

@@ -45,6 +45,13 @@ window.COURSE.lessons.push({
     { sp: "Léa", fr: "Je suis d'accord avec toi. On se voit bientôt ?", en: "I agree with you. See each other soon?" },
     { sp: "Tom", fr: "Oui, avec plaisir !", en: "Yes, with pleasure!" }
   ],
+  dialogueQuiz: [
+    { q: "Where does Léa think it is better to live?", choices: ["In the city", "In the countryside", "By the sea"], answer: "In the city" },
+    { q: "Why does Tom prefer the countryside?", choices: ["It is cheaper", "It is quieter", "It has more restaurants"], answer: "It is quieter" },
+    { q: "What is Tom going to do this summer?", choices: ["Travel to Spain", "Stay at his parents’", "Visit Rome"], answer: "Stay at his parents’" },
+    { q: "Where did Tom go last year?", choices: ["Italy", "Spain", "France"], answer: "Spain" },
+    { q: "What does Tom hope for in September?", choices: ["A new job", "A trip to Italy", "A vacation"], answer: "A vacation" }
+  ],
   reading: {
     title: "Ville ou campagne ?",
     fr: "À mon avis, c'est mieux de vivre en ville. Je trouve que c'est plus pratique : on peut aller au cinéma ou au restaurant. Par contre, mon ami Tom n'est pas d'accord ; il préfère la campagne parce que c'est plus calme. C'est vrai que la ville est plus chère. L'année dernière, je suis allée en Italie et c'était magnifique. Cet été, j'espère voyager encore et visiter Rome. Et après les vacances, je vais continuer le français, parce que je pense que c'est une belle langue.",

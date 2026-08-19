@@ -45,6 +45,13 @@ window.COURSE.lessons.push({
     { sp: "Diego", es: "Un curso corto. Si lo apruebo, podría ascender en un año.", en: "A short course. If I pass it, I could get promoted within a year." },
     { sp: "Marta", es: "¡Qué bien! Cuando termines, lo celebramos.", en: "How great! When you finish, we'll celebrate." }
   ],
+  dialogueQuiz: [
+    { q: "¿Cuánto tiempo hace que Marta no ve a Diego?", choices: ["Unos días", "Varias semanas", "Varios meses"], answer: "Varias semanas" },
+    { q: "¿En qué tipo de empresa trabaja Diego?", choices: ["Una empresa de tecnología", "Una empresa de transporte", "Una empresa de turismo"], answer: "Una empresa de tecnología" },
+    { q: "¿Cuándo tiene que quedarse Diego hasta tarde?", choices: ["Todos los días", "Cuando hay un plazo importante", "Nunca"], answer: "Cuando hay un plazo importante" },
+    { q: "¿Qué está estudiando Diego para mejorar su puesto?", choices: ["Una carrera nueva", "Un máster", "Un curso corto"], answer: "Un curso corto" },
+    { q: "¿Qué propone Marta al final?", choices: ["Celebrarlo cuando termine", "Buscarle otro trabajo", "Ayudarle a estudiar"], answer: "Celebrarlo cuando termine" }
+  ],
   grammarHTML:
     "<h3>Present progressive: estar + gerundio</h3>" +
     "<p>To say what is happening <em>right now</em>, use <strong>estar</strong> plus the gerund. Form the gerund by replacing the infinitive ending:</p>" +

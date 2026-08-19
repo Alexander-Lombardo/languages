@@ -44,6 +44,13 @@ window.COURSE.lessons.push({
     { sp: "Léa", fr: "Ha ha ! Alors aujourd'hui, tu es fatigué.", en: "Ha ha! So today, you're tired." },
     { sp: "Max", fr: "Très fatigué ! Ce soir, je me couche tôt.", en: "Very tired! Tonight, I'm going to bed early." }
   ],
+  dialogueQuiz: [
+    { q: "What time does Max get up?", choices: ["Six o’clock", "Six thirty", "Eight o’clock"], answer: "Six thirty" },
+    { q: "What does Max have for breakfast?", choices: ["Coffee and toast", "Tea and croissants", "Juice and cereal"], answer: "Coffee and toast" },
+    { q: "Why does Max get up early every day?", choices: ["He goes to the gym", "He walks his dog", "He starts work early"], answer: "He walks his dog" },
+    { q: "When does Léa get up on weekends?", choices: ["Before eight", "Around nine", "Not before ten"], answer: "Not before ten" },
+    { q: "Why did Max go to bed late yesterday?", choices: ["He had fun at a party", "He watched a film", "He worked late"], answer: "He had fun at a party" }
+  ],
   reading: {
     title: "La journée de Sophie",
     fr: "Sophie se réveille à sept heures tous les jours. D'abord, elle se lève et elle se douche. Ensuite, elle s'habille et elle se brosse les dents. Pendant la semaine, elle ne se repose pas beaucoup. Le soir, elle se couche tôt parce qu'elle est fatiguée. Mais hier, c'était son anniversaire : elle s'est amusée à une fête et elle s'est couchée très tard. Ce matin, elle s'est réveillée à dix heures !",

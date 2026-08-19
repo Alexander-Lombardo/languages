@@ -45,6 +45,13 @@ window.COURSE.lessons.push({
     { sp: "Sarah", fr: "Parce que je veux écrire un livre.", en: "Because I want to write a book." },
     { sp: "Karim", fr: "Super projet ! Bonne chance.", en: "Great project! Good luck." }
   ],
+  dialogueQuiz: [
+    { q: "What is Karim’s job?", choices: ["Teacher", "Engineer", "Student"], answer: "Engineer" },
+    { q: "How long has Sarah been teaching English?", choices: ["Three years", "Five years", "Nine years"], answer: "Five years" },
+    { q: "Where did Karim live before?", choices: ["In Lyon", "In Marseille", "In Paris"], answer: "In Paris" },
+    { q: "How many hours a day does Karim often work?", choices: ["Seven", "Eight", "Nine"], answer: "Nine" },
+    { q: "Why does Sarah want a part-time job?", choices: ["She wants to write a book", "She wants to travel", "She is tired of teaching"], answer: "She wants to write a book" }
+  ],
   reading: {
     title: "Le travail de Karim",
     fr: "Karim est ingénieur depuis trois ans. Il travaille dans une entreprise de technologie près de Paris. Avant, il était étudiant à l'université, où il a étudié l'informatique. Maintenant, il aime son métier, mais son patron est exigeant et il travaille souvent neuf heures par jour. Ses collègues sont sympas et l'aident beaucoup. Le soir, il est fatigué, mais il est content de son travail. Un jour, il voudrait créer sa propre entreprise.",

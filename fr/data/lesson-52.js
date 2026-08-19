@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Léa", fr: "J'te raconte pas. Bon, faut que j'y aille, ma bagnole est mal garée.", en: "You have no idea. Anyway, I gotta go, my car's badly parked." },
     { sp: "Yanis", fr: "Ok, à plus ! On se cale un truc cette semaine, quoi ?", en: "OK, see you! We'll sort something out this week, yeah?" }
   ],
+  dialogueQuiz: [
+    { q: "Où Yanis est-il allé ce week-end ?", choices: ["Au restaurant avec Léa", "Manger chez Karim", "Au cinéma avec des potes"], answer: "Manger chez Karim" },
+    { q: "Que pense Léa de Karim ?", choices: ["Elle le trouve trop drôle", "Elle le trouve relou", "Elle ne le connaît pas"], answer: "Elle le trouve trop drôle" },
+    { q: "Qu’a fait Léa pendant le week-end ?", choices: ["Elle a dormi", "Elle a bossé", "Elle a fait la fête"], answer: "Elle a bossé" },
+    { q: "Que trouve Yanis « carrément abusé » ?", choices: ["Le boulot le dimanche", "Le prix de la bouffe", "Les bagnoles mal garées"], answer: "Le boulot le dimanche" },
+    { q: "Pourquoi Léa doit-elle partir ?", choices: ["Elle a un rendez-vous", "Sa bagnole est mal garée", "Elle doit retourner bosser"], answer: "Sa bagnole est mal garée" }
+  ],
   reading: {
     title: "Mon coloc est relou (post de forum)",
     fr: "Bon les gens, j'ai besoin de vider mon sac. Mon coloc, c'est un bon pote à la base, mais alors qu'est-ce qu'il est devenu relou. Le mec, il bosse jamais, il passe ses journées à bouffer mes trucs dans le frigo et à regarder des séries genre toute la nuit. Du coup, le matin, impossible de le réveiller, quoi. La semaine dernière, j'lui ai demandé gentiment de faire la vaisselle. Sa réponse ? « Ouais ouais, t'inquiète. » Spoiler : il l'a jamais faite. Carrément. Et le pire, c'est qu'il prend ma bagnole sans demander. L'autre jour, je la retrouve garée n'importe comment, avec une rayure de ouf sur la portière. Là, j'étais grave vénère. Bref, je sais plus quoi faire. Je l'aime bien, hein, c'est mon pote depuis le lycée, mais vivre avec lui c'est devenu un truc de fou. Vous feriez quoi à ma place ? Je lui dis franchement que c'est mort, ou je laisse couler encore un peu ? Aidez-moi, sérieux.",

@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Nadia", fr: "J'y ai pensé, mais je n'ai pas encore eu le temps. Je l'appelle ce soir.", en: "I thought about it, but I haven't had time yet. I'll call him this evening." },
     { sp: "Marc", fr: "Très bien. Compte sur moi pour le reste, je m'en occupe !", en: "Great. Count on me for the rest, I'll take care of it!" }
   ],
+  dialogueQuiz: [
+    { q: "Pourquoi Nadia ne peut-elle pas faire les courses ?", choices: ["Elle est malade", "Elle n’a pas le temps", "Elle n’a pas d’argent"], answer: "Elle n’a pas le temps" },
+    { q: "Comment Nadia envoie-t-elle la liste ?", choices: ["Par message", "Par e-mail", "Sur un papier"], answer: "Par message" },
+    { q: "Où Marc doit-il déposer le colis ?", choices: ["Chez la sœur de Nadia", "À la poste", "Au bureau"], answer: "À la poste" },
+    { q: "Où est le colis ?", choices: ["Sur la table", "Dans l’entrée", "Dans la voiture"], answer: "Sur la table" },
+    { q: "Quand Nadia va-t-elle appeler le médecin ?", choices: ["Tout de suite", "Demain matin", "Ce soir"], answer: "Ce soir" }
+  ],
   reading: {
     title: "Un service entre voisins",
     fr: "Hier, ma voisine Claire m'a demandé un coup de main. Elle devait aller chez le dentiste et elle ne pouvait pas récupérer ses enfants à l'école. Je lui ai dit oui tout de suite : entre voisins, on se rend service. Je suis donc allé les chercher à seize heures. Quand je les ai vus, ils étaient contents. Je les ai ramenés à la maison et je leur ai préparé un goûter. Claire avait aussi des courses à faire ; je les ai faites pour elle parce que ça m'arrangeait, j'allais déjà au supermarché. Elle voulait me rembourser, mais je n'ai rien voulu. Quand elle est rentrée, elle m'a remercié plusieurs fois. Je lui ai répondu que ce n'était rien et que la prochaine fois, ce serait peut-être moi qui aurais besoin d'elle. On peut toujours compter sur ses voisins, et c'est précieux.",

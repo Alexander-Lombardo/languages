@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Lena", de: "Ist das der Ort, wo wir uns kennengelernt haben?", en: "Is that the place where we first met?" },
     { sp: "Tom", de: "Stimmt! Etwas, woran ich mich gern erinnere.", en: "That's right! Something that I like to remember." }
   ],
+  dialogueQuiz: [
+    { q: "Wer ist der Mann, der aus dem Café gekommen ist?", choices: ["Toms Kollege", "Toms Nachbar", "Toms Bruder"], answer: "Toms Nachbar" },
+    { q: "Woher kennt Tom den Mann noch?", choices: ["Aus dem Sportverein", "Aus der Arbeit", "Aus der Schule"], answer: "Aus dem Sportverein" },
+    { q: "Wer ist die Frau neben dem Mann?", choices: ["Seine Frau", "Seine Schwester", "Seine Kollegin"], answer: "Seine Kollegin" },
+    { q: "Was hat Tom für die Kollegin gemacht?", choices: ["Ihr Auto repariert", "Ihre Wohnung renoviert", "Ihren Garten gepflegt"], answer: "Ihre Wohnung renoviert" },
+    { q: "Was ist besonders an dem Café?", choices: ["Es hat den besten Kaffee", "Es hat die besten Kuchen der Stadt", "Es ist das älteste der Stadt"], answer: "Es hat die besten Kuchen der Stadt" }
+  ],
   reading: {
     title: "Die Wohnung, die alles veränderte",
     de: "Vor zwei Jahren fand ich eine Anzeige, die mein Leben veränderte. Es war eine kleine Wohnung, die im Zentrum lag und die ich mir kaum leisten konnte. Der Vermieter, dessen Familie das Haus seit Generationen besitzt, war ein freundlicher Mann, dem man sofort vertraute.\n\nDie Nachbarn, die ich am ersten Tag traf, luden mich zum Kaffee ein. Besonders die Frau, deren Wohnung neben meiner liegt, wurde eine gute Freundin. Sie empfahl mir ein Café, in dem sich viele Leute treffen, die neu in der Stadt sind. Dort lernte ich Menschen kennen, mit denen ich heute noch befreundet bin.\n\nDie Wohnung, die ich damals gemietet habe, ist heute mein Zuhause — ein Ort, wo ich mich wirklich wohlfühle.",

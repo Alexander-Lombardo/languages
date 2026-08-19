@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Viajera", es: "Muchas gracias. ¿Dónde dejo el equipaje grande?", en: "Thank you very much. Where do I leave the large luggage?" },
     { sp: "Agente", es: "Déjelo en el vagón de adelante. ¡Buen viaje!", en: "Leave it in the front carriage. Have a good trip!" }
   ],
+  dialogueQuiz: [
+    { q: "¿Adónde quiere viajar el pasajero?", choices: ["A Querétaro", "A Guadalajara", "A Monterrey"], answer: "A Guadalajara" },
+    { q: "¿A qué hora sale el próximo tren?", choices: ["A las diez y media", "A las diez", "A la una"], answer: "A las diez y media" },
+    { q: "¿Cuánto retraso lleva el tren?", choices: ["Cinco minutos", "Quince minutos", "Media hora"], answer: "Quince minutos" },
+    { q: "¿Dónde hay que hacer transbordo?", choices: ["En Guadalajara", "En Querétaro", "No hay transbordo"], answer: "En Querétaro" },
+    { q: "¿Qué asiento quiere reservar?", choices: ["Junto al pasillo", "Junto a la ventana", "En primera clase"], answer: "Junto a la ventana" }
+  ],
   grammarHTML:
     "<h3>Formal commands (usted) — giving directions</h3>" +
     "<p>When you ask for or give directions to a stranger, you use the <strong>formal command</strong>. To form it, take the <em>yo</em> form of the present, drop the <em>-o</em>, and add the opposite vowel ending.</p>" +

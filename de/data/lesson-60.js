@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Lena", de: "Zum Schluss ein Appell?", en: "And at the end an appeal?" },
     { sp: "Markus", de: "Ja: kurz, direkt, ans Publikum gerichtet. ‚Stimmen Sie heute für die Zukunft!‘ Aber übertreib es nicht — Pathos in Maßen wirkt stärker als Pathos im Übermaß.", en: "Yes: short, direct, addressed to the audience. 'Vote today for the future!' But don't overdo it — pathos in moderation works better than pathos in excess." }
   ],
+  dialogueQuiz: [
+    { q: "Was hat Lena morgen vor?", choices: ["Eine Rede halten", "Eine Prüfung ablegen", "Ein Interview führen"], answer: "Eine Rede halten" },
+    { q: "Womit soll sie laut Markus beginnen?", choices: ["Mit einer rhetorischen Frage", "Mit einer Statistik", "Mit einem Witz"], answer: "Mit einer rhetorischen Frage" },
+    { q: "Was ist eine Anapher?", choices: ["Die Wiederholung des Satzanfangs", "Eine Steigerung in drei Stufen", "Ein Appell ans Publikum"], answer: "Die Wiederholung des Satzanfangs" },
+    { q: "Was entsteht durch „schwer, schwerer, am schwersten“?", choices: ["Eine Klimax", "Eine Dreierfigur", "Eine Metapher"], answer: "Eine Klimax" },
+    { q: "Was rät Markus zum Pathos?", choices: ["In Maßen einsetzen", "Ganz vermeiden", "So viel wie möglich"], answer: "In Maßen einsetzen" }
+  ],
   reading: {
     title: "Eine Rede an die Stadt",
     de: "„Meine Damen und Herren, ich frage Sie: Wie lange wollen wir noch zusehen? Wie lange wollen wir schweigen, während unsere Parks verfallen, unsere Schulen veralten, unsere Straßen verstummen?\n\nWir sind keine Stadt der Zuschauer. Wir sind eine Stadt der Macher, der Mutigen, der Mitbürger. Diese Stadt wurde nicht gebaut von denen, die warteten — sie wurde gebaut von denen, die wagten.\n\nVeränderung beginnt nicht morgen. Sie beginnt nicht nächste Woche. Sie beginnt heute, hier, mit Ihnen. Denn eine Stadt ist wie ein Garten: Was wir heute säen, ernten unsere Kinder.\n\nDeshalb bitte ich Sie nicht um Applaus, ich bitte Sie um Taten. Stehen Sie auf. Reden Sie mit. Gestalten Sie mit. Denn die Zukunft gehört nicht den Lauten, sondern den Tätigen — und sie gehört uns allen.“",

@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Reporter", en: "Did he mention where the next office would be?", es: "¿Mencionó dónde estaría la próxima oficina?" },
     { sp: "Anna", en: "He said it would be there, near the station.", es: "Dijo que estaría allí, cerca de la estación." }
   ],
+  dialogueQuiz: [
+    { q: "What did the manager say about the company?", choices: ["It was doing well", "It was losing money", "It was moving abroad"], answer: "It was doing well" },
+    { q: "How many contracts had he signed that morning?", choices: ["One", "Two", "Three"], answer: "Two" },
+    { q: "Who asked about a raise?", choices: ["Anna", "The reporter", "Tom"], answer: "Tom" },
+    { q: "What did the manager say about salaries?", choices: ["Everyone would get a raise", "He couldn’t promise anything yet", "Salaries would go down"], answer: "He couldn’t promise anything yet" },
+    { q: "Where will the next office be?", choices: ["Near the station", "In the city centre", "Next to the airport"], answer: "Near the station" }
+  ],
   reading: {
     title: "The Office Rumour",
     en: "On Monday, Sofia told her colleague that the company was going to move to a new building. She said she had heard it from a manager the week before, but she admitted that she wasn't completely sure.\n\nHer colleague asked her when the move would happen and whether everyone would keep their jobs. Sofia explained that she didn't know the details. She only knew that the decision had already been made.\n\nBy Friday, the director sent an email to everyone. He wrote that the rumour was true, that the move would take place the following month, and that no one would lose their position. People were relieved: what had started as gossip turned out to be good news.",

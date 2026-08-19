@@ -44,6 +44,13 @@ window.COURSE.lessons.push({
     { sp: "Léa", fr: "Alors, je vais rester à la maison avec un thé chaud.", en: "Then I'm going to stay home with a hot tea." },
     { sp: "Marc", fr: "Bonne idée. À demain !", en: "Good idea. See you tomorrow!" }
   ],
+  dialogueQuiz: [
+    { q: "What is the weather like today?", choices: ["Hot and sunny", "Cold and windy", "Rainy and cloudy"], answer: "Cold and windy" },
+    { q: "What should Léa take tomorrow?", choices: ["A coat", "Sunglasses", "An umbrella"], answer: "An umbrella" },
+    { q: "What is Léa’s favourite season?", choices: ["Summer", "Winter", "Spring"], answer: "Summer" },
+    { q: "Why does Marc like winter?", choices: ["He loves the snow", "He likes hot tea", "He likes big coats"], answer: "He loves the snow" },
+    { q: "What is the temperature today?", choices: ["Fifteen degrees", "Five degrees", "Zero degrees"], answer: "Five degrees" }
+  ],
   reading: {
     title: "Les quatre saisons",
     fr: "J'aime beaucoup les quatre saisons. Au printemps, il fait beau et il pleut un peu ; je porte une veste légère. En été, il fait chaud et il y a du soleil, alors je porte un t-shirt et des sandales. En automne, il fait frais et il y a du vent ; je mets un pull. En hiver, il fait très froid et il neige souvent. Ma saison préférée est l'été, parce que je vais souvent à la plage.",

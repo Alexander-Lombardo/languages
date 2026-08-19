@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Grace", en: "How much is it?", es: "¿Cuánto cuesta?" },
     { sp: "Waiter", en: "It's six dollars. Here's the bill.", es: "Son seis dólares. Aquí tiene la cuenta." }
   ],
+  dialogueQuiz: [
+    { q: "¿Qué pide Grace para beber?", choices: ["Un té", "Un café", "Un zumo"], answer: "Un café" },
+    { q: "¿Cómo quiere el café?", choices: ["Con leche y azúcar", "Con leche, sin azúcar", "Sin leche, con azúcar"], answer: "Con leche, sin azúcar" },
+    { q: "¿Qué pide para comer?", choices: ["Una sopa", "Un sándwich de queso", "Un sándwich de jamón"], answer: "Un sándwich de queso" },
+    { q: "¿Quiere sopa Grace?", choices: ["Sí, una pequeña", "No, solo el sándwich", "Sí, con el café"], answer: "No, solo el sándwich" },
+    { q: "¿Cuánto cuesta todo?", choices: ["Cinco dólares", "Seis dólares", "Siete dólares"], answer: "Seis dólares" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Pedir con cortesía</h3>" +

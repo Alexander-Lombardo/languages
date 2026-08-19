@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Bea", en: "Me too. But in winter I like the snow.", es: "Yo también. Pero en invierno me gusta la nieve." },
     { sp: "Ian", en: "True. Let's hope tomorrow is sunny!", es: "Cierto. ¡Esperemos que mañana haga sol!" }
   ],
+  dialogueQuiz: [
+    { q: "¿Qué tiempo hace hoy?", choices: ["Soleado y caluroso", "Nublado y un poco frío", "Nieva mucho"], answer: "Nublado y un poco frío" },
+    { q: "¿Cuándo dice el pronóstico que va a llover?", choices: ["Esta mañana", "Esta tarde", "Mañana"], answer: "Esta tarde" },
+    { q: "¿Qué temperatura hace?", choices: ["Unos diez grados", "Unos veinte grados", "Unos cinco grados"], answer: "Unos diez grados" },
+    { q: "¿Qué estación prefiere la segunda persona?", choices: ["El invierno", "La primavera", "El verano"], answer: "El verano" },
+    { q: "¿Qué le gusta a la primera persona del invierno?", choices: ["La lluvia", "La nieve", "El viento"], answer: "La nieve" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>El «It's» impersonal del clima</h3>" +

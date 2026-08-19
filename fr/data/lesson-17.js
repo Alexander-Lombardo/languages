@@ -44,6 +44,13 @@ window.COURSE.lessons.push({
     { sp: "Chloé", fr: "Parce que mon amie est arrivée de Madrid. Nous avons parlé pendant des heures.", en: "Because my friend arrived from Madrid. We talked for hours." },
     { sp: "Inès", fr: "C'est une belle fin de semaine pour nous deux !", en: "It's a nice weekend for both of us!" }
   ],
+  dialogueQuiz: [
+    { q: "Who did Inès go to Lyon with?", choices: ["Her friends", "Her brother", "Her parents"], answer: "Her parents" },
+    { q: "What did Chloé do with her brother?", choices: ["They went to the cinema", "They visited a basilica", "They stayed at a hotel"], answer: "They went to the cinema" },
+    { q: "What happened to Inès’s mother?", choices: ["She got sick", "She fell in the street", "She missed the train"], answer: "She fell in the street" },
+    { q: "How did Inès’s family get back to Paris?", choices: ["By car", "By plane", "By train"], answer: "By train" },
+    { q: "Why did Chloé stay home this weekend?", choices: ["She was tired", "Her friend arrived from Madrid", "It was raining"], answer: "Her friend arrived from Madrid" }
+  ],
   reading: {
     title: "Le week-end de Marc",
     fr: "Samedi matin, Marc est parti de chez lui très tôt. Il est allé à la gare et il est monté dans le train pour Bordeaux. Il est arrivé vers midi et il est resté deux jours chez sa sœur. Dimanche, ils sont sortis ensemble et ils sont montés en haut d'une grande tour. Le soir, Marc est tombé dans l'escalier, mais il n'est pas blessé. Lundi, il est rentré à Paris, fatigué mais content.",

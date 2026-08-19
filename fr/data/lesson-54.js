@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Tuteur", fr: "Calque de l'anglais. Pour « to realise », dis plutôt « je me suis rendu compte que j'avais tort ».", en: "An English calque. For 'to realise,' say rather 'je me suis rendu compte que j'avais tort.'" },
     { sp: "Élève", fr: "Compris. Je relirai tout en cherchant ces pièges-là avant de rendre mon travail.", en: "Got it. I'll proofread everything looking for those traps before handing in my work." }
   ],
+  dialogueQuiz: [
+    { q: "Quelle est l’erreur dans « les fleurs que j’ai acheté » ?", choices: ["L’accord du participe passé", "Le choix de l’auxiliaire", "L’ordre des mots"], answer: "L’accord du participe passé" },
+    { q: "Quel mode exige « après que » ?", choices: ["Le subjonctif", "L’indicatif", "Le conditionnel"], answer: "L’indicatif" },
+    { q: "À quoi s’attendait l’élève pour « après que » ?", choices: ["Au subjonctif", "À l’infinitif", "À l’impératif"], answer: "Au subjonctif" },
+    { q: "Comment le tuteur qualifie-t-il « j’ai réalisé que » ?", choices: ["De régionalisme", "De calque de l’anglais", "De tournure littéraire"], answer: "De calque de l’anglais" },
+    { q: "Que fera l’élève avant de rendre son travail ?", choices: ["Il le fera relire par un ami", "Il recopiera tout", "Il relira en cherchant ces pièges"], answer: "Il relira en cherchant ces pièges" }
+  ],
   reading: {
     title: "Les fautes qui trahissent l'apprenant avancé",
     fr: "Même après des années d'étude, certaines erreurs résistent. La plus tenace reste l'accord du participe passé avec avoir : on oublie que « la lettre que j'ai écrite » s'accorde, parce que le complément d'objet direct précède le verbe. Vient ensuite le subjonctif, employé à tort après après que, qui réclame pourtant l'indicatif : on dit « après qu'il est arrivé », et non « après qu'il soit arrivé ». Les prépositions piègent aussi : on se souvient de quelque chose, on s'attend à un résultat, et un ami nous manque, jamais l'inverse. Le genre trompe l'oreille anglophone : un problème, un choix sont masculins, tandis qu'une erreur et une période sont féminines. Enfin, les anglicismes guettent : « réaliser » ne signifie pas se rendre compte, et l'on ne supporte pas une équipe, on la soutient. Relire son texte en traquant précisément ces pièges, plutôt qu'en relisant vaguement, fait souvent gagner un niveau entier. La perfection n'existe pas, mais la vigilance, elle, se cultive.",

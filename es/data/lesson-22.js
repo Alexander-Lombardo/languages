@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Cliente", es: "Por supuesto. Yo en su lugar haría lo mismo.", en: "Of course. In your place I'd do the same." },
     { sp: "Recepcionista", es: "Se lo agradezco. Quedaría todo confirmado, entonces.", en: "I appreciate it. Everything would be confirmed, then." }
   ],
+  dialogueQuiz: [
+    { q: "¿Para qué día quiere la habitación?", choices: ["Para el jueves", "Para el viernes", "Para el sábado"], answer: "Para el viernes" },
+    { q: "¿Qué tipo de habitación ofrecen?", choices: ["Con vista al mar", "Con vista a la ciudad", "Con balcón al jardín"], answer: "Con vista al mar" },
+    { q: "¿Cuánto costaría la noche?", choices: ["Setenta dólares", "Noventa dólares", "Cien dólares"], answer: "Noventa dólares" },
+    { q: "¿Qué pide incluir el cliente?", choices: ["El desayuno", "El estacionamiento", "La cena"], answer: "El desayuno" },
+    { q: "¿Qué pide el recepcionista como garantía?", choices: ["Un depósito en efectivo", "Una tarjeta", "Una copia del pasaporte"], answer: "Una tarjeta" }
+  ],
   grammarHTML:
     "<h3>What the conditional is for</h3>" +
     "<p>The conditional (el condicional) is the <em>would</em> tense. Use it to be polite, to give advice, to talk about hypothetical situations, and to express wishes. In English it is usually <em>would + verb</em>: <em>I would travel</em>, <em>it would cost</em>.</p>" +

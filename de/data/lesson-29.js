@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Markus", de: "Ich ziehe nächste Woche um. Die neue Wohnung wird mir gefallen.", en: "I'm moving next week. I'll like the new apartment." },
     { sp: "Anna", de: "Wo ist Markus eigentlich? — Er wird wohl noch im Büro sein.", en: "Where is Markus, actually? — He's probably still at the office." }
   ],
+  dialogueQuiz: [
+    { q: "Was wird Anna nach dem Studium wahrscheinlich machen?", choices: ["Arbeiten", "Reisen", "Umziehen"], answer: "Reisen" },
+    { q: "Wohin fährt Anna nächstes Jahr?", choices: ["Nach Asien", "Nach Amerika", "Nach Afrika"], answer: "Nach Asien" },
+    { q: "Mit wem reist Anna?", choices: ["Allein", "Mit ihrer Schwester", "Mit einer Freundin"], answer: "Mit einer Freundin" },
+    { q: "Warum wird Anna laut Markus Erfolg haben?", choices: ["Sie hat viel Geld", "Sie spricht drei Sprachen", "Sie hat gute Noten"], answer: "Sie spricht drei Sprachen" },
+    { q: "Was macht Markus nächste Woche?", choices: ["Er zieht um", "Er beginnt eine neue Arbeit", "Er fährt in den Urlaub"], answer: "Er zieht um" }
+  ],
   reading: {
     title: "Gute Vorsätze",
     de: "Jedes Jahr macht Tom am ersten Januar dieselben Pläne. „Dieses Jahr wird alles anders“, sagt er. „Ich werde mehr Sport machen, weniger fernsehen und endlich besser Deutsch lernen.“\n\nSeine Schwester lacht. „Das wirst du wieder nicht schaffen. Im Februar wirst du schon wieder auf dem Sofa liegen.“ Tom ist diesmal aber sicher: „Du wirst sehen, ich werde mich verbessern. Nächste Woche fange ich mit einem Sprachkurs an.“\n\nWahrscheinlich hat seine Schwester recht. Aber vielleicht wird Tom dieses Jahr ja wirklich durchhalten. Wer weiß? Die Zukunft wird es zeigen.",

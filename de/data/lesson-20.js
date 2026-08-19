@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Lena", de: "Und wie fühlst du dich am Morgen?", en: "And how do you feel in the morning?" },
     { sp: "Tom", de: "Ich fühle mich gut und freue mich auf den Tag.", en: "I feel good and look forward to the day." }
   ],
+  dialogueQuiz: [
+    { q: "When does Tom wake up?", choices: ["At six", "At seven", "At eight"], answer: "At six" },
+    { q: "What does Tom do first?", choices: ["He has breakfast", "He takes a shower", "He brushes his teeth"], answer: "He takes a shower" },
+    { q: "What does he do before breakfast?", choices: ["Gets dressed and brushes teeth", "Reads the news", "Goes jogging"], answer: "Gets dressed and brushes teeth" },
+    { q: "Where does Tom eat breakfast?", choices: ["At the table", "In the kitchen standing", "On the sofa"], answer: "At the table" },
+    { q: "How does Tom feel in the morning?", choices: ["Tired and stressed", "Good, looking forward to the day", "Hungry and grumpy"], answer: "Good, looking forward to the day" }
+  ],
   reading: {
     title: "Mein Morgen",
     de: "Mein Wecker klingelt um halb sieben, und ich wache langsam auf. Zuerst dusche ich mich und wasche mir die Haare. Danach ziehe ich mich an und putze mir die Zähne. Dann gehe ich in die Küche und frühstücke mit meiner Familie. Wir setzen uns alle an den Tisch. Ich freue mich immer auf den Kaffee am Morgen. Später fahre ich mit dem Fahrrad zur Arbeit und fühle mich frisch und wach.",

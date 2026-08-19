@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Camille", fr: "Génial ! On se voit ? J'ai fini mes examens il y a deux jours.", en: "Great! Shall we meet up? I finished my exams two days ago." },
     { sp: "Léo", fr: "Avec plaisir. Je t'écris dès que j'arrive — j'y serai en trois heures de train.", en: "Gladly. I'll write you as soon as I arrive — I'll be there in three hours by train." }
   ],
+  dialogueQuiz: [
+    { q: "Où habite Léo maintenant ?", choices: ["À Lyon", "À Nantes", "À Paris"], answer: "À Nantes" },
+    { q: "Depuis combien de temps habite-t-il là-bas ?", choices: ["Six mois", "Un an", "Trois semaines"], answer: "Six mois" },
+    { q: "Pendant combien de temps a-t-il cherché un poste ?", choices: ["Presque un an", "Deux ans", "Quelques semaines"], answer: "Presque un an" },
+    { q: "Quand Léo revient-il à Lyon ?", choices: ["Dans deux jours", "Dans trois semaines", "Dans six mois"], answer: "Dans trois semaines" },
+    { q: "Qu’a fait Camille il y a deux jours ?", choices: ["Elle a déménagé", "Elle a fini ses examens", "Elle a trouvé un travail"], answer: "Elle a fini ses examens" }
+  ],
   reading: {
     title: "La routine de Sophie",
     fr: "Sophie travaille comme infirmière depuis huit ans. Elle a commencé tout de suite après ses études, et elle aime toujours son métier. Au début, elle habitait chez ses parents, mais elle a déménagé il y a cinq ans pour être plus près de l'hôpital. Maintenant, elle vit dans un petit appartement depuis 2021. Son emploi du temps est difficile : elle travaille souvent pendant la nuit, parfois pendant douze heures. Le matin, elle rentre chez elle et elle dort pour quelques heures avant de se réveiller. Récemment, elle a décidé de changer de rythme. Dans deux mois, elle commencera un nouveau poste de jour. \"J'ai attendu cette occasion pendant des années\", dit-elle. Elle a posé sa candidature il y a trois semaines, et elle a eu la réponse en quelques jours seulement. Elle est très contente : depuis l'annonce, elle dort beaucoup mieux.",

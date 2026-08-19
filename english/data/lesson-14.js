@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Coach", en: "And what time do you go to bed?", es: "¿Y a qué hora te acuestas?" },
     { sp: "Sara", en: "I'm never in bed before eleven. I'm a night owl!", es: "Nunca estoy en la cama antes de las once. ¡Soy nocturna!" }
   ],
+  dialogueQuiz: [
+    { q: "¿A qué hora se levanta Sara?", choices: ["A las seis", "A las siete", "A las ocho"], answer: "A las siete" },
+    { q: "¿Qué desayuna normalmente?", choices: ["Café y tostadas", "Té y fruta", "Cereales y leche"], answer: "Café y tostadas" },
+    { q: "¿Cómo va al trabajo a menudo?", choices: ["En coche", "En bicicleta", "En autobús"], answer: "En autobús" },
+    { q: "¿Con qué frecuencia va al gimnasio?", choices: ["Dos veces por semana", "Una vez por semana", "Todos los días"], answer: "Dos veces por semana" },
+    { q: "¿Cuándo se acuesta Sara?", choices: ["Antes de las diez", "Nunca antes de las once", "A las nueve"], answer: "Nunca antes de las once" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Adverbios de frecuencia: ¿cuánto de seguido?</h3>" +

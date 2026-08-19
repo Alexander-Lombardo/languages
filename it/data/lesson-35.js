@@ -39,6 +39,13 @@ window.COURSE.lessons.push({
     { sp: "Lucia", it: "Nessuno parla di vietare. Sostengo solo che servano regole più chiare.", en: "Nobody’s talking about banning. I’m only arguing that we need clearer rules." },
     { sp: "Davide", it: "Su questo punto concordo pienamente. Possiamo essere in disaccordo, ma almeno ci ascoltiamo.", en: "On this point I fully concur. We can disagree, but at least we listen to each other." }
   ],
+  dialogueQuiz: [
+    { q: "Secondo Lucia, che cosa hanno fatto i social media?", choices: ["Hanno migliorato l’informazione", "Hanno peggiorato il dibattito pubblico", "Hanno ridotto la rabbia"], answer: "Hanno peggiorato il dibattito pubblico" },
+    { q: "Secondo Davide, dov’è il problema?", choices: ["Negli strumenti", "Nel modo in cui li usiamo", "Nei giornali"], answer: "Nel modo in cui li usiamo" },
+    { q: "Di che cosa è convinta Lucia?", choices: ["Che le piattaforme premino la rabbia", "Che la gente legga troppo", "Che gli algoritmi siano neutrali"], answer: "Che le piattaforme premino la rabbia" },
+    { q: "Che esempio fa Lucia?", choices: ["I commenti sotto le notizie politiche", "I video di cucina", "Le pubblicità online"], answer: "I commenti sotto le notizie politiche" },
+    { q: "Su che cosa concordano alla fine?", choices: ["Sul vietare i social", "Sulla necessità di regole più chiare", "Sul chiudere i commenti"], answer: "Sulla necessità di regole più chiare" }
+  ],
   reading: {
     title: "L’arte di non essere d’accordo",
     it:

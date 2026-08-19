@@ -39,6 +39,13 @@ window.COURSE.lessons.push({
     { sp: "Giulia", it: "Da bambini uscivate sempre insieme, vero?", en: "As kids you always used to go out together, right?" },
     { sp: "Marco", it: "Sì, ogni estate andavamo al mare. Ieri abbiamo parlato fino a tardi.", en: "Yes, every summer we used to go to the seaside. Yesterday we talked until late." }
   ],
+  dialogueQuiz: [
+    { q: "What was Marco doing yesterday evening at first?", choices: ["Reading a book at home", "Watching TV with his brother", "Waiting at the station"], answer: "Reading a book at home" },
+    { q: "What interrupted his quiet evening?", choices: ["A knock at the door", "The phone rang", "A power cut"], answer: "The phone rang" },
+    { q: "Who called Marco?", choices: ["His mother", "Giulia", "His brother"], answer: "His brother" },
+    { q: "What did Marco do after the call?", choices: ["He went to bed", "He waited for him at the station", "He drove to the airport"], answer: "He waited for him at the station" },
+    { q: "Where did the brothers go every summer as children?", choices: ["To the mountains", "To the seaside", "To the countryside"], answer: "To the seaside" }
+  ],
   reading: {
     title: "Una mattina diversa",
     it: "Di solito Anna si svegliava alle sette e prendeva il caffè con calma. Quella mattina però dormiva ancora quando, all’improvviso, è suonata la sveglia tardi. Si è alzata di corsa, si è vestita ed è uscita senza colazione. Mentre correva alla fermata, ha visto che l’autobus arrivava: per fortuna l’ha preso!",

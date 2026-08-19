@@ -39,6 +39,13 @@ window.COURSE.lessons.push({
     { sp: "Tourist", en: "Thank you very much!", es: "¡Muchas gracias!" },
     { sp: "Local", en: "You're welcome. Goodbye!", es: "De nada. ¡Adiós!" }
   ],
+  dialogueQuiz: [
+    { q: "¿Qué pregunta el turista primero?", choices: ["Si el local habla español", "Dónde está la estación", "Cuánto cuesta el baño"], answer: "Si el local habla español" },
+    { q: "¿Cuánto español habla el local?", choices: ["Nada", "Un poco", "Muy bien"], answer: "Un poco" },
+    { q: "¿Qué busca el turista?", choices: ["El baño", "La salida", "Un restaurante"], answer: "El baño" },
+    { q: "¿Dónde está?", choices: ["A la izquierda", "A la derecha, junto a la puerta", "Arriba, al fondo"], answer: "A la derecha, junto a la puerta" },
+    { q: "¿Por qué pide el turista que repita?", choices: ["No entendió la respuesta", "No oyó por el ruido", "Quiere otra dirección"], answer: "No entendió la respuesta" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>El alfabeto inglés (26 letras)</h3>" +

@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Lena", de: "Genau, kalter Kaffee macht müde. Lass uns einen warmen Tee trinken und nachdenken.", en: "Exactly, cold coffee makes you tired. Let's drink a warm tea and think it over." },
     { sp: "Tom", de: "Gute Idee. Bei einem heißen Tee entscheidet es sich leichter.", en: "Good idea. With a hot tea it's easier to decide." }
   ],
+  dialogueQuiz: [
+    { q: "Was gefällt Tom an der Wohnung?", choices: ["Der große Balkon", "Der kleine Garten", "Das neue Sofa"], answer: "Der große Balkon" },
+    { q: "Was ist Toms Problem mit der Wohnung?", choices: ["Die Küche ist dunkel", "Die Miete ist hoch", "Die Straße ist laut"], answer: "Die Miete ist hoch" },
+    { q: "Warum kann Tom sich die Wohnung laut Lena leisten?", choices: ["Er hat ein gutes Gehalt", "Er hat Geld geerbt", "Die Miete ist billig"], answer: "Er hat ein gutes Gehalt" },
+    { q: "Wo möchte Tom lieber wohnen?", choices: ["Im Stadtzentrum", "In einer ruhigen Straße", "In der Nähe vom Park"], answer: "In einer ruhigen Straße" },
+    { q: "Was wollen sie am Ende tun?", choices: ["Kalten Kaffee trinken", "Die Wohnung sofort mieten", "Einen warmen Tee trinken und nachdenken"], answer: "Einen warmen Tee trinken und nachdenken" }
+  ],
   reading: {
     title: "Die neue Wohnung",
     de: "Anna sucht eine neue Wohnung. Die alte Wohnung ist zu klein, und der laute Verkehr vor dem Fenster stört sie jeden Tag. Sie wünscht sich ein helles Zimmer, eine moderne Küche und einen ruhigen Garten.\n\nGestern hat sie eine schöne Wohnung in einem alten Haus besichtigt. Das große Wohnzimmer hat ihr sofort gefallen. Mit den hohen Fenstern und dem warmen Licht wirkt es sehr gemütlich. Nur die hohe Miete macht ihr Sorgen.\n\nIhre beste Freundin sagt: „Eine gute Wohnung in einer ruhigen Straße findet man nicht jeden Tag. Nimm sie!“ Anna denkt nach. Vielleicht ist diese teure Wohnung doch die richtige Entscheidung.",

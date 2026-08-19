@@ -39,6 +39,13 @@ window.COURSE.lessons.push({
     { sp: "Tom", de: "Und mein „Chef“ ist mein Boss, nicht der Koch in der Küche.", en: "And my Chef is my boss, not the cook in the kitchen." },
     { sp: "Lena", de: "Du hast es im Griff. Jetzt fehlt nur noch, dass du „eventuell“ nicht mit „eventually“ verwechselst.", en: "You've got it under control. Now you just mustn't confuse eventuell with “eventually.”" }
   ],
+  dialogueQuiz: [
+    { q: "Was hat Tom gestern bekommen?", choices: ["Ein tolles Feedback", "Ein Geschenk", "Ein Steak"], answer: "Ein tolles Feedback" },
+    { q: "Welchen Fehler machen Anfänger mit „bekommen“?", choices: ["Sie sagen „become“", "Sie sagen „get“", "Sie sagen „receive“"], answer: "Sie sagen „become“" },
+    { q: "Was bedeutet „Gift“ auf Deutsch?", choices: ["Gift, also Poison", "Ein Geschenk", "Eine Gabe"], answer: "Gift, also Poison" },
+    { q: "Wer ist Toms „Chef“?", choices: ["Sein Boss", "Der Koch", "Sein Lehrer"], answer: "Sein Boss" },
+    { q: "Was darf Tom laut Lena nicht verwechseln?", choices: ["„eventuell“ und „eventually“", "„Chef“ und „chef“", "„Gift“ und „gift“"], answer: "„eventuell“ und „eventually“" }
+  ],
   reading: {
     title: "Aus dem Notizbuch eines fast perfekten Sprechers",
     de: "Man kennt das Gefühl, beinahe angekommen zu sein. Die Grammatik sitzt, der Wortschatz ist groß, und dennoch verrät einen ausgerechnet das Einfache. Nicht die langen Wörter sind gefährlich, sondern die kurzen, vertrauten — jene, die aussehen wie ein alter Bekannter und sich als Hochstapler entpuppen.\n\nNeulich wollte ich einem Kollegen ein Kompliment machen und sagte, er sei sehr „sensibel“ — und meinte „vernünftig“. Auf Deutsch heißt das aber „empfindsam“, fast schon „nah am Wasser gebaut“. Er sah mich verwundert an. Eine kleine Blamage, mehr nicht, aber lehrreich.\n\nGefährlicher sind die unsichtbaren Fehler: die wörtlich übersetzten Wendungen, die sich anhören, als hätte sie ein Computer gebaut. „Es macht Sinn“ hat sich inzwischen durchgesetzt, doch Sprachpfleger zucken noch immer zusammen und bestehen auf „es ergibt Sinn“.\n\nVielleicht ist gerade dies das letzte Stück des Weges: nicht mehr Regeln zu lernen, sondern ein Gefühl dafür zu entwickeln, was sich richtig anfühlt — und was nur richtig aussieht.",

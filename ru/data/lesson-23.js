@@ -52,6 +52,13 @@ window.COURSE.lessons.push({
     { sp: "Продавец", ru: "Хорошо. С вас две тысячи семьсот рублей. Касса там.", en: "Fine. That'll be two thousand seven hundred roubles. The checkout is there." },
     { sp: "Оля", ru: "Спасибо большое! До свидания.", en: "Thank you very much! Goodbye." }
   ],
+  dialogueQuiz: [
+    { q: "What is the customer looking for?", choices: ["A blue shirt", "A green jacket", "Black trousers"], answer: "A blue shirt" },
+    { q: "How much does the shirt cost?", choices: ["1,200 roubles", "1,500 roubles", "2,000 roubles"], answer: "1,200 roubles" },
+    { q: "Which trousers does the customer take?", choices: ["The 2,000-rouble ones", "The black ones", "None"], answer: "The black ones" },
+    { q: "Why doesn’t the customer buy the jacket?", choices: ["It’s too expensive", "It’s the wrong size", "It’s not warm"], answer: "It’s too expensive" },
+    { q: "How much does the customer pay in total?", choices: ["2,700 roubles", "3,000 roubles", "3,200 roubles"], answer: "2,700 roubles" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Asking the price: стоит or стоят?</h3>" +

@@ -47,6 +47,13 @@ window.COURSE.lessons.push({
     { sp: "Léo", fr: "Oui ! À bientôt, Inès.", en: "Yes! See you soon, Inès." },
     { sp: "Inès", fr: "À bientôt !", en: "See you soon!" }
   ],
+  dialogueQuiz: [
+    { q: "How old is Léo?", choices: ["19", "21", "23"], answer: "23" },
+    { q: "How many brothers does Inès have?", choices: ["One", "Two", "Three"], answer: "Two" },
+    { q: "How old is Inès’s mother?", choices: ["48", "52", "45"], answer: "48" },
+    { q: "What does Léo ask Inès to do with her number?", choices: ["Write it down", "Say it slowly", "Repeat it in English"], answer: "Say it slowly" },
+    { q: "How many students are in the class?", choices: ["Fifty-six", "Sixty-five", "Seventy-five"], answer: "Sixty-five" }
+  ],
   grammarHTML:
     "<h3>The tens (20–60)</h3>" +
     "<p>20 vingt, 30 <strong>trente</strong>, 40 <strong>quarante</strong>, 50 <strong>cinquante</strong>, 60 <strong>soixante</strong>. Build the in-betweens with a hyphen: <em>vingt-deux</em> (22), <em>trente-cinq</em> (35).</p>" +

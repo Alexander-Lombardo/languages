@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Sara", it: "Tuo fratello è già a Milano, no? Sarà contento di rivederti.", en: "Your brother is already in Milan, right? He must be happy to see you again." },
     { sp: "Davide", it: "Sì! Faremo molte cose insieme. Chissà, magari resterò per sempre.", en: "Yes! We'll do lots of things together. Who knows, maybe I'll stay for good." }
   ],
+  dialogueQuiz: [
+    { q: "Quando si laureerà Davide?", choices: ["A giugno", "A luglio", "A settembre"], answer: "A luglio" },
+    { q: "Dove cercherà lavoro?", choices: ["A Milano", "A Roma", "A Torino"], answer: "A Milano" },
+    { q: "Quanti colloqui avrà la settimana prossima?", choices: ["Uno", "Due", "Tre"], answer: "Due" },
+    { q: "Dove abiterà probabilmente?", choices: ["Da suo fratello", "In una stanza in centro", "In periferia"], answer: "In una stanza in centro" },
+    { q: "Chi vive già a Milano?", choices: ["Sua sorella", "Suo fratello", "Un amico"], answer: "Suo fratello" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>The regular <em>futuro semplice</em></h3>" +

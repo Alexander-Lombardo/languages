@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Editor", en: "'Obtain'. Same meaning, higher register. Match the word to the room.", es: "«Obtain». Mismo significado, registro más alto. Ajusta la palabra al contexto." },
     { sp: "Cole", en: "Got it. Fine-tune every word, don't just translate the idea.", es: "Entendido. Afinar cada palabra, no solo traducir la idea." }
   ],
+  dialogueQuiz: [
+    { q: "Which verb does Cole suggest instead of ‘asked for’?", choices: ["Requested", "Demanded", "Begged"], answer: "Demanded" },
+    { q: "What word did Cole use three times in one paragraph?", choices: ["Big", "Huge", "Important"], answer: "Big" },
+    { q: "How should Cole vary his vocabulary?", choices: ["With intent", "At random", "Using the thesaurus"], answer: "With intent" },
+    { q: "What does the editor say about synonyms?", choices: ["They are always interchangeable", "They are rarely interchangeable", "They should be avoided"], answer: "They are rarely interchangeable" },
+    { q: "Which word should Cole use in the formal report?", choices: ["Get", "Obtain", "Grab"], answer: "Obtain" }
+  ],
   reading: {
     title: "The Difference a Word Makes",
     en: "Mark Twain once said that the difference between the almost right word and the right word is the difference between the lightning bug and the lightning. He was pointing at something that troubles every careful writer: synonyms are rarely twins. They are more like cousins, related but distinct, each carrying its own weight, its own register, its own faint colour of meaning.\n\nTake the simple idea of being tired. You can be tired after a short walk, weary after a long disappointment, exhausted after a marathon, or drained after a difficult conversation. The dictionary calls them synonyms, yet you would not say you felt \"exhausted\" by a single flight of stairs, nor \"weary\" after a quick nap. Each word fits a particular size and shape of feeling.\n\nFormality is a second axis. \"Get,\" \"obtain,\" and \"acquire\" all mean roughly the same thing, but they belong to different rooms. You get a coffee, you obtain a visa, a museum acquires a painting. Use \"get\" in a legal contract and you sound careless; use \"acquire\" with friends and you sound pompous. The word is not wrong, but it is dressed for the wrong occasion.\n\nThis is why a thesaurus is a dangerous friend. It offers you a list and tempts you to grab whichever word looks fanciest, as though variety alone were the goal. But the aim is not to avoid repetition at any cost; it is to say exactly what you mean. The precise word, fitted to its precise shade of meaning, is what separates writing that merely communicates from writing that lands.",

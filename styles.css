@@ -330,6 +330,15 @@ a.sr-row:hover { background: var(--hover); }
 .spk { font-weight: 700; color: var(--ink); }
 .dialogue .en, .reading-en { color: var(--muted); }
 .dialogue:not(.show-en) .en { display: none; }
+.dialogue .hidden-note { display: none; margin: .2em 0; font-style: italic; }
+.dialogue.hide-text .dline { display: none; }
+.dialogue.hide-text .hidden-note { display: block; }
+.dq { margin-top: 16px; }
+.dq-title { margin: 0 0 2px; font-size: 1rem; }
+.dq-q { margin-top: 12px; }
+.dq .ex-prompt { margin: 0 0 6px; }
+.dq .score-line { margin-top: 12px; }
+.dq .score-line .ex-show { margin-left: 10px; font-weight: 500; }
 .reading-l2 p { margin: .5em 0; }
 .reading-en { border-top: 1px dashed var(--line); margin-top: 8px; padding-top: 6px; font-size: .92rem; }
 .reading:not(.show-en) .reading-en { display: none; }

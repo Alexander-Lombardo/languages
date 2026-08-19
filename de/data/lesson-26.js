@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Markus", de: "Wegen des Verkehrs sollten wir aber bald los.", en: "Because of the traffic, though, we should set off soon." },
     { sp: "Anna", de: "Dann komm, ich hole nur schnell etwas aus der Küche.", en: "Then come on, I'll just quickly get something from the kitchen." }
   ],
+  dialogueQuiz: [
+    { q: "Was muss Anna in der Stadt erledigen?", choices: ["Ein Geschenk für ihre Schwester kaufen", "Ihren Bruder besuchen", "Zur Apotheke gehen"], answer: "Ein Geschenk für ihre Schwester kaufen" },
+    { q: "Warum gehen sie zuerst durch den Park?", choices: ["Weil es schöner ist", "Weil es schneller ist", "Weil Anna das möchte"], answer: "Weil es schneller ist" },
+    { q: "Wo wohnt Annas Bruder?", choices: ["Neben der Bushaltestelle", "Im Park", "Gegenüber der Apotheke"], answer: "Gegenüber der Apotheke" },
+    { q: "Womit wollen sie fahren?", choices: ["Mit dem Bus", "Mit dem Auto", "Mit dem Fahrrad"], answer: "Mit dem Auto" },
+    { q: "Warum sollten sie bald losfahren?", choices: ["Wegen des Verkehrs", "Wegen des Wetters", "Weil die Geschäfte schließen"], answer: "Wegen des Verkehrs" }
+  ],
   reading: {
     title: "Ein Samstag in der Stadt",
     de: "Jeden Samstag fährt Pia mit dem Fahrrad zur Arbeit, denn sie arbeitet auch am Wochenende in einem Café. Der Weg führt durch einen kleinen Park und über eine alte Brücke. Nach der Arbeit trifft sie sich oft mit einer Freundin.\n\nHeute kauft sie zuerst ein Geschenk für ihren Neffen. Dann geht sie kurz zum Arzt, weil sie ein Rezept braucht, und holt das Medikament aus der Apotheke gegenüber. Während des Einkaufs ruft ihre Mutter an und fragt, ob Pia am Abend zu ihr kommt.\n\nGegen sieben Uhr fährt Pia mit dem Bus nach Hause. Trotz des langen Tages ist sie zufrieden: Sie hat alles erledigt, und ohne Stress.",

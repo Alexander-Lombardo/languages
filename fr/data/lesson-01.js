@@ -50,6 +50,13 @@ window.COURSE.lessons.push({
     { sp: "Marc", fr: "À demain !", en: "See you tomorrow!" },
     { sp: "Sophie", fr: "À demain !", en: "See you tomorrow!" }
   ],
+  dialogueQuiz: [
+    { q: "How does Sophie reply when Claire introduces herself?", choices: ["Nice to meet you", "See you soon", "You’re welcome"], answer: "Nice to meet you" },
+    { q: "Who is Marc?", choices: ["Claire’s brother", "Sophie’s friend", "Sophie’s teacher"], answer: "Sophie’s friend" },
+    { q: "How is Claire feeling when Marc asks?", choices: ["Very well", "So-so", "Tired"], answer: "So-so" },
+    { q: "What does Sophie say after Claire thanks her?", choices: ["Good evening", "Excuse me", "You’re welcome"], answer: "You’re welcome" },
+    { q: "When will Marc and Sophie see each other again?", choices: ["Tomorrow", "Tonight", "Next week"], answer: "Tomorrow" }
+  ],
   grammarHTML:
     "<h3>Formal vs. informal “you”</h3>" +
     "<p>French has two words for “you”:</p>" +

@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Hélène", fr: "Avant qu'elle ne parte, il devrait la titulariser. En un an, elle a appris ce que d'autres mettent une année entière à saisir.", en: "Before she leaves, he ought to make her permanent. In one year she has learned what others take a whole year to grasp." },
     { sp: "Bruno", fr: "C'est intéressant, ce que tu dis — et il est intéressant, le bonhomme, quand on creuse un peu.", en: "What you're saying is interesting — and he's an interesting fellow, the man, when you dig a little." }
   ],
+  dialogueQuiz: [
+    { q: "Pourquoi Hélène dit-elle que Mercier est un grand homme ?", choices: ["Il a transformé la profession", "Il est très grand", "Il parle quatre langues"], answer: "Il a transformé la profession" },
+    { q: "Combien mesure Mercier, selon Bruno ?", choices: ["Un mètre quatre-vingts", "Un mètre soixante", "Un mètre soixante-quinze"], answer: "Un mètre soixante" },
+    { q: "Que cherchait Mercier la semaine dernière ?", choices: ["Un assistant qui ait du flair", "Un nouveau bureau", "Un associé"], answer: "Un assistant qui ait du flair" },
+    { q: "Qui a-t-il engagé ?", choices: ["Un jeune homme", "Une jeune femme qui parle quatre langues", "Une ancienne collègue"], answer: "Une jeune femme qui parle quatre langues" },
+    { q: "Que devrait faire Mercier, selon Hélène ?", choices: ["La titulariser", "La licencier", "L’augmenter"], answer: "La titulariser" }
+  ],
   reading: {
     title: "La grammaire des nuances",
     fr: "Ce qui distingue un locuteur natif d'un étranger très avancé, ce n'est presque jamais le vocabulaire : c'est la nuance. Deux phrases identiques au mot près peuvent dire le contraire selon un détail invisible. « Un grand homme » loue un destin ; « un homme grand » mesure une taille. « Mon ancien appartement » désigne celui que j'ai quitté ; « un appartement ancien » vante des moulures d'époque. L'adjectif antéposé exprime souvent un jugement, une valeur ; postposé, il décrit une propriété objective. La même subtilité gouverne les temps : « Je lisais quand il est entré » oppose un décor à un événement, et inverser les temps détruit le sens. Le mode aussi compte : « Je cherche une maison qui ait un jardin » ouvre une hypothèse ; « qui a un jardin » vise une maison précise, déjà repérée. Restent ces fameux « ne » qui ne nient rien — « avant qu'il ne parte », « je crains qu'il ne vienne » — purs ornements hérités du latin. Maîtriser ces écarts, c'est cesser de traduire pour enfin penser dans la langue, là où chaque détail pèse son poids de sens.",

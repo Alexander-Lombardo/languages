@@ -44,6 +44,13 @@ window.COURSE.lessons.push({
     { sp: "La recruteuse", fr: "Parfait. Nous proposons d'abord un CDD, puis un CDI si tout se passe bien.", en: "Perfect. We first offer a fixed-term contract, then a permanent one if all goes well." },
     { sp: "Karim", fr: "Cela me convient. Quand pourrais-je commencer ?", en: "That suits me. When could I start?" }
   ],
+  dialogueQuiz: [
+    { q: "Qu’a reçu la recruteuse ?", choices: ["Le CV et la lettre de motivation", "Une recommandation", "Un portfolio"], answer: "Le CV et la lettre de motivation" },
+    { q: "Combien de temps Karim a-t-il travaillé chez Solex ?", choices: ["Un an", "Trois ans", "Cinq ans"], answer: "Trois ans" },
+    { q: "De quoi s’occupait-il chez Solex ?", choices: ["De la comptabilité", "Du service client", "Du marketing"], answer: "Du service client" },
+    { q: "Qu’a-t-il appris dans ce poste ?", choices: ["À parler anglais", "À gérer le stress", "À programmer"], answer: "À gérer le stress" },
+    { q: "Que propose l’entreprise d’abord ?", choices: ["Un CDI", "Un CDD", "Un stage"], answer: "Un CDD" }
+  ],
   reading: {
     title: "La recherche d'emploi de Nadia",
     fr: "Après ses études, Nadia a cherché du travail pendant plusieurs mois. Chaque matin, elle préparait son café et postulait à de nouvelles offres en lisant les annonces sur internet. Au début, elle envoyait des candidatures sans vraiment adapter sa lettre de motivation, et elle ne recevait aucune réponse. Puis une amie lui a donné un bon conseil : « En personnalisant chaque candidature, tu montres que tu es vraiment intéressée. » Nadia a suivi ce conseil. Elle a réécrit son CV, mis en avant ses compétences, et décroché trois entretiens d'embauche. Pendant ces entretiens, elle restait calme en respirant lentement avant de répondre. Finalement, une entreprise l'a embauchée en CDI. Le premier jour, en arrivant au bureau, elle était à la fois nerveuse et heureuse. Elle savait qu'elle avait réussi en restant patiente et en croyant en elle.",

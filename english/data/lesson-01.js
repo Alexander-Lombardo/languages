@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Liam", en: "Great! See you later, Emma.", es: "¡Genial! Hasta luego, Emma." },
     { sp: "Emma", en: "Bye, Liam!", es: "¡Adiós, Liam!" }
   ],
+  dialogueQuiz: [
+    { q: "¿En qué momento del día hablan?", choices: ["Por la mañana", "Por la tarde", "Por la noche"], answer: "Por la mañana" },
+    { q: "¿Cómo se llama el chico?", choices: ["Liam", "Noah", "Adam"], answer: "Liam" },
+    { q: "¿Cómo está Liam?", choices: ["Cansado", "Bien", "Enfermo"], answer: "Bien" },
+    { q: "¿De dónde es Liam?", choices: ["De México", "De Canadá", "De Estados Unidos"], answer: "De Canadá" },
+    { q: "¿De dónde es Emma?", choices: ["De México", "De Canadá", "De España"], answer: "De México" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Presentarte con el verbo <em>to be</em></h3>" +

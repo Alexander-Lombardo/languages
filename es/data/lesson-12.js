@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Diego", es: "No. Estaba tan emocionado que cerré los libros.", en: "No. I was so excited that I closed the books." },
     { sp: "Marta", es: "¡Qué recuerdo tan increíble!", en: "What an incredible memory!" }
   ],
+  dialogueQuiz: [
+    { q: "What was Diego doing last night?", choices: ["Watching a film", "Studying for an exam", "Sleeping"], answer: "Studying for an exam" },
+    { q: "Who called Diego?", choices: ["His brother", "His mother", "Marta"], answer: "His brother" },
+    { q: "What happened to Diego’s brother?", choices: ["He got a new job", "He won the lottery", "He passed an exam"], answer: "He won the lottery" },
+    { q: "How was Diego’s brother?", choices: ["Very calm", "Very nervous", "Very happy"], answer: "Very happy" },
+    { q: "Did Diego finish studying?", choices: ["Yes, late at night", "No, he closed the books", "Yes, before the call"], answer: "No, he closed the books" }
+  ],
   grammarHTML:
     "<h3>Two past tenses, two jobs</h3>" +
     "<p>Spanish has two simple past tenses. The <strong>preterite</strong> tells you <em>what happened</em> — a single, finished action. The <strong>imperfect</strong> sets the scene — what <em>was happening</em>, what <em>used to</em> happen, or a description.</p>" +

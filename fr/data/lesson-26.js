@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Sarah", fr: "Le jour où il me le prête, je le lis tout de suite.", en: "The day he lends it to me, I'll read it right away." },
     { sp: "Marc", fr: "C'est une histoire dont tu te souviendras longtemps.", en: "It's a story you'll remember for a long time." }
   ],
+  dialogueQuiz: [
+    { q: "Qui est l’homme qui parle avec la sœur de Marc ?", choices: ["Un collègue de travail", "Le voisin de Marc", "Un ami d’enfance"], answer: "Le voisin de Marc" },
+    { q: "Qu’est-ce que le voisin possède ?", choices: ["Un grand chien", "Un petit chat", "Une vieille voiture"], answer: "Un grand chien" },
+    { q: "Où Marc et le voisin se sont-ils rencontrés ?", choices: ["À la bibliothèque", "Au parc", "Au café"], answer: "Au café" },
+    { q: "Quand Marc vient-il dans ce café ?", choices: ["Tous les matins", "Le week-end seulement", "Une fois par mois"], answer: "Tous les matins" },
+    { q: "Qu’est-ce que Marc dit du roman ?", choices: ["Tout le monde en parle", "Il est difficile à lire", "Personne ne le connaît"], answer: "Tout le monde en parle" }
+  ],
   reading: {
     title: "Le quartier où j'ai grandi",
     fr: "Je veux te parler du quartier où j'ai grandi, un endroit que j'aime profondément. C'est une petite rue qui monte vers la colline, bordée d'arbres qui changent de couleur en automne. La maison dont je me souviens le mieux est celle de ma grand-mère, dont le jardin était plein de fleurs. C'était une femme dont tout le monde admirait la générosité. Les voisins que nous connaissions venaient souvent prendre le café qu'elle préparait chaque dimanche. Le boulanger qui travaillait au coin de la rue faisait un pain dont l'odeur remplissait tout le quartier. Aujourd'hui, c'est encore l'endroit où je retourne quand j'ai besoin de calme. Ce sont des souvenirs dont je suis très fier et que je n'oublierai jamais.",

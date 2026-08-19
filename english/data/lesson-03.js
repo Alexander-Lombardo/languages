@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Clerk", en: "Of course. That's an easy one!", es: "Claro. ¡Ese es fácil!" },
     { sp: "Sam", en: "Great. Have a good day!", es: "Genial. ¡Que tenga un buen día!" }
   ],
+  dialogueQuiz: [
+    { q: "¿Qué pregunta el dependiente al principio?", choices: ["Si Sam necesita una bolsa", "Si Sam quiere café", "Si Sam tiene dinero"], answer: "Si Sam necesita una bolsa" },
+    { q: "¿Qué tiene Sam?", choices: ["Tres manzanas y una caja", "Una manzana y tres cajas", "Dos manzanas y dos cajas"], answer: "Una manzana y tres cajas" },
+    { q: "¿Para quién es la manzana?", choices: ["Para Sam", "Para los niños", "Para el dependiente"], answer: "Para los niños" },
+    { q: "¿Cuántos niños tiene Sam?", choices: ["Dos niños y dos niñas", "Tres niños y una niña", "Dos niños"], answer: "Dos niños y dos niñas" },
+    { q: "¿Dónde está el pan?", choices: ["Junto al café", "Junto al agua", "Junto a la puerta"], answer: "Junto al agua" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>¿Qué hacen los artículos?</h3>" +

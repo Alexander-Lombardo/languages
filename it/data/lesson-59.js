@@ -37,6 +37,13 @@ window.COURSE.lessons.push({
     { sp: "Tutor", it: "Senti come hai appena cambiato registro, dal «mi prenda» formale al ragionamento spontaneo: è proprio quello il segno della padronanza.", en: "Listen to how you just switched register, from the formal “take me” to spontaneous reasoning: that’s exactly the mark of mastery." },
     { sp: "Studente", it: "Non ho peli sulla lingua: è stata dura, eppure rifarei tutto. Adesso tocca a me tirare le fila e continuare da solo.", en: "I won’t mince words: it was hard, and yet I’d do it all again. Now it’s my turn to pull the threads together and carry on alone." }
   ],
+  dialogueQuiz: [
+    { q: "Quale lezione stanno facendo?", choices: ["La prima", "L’ultima", "Quella di metà corso"], answer: "L’ultima" },
+    { q: "Su che cosa inciampava lo studente all’inizio?", choices: ["Sui saluti", "Sul congiuntivo", "Sui numeri"], answer: "Sui saluti" },
+    { q: "Che cosa padroneggia ora lo studente, secondo il tutor?", choices: ["I proverbi", "La pronuncia", "Il congiuntivo"], answer: "Il congiuntivo" },
+    { q: "Che cosa nota il tutor nel modo di parlare dello studente?", choices: ["Un cambio di registro", "Troppi errori", "Un accento straniero"], answer: "Un cambio di registro" },
+    { q: "Che cosa farà ora lo studente?", choices: ["Ricomincerà da zero", "Continuerà da solo", "Cambierà tutor"], answer: "Continuerà da solo" }
+  ],
   reading: {
     title: "L’ultima pagina del quaderno",
     it:

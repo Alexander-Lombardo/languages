@@ -45,6 +45,13 @@ window.COURSE.lessons.push({
     { sp: "Sophie", fr: "Vous êtes une famille sympa.", en: "You're a nice family." },
     { sp: "Léo", fr: "Merci ! Tu es gentille.", en: "Thanks! You're kind." }
   ],
+  dialogueQuiz: [
+    { q: "What does Sophie’s sister look like?", choices: ["Tall, with brown hair", "Short, with blond hair", "Tall, with red hair"], answer: "Tall, with brown hair" },
+    { q: "What pet does Sophie’s sister have?", choices: ["A black cat", "A little white dog", "A grey rabbit"], answer: "A little white dog" },
+    { q: "What is Léo’s car like?", choices: ["New and red", "Old and grey", "Small and white"], answer: "Old and grey" },
+    { q: "What does Léo’s brother always wear?", choices: ["A white shirt and black trousers", "A black shirt and jeans", "A grey suit and a tie"], answer: "A white shirt and black trousers" },
+    { q: "How old is the brother’s cat?", choices: ["Five", "Ten", "Fifteen"], answer: "Fifteen" }
+  ],
   reading: {
     title: "Ma nouvelle voisine",
     fr: "J'ai une nouvelle voisine. Elle est grande, avec les cheveux bruns et les yeux verts. Elle est très gentille et intelligente. Elle a un petit chien blanc et un vieux chat noir. Le matin, elle porte une jolie robe rouge pour aller au travail. Sa maison est belle, mais elle préfère son petit jardin. C'est une femme drôle et sympa.",

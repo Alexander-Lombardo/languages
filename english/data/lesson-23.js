@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Mia", en: "Great. And if we hurry, we won't miss the bus.", es: "Genial. Y si nos damos prisa, no perderemos el autobús." },
     { sp: "Leo", en: "Then let's get ready!", es: "¡Entonces preparémonos!" }
   ],
+  dialogueQuiz: [
+    { q: "What does the first speaker think will happen?", choices: ["It’ll snow", "It’ll rain", "It’ll be sunny"], answer: "It’ll rain" },
+    { q: "What will they do if it rains?", choices: ["Go to the park", "Take the bus", "Stay at home"], answer: "Stay at home" },
+    { q: "How will the first speaker feel staying home?", choices: ["Happy", "Bored", "Relaxed"], answer: "Bored" },
+    { q: "What happens in the streets when it rains?", choices: ["They flood", "They get icy", "They close"], answer: "They flood" },
+    { q: "Where will they go if the sun comes out?", choices: ["To the cinema", "To the park", "To the shops"], answer: "To the park" }
+  ],
   reading: {
     title: "Small Choices, Big Results",
     en: "Some things are always true. If you heat water to one hundred degrees, it boils. If the temperature drops below zero, water freezes. These are facts, and we use the zero conditional to talk about them.\n\nOther things depend on the future. If I save money this year, I will travel to Canada. If it rains tomorrow, we will cancel the picnic. We don't know yet, but the situation is real and possible.\n\nThe secret is simple. After 'if', we use the present tense, never 'will'. The future goes in the other half of the sentence. If you remember this rule, your conditionals will always be correct.",

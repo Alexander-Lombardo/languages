@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Mum", en: "Ha! I'm sitting on the bus. I'm coming home now.", es: "¡Ja! Estoy sentada en el autobús. Voy de camino a casa." },
     { sp: "Leo", en: "Great. Dinner is almost ready.", es: "Genial. La cena está casi lista." }
   ],
+  dialogueQuiz: [
+    { q: "¿Qué está haciendo Leo?", choices: ["Está estudiando", "Está cocinando pasta", "Está viendo la tele"], answer: "Está cocinando pasta" },
+    { q: "¿Por qué no ayuda la hermana?", choices: ["Está durmiendo", "Está estudiando para un examen", "Está en el jardín"], answer: "Está estudiando para un examen" },
+    { q: "¿Qué está haciendo la abuela?", choices: ["Está durmiendo", "Está viendo la tele", "Está cocinando"], answer: "Está durmiendo" },
+    { q: "¿Dónde están los niños?", choices: ["En el jardín", "En el autobús", "En su habitación"], answer: "En el jardín" },
+    { q: "¿Dónde está la madre?", choices: ["En el trabajo", "En el autobús", "En casa"], answer: "En el autobús" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>El present continuous: lo que pasa ahora</h3>" +

@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Professeure", fr: "Concédez d'abord : « Certes, on peut objecter que… » puis nuancez : « néanmoins, il convient de souligner que… ».", en: "Concede first: \"Admittedly, one might object that...\" then qualify: \"nevertheless, it should be stressed that...\"." },
     { sp: "Étudiant", fr: "En somme, chaque paragraphe doit étayer un seul argument, c'est cela ?", en: "In short, each paragraph should support a single argument, is that it?" }
   ],
+  dialogueQuiz: [
+    { q: "À quoi l’étudiant devait-il réfléchir avant de rédiger ?", choices: ["À sa problématique", "À sa conclusion", "À ses sources"], answer: "À sa problématique" },
+    { q: "Quelle formule l’étudiant veut-il éviter ?", choices: ["« nous verrons »", "« je vais parler de »", "« en somme »"], answer: "« je vais parler de »" },
+    { q: "Que conseille la professeure à la place du « je » ?", choices: ["« on »", "« nous »", "« vous »"], answer: "« nous »" },
+    { q: "Comment introduire une objection ?", choices: ["La nier d’abord", "Concéder d’abord, puis nuancer", "L’ignorer"], answer: "Concéder d’abord, puis nuancer" },
+    { q: "Combien d’arguments par paragraphe ?", choices: ["Un seul", "Deux", "Trois"], answer: "Un seul" }
+  ],
   reading: {
     title: "Faut-il limiter le télétravail ?",
     fr: "Depuis la pandémie, le télétravail s'est imposé dans de nombreuses entreprises. On peut alors se demander s'il convient de l'encadrer plus strictement. Nous examinerons d'abord ses bénéfices, puis ses limites, avant de proposer une voie médiane.\n\nIl est vrai que le travail à distance présente des avantages indéniables. Il réduit les trajets, allège la pollution et offre une flexibilité précieuse aux familles. Ainsi, de nombreux salariés affirment avoir gagné en qualité de vie.\n\nNéanmoins, certains effets pervers méritent d'être soulignés. L'isolement guette les plus fragiles, et la frontière entre vie privée et vie professionnelle s'estompe. C'est le cas, par exemple, des jeunes recrues qui peinent à s'intégrer sans contact direct.\n\nEn définitive, plutôt que d'interdire ou d'imposer, il paraît plus judicieux d'adopter un modèle hybride, négocié au cas par cas. On peut donc affirmer que la solution réside moins dans la règle que dans la souplesse. Reste à savoir si les entreprises sauront en faire un véritable choix de société.",

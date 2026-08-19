@@ -39,6 +39,13 @@ window.COURSE.lessons.push({
     { sp: "Marta", it: "Nonostante tutto, sono contenta che siamo qui insieme stasera.", en: "Despite everything, I'm glad we're here together tonight." },
     { sp: "Davide", it: "Anch’io. È importante che tu non ti arrabbi appena entra.", en: "Me too. It's important that you don't get angry the moment he comes in." }
   ],
+  dialogueQuiz: [
+    { q: "Che cosa pensa Marta di Luca?", choices: ["Che arriverà in ritardo", "Che non verrà", "Che arriverà in anticipo"], answer: "Che arriverà in ritardo" },
+    { q: "Che cosa credeva Davide di Luca?", choices: ["Che fosse distratto", "Che fosse una persona puntuale", "Che fosse molto timido"], answer: "Che fosse una persona puntuale" },
+    { q: "Che cosa si è dimenticato Luca l’altra volta?", choices: ["Il dolce", "I regali", "Il vino"], answer: "Il vino" },
+    { q: "Di che cosa è contenta Marta nonostante tutto?", choices: ["Che Luca porti il vino", "Che siano insieme stasera", "Che la cena sia pronta"], answer: "Che siano insieme stasera" },
+    { q: "Che cosa raccomanda Davide a Marta?", choices: ["Di non arrabbiarsi appena Luca entra", "Di telefonare a Luca", "Di iniziare a mangiare senza Luca"], answer: "Di non arrabbiarsi appena Luca entra" }
+  ],
   reading: {
     title: "Una lettera piena di speranze",
     it: "Cara Elena,\n\nti scrivo perché penso che sia arrivato il momento di dirti come mi sento. Credo che la nostra amicizia sia una delle cose più belle della mia vita, e spero che tu provi lo stesso. So che in questi mesi sei stata lontana per lavoro, e ho paura che tu ti sia sentita sola in una città nuova.\n\nVoglio che tu sappia che, qualunque cosa accada, puoi sempre contare su di me. È probabile che io venga a trovarti la prossima primavera, purché riesca a prendere qualche giorno di ferie. Mi auguro che il nuovo lavoro ti dia tutte le soddisfazioni che meriti, anche se temo che ti faccia lavorare troppo.\n\nNonostante la distanza, sono contenta che tu abbia trovato il coraggio di cambiare vita. Magari un giorno potremo raccontarci tutto davanti a un buon caffè.\n\nUn abbraccio forte,\nGiulia",

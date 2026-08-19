@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Nina", en: "I'm having lunch, but I'm free in an hour.", es: "Estoy almorzando, pero estoy libre en una hora." },
     { sp: "Paul", en: "Perfect. I need this report for tomorrow.", es: "Perfecto. Necesito este informe para mañana." }
   ],
+  dialogueQuiz: [
+    { q: "¿Dónde trabaja Paul normalmente?", choices: ["En casa", "En la oficina", "En el tren"], answer: "En la oficina" },
+    { q: "¿Por qué trabaja hoy desde casa?", choices: ["Está enfermo", "El tren no funciona", "La oficina está cerrada"], answer: "El tren no funciona" },
+    { q: "¿Qué no entiende Paul?", choices: ["El programa nuevo", "El informe", "El horario del tren"], answer: "El programa nuevo" },
+    { q: "¿Qué está haciendo Nina ahora?", choices: ["Está trabajando", "Está almorzando", "Está en el tren"], answer: "Está almorzando" },
+    { q: "¿Para cuándo necesita Paul el informe?", choices: ["Para hoy", "Para mañana", "Para el lunes"], answer: "Para mañana" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Dos presentes con dos significados</h3>" +

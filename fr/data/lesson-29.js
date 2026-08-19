@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Camille", fr: "Moi, j'apprendrai à coder. On dit que l'intelligence artificielle changera tout.", en: "Me, I'll learn to code. They say AI will change everything." },
     { sp: "Hugo", fr: "C'est vrai. Promets-moi qu'on fêtera nos réussites en décembre !", en: "True. Promise me we'll celebrate our successes in December!" }
   ],
+  dialogueQuiz: [
+    { q: "Quelles sont les résolutions de Hugo ?", choices: ["Voyager et lire plus", "Faire du sport et économiser", "Apprendre à cuisiner"], answer: "Faire du sport et économiser" },
+    { q: "Pourquoi Hugo veut-il économiser ?", choices: ["Pour acheter une voiture", "Pour déménager à Lyon", "Pour partir en vacances"], answer: "Pour déménager à Lyon" },
+    { q: "Que fera Hugo quand il sera installé ?", choices: ["Il enverra son CV partout", "Il ouvrira un magasin", "Il reprendra ses études"], answer: "Il enverra son CV partout" },
+    { q: "Que veut apprendre Camille ?", choices: ["À coder", "À dessiner", "À chanter"], answer: "À coder" },
+    { q: "Quand veulent-ils fêter leurs réussites ?", choices: ["En juin", "En septembre", "En décembre"], answer: "En décembre" }
+  ],
   reading: {
     title: "Le monde de demain",
     fr: "À quoi ressemblera le monde dans vingt ans ? Personne ne le sait vraiment, mais beaucoup de gens font des prédictions. Les experts disent que la technologie continuera de transformer notre vie quotidienne. Nous travaillerons peut-être moins, parce que l'intelligence artificielle fera une partie de notre travail. Les voitures rouleront toutes seules et nous voyagerons plus facilement.\n\nMais il y aura aussi des défis. Le changement climatique restera un problème sérieux, et nous devrons changer nos habitudes. Chacun aura un rôle à jouer : nous consommerons moins, nous recyclerons davantage, et les villes deviendront plus vertes.\n\nQuand mes enfants seront grands, ils vivront dans un monde très différent. J'espère qu'ils réaliseront leurs rêves et qu'ils prendront soin de la planète. L'avenir n'est pas écrit : nous le construirons ensemble, jour après jour.",

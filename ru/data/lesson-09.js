@@ -51,6 +51,13 @@ window.COURSE.lessons.push({
     { sp: "Маша", ru: "Хорошо, пока! Я тоже на работе.", en: "Okay, bye! I'm at work too." },
     { sp: "Олег", ru: "Пока, Маша! До завтра.", en: "Bye, Masha! See you tomorrow." }
   ],
+  dialogueQuiz: [
+    { q: "Where does Masha work?", choices: ["In a shop downtown", "At a school", "At a university"], answer: "In a shop downtown" },
+    { q: "What is Oleg’s job?", choices: ["Teacher", "Shop assistant", "Student"], answer: "Teacher" },
+    { q: "Where does Oleg live?", choices: ["Moscow", "Saint Petersburg", "London"], answer: "Saint Petersburg" },
+    { q: "Where are Oleg’s books?", choices: ["On the table in the room", "At school", "In the classroom"], answer: "On the table in the room" },
+    { q: "Where is Oleg’s sister?", choices: ["In Moscow", "In London, at university", "At home"], answer: "In London, at university" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>What is a «case»? Why endings change</h3>" +

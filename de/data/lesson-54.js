@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Sofia", de: "Diese Verbendstellung übersehe ich beim Sprechen ständig.", en: "I constantly overlook this verb-final position when speaking." },
     { sp: "Herr Klein", de: "Das ist normal. Machen Sie es zur letzten Frage Ihrer Selbstkontrolle: Wo steht das Verb?", en: "That's normal. Make it the last question of your self-check: where is the verb?" }
   ],
+  dialogueQuiz: [
+    { q: "Welcher Fehler steht in Sofias Aufsatz?", choices: ["„auf dem Tisch“ statt „auf den Tisch“", "„auf den Tisch“ statt „auf dem Tisch“", "Ein falsches Verb"], answer: "„auf dem Tisch“ statt „auf den Tisch“" },
+    { q: "Warum muss es Akkusativ sein?", choices: ["Weil es um eine Bewegung geht", "Weil es um einen Ort geht", "Weil „auf“ immer Akkusativ verlangt"], answer: "Weil es um eine Bewegung geht" },
+    { q: "Welche Frage gehört zum Dativ?", choices: ["Wo?", "Wohin?", "Woher?"], answer: "Wo?" },
+    { q: "Wo steht das Verb nach „weil“?", choices: ["Am Ende", "An zweiter Stelle", "Am Anfang"], answer: "Am Ende" },
+    { q: "Was soll Sofia sich zuletzt immer fragen?", choices: ["Wo steht das Verb?", "Welcher Fall ist richtig?", "Ist der Satz zu lang?"], answer: "Wo steht das Verb?" }
+  ],
   reading: {
     title: "Die hartnäckigen Fehler",
     de: "Es gibt Fehler, die selbst fortgeschrittene Lernende ein Leben lang begleiten. Nicht weil die Regel unbekannt wäre, sondern weil sie im Eifer des Gesprächs durchrutscht. Der Klassiker ist der Kasus nach Wechselpräpositionen: „Ich gehe in die Küche“ (Akkusativ, weil Bewegung), aber „Ich bin in der Küche“ (Dativ, weil Ort). Wer das verwechselt, wird verstanden — und doch hört jeder Muttersprachler sofort den Fehler.\n\nÄhnlich zäh ist die Verbendstellung im Nebensatz. Nach „weil“, „dass“ oder „obwohl“ wandert das konjugierte Verb ans Ende: nicht „weil ich bin krank“, sondern „weil ich krank bin“. Im Schreiben gelingt das meist; im schnellen Sprechen kippt die Konstruktion zurück in die englische Reihenfolge.\n\nDie gute Nachricht: Diese Fehler verschwinden nicht durch mehr Theorie, sondern durch bewusstes Gegenlesen. Wer sich angewöhnt, jeden eigenen Text einmal nur auf Kasus, einmal nur auf Wortstellung und einmal nur auf die Endungen zu prüfen, erwischt die meisten von selbst. Korrektur lesen ist eine Fertigkeit – und sie lässt sich trainieren.",

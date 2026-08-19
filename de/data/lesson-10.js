@@ -45,6 +45,13 @@ window.COURSE.lessons.push({
     { sp: "Tom", de: "Zusammen, bitte.", en: "Together, please." },
     { sp: "Kellner", de: "Das macht zwölf Euro fünfzig.", en: "That comes to twelve euros fifty." }
   ],
+  dialogueQuiz: [
+    { q: "What does Lena order to drink?", choices: ["A tea", "A coffee", "A water"], answer: "A coffee" },
+    { q: "What does Lena order to eat?", choices: ["A piece of cake", "A soup", "A sandwich"], answer: "A piece of cake" },
+    { q: "What does Tom order?", choices: ["Cake and coffee", "Soup and water", "Soup and coffee"], answer: "Soup and water" },
+    { q: "How do they want to pay?", choices: ["Separately", "Together", "By card"], answer: "Together" },
+    { q: "How much is the bill?", choices: ["Twelve euros fifty", "Twenty euros fifty", "Twelve euros fifteen"], answer: "Twelve euros fifty" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Ordering politely: Ich möchte… and Ich hätte gern…</h3>" +

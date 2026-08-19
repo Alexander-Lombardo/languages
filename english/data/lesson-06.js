@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Sophie", en: "And the dog? What's its name?", es: "¿Y el perro? ¿Cómo se llama?" },
     { sp: "Adam", en: "Its name is Rocky. It's very friendly.", es: "Se llama Rocky. Es muy cariñoso." }
   ],
+  dialogueQuiz: [
+    { q: "¿De qué es la foto?", choices: ["De la familia de Adam", "De la familia de Sophie", "De los amigos de Adam"], answer: "De la familia de Adam" },
+    { q: "¿Quién es Lucy?", choices: ["La madre de Adam", "La hermana de Adam", "La prima de Adam"], answer: "La hermana de Adam" },
+    { q: "¿Quién es Paul?", choices: ["El padre de Adam", "El hermano de Lucy", "El esposo de Lucy"], answer: "El esposo de Lucy" },
+    { q: "¿Cómo es la familia de Adam?", choices: ["Grande", "Pequeña", "Nueva"], answer: "Grande" },
+    { q: "¿Cómo se llama el perro?", choices: ["Rocky", "Paul", "Lucky"], answer: "Rocky" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Hablar de lo que es de alguien</h3>" +

@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Liam", en: "What a night. You had never lost them before, right?", es: "Vaya noche. Nunca las habías perdido antes, ¿verdad?" },
     { sp: "Noah", en: "Never. After that, I bought a key tracker the next day.", es: "Nunca. Después de eso, me compré un localizador de llaves al día siguiente." }
   ],
+  dialogueQuiz: [
+    { q: "What had Noah lost?", choices: ["His phone", "His wallet", "His keys"], answer: "His keys" },
+    { q: "Why couldn’t he get his keys from work?", choices: ["The office had already closed", "He had no car", "His boss was away"], answer: "The office had already closed" },
+    { q: "Who did Noah call?", choices: ["His sister", "A locksmith", "His landlord"], answer: "His sister" },
+    { q: "Why did she have a spare key?", choices: ["She lives with him", "She had made a copy", "Noah gave her one that night"], answer: "She had made a copy" },
+    { q: "What did Noah buy the next day?", choices: ["A new lock", "A key tracker", "A second phone"], answer: "A key tracker" }
+  ],
   reading: {
     title: "The Empty Platform",
     en: "When Maria arrived at the station, the train had already left. She stood on the empty platform and checked the time again. She had been so sure she was early.\n\nThat morning everything had gone wrong. Her alarm hadn't rung because the power had gone out during the night. By the time she woke up, she had lost almost an hour. She was rushing out of the door when she realized she had forgotten her ticket too.\n\nMeanwhile, her colleague was waiting at the other end of the line. He had bought two coffees and was reading the news. When his phone finally rang, Maria explained what had happened. He laughed and told her not to worry: the meeting had been postponed anyway.",

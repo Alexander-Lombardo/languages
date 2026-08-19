@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Tom", de: "Wir sollten das mal wieder öfter machen. Hast du etwa keine Zeit?", en: "We really should do this more often. You don't have time, do you?" },
     { sp: "Anna", de: "Doch, doch. Ich hab schon Zeit, ich bin nur viel unterwegs.", en: "Yes I do, I do. I have time alright, I'm just on the move a lot." }
   ],
+  dialogueQuiz: [
+    { q: "Was will Tom Anna zeigen?", choices: ["Ein Foto von damals","Einen Brief","Ein neues Handy"], answer: "Ein Foto von damals" },
+    { q: "Wie klingt Tom laut Anna?", choices: ["Ganz aufgeregt","Sehr müde","Etwas traurig"], answer: "Ganz aufgeregt" },
+    { q: "Was waren sie damals?", choices: ["Studenten","Kollegen","Nachbarn"], answer: "Studenten" },
+    { q: "Was sagt Anna über Tom?", choices: ["Er hat sich kaum verändert","Er sieht älter aus","Er ist dünner geworden"], answer: "Er hat sich kaum verändert" },
+    { q: "Warum sehen sie sich so selten?", choices: ["Anna ist viel unterwegs","Anna hat keine Zeit","Tom wohnt weit weg"], answer: "Anna ist viel unterwegs" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>What modal particles are — and aren't</h3>" +

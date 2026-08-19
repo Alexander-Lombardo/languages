@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Marc", fr: "Parfait. À moins qu'il ne refuse tout, je pense que ça passera.", en: "Perfect. Unless he refuses everything, I think it'll go through." },
     { sp: "Inès", fr: "Il est probable qu'il comprendra ; il a toujours été raisonnable.", en: "It's likely that he'll understand; he has always been reasonable." }
   ],
+  dialogueQuiz: [
+    { q: "Que pense Marc du projet ?", choices: ["Il sera prêt jeudi", "Il ne finira pas avant vendredi", "Il est déjà terminé"], answer: "Il ne finira pas avant vendredi" },
+    { q: "Qui faut-il prévenir ?", choices: ["Le directeur", "Le client", "L’équipe"], answer: "Le client" },
+    { q: "De quoi Inès doute-t-elle ?", choices: ["Que le client accepte un retard", "Que l’équipe soit motivée", "Que Marc ait raison"], answer: "Que le client accepte un retard" },
+    { q: "Que faut-il proposer au client selon Marc ?", choices: ["Une réduction", "Une solution", "Une excuse"], answer: "Une solution" },
+    { q: "Que fait Inès ce soir ?", choices: ["Elle appelle le client", "Elle travaille", "Elle se repose"], answer: "Elle travaille" }
+  ],
   reading: {
     title: "Une décision difficile au bureau",
     fr: "Camille hésite depuis des semaines. Son patron veut qu'elle dirige le nouveau projet, mais elle doute qu'elle ait assez d'expérience. \"Je ne pense pas que ce soit le bon moment\", confie-t-elle à son collègue Théo. Lui, au contraire, est convaincu : \"Je crois que tu es prête. Il est dommage que tu n'aies pas plus confiance en toi.\" Camille reconnaît qu'il est possible qu'elle se trompe. Bien qu'elle soit nerveuse, elle sait qu'il faut qu'elle saisisse cette occasion avant qu'il ne soit trop tard. Théo ajoute : \"Il est essentiel que tu acceptes, à condition que l'entreprise te donne les moyens de réussir.\" Finalement, Camille décide d'accepter, non pas parce qu'elle est sûre, mais pour que sa carrière avance. Il se peut que ce soit difficile au début, mais elle préfère essayer plutôt que de regretter. Le lendemain, elle annonce sa décision, le cœur encore plein de doute mais l'esprit décidé.",

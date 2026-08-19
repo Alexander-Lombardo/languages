@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Diego", es: "Tranquila, hazme caso: va a quedar riquísimo.", en: "Relax, trust me: it's going to turn out delicious." },
     { sp: "Marta", es: "Eso espero. Ahora baja el fuego y tápala.", en: "I hope so. Now lower the heat and cover it." }
   ],
+  dialogueQuiz: [
+    { q: "¿Qué le pide la mujer a Diego?", choices: ["Que ponga la mesa", "Que la ayude con una receta", "Que compre cebollas"], answer: "Que la ayude con una receta" },
+    { q: "¿Qué hace Diego primero?", choices: ["Pica la cebolla", "Agrega el ajo", "Prueba la salsa"], answer: "Pica la cebolla" },
+    { q: "¿Cuánto debe esperar antes de agregar el ajo?", choices: ["Dos minutos", "Cinco minutos", "Diez minutos"], answer: "Dos minutos" },
+    { q: "¿Qué le falta a la salsa, según Diego?", choices: ["Un poco de ajo", "Un poco de sal", "Un poco de agua"], answer: "Un poco de sal" },
+    { q: "¿Qué debe hacer Diego al final?", choices: ["Subir el fuego", "Apagar el fuego", "Bajar el fuego y tapar la salsa"], answer: "Bajar el fuego y tapar la salsa" }
+  ],
   grammarHTML:
     "<h3>What the imperative does</h3>" +
     "<p>The imperative gives <strong>commands, instructions and advice</strong>: <em>turn left</em>, <em>don't worry</em>, <em>add salt</em>. Spanish has different forms depending on <strong>who</strong> you are addressing (tú, usted, ustedes) and whether the command is <strong>affirmative</strong> or <strong>negative</strong>.</p>" +

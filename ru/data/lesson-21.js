@@ -52,6 +52,13 @@ window.COURSE.lessons.push({
     { sp: "Нина", ru: "А вещи? Ты много возишь вещей?", en: "And things? Do you carry many things?" },
     { sp: "Антон", ru: "Нет, только сумку с книгами и ключи.", en: "No, just a bag with books and keys." }
   ],
+  dialogueQuiz: [
+    { q: "How many brothers does Anton have?", choices: ["Two", "Three", "Five"], answer: "Two" },
+    { q: "Where do Anton’s friends live?", choices: ["All in Moscow", "In different cities", "In Kazan only"], answer: "In different cities" },
+    { q: "What does Anton bring as gifts?", choices: ["Books", "Chocolate", "Keys"], answer: "Books" },
+    { q: "About how much do the books cost?", choices: ["About a thousand roubles", "About five hundred roubles", "About two thousand roubles"], answer: "About a thousand roubles" },
+    { q: "What does Anton say is most important?", choices: ["Family", "Friends", "Books"], answer: "Friends" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Step 1: the nominative plural (-ы / -и / -а)</h3>" +

@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Luca", it: "Vedremo. Se viene bene, ne saremo orgogliosi tutti e due.", en: "We’ll see. If it turns out well, we’ll both be proud of it." },
     { sp: "Sara", it: "Allora vai, che si fa tardi. Me ne vado a preparare la teglia!", en: "Then go, it’s getting late. I’m off to get the cake tin ready!" }
   ],
+  dialogueQuiz: [
+    { q: "Perché Sara non va al supermercato?", choices: ["È stanca", "Ci è già stata stamattina", "Deve lavorare"], answer: "Ci è già stata stamattina" },
+    { q: "Quante uova ci sono in frigo?", choices: ["Tre", "Sei", "Una dozzina"], answer: "Tre" },
+    { q: "Quanto latte deve comprare Luca?", choices: ["Mezzo litro", "Un litro", "Due litri"], answer: "Un litro" },
+    { q: "Di cosa Sara non può fare a meno la mattina?", choices: ["Del tè", "Del caffè", "Del latte"], answer: "Del caffè" },
+    { q: "Cosa vuole fare Luca stasera?", choices: ["Una torta", "Una pizza", "Una frittata"], answer: "Una torta" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>The particle <em>ne</em>: “of it / of them”</h3>" +

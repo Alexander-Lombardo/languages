@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Karim", fr: "D'accord. Au fait, tu as vu les infos ? Un incendie aurait détruit l'entrepôt voisin.", en: "Alright. By the way, did you see the news? A fire reportedly destroyed the warehouse next door." },
     { sp: "Nadia", fr: "Quoi ? Selon les premières sources, il n'y aurait pas eu de blessés, j'espère.", en: "What? According to early sources, there were apparently no injuries, I hope." }
   ],
+  dialogueQuiz: [
+    { q: "Quand Karim aura-t-il terminé le rapport ?", choices: ["Ce soir", "Demain matin", "La semaine prochaine"], answer: "Ce soir" },
+    { q: "Que reproche Nadia à Karim ?", choices: ["Il a fait des erreurs", "Il ne l’a pas prévenue du délai", "Il a envoyé le mauvais fichier"], answer: "Il ne l’a pas prévenue du délai" },
+    { q: "Qu’aurait fait Nadia à la place de Karim ?", choices: ["Elle aurait demandé un report", "Elle aurait travaillé la nuit", "Elle aurait refusé le travail"], answer: "Elle aurait demandé un report" },
+    { q: "Que feront-ils une fois le fichier envoyé ?", choices: ["Ils le reliront ensemble", "Ils l’imprimeront", "Ils le présenteront au client"], answer: "Ils le reliront ensemble" },
+    { q: "Qu’aurait détruit l’incendie ?", choices: ["L’entrepôt voisin", "Le bureau", "Un parking"], answer: "L’entrepôt voisin" }
+  ],
   reading: {
     title: "Le projet qu'on aurait pu sauver",
     fr: "Lundi, Élodie s'est dit : « Quand j'aurai terminé ce dossier, je pourrai enfin partir en vacances. » Elle était sûre qu'elle aurait fini avant le délai. Mais une fois qu'elle aura compris l'ampleur du travail, il sera déjà trop tard. En effet, elle avait sous-estimé l'échéance. Si elle avait commencé une semaine plus tôt, elle aurait rendu le projet à temps et elle n'aurait pas passé la nuit au bureau. Son collègue, lui, le lui avait dit : « Tu aurais dû me prévenir, je t'aurais aidée. » Élodie le sait maintenant : à sa place, elle aussi aurait demandé du renfort. Le lendemain, la presse locale parlait d'une autre entreprise : selon les sources, un retard de livraison aurait coûté un contrat important à un concurrent. Élodie a souri. Une fois qu'elle aura récupéré, elle se promet une chose : la prochaine fois, dès qu'un délai sera fixé, elle s'organisera tout de suite.",

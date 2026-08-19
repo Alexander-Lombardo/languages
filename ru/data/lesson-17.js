@@ -51,6 +51,13 @@ window.COURSE.lessons.push({
     { sp: "Антон", ru: "Ха-ха, ничего. Спасибо большое!", en: "Ha-ha, no worries. Thank you so much!" },
     { sp: "Лена", ru: "Завтра мы пойдём вместе.", en: "Tomorrow we'll go together." }
   ],
+  dialogueQuiz: [
+    { q: "Where was Anton last night?", choices: ["At the theatre", "At home", "At his sister’s"], answer: "At home" },
+    { q: "Why couldn’t Anton go out?", choices: ["The weather was bad", "He was ill", "He had no ticket"], answer: "The weather was bad" },
+    { q: "What was Anton reading?", choices: ["A novel by Tolstoy", "A newspaper", "A textbook"], answer: "A novel by Tolstoy" },
+    { q: "Where did they both live as children?", choices: ["Moscow", "Kazan", "Saint Petersburg"], answer: "Kazan" },
+    { q: "What gift was bought for Anton?", choices: ["A book", "A theatre ticket", "A scarf"], answer: "A theatre ticket" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>How the past tense is built</h3>" +

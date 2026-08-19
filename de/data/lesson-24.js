@@ -47,6 +47,13 @@ window.COURSE.lessons.push({
     { sp: "Ärztin", de: "In drei Tagen. Sie müssen sich jetzt schonen!", en: "In three days. You have to take it easy now!" },
     { sp: "Tom", de: "Vielen Dank, Frau Doktor.", en: "Thank you very much, Doctor." }
   ],
+  dialogueQuiz: [
+    { q: "What is Tom’s first complaint?", choices: ["His head hurts", "His back hurts", "His stomach hurts"], answer: "His head hurts" },
+    { q: "How long has Tom had the pain?", choices: ["Since yesterday", "For two days", "For a week"], answer: "For two days" },
+    { q: "What does the doctor think Tom has?", choices: ["The flu", "A cold", "An allergy"], answer: "A cold" },
+    { q: "How often should Tom take the tablets?", choices: ["Once a day", "Twice a day", "Three times a day"], answer: "Three times a day" },
+    { q: "When may Tom work again?", choices: ["Tomorrow", "In three days", "Next week"], answer: "In three days" }
+  ],
   reading: {
     title: "Beim Arzt",
     de: "Lena geht zum Arzt, denn sie fühlt sich seit einer Woche krank. Sie hat starke Kopfschmerzen und ist sehr müde. Der Arzt fragt: „Schlafen Sie genug?“ Lena antwortet: „Nein, ich arbeite zu viel.“\n\nDer Arzt sagt: „Sie sollten weniger arbeiten und mehr schlafen. Sie müssen auch mehr Wasser trinken. Wenn die Kopfschmerzen bleiben, kommen Sie wieder.“ Lena nimmt das Rezept und geht in die Apotheke. Dort kauft sie die Tabletten. Jetzt will sie endlich gesund werden.",

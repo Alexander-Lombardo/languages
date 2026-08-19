@@ -45,6 +45,13 @@ window.COURSE.lessons.push({
     { sp: "Marchande", fr: "Bien sûr. Merci, et bonne journée !", en: "Of course. Thanks, and have a good day!" },
     { sp: "Client", fr: "Merci à vous. Au revoir !", en: "Thank you. Goodbye!" }
   ],
+  dialogueQuiz: [
+    { q: "What does the customer ask for first?", choices: ["A kilo of apples", "A bottle of milk", "Six bananas"], answer: "A kilo of apples" },
+    { q: "How much are the tomatoes?", choices: ["Two euros a kilo", "Three euros a kilo", "Seven euros a kilo"], answer: "Three euros a kilo" },
+    { q: "How much cheese does the customer want?", choices: ["A lot", "Just a little", "Half a kilo"], answer: "Just a little" },
+    { q: "What does the customer refuse?", choices: ["Fruit", "Cheese", "Meat"], answer: "Meat" },
+    { q: "What is the total?", choices: ["€7.50", "€3.00", "€6.50"], answer: "€7.50" }
+  ],
   grammarHTML:
     "<h3>Expressions of quantity → always + de (no article!)</h3>" +
     "<p>After a quantity word, use plain <strong>de / d'</strong>, not du/de la/des:</p>" +

@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Marta", es: "Me acuesto a las once, pero me duermo tarde.", en: "I go to bed at eleven, but I fall asleep late." },
     { sp: "Diego", es: "Yo me duermo rápido. ¡Estoy muy cansado!", en: "I fall asleep fast. I'm very tired!" }
   ],
+  dialogueQuiz: [
+    { q: "What time does the speaker normally wake up?", choices: ["At six thirty", "At seven thirty", "At eleven"], answer: "At six thirty" },
+    { q: "What does he do first after waking up?", choices: ["Brushes his teeth", "Gets up and showers", "Has breakfast"], answer: "Gets up and showers" },
+    { q: "When does he get dressed?", choices: ["Before breakfast", "After breakfast", "After brushing his teeth"], answer: "After breakfast" },
+    { q: "When does the other speaker get up very late?", choices: ["On weekends", "Every day", "On Mondays"], answer: "On weekends" },
+    { q: "What time does the first speaker go to bed?", choices: ["At ten", "At eleven", "At midnight"], answer: "At eleven" }
+  ],
   grammarHTML:
     "<h3>What is a reflexive verb?</h3>" +
     "<p>A reflexive verb describes an action you do <em>to yourself</em>. In the dictionary it ends in <strong>-se</strong>: <em>levantarse</em> (to get oneself up), <em>ducharse</em> (to shower oneself). To use it, you drop the <strong>-se</strong>, conjugate the verb as normal, and add a <strong>reflexive pronoun</strong> in front.</p>" +

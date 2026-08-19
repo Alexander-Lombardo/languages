@@ -39,6 +39,13 @@ window.COURSE.lessons.push({
     { sp: "Anna", it: "Hai ragione. Mi manca solo pagare il conto.", en: "You're right. I just have the bill left to pay." },
     { sp: "Giulio", it: "Offro io! Mi è piaciuta molto la serata.", en: "It's on me! I really enjoyed the evening." }
   ],
+  dialogueQuiz: [
+    { q: "What does Giulio like most at the restaurant?", choices: ["The desserts", "The first courses", "The cooked vegetables"], answer: "The first courses" },
+    { q: "What does Anna not like?", choices: ["Pasta", "Cooked vegetables", "Coffee"], answer: "Cooked vegetables" },
+    { q: "What did Anna like as a child?", choices: ["Almost everything", "Only pasta", "Nothing"], answer: "Nothing" },
+    { q: "What do they still need now?", choices: ["A good coffee", "A dessert", "A glass of wine"], answer: "A good coffee" },
+    { q: "Who will pay the bill?", choices: ["Anna", "Giulio", "They split it"], answer: "Giulio" }
+  ],
   reading: {
     title: "I gusti di Marco",
     it: "A Marco piace molto leggere, ma non gli piacciono i film lunghi. Da bambino gli piaceva giocare a calcio ogni giorno. Adesso gli manca lo sport e gli sembra di non avere mai abbastanza tempo. Ieri è andato al cinema con un'amica e il film gli è piaciuto davvero.",

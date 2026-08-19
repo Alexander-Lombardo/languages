@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Liz", en: "I'd argue that car-free zones actually help local shops.", es: "Yo diría que las zonas sin coches en realidad ayudan a las tiendas locales." },
     { sp: "Raj", en: "That said, the change has to be gradual.", es: "Dicho esto, el cambio tiene que ser gradual." }
   ],
+  dialogueQuiz: [
+    { q: "What is the discussion about?", choices: ["Banning cars from city centres", "Building more car parks", "Raising bus fares"], answer: "Banning cars from city centres" },
+    { q: "Why does Dana support the idea?", choices: ["Shops would earn more", "The air would be cleaner", "Streets would be quieter"], answer: "The air would be cleaner" },
+    { q: "What concern does Raj raise?", choices: ["Parking prices", "Tourists", "People with disabilities"], answer: "People with disabilities" },
+    { q: "What does Raj say is needed first?", choices: ["Better buses", "More bike lanes", "Wider roads"], answer: "Better buses" },
+    { q: "What does Liz argue about car-free zones?", choices: ["They hurt local shops", "They help local shops", "They increase traffic"], answer: "They help local shops" }
+  ],
   reading: {
     title: "How to Disagree Well",
     en: "In English-speaking debates, how you say something matters as much as what you say. A flat \"You're wrong\" rarely changes minds; in fact, it usually ends the conversation. Skilled speakers soften their language so the other person stays willing to listen.\n\nThe trick is to acknowledge before you attack. Phrases like \"I see your point, but…\" or \"Admittedly, that's true, however…\" show that you have understood the other side. Only then do you offer your counterargument. This is called conceding a point, and it makes you sound reasonable rather than stubborn.\n\nInterrupting is also an art. Jumping in with no warning feels rude, so people signal it: \"Sorry to jump in, but…\" or \"Can I just add something?\" These short phrases ask for permission in advance and keep the discussion polite.\n\nStrong opinions are welcome in English; aggressive delivery is not. If you master these functional phrases, you can disagree firmly and still be seen as someone worth talking to.",

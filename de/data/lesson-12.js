@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Markus", de: "Natürlich darfst du. Je mehr, desto besser.", en: "Of course you may. The more the merrier." },
     { sp: "Lena", de: "Super. Dann möchte ich auch Tom fragen.", en: "Great. Then I'd like to ask Tom too." }
   ],
+  dialogueQuiz: [
+    { q: "Why can't Lena come this evening?", choices: ["She has to work", "She is tired", "She is going to the cinema"], answer: "She has to work" },
+    { q: "What does Markus suggest for tomorrow?", choices: ["Going to the cinema", "Going to a café", "Going to a concert"], answer: "Going to the cinema" },
+    { q: "What can't Lena do tomorrow?", choices: ["Buy tickets", "Stay late", "Bring a friend"], answer: "Stay late" },
+    { q: "Who will buy the tickets?", choices: ["Lena", "Markus", "Tom"], answer: "Markus" },
+    { q: "Whom does Lena want to ask along?", choices: ["Anna", "Max", "Tom"], answer: "Tom" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>What modal verbs do</h3>" +

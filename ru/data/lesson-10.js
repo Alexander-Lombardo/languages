@@ -51,6 +51,13 @@ window.COURSE.lessons.push({
     { sp: "Дима", ru: "Бабушке. Она любит письма.", en: "To Grandma. She loves letters." },
     { sp: "Катя", ru: "Как мило! Ну, я жду брата. Пока!", en: "How sweet! Well, I'm waiting for my brother. Bye!" }
   ],
+  dialogueQuiz: [
+    { q: "What does Dima prefer to read?", choices: ["A newspaper", "A magazine", "A letter"], answer: "A magazine" },
+    { q: "What is Dima watching in the evening?", choices: ["A new film", "The news", "A concert"], answer: "A new film" },
+    { q: "Who is Dima waiting for?", choices: ["His sister", "His brother", "His grandma"], answer: "His brother" },
+    { q: "What is Dima eating?", choices: ["Soup", "Pizza", "Salad"], answer: "Pizza" },
+    { q: "Who is the letter for?", choices: ["Grandma", "Dima’s sister", "A friend"], answer: "Grandma" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>The accusative = the «victim» of the verb</h3>" +

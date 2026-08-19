@@ -45,6 +45,13 @@ window.COURSE.lessons.push({
     { sp: "Client", fr: "D'accord, je voudrais réserver pour ce soir.", en: "OK, I'd like to book for tonight." },
     { sp: "Réceptionniste", fr: "Très bien. Bonne soirée !", en: "Very well. Have a good evening!" }
   ],
+  dialogueQuiz: [
+    { q: "What kind of ticket does the traveller buy?", choices: ["One-way", "Round-trip", "A monthly pass"], answer: "Round-trip" },
+    { q: "What time does the next train leave?", choices: ["2:10 p.m.", "4:10 p.m.", "5:00 p.m."], answer: "2:10 p.m." },
+    { q: "How much does the ticket cost?", choices: ["Sixteen euros", "Sixty euros", "Eighty euros"], answer: "Sixty euros" },
+    { q: "How many nights does the client want a room for?", choices: ["One night", "Two nights", "Three nights"], answer: "Two nights" },
+    { q: "What does the client have to book?", choices: ["Breakfast", "A taxi", "Dinner"], answer: "Dinner" }
+  ],
   reading: {
     title: "Un week-end à Marseille",
     fr: "Le mois dernier, Léa a voulu partir en week-end. Elle a réservé un billet aller-retour pour Marseille et une chambre d'hôtel pour deux nuits. Le train est parti à quatorze heures dix et il est arrivé vers dix-sept heures. À l'hôtel, la réceptionniste lui a dit que la chambre était libre et que le petit-déjeuner était inclus. Léa a demandé : « Je peux payer par carte ? » et elle a payé quatre-vingts euros la nuit. Le matin, elle devait réserver pour le dîner, mais elle voulait surtout visiter la ville. C'était un voyage parfait.",

@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Frau Weber", de: "Gut. Dann formuliere ich einen Widerspruch — sachlich und höflich.", en: "Good. Then I'll draft an objection — factual and polite." },
     { sp: "Herr Klein", de: "Genau. ‚Sehr geehrte Damen und Herren‘ oben, ‚Mit freundlichen Grüßen‘ unten — dazwischen klar und knapp.", en: "Exactly. 'Dear Sir or Madam' at the top, 'Yours sincerely' at the bottom — clear and concise in between." }
   ],
+  dialogueQuiz: [
+    { q: "Was hat Frau Weber bekommen?", choices: ["Einen Bescheid", "Eine Rechnung", "Eine Einladung"], answer: "Einen Bescheid" },
+    { q: "Warum wurde der Antrag abgelehnt?", choices: ["Der Anspruch wurde nicht nachgewiesen", "Die Frist war abgelaufen", "Das Formular fehlte"], answer: "Der Anspruch wurde nicht nachgewiesen" },
+    { q: "Wie schreibt die Verwaltung laut Herrn Klein?", choices: ["Im Nominalstil mit viel Passiv", "In kurzen, klaren Sätzen", "Mit vielen Fachwörtern aus dem Englischen"], answer: "Im Nominalstil mit viel Passiv" },
+    { q: "Wie lange kann man Widerspruch einlegen?", choices: ["Binnen eines Monats", "Binnen einer Woche", "Binnen drei Monaten"], answer: "Binnen eines Monats" },
+    { q: "Wie will Frau Weber den Widerspruch formulieren?", choices: ["Sachlich und höflich", "Scharf und ausführlich", "Kurz und wütend"], answer: "Sachlich und höflich" }
+  ],
   reading: {
     title: "Amtston und Klartext",
     de: "Im Original lautet der entscheidende Satz des Bescheids: „Nach eingehender Prüfung des vorgetragenen Sachverhalts ist festzustellen, dass die seitens des Antragstellers geltend gemachten Anspruchsvoraussetzungen mangels hinreichender Nachweise nicht als erfüllt angesehen werden können, weshalb dem Begehren nicht zu entsprechen war.“\n\nDieser Satz ist ein Musterbeispiel für Behördendeutsch: Er besteht fast nur aus Substantiven, vermeidet jede handelnde Person und schiebt das eigentliche Ergebnis — die Ablehnung — ganz ans Ende. Das unpersönliche Passiv und die Funktionsverbgefüge („Anwendung finden“, „in Abrede stellen“) erzeugen eine Distanz, die manche für Objektivität halten, die viele Bürger aber als kalt und undurchschaubar empfinden.\n\nIn verständlicher Sprache hieße derselbe Inhalt schlicht: „Wir haben Ihren Antrag geprüft. Sie haben nicht ausreichend belegt, dass Sie Anspruch haben. Deshalb lehnen wir den Antrag ab.“ Drei kurze Sätze, ein klares Subjekt, aktive Verben. Der Trend zur „Bürgernähe“ verlangt heute genau diese Übersetzung — ohne dass juristische Genauigkeit verloren geht.",

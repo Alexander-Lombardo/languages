@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Diego", es: "Por suerte todo terminó bien. ¡Menudo susto!", en: "Luckily it all ended well. What a scare!" },
     { sp: "Marta", es: "Sí. Sin embargo, ahora siempre miro hacia los arbustos.", en: "Yes. However, now I always look towards the bushes." }
   ],
+  dialogueQuiz: [
+    { q: "¿Cuándo ocurrió la historia?", choices: ["Ayer, al volver a casa", "Esta mañana, en el trabajo", "El fin de semana pasado"], answer: "Ayer, al volver a casa" },
+    { q: "¿Por dónde caminaba la persona?", choices: ["Por la playa", "Por el parque", "Por el centro"], answer: "Por el parque" },
+    { q: "¿De dónde salió el perro?", choices: ["De unos arbustos", "De una casa", "De un coche"], answer: "De unos arbustos" },
+    { q: "¿Qué hacía el perro mientras la persona corría?", choices: ["La seguía", "Ladraba sin moverse", "Se fue corriendo"], answer: "La seguía" },
+    { q: "¿Qué quería el perro en realidad?", choices: ["Morder", "Comer", "Jugar"], answer: "Jugar" }
+  ],
   grammarHTML:
     "<h3>Two past tenses, one story</h3>" +
     "<p>To narrate in Spanish you weave together the <strong>imperfecto</strong> (the background) and the <strong>pretérito</strong> (the events). Learning when to use each is the heart of B1 storytelling.</p>" +

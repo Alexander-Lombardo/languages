@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Marta", es: "¡Qué bonito recuerdo!", en: "What a lovely memory!" },
     { sp: "Carlos", es: "Sí. A veces extraño esos días.", en: "Yes. Sometimes I miss those days." }
   ],
+  dialogueQuiz: [
+    { q: "Where did Carlos live as a child?", choices: ["In a big city", "In a small town", "By the sea"], answer: "In a small town" },
+    { q: "What did Carlos do after school?", choices: ["Played in the street", "Did homework", "Watched TV"], answer: "Played in the street" },
+    { q: "Did Carlos have many friends?", choices: ["Yes, many", "No, only one", "No, none"], answer: "Yes, many" },
+    { q: "When did he eat at his grandmother’s house?", choices: ["On Saturdays", "On Sundays", "Every day"], answer: "On Sundays" },
+    { q: "How does Carlos feel about those days?", choices: ["He misses them sometimes", "He forgot them", "He disliked them"], answer: "He misses them sometimes" }
+  ],
   grammarHTML:
     "<h3>What is the imperfect for?</h3>" +
     "<p>The <strong>imperfect</strong> (<em>el imperfecto</em>) describes the past without a clear end point. Use it for <strong>habits and routines</strong> (\"I used to play\"), <strong>descriptions</strong> (weather, age, feelings) and <strong>background scenes</strong>. Think: \"used to\" or \"was/were ...-ing\".</p>" +

@@ -37,6 +37,13 @@ window.COURSE.lessons.push({
     { sp: "Luca", it: "Perfetto. Io bevo un caffè e poi vengo.", en: "Perfect. I’ll have (drink) a coffee and then I’ll come." },
     { sp: "Marta", it: "Ottimo. Ti do un messaggio quando esco di casa.", en: "Great. I’ll give you (send) a message when I leave the house." }
   ],
+  dialogueQuiz: [
+    { q: "Where is Marta going tonight?", choices: ["For a walk downtown", "To the cinema", "To a restaurant"], answer: "For a walk downtown" },
+    { q: "What does Luca do first?", choices: ["He calls a friend", "He has dinner", "He does the shopping"], answer: "He does the shopping" },
+    { q: "How is Luca today?", choices: ["Well", "Tired", "So-so"], answer: "Well" },
+    { q: "What time will they go out?", choices: ["At five", "At six", "At seven"], answer: "At six" },
+    { q: "What will Marta do when she leaves?", choices: ["Call Luca", "Send Luca a message", "Wait at the café"], answer: "Send Luca a message" }
+  ],
   reading: null,
   grammarHTML: "<h3>The big irregular verbs</h3>" +
     "<p>Several very common Italian verbs are irregular in the present tense. You simply have to learn them, because you will use them every day. Notice that <strong>andare</strong> (to go), <strong>fare</strong> (to do/make), <strong>dare</strong> (to give) and <strong>stare</strong> (to stay) share a similar pattern in the plural.</p>" +

@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Assistant", en: "Great. Cash or card?", es: "Genial. ¿Efectivo o tarjeta?" },
     { sp: "Mara", en: "Card, please. Can I have a receipt?", es: "Tarjeta, por favor. ¿Me da el tique?" }
   ],
+  dialogueQuiz: [
+    { q: "¿Qué le gusta al cliente?", choices: ["Una camisa azul", "Una chaqueta negra", "Unos pantalones"], answer: "Una camisa azul" },
+    { q: "¿Cuánto cuesta la camisa?", choices: ["Cuarenta libras", "Veinticinco libras", "Quince libras"], answer: "Veinticinco libras" },
+    { q: "¿Qué talla usa el cliente?", choices: ["Pequeña", "Mediana", "Grande"], answer: "Mediana" },
+    { q: "¿Cómo le queda la camisa?", choices: ["Le queda bien", "Le queda grande", "Le queda pequeña"], answer: "Le queda bien" },
+    { q: "¿Cómo paga el cliente?", choices: ["En efectivo", "Con tarjeta", "Con cheque"], answer: "Con tarjeta" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>this / that / these / those: señalar cosas</h3>" +

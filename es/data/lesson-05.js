@@ -44,6 +44,13 @@ window.COURSE.lessons.push({
     { sp: "Sofía", es: "Perfecto. ¡Hasta mañana!", en: "Perfect. See you tomorrow!" },
     { sp: "Diego", es: "¡Hasta mañana!", en: "See you tomorrow!" }
   ],
+  dialogueQuiz: [
+    { q: "What time is it?", choices: ["Half past two", "Half past three", "Three o’clock"], answer: "Half past three" },
+    { q: "What day is today?", choices: ["Monday", "Tuesday", "Sunday"], answer: "Monday" },
+    { q: "What is the date?", choices: ["The fifth of March", "The fifth of May", "The third of March"], answer: "The fifth of March" },
+    { q: "When is the concert?", choices: ["Monday at eight", "Tuesday at eight", "Tuesday at three"], answer: "Tuesday at eight" },
+    { q: "How much does the ticket cost?", choices: ["Twelve dollars", "Twenty dollars", "Thirty dollars"], answer: "Twenty dollars" }
+  ],
   grammarHTML:
     "<h3>Numbers 0–20</h3>" +
     "<p>The first twenty numbers are written as single words. Learn them as a block — the rest of the system builds on them.</p>" +

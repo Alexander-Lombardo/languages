@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Tom", de: "Genau. Die Stühle sind auch neu.", en: "Exactly. The chairs are also new." },
     { sp: "Lena", de: "Alles ist neu hier!", en: "Everything is new here!" }
   ],
+  dialogueQuiz: [
+    { q: "What is the table like?", choices: ["Old", "New", "Small"], answer: "New" },
+    { q: "What does Tom say about the lamp?", choices: ["It is beautiful", "It is broken", "It is big"], answer: "It is beautiful" },
+    { q: "Is the object a book or a notebook?", choices: ["A notebook", "A book", "Neither"], answer: "A book" },
+    { q: "Who is the person Lena asks about?", choices: ["A man named Max", "A woman named Anna", "A woman named Lena"], answer: "A woman named Anna" },
+    { q: "How many chairs are there?", choices: ["One", "Two", "Three"], answer: "Two" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Every noun has a gender</h3>" +

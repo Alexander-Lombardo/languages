@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Turista", es: "Muchas gracias. ¡Es muy amable!", en: "Thank you very much. You're very kind!" },
     { sp: "Local", es: "De nada. ¡Buen viaje!", en: "You're welcome. Have a good trip!" }
   ],
+  dialogueQuiz: [
+    { q: "Where is the bathroom?", choices: ["To the right", "To the left", "Straight ahead"], answer: "To the right" },
+    { q: "Is the market near?", choices: ["No, it’s far", "Yes, very near", "It’s at the station"], answer: "Yes, very near" },
+    { q: "How does the tourist get to the market?", choices: ["Turn left", "Turn right", "Go straight ahead"], answer: "Go straight ahead" },
+    { q: "Where is the bank?", choices: ["At the station", "At the market", "To the right"], answer: "At the station" },
+    { q: "When does the bank open?", choices: ["At eight", "At nine", "At ten"], answer: "At nine" }
+  ],
   grammarHTML:
     "<h3>Question words</h3>" +
     "<p>Spanish question words always carry a written accent and sit at the start of the question, framed by <em>¿ ?</em>.</p>" +

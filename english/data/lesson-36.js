@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Hana", en: "We could start by raising awareness in our own community.", es: "Podríamos empezar por concienciar en nuestra propia comunidad." },
     { sp: "Marco", en: "Agreed. Small habits add up and reduce your carbon footprint.", es: "De acuerdo. Los pequeños hábitos suman y reducen tu huella de carbono." }
   ],
+  dialogueQuiz: [
+    { q: "What has reached a record level, according to the report?", choices: ["Pollution", "Unemployment", "Rainfall"], answer: "Pollution" },
+    { q: "Where do most greenhouse gases come from?", choices: ["Factories", "Traffic", "Farms"], answer: "Traffic" },
+    { q: "What does Marco suggest can bring real change?", choices: ["Renewable energy", "Higher taxes", "New laws"], answer: "Renewable energy" },
+    { q: "Why can’t poorer countries use it, according to Hana?", choices: ["They lack the land", "They can’t afford it", "They don’t want it"], answer: "They can’t afford it" },
+    { q: "How does Hana suggest they start?", choices: ["By protesting in the streets", "By raising awareness locally", "By writing to politicians"], answer: "By raising awareness locally" }
+  ],
   reading: {
     title: "The Cost of Convenience",
     en: "Modern life is built on convenience. We want food delivered, products shipped overnight, and energy available at the touch of a button. Yet this comfort has a hidden price. The waste we produce and the greenhouse gases we release are, in large part, due to the speed and scale of how we consume.\n\nScientists warn that pollution and global warming will lead to more extreme weather, rising seas, and pressure on the poorest communities. Inequality plays a key role here: those who pollute the least often suffer the most. As a consequence, the debate about the environment is also a debate about fairness.\n\nNone of this means the situation is hopeless. Renewable energy is now cheaper than ever, and many cities are cutting their carbon footprint year after year. Real change, however, will not come from technology alone. It requires that ordinary people raise awareness, change small habits, and demand that governments and companies act.",

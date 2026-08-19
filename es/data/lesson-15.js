@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Sofía", es: "Sí. Es el menos caro y el más práctico.", en: "Yes. It's the least expensive and the most practical." },
     { sp: "Diego", es: "De acuerdo. Es la mejor opción.", en: "Agreed. It's the best option." }
   ],
+  dialogueQuiz: [
+    { q: "What are the two friends comparing?", choices: ["Two tablets", "Two phones", "Two laptops"], answer: "Two phones" },
+    { q: "What is said about the more expensive phone?", choices: ["It is better", "It has a bigger screen", "It is more practical"], answer: "It is better" },
+    { q: "What is weaker on the cheap phone?", choices: ["The screen", "The camera", "The battery"], answer: "The battery" },
+    { q: "What matters most to the second speaker?", choices: ["The battery", "The screen size", "The price"], answer: "The price" },
+    { q: "Which phone do they decide is best for him?", choices: ["The cheap one", "The expensive one", "Neither of them"], answer: "The cheap one" }
+  ],
   grammarHTML:
     "<h3>Comparing two things</h3>" +
     "<p>To compare, put <strong>más</strong> (more) or <strong>menos</strong> (less) before the adjective and <strong>que</strong> (than) after it.</p>" +

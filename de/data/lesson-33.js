@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Tom", de: "Und am Ende?", en: "And in the end?" },
     { sp: "Anna", de: "Am Ende saßen wir nebeneinander und haben die ganze Fahrt geredet.", en: "In the end we sat next to each other and talked the whole journey." }
   ],
+  dialogueQuiz: [
+    { q: "Wohin ist Anna zuerst gegangen?", choices: ["Zum Flughafen", "Zum Bahnhof", "Zur Bushaltestelle"], answer: "Zum Bahnhof" },
+    { q: "Was hat Anna dann gemerkt?", choices: ["Sie hatte ihr Ticket vergessen", "Sie hatte ihr Handy verloren", "Sie war zu spät"], answer: "Sie hatte ihr Ticket vergessen" },
+    { q: "Wer hat Anna gerufen?", choices: ["Ein Schaffner", "Eine Freundin", "Eine Frau mit ihrem Ticket"], answer: "Eine Frau mit ihrem Ticket" },
+    { q: "Haben sie den Zug erreicht?", choices: ["Ja, sie sind gerannt", "Nein, sie haben ihn verpasst", "Nein, sie nahmen den nächsten"], answer: "Ja, sie sind gerannt" },
+    { q: "Was haben sie während der Fahrt gemacht?", choices: ["Geschlafen", "Die ganze Fahrt geredet", "Ein Buch gelesen"], answer: "Die ganze Fahrt geredet" }
+  ],
   reading: {
     title: "Der verpasste Zug",
     de: "An einem kalten Montagmorgen wachte Jonas zu spät auf. Er hatte am Abend vorher seinen Wecker nicht gestellt, und so verschlief er beinahe eine Stunde. Zuerst blieb er ganz ruhig, denn er glaubte, noch genug Zeit zu haben. Dann aber sah er auf die Uhr und sprang aus dem Bett.\n\nNachdem er sich in fünf Minuten angezogen hatte, rannte er zum Bahnhof. Unterwegs merkte er, dass er sein Handy zu Hause vergessen hatte. Doch umkehren konnte er nicht mehr. Plötzlich begann es auch noch zu regnen.\n\nAls er den Bahnsteig erreichte, fuhr der Zug gerade ab. Jonas war völlig außer Atem und sehr enttäuscht. Schließlich setzte er sich auf eine Bank und überlegte, was er tun sollte. Da sprach ihn ein älterer Mann an, der dasselbe Problem hatte. Die beiden kamen ins Gespräch, und der Mann bot Jonas an, ihn mit dem Auto in die Stadt mitzunehmen.\n\nAm Ende kam Jonas sogar früher an als geplant. Nachdem er sich herzlich bedankt hatte, dachte er: Manchmal ist ein verpasster Zug ein Glück.",

@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Sara", it: "Finisco alle sette. Poi dormo un’ora e arrivo da te.", en: "I finish at seven. Then I sleep for an hour and come to your place." },
     { sp: "Luca", it: "Perfetto. Ti aspetto!", en: "Perfect. I’ll wait for you!" }
   ],
+  dialogueQuiz: [
+    { q: "Is Sara working today?", choices: ["Yes, all day", "No, she is not", "Only in the morning"], answer: "No, she is not" },
+    { q: "What does Sara plan to do today?", choices: ["Write an email and read", "Watch a film", "Go shopping"], answer: "Write an email and read" },
+    { q: "What language does the author write in?", choices: ["Italian", "English", "French"], answer: "English" },
+    { q: "What will Sara get for dinner?", choices: ["Pasta", "Sushi", "Pizza"], answer: "Pizza" },
+    { q: "What time does Sara finish working?", choices: ["At six", "At seven", "At eight"], answer: "At seven" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>The three verb families</h3>" +

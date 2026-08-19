@@ -45,6 +45,13 @@ window.COURSE.lessons.push({
     { sp: "Théo", fr: "Vas-y ! À demain matin !", en: "Go on! See you tomorrow morning!" },
     { sp: "Emma", fr: "À demain !", en: "See you tomorrow!" }
   ],
+  dialogueQuiz: [
+    { q: "What time is it at the start?", choices: ["Quarter past nine", "Half past ten", "Ten o’clock"], answer: "Quarter past nine" },
+    { q: "What day is it today?", choices: ["Monday, March 4th", "Tuesday, March 14th", "Wednesday, March 14th"], answer: "Tuesday, March 14th" },
+    { q: "Where is Emma’s appointment?", choices: ["At the station", "At the university", "At a café near the station"], answer: "At a café near the station" },
+    { q: "When does Théo work today?", choices: ["From 9 to 12", "From 2 to 6 p.m.", "He doesn’t work today"], answer: "From 2 to 6 p.m." },
+    { q: "When is Théo’s birthday?", choices: ["March 14th", "April 1st", "March 1st"], answer: "April 1st" }
+  ],
   grammarHTML:
     "<h3>Telling time</h3>" +
     "<p>Start with <strong>Il est … heure(s)</strong>: <em>Il est une heure</em> (1:00, singular), <em>Il est trois heures</em> (3:00). Then:</p>" +

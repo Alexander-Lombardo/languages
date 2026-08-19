@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Olivia", en: "Perfect. See you on Tuesday!", es: "Perfecto. ¡Nos vemos el martes!" },
     { sp: "Daniel", en: "See you! Don't be late.", es: "¡Hasta luego! No llegues tarde." }
   ],
+  dialogueQuiz: [
+    { q: "¿Qué hora es?", choices: ["Las nueve y media", "Las diez", "Las nueve y cuarto"], answer: "Las nueve y media" },
+    { q: "¿A qué hora es la clase de Olivia?", choices: ["A las nueve", "A las diez en punto", "A las tres y cuarto"], answer: "A las diez en punto" },
+    { q: "¿Qué día es la reunión?", choices: ["El lunes", "El martes", "El miércoles"], answer: "El martes" },
+    { q: "¿A qué hora es la reunión?", choices: ["A las tres y cuarto", "A las tres y media", "A las dos y cuarto"], answer: "A las tres y cuarto" },
+    { q: "¿Cuándo es el viaje?", choices: ["El cinco de junio", "El cinco de julio", "El quince de julio"], answer: "El cinco de julio" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>Decir la hora</h3>" +

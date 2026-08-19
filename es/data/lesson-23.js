@@ -43,6 +43,13 @@ window.COURSE.lessons.push({
     { sp: "Marta", es: "Sí, la que ganó el premio trata sobre eso.", en: "Yes, the one that won the prize is about that." },
     { sp: "Diego", es: "Entonces dame el título, que la busco hoy mismo.", en: "Then give me the title, because I'll look for it today." }
   ],
+  dialogueQuiz: [
+    { q: "¿A quién conoció ayer?", choices: ["A una mujer que escribe novelas", "A una profesora de literatura", "A una periodista"], answer: "A una mujer que escribe novelas" },
+    { q: "¿Qué relación tiene la escritora con él?", choices: ["Es su prima", "Es la vecina cuyo hijo estudia con él", "Es su antigua profesora"], answer: "Es la vecina cuyo hijo estudia con él" },
+    { q: "¿Dónde vive ahora la escritora?", choices: ["En el barrio donde se mudaron", "En otra ciudad", "Cerca de la universidad"], answer: "En el barrio donde se mudaron" },
+    { q: "¿Qué es lo que más le gusta de ella?", choices: ["Que es famosa", "Que es muy sencilla", "Que escribe rápido"], answer: "Que es muy sencilla" },
+    { q: "¿De qué trata la novela que ganó el premio?", choices: ["De su familia", "De un viaje", "De su ciudad"], answer: "De su ciudad" }
+  ],
   grammarHTML:
     "<h3>What a relative clause does</h3>" +
     "<p>A relative clause adds information about a noun (the <strong>antecedent</strong>) without starting a new sentence. The relative word links the two parts: <em>la mujer <strong>que</strong> escribe novelas</em> = the woman <strong>who</strong> writes novels.</p>" +

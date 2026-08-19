@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Teacher", en: "And the effect of that image?", es: "¿Y el efecto de esa imagen?" },
     { sp: "Yuki", en: "It makes hope feel fragile, about to go out. Very vivid.", es: "Hace que la esperanza parezca frágil, a punto de apagarse. Muy vívido." }
   ],
+  dialogueQuiz: [
+    { q: "How does Yuki describe the mood of the opening paragraph?", choices: ["Bleak and lonely", "Warm and hopeful", "Tense and angry"], answer: "Bleak and lonely" },
+    { q: "What device is ‘indifferent’ applied to the sea?", choices: ["Simile", "Metaphor", "Personification"], answer: "Personification" },
+    { q: "What does the sea mirror?", choices: ["The narrator’s loneliness", "The narrator’s anger", "The narrator’s hope"], answer: "The narrator’s loneliness" },
+    { q: "What is hope compared to in the simile?", choices: ["A candle in a draught", "A bird in a storm", "A wave on the shore"], answer: "A candle in a draught" },
+    { q: "What effect does that image have?", choices: ["It makes hope feel strong", "It makes hope feel fragile", "It makes hope feel distant"], answer: "It makes hope feel fragile" }
+  ],
   reading: {
     title: "The Last Light (an extract)",
     en: "The house remembered more than she did. Its floorboards sighed under her feet, recounting the footsteps of everyone who had ever crossed them, and the walls held their breath as she climbed the stairs. Dust hung in the air like a slow grey snow, catching the last of the afternoon light.\n\nIn the attic she found the box, small and patient, as if it had been waiting for her the way a dog waits at a door. Inside lay her mother's letters, brittle as autumn leaves, each one a window into a year she had never known. She lifted the first to the window. The handwriting climbed across the page like ivy, looping and stubborn and alive.\n\nShe read until the room grew dark, and the words seemed to glow against the gathering shadow, small lamps in a long corridor. Outside, the city carried on its loud, forgetful business. But here, in this one still room at the top of a sighing house, the past was not dead at all. It was merely sleeping, and she had woken it.\n\nWhen at last she stood, her legs stiff and her cheeks wet, she understood something she could not have put into words. Grief, she saw, is only love with nowhere left to go.",

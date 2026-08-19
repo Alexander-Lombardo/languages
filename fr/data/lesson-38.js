@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Hugo", fr: "Et comment ça se passe dans les commerces ? Ça ne se fait pas du jour au lendemain.", en: "And how is it going in the shops? That isn't done overnight." },
     { sp: "Camille", fr: "Une période d'adaptation a été prévue. Tout sera appliqué d'ici janvier.", en: "An adaptation period has been planned. Everything will be applied by January." }
   ],
+  dialogueQuiz: [
+    { q: "Qu’est-ce qui vient d’être voté ?", choices: ["Une nouvelle loi", "Un nouveau budget", "Une taxe"], answer: "Une nouvelle loi" },
+    { q: "Qu’est-ce qui est désormais interdit dans les magasins ?", choices: ["Les bouteilles en verre", "Les sacs plastiques", "Les emballages en carton"], answer: "Les sacs plastiques" },
+    { q: "Où seront fabriqués les sacs réutilisables ?", choices: ["À l’étranger", "Localement", "Dans une seule usine"], answer: "Localement" },
+    { q: "Comment la mesure a-t-elle été accueillie ?", choices: ["Très bien", "Avec méfiance", "Avec indifférence"], answer: "Très bien" },
+    { q: "D’ici quand tout sera-t-il appliqué ?", choices: ["D’ici janvier", "D’ici l’été", "D’ici la fin du mois"], answer: "D’ici janvier" }
+  ],
   reading: {
     title: "Comment le fromage est fabriqué",
     fr: "Beaucoup de gens ignorent comment leur fromage préféré est produit. Le processus suit plusieurs étapes précises, et chaque étape est contrôlée avec soin. D'abord, le lait est collecté dans les fermes de la région, puis il est transporté à la fromagerie. Là, il est chauffé doucement et des ferments sont ajoutés. La pâte qui se forme est ensuite découpée, pressée et salée. À ce stade, les meules sont placées dans des caves où elles seront affinées pendant des mois. Pendant cette période, le fromage est retourné régulièrement par les ouvriers. Certaines recettes sont protégées par une appellation officielle, et la qualité est respectée de tous les producteurs. Aujourd'hui, ce savoir-faire est encore transmis de génération en génération. On dit souvent qu'un bon fromage ne se fabrique pas vite : il se mérite. Désormais, ces méthodes traditionnelles sont aussi expliquées aux visiteurs lors de visites guidées.",

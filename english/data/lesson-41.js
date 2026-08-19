@@ -41,6 +41,13 @@ window.COURSE.lessons.push({
     { sp: "Coach", en: "And yet here you are. The very thing you feared didn't sink you.", es: "Y aun así aquí estás. Justo lo que temías no te hundió." },
     { sp: "Ravi", en: "True. What matters now is the follow-up email, I suppose.", es: "Cierto. Lo que importa ahora es el correo de seguimiento, supongo." }
   ],
+  dialogueQuiz: [
+    { q: "How did Ravi feel during the interview?", choices: ["More nervous than ever before", "Calm and confident", "Bored"], answer: "More nervous than ever before" },
+    { q: "What did Ravi forget?", choices: ["The interviewer’s name", "His own job title", "His CV"], answer: "His own job title" },
+    { q: "According to the coach, what gets to people?", choices: ["The questions", "The pressure", "The interviewers"], answer: "The pressure" },
+    { q: "What did Ravi really need?", choices: ["A glass of water and a deep breath", "More time to prepare", "A second chance"], answer: "A glass of water and a deep breath" },
+    { q: "What matters now, according to Ravi?", choices: ["The follow-up email", "A new interview", "His salary"], answer: "The follow-up email" }
+  ],
   reading: {
     title: "The Art of Saying It With Emphasis",
     en: "Great speakers know a secret that ordinary speakers do not: it is not only what you say, but how you frame it that lands. Compare two sentences. \"I have never seen such courage\" is perfectly correct. But \"Never have I seen such courage\" lifts the words off the page. The inversion forces the listener to lean in.\n\nThis trick belongs to formal and literary English. Politicians, novelists, and wedding speakers reach for it instinctively. Not only does it sound elegant, but it also signals that the moment is important. Used sparingly, it is powerful; used constantly, it sounds pompous and rehearsed.\n\nCleft sentences do similar work in a gentler way. When you say \"It was patience that saved us\" instead of \"Patience saved us,\" you spotlight the word patience. When you say \"What this team needs is trust,\" you build a small drama before delivering the key idea. The structure delays the point just long enough to make the listener want it.\n\nThe lesson, then, is one of restraint. Under no circumstances should every sentence be inverted or clefted. The power of emphasis comes precisely from its rarity. Say everything loudly, and nothing is heard.",

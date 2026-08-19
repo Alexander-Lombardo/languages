@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Mia", en: "When I was a child, I used to love stories like this.", es: "Cuando era niña, me encantaban historias así." },
     { sp: "Leo", en: "Well, in the end I got home safe. That's what matters.", es: "Bueno, al final llegué a casa a salvo. Eso es lo que importa." }
   ],
+  dialogueQuiz: [
+    { q: "What was Leo doing when it started to rain?", choices: ["Driving to work", "Walking home", "Waiting for a bus"], answer: "Walking home" },
+    { q: "What happened while Leo was running?", choices: ["He lost his phone", "He slipped and fell", "He missed the train"], answer: "He slipped and fell" },
+    { q: "Who helped Leo?", choices: ["A man in a car", "A police officer", "His neighbour"], answer: "A man in a car" },
+    { q: "What was the man doing there?", choices: ["Looking for a shop", "Driving home from work", "Visiting a friend"], answer: "Driving home from work" },
+    { q: "How does Leo’s story end?", choices: ["He went to hospital", "He got home safe", "He stayed with the man"], answer: "He got home safe" }
+  ],
   reading: {
     title: "The Night of the Storm",
     en: "It was a cold night and the wind was blowing hard. Anna was reading a book in the living room when the lights suddenly went out. At first she thought it was nothing, but then she heard a strange noise in the kitchen.\n\nWhile she was looking for her phone, the noise stopped. She walked slowly to the kitchen, and her heart was beating fast. When she opened the door, she saw her cat sitting on the table next to a broken glass.\n\nAnna laughed with relief. When she was younger, she used to be afraid of the dark, but that night she learned that the scariest sounds often have the simplest causes. In the end, she cleaned the glass, found a candle, and finished her book by its light.",

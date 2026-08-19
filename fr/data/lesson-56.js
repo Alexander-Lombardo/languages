@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Camille", fr: "On pourrait couper la poire en deux : tu lui parles, mais sans mettre les pieds dans le plat.", en: "We could meet halfway: you talk to him, but without putting your foot in it." },
     { sp: "Hugo", fr: "Va pour ça. Comme on dit, qui ne tente rien n'a rien.", en: "Let's go with that. As they say, nothing ventured, nothing gained." }
   ],
+  dialogueQuiz: [
+    { q: "Pourquoi Hugo a-t-il une tête épouvantable ?", choices: ["Il est malade", "Il a passé une nuit blanche", "Il s’est disputé avec Camille"], answer: "Il a passé une nuit blanche" },
+    { q: "Qu’a fait l’associé ce matin ?", choices: ["Il a posé un lapin à Hugo", "Il a annulé le contrat", "Il a démissionné"], answer: "Il a posé un lapin à Hugo" },
+    { q: "Que reproche Hugo à son associé ?", choices: ["Il a un poil dans la main", "Il parle trop", "Il dépense trop"], answer: "Il a un poil dans la main" },
+    { q: "Pourquoi Hugo doit-il rester prudent ?", choices: ["L’associé est son cousin", "L’associé a le bras long", "Le contrat est déjà signé"], answer: "L’associé a le bras long" },
+    { q: "Quel compromis Camille propose-t-elle ?", choices: ["Ne rien dire", "Rompre l’association", "Lui parler sans mettre les pieds dans le plat"], answer: "Lui parler sans mettre les pieds dans le plat" }
+  ],
   reading: {
     title: "Petit à petit, l'oiseau fait son nid",
     fr: "Léa avait toujours rêvé d'ouvrir sa propre librairie. Au début, ses amis lui cassaient les pieds : « Tu n'as pas un sou, c'est de la folie ! » Mais Léa n'était pas du genre à tomber dans les pommes devant la difficulté. Elle s'est dit que, petit à petit, l'oiseau fait son nid.\n\nElle a donc mis la main à la pâte. Le jour, elle travaillait dans une banque ; la nuit, elle apprenait le métier. Plus d'une fois, elle a passé des nuits blanches sur ses comptes. Quand un investisseur lui a posé un lapin, elle n'en a pas fait tout un fromage : elle avait d'autres chats à fouetter.\n\nUn ami au bras long lui a fini par ouvrir quelques portes. Léa, qui n'aimait pas tourner autour du pot, a appelé un chat un chat et a négocié son bail sans y aller par quatre chemins. Aujourd'hui, sa librairie ne désemplit pas. Comme quoi : l'habit ne fait pas le moine, et qui ne tente rien n'a rien.",

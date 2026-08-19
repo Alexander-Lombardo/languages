@@ -39,6 +39,13 @@ window.COURSE.lessons.push({
     { sp: "Markus", de: "Bitte! Bis bald, Anna.", en: "You're welcome! See you soon, Anna." },
     { sp: "Anna", de: "Auf Wiedersehen, Markus. Tschüss!", en: "Goodbye, Markus. Bye!" }
   ],
+  dialogueQuiz: [
+    { q: "How does Anna greet Markus?", choices: ["Good day", "Good evening", "Good morning"], answer: "Good day" },
+    { q: "What does Anna ask Markus?", choices: ["If he speaks English", "If he speaks French", "Where he lives"], answer: "If he speaks English" },
+    { q: "How much English does Markus speak?", choices: ["None", "A little", "Fluently"], answer: "A little" },
+    { q: "Which language does Markus want to use?", choices: ["English", "German", "Both languages"], answer: "German" },
+    { q: "How does Markus say goodbye?", choices: ["Good night", "See you soon", "Have a nice day"], answer: "See you soon" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>The German alphabet</h3>" +

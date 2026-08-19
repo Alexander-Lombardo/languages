@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "Frau Weber (DE)", de: "Gern. Sie merken, ich komme aus Deutschland — bei uns sagt man Tüte.", en: "Please do. You can tell I'm from Germany — we say Tüte." },
     { sp: "Verkäufer (AT)", de: "Kein Problem. Wir verstehen uns ja trotzdem. Pfiat di!", en: "No problem. We understand each other anyway. Bye!" }
   ],
+  dialogueQuiz: [
+    { q: "Was möchte Frau Weber kaufen?", choices: ["Zwei Brötchen", "Zwei Brote", "Zwei Croissants"], answer: "Zwei Brötchen" },
+    { q: "Wie heißen Brötchen in Österreich?", choices: ["Semmeln", "Schrippen", "Weckerl"], answer: "Semmeln" },
+    { q: "Was sind „Paradeiser und Marillen“?", choices: ["Tomaten und Aprikosen", "Kartoffeln und Pflaumen", "Tomaten und Pfirsiche"], answer: "Tomaten und Aprikosen" },
+    { q: "Was sagt man in Deutschland statt „Sackerl“?", choices: ["Tüte", "Beutel", "Korb"], answer: "Tüte" },
+    { q: "Woher kommt Frau Weber?", choices: ["Aus Deutschland", "Aus Österreich", "Aus der Schweiz"], answer: "Aus Deutschland" }
+  ],
   reading: {
     title: "Eine Sprache, drei Standards",
     de: "Deutsch ist eine plurizentrische Sprache: Es gibt nicht eine einzige richtige Norm, sondern drei gleichberechtigte Standardvarietäten — die bundesdeutsche, die österreichische und die schweizerische. Wer in Wien »Jänner« sagt, spricht keinen Dialekt, sondern korrektes Standarddeutsch; nur in Deutschland heißt der Monat »Januar«.\n\nDie Unterschiede sind oft genüsslich kulinarisch. In Deutschland kauft man Tomaten, Aprikosen und Kartoffeln; in Österreich Paradeiser, Marillen und Erdäpfel. Das Brötchen wird im Süden zur Semmel, in Berlin zur Schrippe. Und in der Schweiz fährt man nicht mit dem Fahrrad, sondern mit dem Velo, und telefoniert nicht mit dem Handy, sondern mit dem Natel.\n\nEine schweizerische Besonderheit fällt sofort ins Auge: Das ß gibt es dort nicht. Man schreibt konsequent »ss« — also »Strasse«, »Fuss«, »heissen«. Auch die Begrüßung verrät die Herkunft: »Moin« im Norden, »Grüß Gott« im Süden und in Österreich, »Grüezi« in der Schweiz. Wer all das kennt, hört einem Sprecher die Heimat schon nach wenigen Worten an.",

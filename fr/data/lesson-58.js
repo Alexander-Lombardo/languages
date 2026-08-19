@@ -40,6 +40,13 @@ window.COURSE.lessons.push({
     { sp: "La présidente", fr: "J'en prends bonne note. Le cas échéant, nous solliciterons un délai supplémentaire auprès du comité. Quelqu'un souhaite-t-il intervenir ?", en: "I take due note of that. Where appropriate, we shall request an additional extension from the committee. Does anyone wish to speak?" },
     { sp: "Le DAF", fr: "Rien à ajouter. Je vous ferai parvenir le relevé de décisions dans les meilleurs délais, à toutes fins utiles.", en: "Nothing to add. I shall send you the record of decisions at the earliest opportunity, for your information." }
   ],
+  dialogueQuiz: [
+    { q: "Que propose la présidente en ouvrant la séance ?", choices: ["De reporter la réunion", "D’aborder d’emblée le premier point", "De relire tout le compte rendu"], answer: "D’aborder d’emblée le premier point" },
+    { q: "Que demande le DAF avant cela ?", choices: ["Une rectification du compte rendu", "Un nouvel ordre du jour", "Une pause"], answer: "Une rectification du compte rendu" },
+    { q: "De quel sujet la présidente vient-elle ensuite à parler ?", choices: ["Du recrutement", "Des locaux", "Du budget prévisionnel"], answer: "Du budget prévisionnel" },
+    { q: "Selon le DRH, que conviendrait-il de faire ?", choices: ["Réviser la feuille de route", "Augmenter le budget", "Annuler le projet"], answer: "Réviser la feuille de route" },
+    { q: "Que fera parvenir le DAF ?", choices: ["Le nouveau budget", "Le relevé de décisions", "La feuille de route"], answer: "Le relevé de décisions" }
+  ],
   reading: {
     title: "Courrier administratif — accusé de réception d'une réclamation",
     fr: "Madame, Monsieur,\n\nNous accusons réception de votre courrier en date du 14 mai dernier, par lequel vous formulez une réclamation au sujet de la facturation afférente à votre contrat. Nous vous prions de bien vouloir nous excuser pour la gêne occasionnée.\n\nAprès examen de votre dossier, force est de constater qu'une erreur d'imputation s'est effectivement produite. En vertu des dispositions contractuelles en vigueur, et sous réserve de la production des justificatifs requis, un avoir vous sera consenti dans un délai de trente jours.\n\nLe cas échéant, et nonobstant les démarches déjà entreprises, nous vous invitons à nous transmettre tout document complémentaire à toutes fins utiles. Vous trouverez ci-joint le formulaire de régularisation, qu'il conviendra de nous retourner dûment complété et signé dans les meilleurs délais.\n\nNous restons à votre entière disposition pour tout renseignement que vous jugeriez utile et vous prions d'agréer, Madame, Monsieur, l'expression de nos salutations distinguées.\n\nLe service clientèle",

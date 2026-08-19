@@ -52,6 +52,13 @@ window.COURSE.lessons.push({
     { sp: "Катя", ru: "Точно. Завтра я постараюсь встать рано.", en: "Exactly. Tomorrow I'll try to get up early." },
     { sp: "Дима", ru: "Удачи! Это трудно.", en: "Good luck! That's hard." }
   ],
+  dialogueQuiz: [
+    { q: "When does Dima wake up?", choices: ["At six", "At eight", "At seven"], answer: "At six" },
+    { q: "What does Dima do first in the morning?", choices: ["Gets dressed", "Has breakfast", "Washes his face"], answer: "Washes his face" },
+    { q: "Where does Dima study during the day?", choices: ["At home", "In the library", "In a cafe"], answer: "In the library" },
+    { q: "When does Dima go to bed?", choices: ["Around midnight", "At ten", "At eleven"], answer: "Around midnight" },
+    { q: "What does Dima promise to try tomorrow?", choices: ["To sleep more", "To get up early", "To study at home"], answer: "To get up early" }
+  ],
   reading: null,
   grammarHTML:
     "<h3>What is a reflexive verb?</h3>" +

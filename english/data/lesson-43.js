@@ -42,6 +42,13 @@ window.COURSE.lessons.push({
     { sp: "Tutor", en: "Right. The dictionary gives you the meaning; only practice gives you the flavour.", es: "Cierto. El diccionario te da el significado; solo la práctica te da el matiz." },
     { sp: "Léa", en: "Then I'd better read more and translate less.", es: "Entonces más vale que lea más y traduzca menos." }
   ],
+  dialogueQuiz: [
+    { q: "What mistake did Léa make in her essay?", choices: ["She wrote ‘make a research’", "She wrote ‘do a decision’", "She misspelled ‘research’"], answer: "She wrote ‘make a research’" },
+    { q: "According to the tutor, what does ‘make’ tend to do?", choices: ["Perform a task", "Create something", "Describe a feeling"], answer: "Create something" },
+    { q: "What did Léa mean by ‘stingy’?", choices: ["Careful with money, in a good way", "Rude to staff", "Very generous"], answer: "Careful with money, in a good way" },
+    { q: "Which word does the tutor recommend instead?", choices: ["Cheap", "Mean", "Thrifty"], answer: "Thrifty" },
+    { q: "What does Léa decide to do?", choices: ["Read more and translate less", "Buy a better dictionary", "Rewrite the essay"], answer: "Read more and translate less" }
+  ],
   reading: {
     title: "The Company Words Keep",
     en: "There is an old saying in linguistics: \"You shall know a word by the company it keeps.\" Two words may share a definition and yet refuse to appear in the same places. We say \"heavy rain\" but never \"strong rain,\" \"strong coffee\" but never \"heavy coffee.\" No logic explains this; it is simply how English has settled. These habitual partnerships are called collocations, and getting them right is what makes a sentence sound native.\n\nConnotation is a subtler matter still. A word carries not only a meaning but a feeling. Call a child \"childlike\" and you praise their wonder and innocence; call an adult \"childish\" and you accuse them of immaturity. The dictionary definitions overlap almost completely, yet one warms and the other wounds.\n\nThis is where careful translation fails. A learner who reaches for the first dictionary entry may write that a friend is \"skinny\" when they mean \"slim,\" or that a colleague is \"stingy\" when they mean \"thrifty.\" The meaning lands, but the feeling is wrong, and the listener flinches.\n\nThe remedy is exposure, not memorisation. You absorb collocations and connotations the way you absorb the flavour of a cuisine: by tasting it again and again until the wrong combination feels as strange to you as it does to a native speaker. Bear that in mind, and your English will stop sounding translated.",
