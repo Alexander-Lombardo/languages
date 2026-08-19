@@ -27,7 +27,7 @@ Lesson content is authored in the sibling per-language repos
 each generating an `output/` app. To pull fresh content into this site:
 
 ```sh
-node tools/sync.js     # re-copies <Lang>/output/data → <code>/data, English/output → english/, regenerates manifest.js
+node tools/sync.js     # re-copies <Lang>/output/data → <code>/data, English/output → english/, regenerates manifest.js + static pages
 node tools/smoke-test.js   # headless render of every route in all 5 languages
 git commit -am "sync content" && git push
 ```
@@ -38,3 +38,24 @@ git commit -am "sync content" && git push
 python3 -m http.server 8000
 # open http://localhost:8000
 ```
+
+## Static lesson pages (SEO)
+
+The app is a client-side SPA, so search engines only see one page. `tools/gen-static.js`
+(run automatically at the end of `sync.js`, or by hand) renders a crawlable HTML page for
+every lesson plus a course landing page per language:
+
+```
+<code>/lessons/              course overview (levels, unit-by-unit lesson index)
+<code>/lessons/<slug>/       one page per lesson: objectives, vocab, dialogue, grammar,
+                             reading, culture note + "Open the interactive lesson" deep link
+pages.css                    standalone stylesheet for these pages
+sitemap.xml, robots.txt
+```
+
+The "open interactive lesson" buttons set `activeLanguage.v1` in localStorage and jump to
+`index.html#lesson/NN` (the English course links straight to `english/index.html#lesson/NN`).
+
+Canonical/OG URLs and the sitemap use `SITE_URL` — once there is a custom domain, run
+`SITE_URL=https://yourdomain.com node tools/gen-static.js` (or change `DEFAULT_SITE_URL`
+in the script). `SITE_BRAND` overrides the site name in titles/footers.

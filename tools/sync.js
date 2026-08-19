@@ -87,3 +87,7 @@ fs.writeFileSync(
     "window.SITE_MANIFEST = " + JSON.stringify(manifest, null, 2) + ";\n"
 );
 console.log("Wrote manifest.js");
+
+// Regenerate the static SEO lesson pages (the english/ wipe above removes them,
+// and lesson titles/slugs may have changed).
+require("child_process").execFileSync(process.execPath, [path.join(__dirname, "gen-static.js")], { stdio: "inherit" });
