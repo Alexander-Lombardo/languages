@@ -696,7 +696,7 @@ window.startCourse = function (cfg) {
       // graceful fallback: show the text so the exercise is still doable
       card.appendChild(el("p", { class: "muted", text: "(Audio unavailable in this browser — here is the phrase to transcribe:) " + phrase }));
     }
-    var play = el("button", { class: "btn small", onclick: function () { speak(phrase); } }, ["🔊 Play again"]);
+    var play = el("button", { class: "btn small", onclick: function () { speak(phrase); } }, ["🔊 Play"]);
     var input = el("input", { class: "ex-input wide", type: "text", placeholder: "type what you hear…", autocomplete: "off", spellcheck: "false" });
     var check = el("button", { class: "btn small", onclick: function () {
       var v = judge(input.value, answers);
@@ -705,7 +705,6 @@ window.startCourse = function (cfg) {
       else mark("incorrect", "✗ It was: <strong>" + answers[0] + "</strong>");
     } }, ["Check"]);
     input.addEventListener("keydown", function (e) { if (e.key === "Enter") check.click(); });
-    if (CAN_AUDIO) speak(phrase);
     card.appendChild(el("div", { class: "ex-controls" }, [play, input, check, revealLink(answers, feedback)]));
   }
 
