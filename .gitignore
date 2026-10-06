@@ -1,0 +1,20 @@
+# Local credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Generated logs, caches, and local tooling
+*.log
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+
+# Keep internal planning outside this public repository
+/private/
+/docs/monetization-plan.md
+/docs/30-day-schedule.md
