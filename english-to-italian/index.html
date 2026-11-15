@@ -1,4 +1,56 @@
-<!doctype html><html lang="it"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>English to Italian</title>
-<style>*{box-sizing:border-box}body{background:#f6f3e9;color:#183e36;font:18px/1.5 system-ui;margin:0}main{max-width:680px;margin:auto;padding:32px 20px}header{border-bottom:2px solid;padding-bottom:16px}small{letter-spacing:.12em;font-weight:700}h1,h2{font-family:Georgia,serif;line-height:1.1}h1{font-size:clamp(38px,7vw,64px);margin:14px 0}article{background:white;padding:clamp(18px,4vw,32px);border-radius:16px;margin-top:24px}button,select{font:inherit;color:inherit;border:1px solid #719086;background:white;border-radius:9px;padding:12px;cursor:pointer}button{display:block;width:100%;margin:8px 0;text-align:left}button:hover,button:focus-visible{background:#e9f1e9}select{max-width:100%}#next{background:#184c40;color:white}h2{font-size:36px}button[hidden]{display:none}</style>
-<main><header><small>QUADERNO DI INGLESE · A1</small><h1>English to Italian</h1><p>Impara le frasi di tutti i giorni. Leggi la frase inglese e scegli il significato in italiano.</p></header><p><label>Lezione <select id="lesson"><option>Presentarsi</option><option>Al bar</option><option>In viaggio</option></select></label></p><article><small id="count"></small><h2 id="phrase" lang="en"></h2><button id="listen">♫ Ascolta in inglese</button><div id="choices"></div><p id="feedback" role="status"></p><button id="next" hidden>Continua →</button></article></main>
-<script src="lesson.js"></script></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book contents · English to Italian</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f6f3e9; color: #183e36; font: 17px/1.55 system-ui, sans-serif; }
+    main { max-width: 780px; margin: auto; padding: 2rem 1.25rem; }
+    h1, strong { font-family: Georgia, serif; }
+    h1 { font-size: clamp(2rem, 6vw, 3.5rem); margin: .4em 0; line-height: 1.1; }
+    ol { padding-left: 2em; }
+    li { border-top: 1px solid #babfb4; padding: .8em 0 .8em .4em; }
+    strong { font-size: 1.3em; }
+    .page { float: right; margin-left: 1em; font-variant-numeric: tabular-nums; }
+    nav a { color: inherit; }
+  </style>
+</head>
+<body>
+  <main>
+    <nav aria-label="Practice"><a href="practice.html">Phrase practice</a></nav>
+    <h1 lang="it">Leggere con piacere</h1>
+    <p>Book contents · Italian chapters and grammar topics</p>
+    <ol>
+      <li><span class="page">p. 1</span><strong lang="it">Il giovane</strong><div>Personal pronouns and the present tense of essere</div></li>
+      <li><span class="page">p. 6</span><strong lang="it">L’amico generoso</strong><div>The present tense of avere</div></li>
+      <li><span class="page">p. 11</span><strong lang="it">Il pericolo stradale</strong><div>Present tense of first-conjugation verbs (–are)</div></li>
+      <li><span class="page">p. 16</span><strong lang="it">Ridere o non ridere?</strong><div>Present tense of –ere verbs, definite articles, and noun gender and number</div></li>
+      <li><span class="page">p. 21</span><strong lang="it">Il gioco ed il riposo</strong><div>Adjective agreement in gender and number</div></li>
+      <li><span class="page">p. 28</span><strong lang="it">I dormiglioni</strong><div>Present tense of –ire verbs without –isc–</div></li>
+      <li><span class="page">p. 34</span><strong lang="it">Ardire o non ardire?</strong><div>Present tense of –ire verbs with –isc–</div></li>
+      <li><span class="page">p. 39</span><strong lang="it">Un paese piccolo e montuoso</strong><div>Prepositions combined with definite articles</div></li>
+      <li><span class="page">p. 45</span><strong lang="it">Lo zuccone</strong><div>The present tense of andare and expressions of age</div></li>
+      <li><span class="page">p. 50</span><strong lang="it">I germi che vincono sempre</strong><div>The present tense of stare</div></li>
+      <li><span class="page">p. 55</span><strong lang="it">Per imparare</strong><div>The present tense of dire and sapere</div></li>
+      <li><span class="page">p. 60</span><strong lang="it">La giovane zia lavora a maglia</strong><div>The present tense of fare</div></li>
+      <li><span class="page">p. 66</span><strong lang="it">I vulcani d’Italia</strong><div>Comparative and superlative adjectives</div></li>
+      <li><span class="page">p. 71</span><strong lang="it">Per andare alla spiaggia</strong><div>Future tense of –are and –ere verbs</div></li>
+      <li><span class="page">p. 77</span><strong lang="it">I gemelli andranno a pescare</strong><div>Future tense of –ire verbs</div></li>
+      <li><span class="page">p. 82</span><strong lang="it">L’aristocratico economo</strong><div>The future tense of fare</div></li>
+      <li><span class="page">p. 88</span><strong lang="it">I fiumi d’Italia</strong><div>The absolute superlative</div></li>
+      <li><span class="page">p. 93</span><strong lang="it">La tavola</strong><div>The future tense of essere</div></li>
+      <li><span class="page">p. 98</span><strong lang="it">Il mangione</strong><div>Passato prossimo of –are verbs</div></li>
+      <li><span class="page">p. 104</span><strong lang="it">Il cattivello spiritoso</strong><div>Passato prossimo of regular –ere verbs</div></li>
+      <li><span class="page">p. 109</span><strong lang="it">Che tempo farà?</strong><div>Passato prossimo of regular –ire verbs</div></li>
+      <li><span class="page">p. 115</span><strong lang="it">I laghi d’Italia</strong><div>Nouns and adjectives ending in –co, –ca, –go or –ga that take h in the plural</div></li>
+      <li><span class="page">p. 120</span><strong lang="it">Gente di poca fede</strong><div>Future tense of verbs ending in –care and –gare</div></li>
+      <li><span class="page">p. 126</span><strong lang="it">Chi è l’asino?</strong><div>Verbs that take essere in the passato prossimo</div></li>
+      <li><span class="page">p. 132</span><strong lang="it">La medicina per l’insonnia</strong><div>Verbs with irregular past participles</div></li>
+      <li><span class="page">p. 138</span><strong lang="it">Un paese agricolo o industriale?</strong><div>Using si to form the passive</div></li>
+    </ol>
+    <p><span class="page">p. 145</span><strong lang="it">Vocabolario</strong></p>
+  </main>
+</body>
+</html>
