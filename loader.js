@@ -90,6 +90,11 @@
       el("div", { class: "lang-meta", text: "Curso para hispanohablantes" }),
       el("div", { class: "lang-meta", text: "60 lecciones · A1 → C2" })
     ]));
+    grid.appendChild(el("a", { class: "lang-card", href: "english-to-italian/" }, [
+      el("div", { class: "lang-flag", text: "🇬🇧" }),
+      el("div", { class: "lang-name", text: "English to Italian" }),
+      el("div", { class: "lang-meta", text: "Inglese per chi parla italiano · A1" })
+    ]));
     c.appendChild(grid);
   }
 
